@@ -12,7 +12,6 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -25,6 +24,7 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = "mobileID"))
@@ -41,69 +41,68 @@ public class User extends BaseEntity implements Serializable {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
 
-	@NotNull
+	@NotEmpty(message = "firstName may not be empty")
 	@Size(min = 1, max = 40)
 	private String firstName = StringUtils.EMPTY;
 
-	@NotNull
+	@NotEmpty(message = "lastName may not be empty")
 	@Size(min = 1, max = 40)
 	private String lastName = StringUtils.EMPTY;
 
-	@NotNull
-	@Size(min = 1, max = 40)
-	@Email
+	@NotEmpty(message = "email may not be empty")
+	@Size(min = 1, max = 40, message = "email must be greater than 1 and less than 40")
+	@Email(message = "email not valid")
 	private String email = StringUtils.EMPTY;
 	
-	@NotNull
-	@Size(min = 1, max = 200)
+	@NotEmpty(message = "address may not be empty")
+	@Size(min = 1, max = 200, message = "address must be greater than 1 and less than 200")
 	@Pattern(regexp = "[A-Za-z0-9 ]*", message = "must contain only numbers,letters or spaces")
 	private String address = StringUtils.EMPTY;
 
-	@NotNull
-	@Size(min = 1, max = 10)
+	@NotEmpty(message = "zipCode may not be empty")
+	@Size(min = 1, max = 10, message = "zipCode must be greater than 1 and less than 10")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
 	private String zipCode = StringUtils.EMPTY;
 
-	@NotNull
-	@Size(min = 1, max = 10)
+	@NotEmpty(message = "city may not be empty")
+	@Size(min = 1, max = 10, message = "city must be greater than 1 and less than 10")
 	@Pattern(regexp = "[A-Za-z]*", message = "must contain only letters")
 	private String city = StringUtils.EMPTY;
 
-	@NotNull
-	@Size(min = 1, max = 10)
+	@NotEmpty(message = "country may not be empty")
+	@Size(min = 1, max = 10, message = "country must be greater than 1 and less than 10")
 	@Pattern(regexp = "[A-Za-z]*", message = "must contain only letters")
 	private String country = StringUtils.EMPTY;
 
-	@NotNull
-	@Size(min = 1, max = 10)
+	@NotEmpty(message = "userKind may not be empty")
+	@Size(min = 1, max = 10, message = "userKind must be greater than 1 and less than 10")
 	@Pattern(regexp = "[A-Za-z]*", message = "must contain only letters")
 	private String userKind = StringUtils.EMPTY;
 
-	@Size(min = 1, max = 10)
+	@Size(min = 1, max = 10, message = "userKind must be greater than 1 and less than 10")
 	@Pattern(regexp = "[A-Za-z0-9 ]*", message = "must contain only numbers,letters or spaces")
 	private String company = StringUtils.EMPTY;
 
-	@NotNull
-	@Size(min = 1, max = 10)
+	@NotEmpty(message = "nif may not be empty")
+	@Size(min = 9, max = 9, message = "nif must be exactly 9 numbers")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
 	private String nif = StringUtils.EMPTY;
 
-	@NotNull
 	@Size(min = 1, max = 10)
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
 	private String phoneNumber = StringUtils.EMPTY;
 
-	@NotNull
-	@Size(min = 1, max = 10)
+	@NotEmpty(message = "cellPhone may not be empty")
+	@Size(min = 9, max = 9, message = "cellPhone must be exactly 9 numbers")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
 	private String cellPhone = StringUtils.EMPTY;
 
-	@NotNull
-	@Size(min = 1, max = 10)
+	@Size(min = 9, max = 9, message = "fax must be exactly 9 numbers")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
 	private String fax = StringUtils.EMPTY;
 
-	@Size(min = 1, max = 255)
+	@NotEmpty(message = "password may not be empty")
+	@Size(min = 5, max = 20, message = "password must be 5 digits or more")
 	private String password;/* SHA-1 */
 
 	/* ==========================GETTERS/SETTERS======================= */
