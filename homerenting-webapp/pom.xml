@@ -24,6 +24,13 @@
 		<!-- JBoss AS plugin for deployment -->
 		<version.jboss.as.maven.plugin>7.1.1.Final</version.jboss.as.maven.plugin>
 
+		<!-- Guava version -->
+		<guava.version>12.0</guava.version>
+		<!-- Slf4j version -->
+		<slf4j.version>1.6.6</slf4j.version>
+		<!-- Logback version -->
+		<logback.version>1.0.7</logback.version>
+
 	</properties>
 
 	<dependencyManagement>
@@ -100,6 +107,12 @@
 				<artifactId>spring-test</artifactId>
 				<version>${version.spring}</version>
 				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -259,7 +272,7 @@
 		</dependency>
 
 
-		<!-- Add cglib for the MemberDaoTest -->
+		<!-- Add cglib for the DaoTest -->
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib-nodep</artifactId>
@@ -308,6 +321,35 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.0</version>
+		</dependency>
+
+		<!-- guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<!-- =======LOGGING======== -->
+		<!-- slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- logback -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logback.version}</version>
 		</dependency>
 
 	</dependencies>
