@@ -30,7 +30,8 @@
 		<slf4j.version>1.6.6</slf4j.version>
 		<!-- Logback version -->
 		<logback.version>1.0.7</logback.version>
-
+		<!-- Freemarker version -->
+		<freemarker.version>2.3.20</freemarker.version>
 	</properties>
 
 	<dependencyManagement>
@@ -330,6 +331,12 @@
 			<version>${guava.version}</version>
 		</dependency>
 
+		<!-- freemarker -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>${freemarker.version}</version>
+		</dependency>
 		<!-- =======LOGGING======== -->
 		<!-- slf4j -->
 		<dependency>

@@ -27,7 +27,7 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-@Table(uniqueConstraints = @UniqueConstraint(columnNames = "mobileID"))
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 @NamedQueries({ @NamedQuery(name = "User.FIND_ALL", query = "select u from User u") })
 @XmlRootElement(name = "user")
 @XmlAccessorType(XmlAccessType.PROPERTY)
@@ -75,11 +75,11 @@ public class User extends BaseEntity implements Serializable {
 	private String country = StringUtils.EMPTY;
 
 	@NotEmpty(message = "userKind may not be empty")
-	@Size(min = 1, max = 10, message = "userKind must be greater than 1 and less than 10")
+	@Size(min = 0, max = 12, message = "userKind must be less than 12")
 	@Pattern(regexp = "[A-Za-z]*", message = "must contain only letters")
-	private String userKind = StringUtils.EMPTY;
+	private String userKind = StringUtils.EMPTY;/*particular-empresarial*/
 
-	@Size(min = 1, max = 10, message = "userKind must be greater than 1 and less than 10")
+	@Size(min = 0, max = 10, message = "company must be greater than 1 and less than 10")
 	@Pattern(regexp = "[A-Za-z0-9 ]*", message = "must contain only numbers,letters or spaces")
 	private String company = StringUtils.EMPTY;
 
@@ -89,7 +89,7 @@ public class User extends BaseEntity implements Serializable {
 	private String nif = StringUtils.EMPTY;
 
 	@Size(min = 1, max = 10)
-	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
+	@Pattern(regexp = "[0-9]*", message = "phoneNumber must contain only numbers")
 	private String phoneNumber = StringUtils.EMPTY;
 
 	@NotEmpty(message = "cellPhone may not be empty")
@@ -97,7 +97,7 @@ public class User extends BaseEntity implements Serializable {
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
 	private String cellPhone = StringUtils.EMPTY;
 
-	@Size(min = 9, max = 9, message = "fax must be exactly 9 numbers")
+	@Size(min = 0, max = 9, message = "fax must be exactly 9 numbers")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
 	private String fax = StringUtils.EMPTY;
 
@@ -134,6 +134,15 @@ public class User extends BaseEntity implements Serializable {
 		this.lastName = lastName;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	@XmlElement
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	public String getAddress() {
 		return address;
 	}
