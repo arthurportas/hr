@@ -34,7 +34,14 @@ public class UserController {
 	@RequestMapping(value = "/addUser", method = RequestMethod.GET)
 	public String registerNewUser(@ModelAttribute("newUser") @Valid User newUser,
 			BindingResult result, Model model) {
-		return NEW_USER_FORM;
+		if (!result.hasErrors()) {
+		//userDao.create(newUser);
+		return "cool";	
+	} else {
+		//model.addAttribute("users", userDao.findAllOrderedByName());
+		return "not so cool";
+	}
+		//return NEW_USER_FORM;
 		/*if (!result.hasErrors()) {
 			userDao.create(newUser);
 			return "redirect:/";	

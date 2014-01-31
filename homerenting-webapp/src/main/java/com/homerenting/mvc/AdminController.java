@@ -28,10 +28,16 @@ public class AdminController {
 	public String displayAdminLogin(Model model) {
 		return "admin-login";
 	}
-	@RequestMapping(value = "/admin.home", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/home", method = RequestMethod.GET)
 	public String displayAdminHome(Model model) {
 		return "admin-index";
 	}
+	
+	@RequestMapping(value = "/admin/home/nav/admin-form-new-user", method = RequestMethod.GET)
+	public String displayAdminFormNewUser(Model model) {
+		return "admin-form-new-user";
+	}
+	
 	
 /*
 	@RequestMapping(value = "/addUser", method = RequestMethod.GET)
