@@ -1,10 +1,19 @@
 package com.homerenting.mvc;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.validation.Valid;
 
 import com.homerenting.domain.User;
+import com.homerenting.domain.UserKind;
 import com.homerenting.repo.IUserDao;
+import com.neovisionaries.i18n.CountryCode;
 
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +23,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class UserController {
@@ -49,6 +59,30 @@ public class UserController {
 			model.addAttribute("users", userDao.findAllOrderedByName());
 			return "index";
 		}*/
+	}
+	
+	@RequestMapping(value = "/userkind", method = RequestMethod.GET)
+	@ResponseBody
+	public String displayUserKind(Model model) {
+		slf4jLogger.info("==String displayUserKind(Model model)==");
+		List<String> userKind = new ArrayList<String>(1);
+		userKind.add(UserKind.PRIVATE.toString());
+		userKind.add(UserKind.CORPORATE.toString());
+		ObjectMapper mapper = new ObjectMapper();
+		try {
+			String json = mapper.writeValueAsString(userKind);
+			return json;
+		} catch (JsonGenerationException jge) {
+			slf4jLogger.debug("==JsonGenerationException jge==");
+			slf4jLogger.debug(jge.getMessage());
+		} catch (JsonMappingException jme) {
+			slf4jLogger.debug("==JsonMappingException jme==");
+			slf4jLogger.debug(jme.getMessage());
+		} catch (IOException ioe) {
+			slf4jLogger.debug("==IOException ioe==");
+			slf4jLogger.debug(ioe.getMessage());
+		}
+		return "";
 	}
 
 }

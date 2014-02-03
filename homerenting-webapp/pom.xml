@@ -337,6 +337,14 @@
 			<artifactId>freemarker</artifactId>
 			<version>${freemarker.version}</version>
 		</dependency>
+
+		<!-- https://github.com/TakahikoKawasaki/nv-i18n -->
+		<!-- Javadoc http://takahikokawasaki.github.com/nv-i18n/ -->
+		<dependency>
+			<groupId>com.neovisionaries</groupId>
+			<artifactId>nv-i18n</artifactId>
+			<version>1.1</version>
+		</dependency>
 		<!-- =======LOGGING======== -->
 		<!-- slf4j -->
 		<dependency>
