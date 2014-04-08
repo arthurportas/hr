@@ -45,101 +45,6 @@
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/ROOT.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/homerenting.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/artifacts/eduict_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/artifacts/eduict_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/artifacts/homerenting_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/artifacts/homerenting_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/artifacts/jboss_as_kitchensink_spring_matrixvariables_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/artifacts/jboss_as_kitchensink_spring_matrixvariables_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__cglib_cglib_nodep_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__com_google_guava_guava_12_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__com_h2database_h2_1_3_165.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__com_neovisionaries_nv_i18n_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__commons_codec_commons_codec_20041127_091804.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__javax_enterprise_cdi_api_1_0_SP4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__javax_servlet_jstl_1_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__javax_servlet_servlet_api_3_0_alpha_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__junit_junit_4_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__junit_junit_4_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_hibernate_hibernate_core_4_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_hibernate_hibernate_jpamodelgen_1_1_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_2_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_hibernate_hibernate_validator_annotation_processor_4_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_config_arquillian_config_api_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_config_arquillian_config_impl_base_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_impl_base_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_spi_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_test_api_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_test_impl_base_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_container_arquillian_container_test_spi_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_core_arquillian_core_api_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_core_arquillian_core_impl_base_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_core_arquillian_core_spi_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_junit_arquillian_junit_container_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_junit_arquillian_junit_core_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_protocol_arquillian_protocol_servlet_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_test_arquillian_test_api_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_test_arquillian_test_impl_base_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_arquillian_test_arquillian_test_spi_1_0_0_CR7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_shrinkwrap_descriptors_shrinkwrap_descriptors_api_1_1_0_beta_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_shrinkwrap_descriptors_shrinkwrap_descriptors_spi_1_1_0_beta_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_shrinkwrap_shrinkwrap_api_1_0_0_cr_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_shrinkwrap_shrinkwrap_impl_base_1_0_0_cr_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_shrinkwrap_shrinkwrap_spi_1_0_0_cr_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_1_spec_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_spec_javax_ejb_jboss_ejb_api_3_1_spec_1_0_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_spec_javax_faces_jboss_jsf_api_2_0_spec_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_spec_javax_interceptor_jboss_interceptors_api_1_1_spec_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_jboss_spec_javax_ws_rs_jboss_jaxrs_api_1_1_spec_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_6_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_aop_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_asm_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_beans_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_context_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_context_support_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_core_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_expression_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_jdbc_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_orm_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_test_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_tx_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_web_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__org_springframework_spring_webmvc_3_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting-root/homerenting/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting/src/main/resources/messages_en_UK.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting/src/main/resources/messages_es_ES.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting/src/main/resources/messages_pt_PT.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting/src/main/webapp/WEB-INF/i18n/messages.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homerenting/src/main/webapp/WEB-INF/i18n/messages_en_UK.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/deployments/ROOT.war" afterPath="$USER_HOME$/eduict/deployments/ROOT.war" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict.war" afterPath="$USER_HOME$/eduict/target/eduict.war" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/.name" afterPath="$USER_HOME$/eduict/.idea/.name" />
@@ -311,7 +216,7 @@
       <file leaf-file-name="spring-quickstart-ds.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/target/homerenting/WEB-INF/spring-quickstart-ds.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="42" selection-start="566" selection-end="566" vertical-scroll-proportion="0.2437276" vertical-offset="68" max-vertical-offset="697">
+            <state line="8" column="42" selection-start="566" selection-end="566" vertical-scroll-proportion="0.16229117" vertical-offset="68" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -327,10 +232,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishServiceImpl.java" />
@@ -381,6 +291,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin-left-navbar.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin-form-new-user.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-quickstart-ds.xml" />
+        <option value="$PROJECT_DIR$/target/homerenting/WEB-INF/spring-quickstart-ds.xml" />
       </list>
     </option>
   </component>
@@ -553,7 +464,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/eduict/target" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1014,7 +925,7 @@
       <updated>1396643176958</updated>
       <workItem from="1396643200176" duration="8000" />
       <workItem from="1396735648489" duration="23735000" />
-      <workItem from="1396787920956" duration="27799000" />
+      <workItem from="1396787920956" duration="28681000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -1032,31 +943,35 @@
       <created>1396995558930</created>
       <updated>1396995558930</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Major refactor&#10;">
+      <created>1396995871997</created>
+      <updated>1396995871997</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51542000" />
+    <option name="totallyTimeSpent" value="52424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="22" width="1440" height="812" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5236111" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5236111" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5236111" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17310444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1098,7 +1013,8 @@
     <MESSAGE value="i18n working DS&#10;" />
     <MESSAGE value="added concelhos.txt&#10;" />
     <MESSAGE value="Moved properties files&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved properties files&#10;" />
+    <MESSAGE value="Major refactor&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Major refactor&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1489,7 +1405,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/target/homerenting/WEB-INF/spring-quickstart-ds.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="566" selection-end="566" vertical-scroll-proportion="0.2437276" vertical-offset="68" max-vertical-offset="697">
+        <state line="8" column="42" selection-start="566" selection-end="566" vertical-scroll-proportion="0.16229117" vertical-offset="68" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
