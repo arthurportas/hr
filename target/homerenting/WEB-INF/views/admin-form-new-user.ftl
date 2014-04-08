@@ -9,7 +9,7 @@
 
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="name">
-                            <@spring.messageText "label.firstname", "Nome_"/>
+                            <@spring.message "label.firstname" />
                         </label>
                         <div class="col-md-4">
                             <input id="name" name="name" type="text" placeholder="name"
