@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="eduict:war exploded">
+    <output-path>$USER_HOME$/IdeaProjects/eduict/eduict/target/eduict</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="eduict/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="eduict" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.20" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:3.0-alpha-1" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.4" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
