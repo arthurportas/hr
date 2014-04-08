@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/eduict/eduict.iml" filepath="$USER_HOME$/eduict/eduict.iml" />
       <module fileurl="file://$PROJECT_DIR$/homerenting-webapp.iml" filepath="$PROJECT_DIR$/homerenting-webapp.iml" />
     </modules>
   </component>
