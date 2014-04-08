@@ -1,3 +1,5 @@
+<#import "spring.ftl" as spring />
+<h1>cenas<@spring.message "admin.left.nav.users.new" /></h1>
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
