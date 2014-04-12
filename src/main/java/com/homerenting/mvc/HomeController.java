@@ -13,9 +13,6 @@ public class HomeController {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(HomeController.class);
 
-    @Autowired
-    public HomeController() {
-    }
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
