@@ -1,4 +1,3 @@
-<#import "spring.ftl" as spring />
 <!-- begin header -->
 <header>
     <#include "navigation/navigation.ftl">
@@ -7,8 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="span8">
-                    <a class="brand" href="index.html"><span class="logo-text">Realto</span></a>
-                    <span class="tag-line hidden-phone">Your tag line here</span>
+                    <a class="brand" href="index.html"><span class="logo-text">HomeRenting</span></a>
+                    <span class="tag-line hidden-phone"><@spring.message "tag.line" /></span>
                 </div>
                 <#include "login/login.ftl">
             </div>
