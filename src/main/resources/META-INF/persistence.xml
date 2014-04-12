@@ -4,10 +4,20 @@
         http://java.sun.com/xml/ns/persistence
         http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
    <persistence-unit name="primary">
+       <provider>org.hibernate.ejb.HibernatePersistence</provider>
       <jta-data-source>java:jboss/datasources/PostgreSQLDS</jta-data-source>
+       <class>com.homerenting.domain.Member</class>
+       <class>com.homerenting.domain.User</class>
+       <class>com.homerenting.domain.EnergieCertificate</class>
+       <class>com.homerenting.domain.Highlights</class>
+       <class>com.homerenting.domain.District</class>
+       <class>com.homerenting.domain.Parish</class>
+       <class>com.homerenting.domain.Region</class>
+       <validation-mode>CALLBACK</validation-mode>
       <properties>
 		 <property name="jboss.entity.manager.factory.jndi.name" value="java:jboss/spring-quickstart/persistence" />
          <!-- Properties for Hibernate -->
+          <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
          <property name="hibernate.hbm2ddl.auto" value="create-drop" />
          <property name="hibernate.show_sql" value="false" />
       </properties>

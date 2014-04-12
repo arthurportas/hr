@@ -1,5 +1,6 @@
 -- You can use this file to load seed data into the database using SQL statements
 insert into Member (id, name, email, phone_number) values (0, 'John Smith', 'john.smith@mailinator.com', '2125551212')
+/*
 
 insert into User (id, firstName, lastName, email, address, zipcode, city, country, userKind, company, nif, phoneNumber, cellPhone, fax, password) values (0, 'arthur', 'portas', 'arthurportas@gmail.com', 'rua a voz dos ridiculos, 40, 1º h2', '4250551', 'porto', 'portugal', 'particular', '', '221446834', '220109606', '935705832', '', 'tretas')
 
@@ -103,3 +104,4 @@ INSERT INTO  User  ( id , firstName , lastName , email , address , zipcode , cit
 INSERT INTO  User  ( id , firstName , lastName , email , address , zipcode , city , country , userKind , company , nif , phoneNumber , cellPhone , fax , password ) VALUES (99,"Madaline","Keller","pede.ultrices.a@eterosProin.ca","474-9301 Quis, Road","20408","Cognelee","Tonga","commodo","Curabitur Foundation",9,"408585927","674734940","922157085","Aenean");
 INSERT INTO  User  ( id , firstName , lastName , email , address , zipcode , city , country , userKind , company , nif , phoneNumber , cellPhone , fax , password ) VALUES (100,"Micah","Richardson","sagittis@utmiDuis.ca","P.O. Box 607, 7214 Suspendisse Road","7813","Subbiano","Tanzania","in","Placerat Augue Sed Foundation",9,"695168350","961845729","759756707","Nulla");
 INSERT INTO  User  ( id , firstName , lastName , email , address , zipcode , city , country , userKind , company , nif , phoneNumber , cellPhone , fax , password ) VALUES (101,"Ursa","Larson","interdum.Curabitur.dictum@Vivamusnon.edu","P.O. Box 241, 875 Dolor Rd.","4100DD","New Orleans","Ãland Islands","eu","Non Massa Foundation",9,"034570177","951681621","674057968","lectus");
+*/
