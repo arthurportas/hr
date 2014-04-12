@@ -1,468 +1,647 @@
 <#import "spring.ftl" as spring />
-<#include "admin-header.ftl">
+<#include "header.ftl">
 <body>
 
-<div id="wrapper">
-
-
-<#include "navbar-static-top.ftl">
-<#include "admin-left-navbar.ftl">
-
-<div id="page-wrapper">
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">Dashboard</h1>
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-<div class="row">
-<div class="col-lg-8">
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
-        <div class="pull-right">
-            <div class="btn-group">
-                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                    Actions
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="#">Action</a>
-                    </li>
-                    <li><a href="#">Another action</a>
-                    </li>
-                    <li><a href="#">Something else here</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- /.panel-heading -->
-    <div class="panel-body">
-        <div id="morris-area-chart"></div>
-    </div>
-    <!-- /.panel-body -->
-</div>
-<!-- /.panel -->
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
-        <div class="pull-right">
-            <div class="btn-group">
-                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                    Actions
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="#">Action</a>
-                    </li>
-                    <li><a href="#">Another action</a>
-                    </li>
-                    <li><a href="#">Something else here</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- /.panel-heading -->
-    <div class="panel-body">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="table-responsive">
-                    <table class="table table-bordered table-hover table-striped">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Date</th>
-                            <th>Time</th>
-                            <th>Amount</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>3326</td>
-                            <td>10/21/2013</td>
-                            <td>3:29 PM</td>
-                            <td>$321.33</td>
-                        </tr>
-                        <tr>
-                            <td>3325</td>
-                            <td>10/21/2013</td>
-                            <td>3:20 PM</td>
-                            <td>$234.34</td>
-                        </tr>
-                        <tr>
-                            <td>3324</td>
-                            <td>10/21/2013</td>
-                            <td>3:03 PM</td>
-                            <td>$724.17</td>
-                        </tr>
-                        <tr>
-                            <td>3323</td>
-                            <td>10/21/2013</td>
-                            <td>3:00 PM</td>
-                            <td>$23.71</td>
-                        </tr>
-                        <tr>
-                            <td>3322</td>
-                            <td>10/21/2013</td>
-                            <td>2:49 PM</td>
-                            <td>$8345.23</td>
-                        </tr>
-                        <tr>
-                            <td>3321</td>
-                            <td>10/21/2013</td>
-                            <td>2:23 PM</td>
-                            <td>$245.12</td>
-                        </tr>
-                        <tr>
-                            <td>3320</td>
-                            <td>10/21/2013</td>
-                            <td>2:15 PM</td>
-                            <td>$5663.54</td>
-                        </tr>
-                        <tr>
-                            <td>3319</td>
-                            <td>10/21/2013</td>
-                            <td>2:13 PM</td>
-                            <td>$943.45</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- /.table-responsive -->
-            </div>
-            <!-- /.col-lg-4 (nested) -->
-            <div class="col-lg-8">
-                <div id="morris-bar-chart"></div>
-            </div>
-            <!-- /.col-lg-8 (nested) -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.panel-body -->
-</div>
-<!-- /.panel -->
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <i class="fa fa-clock-o fa-fw"></i> Timeline
-    </div>
-    <!-- /.panel-heading -->
-    <div class="panel-body">
-        <ul class="timeline">
-            <li>
-                <div class="timeline-badge"><i class="fa fa-check"></i>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Timeline Event</h4>
-                        <p>
-                            <small class="text-muted"><i class="fa fa-time"></i> 11 hours ago via Twitter</small>
-                        </p>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo eu mi scelerisque vulputate. Aliquam in metus eu lectus aliquet egestas.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Timeline Event</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo eu mi scelerisque vulputate. Aliquam in metus eu lectus aliquet egestas.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo eu mi scelerisque vulputate. Aliquam in metus eu lectus aliquet egestas.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-badge danger"><i class="fa fa-credit-card"></i>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Timeline Event</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo eu mi scelerisque vulputate. Aliquam in metus eu lectus aliquet egestas.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Timeline Event</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo eu mi scelerisque vulputate. Aliquam in metus eu lectus aliquet egestas.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-badge info"><i class="fa fa-save"></i>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Timeline Event</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo eu mi scelerisque vulputate. Aliquam in metus eu lectus aliquet egestas.</p>
-                        <hr>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-cog"></i>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a>
-                                </li>
-                                <li><a href="#">Another action</a>
-                                </li>
-                                <li><a href="#">Something else here</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Timeline Event</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo eu mi scelerisque vulputate. Aliquam in metus eu lectus aliquet egestas.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge success"><i class="fa fa-thumbs-up"></i>
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Timeline Event</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo eu mi scelerisque vulputate. Aliquam in metus eu lectus aliquet egestas.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!-- /.panel-body -->
-</div>
-<!-- /.panel -->
-</div>
-<!-- /.col-lg-8 -->
-<div class="col-lg-4">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <i class="fa fa-bell fa-fw"></i> Notifications Panel
-        </div>
-        <!-- /.panel-heading -->
-        <div class="panel-body">
-            <div class="list-group">
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
-                                    </span>
-                </a>
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
-                </a>
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                    </span>
-                </a>
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                    </span>
-                </a>
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
-                </a>
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                </a>
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                </a>
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-                </a>
-                <a href="#" class="list-group-item">
-                    <i class="fa fa-money fa-fw"></i> Payment Received
-                                    <span class="pull-right text-muted small"><em>Yesterday</em>
-                                    </span>
-                </a>
-            </div>
-            <!-- /.list-group -->
-            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
-        </div>
-        <!-- /.panel-body -->
-    </div>
-    <!-- /.panel -->
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
-        </div>
-        <div class="panel-body">
-            <div id="morris-donut-chart"></div>
-            <a href="#" class="btn btn-default btn-block">View Details</a>
-        </div>
-        <!-- /.panel-body -->
-    </div>
-    <!-- /.panel -->
-    <div class="chat-panel panel panel-default">
-        <div class="panel-heading">
-            <i class="fa fa-comments fa-fw"></i>
-            Chat
-            <div class="btn-group pull-right">
-                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-chevron-down"></i>
-                </button>
-                <ul class="dropdown-menu slidedown">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-refresh fa-fw"></i> Refresh
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-check-circle fa-fw"></i> Available
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-times fa-fw"></i> Busy
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-clock-o fa-fw"></i> Away
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.panel-heading -->
-        <div class="panel-body">
-            <ul class="chat">
-                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                    <div class="chat-body clearfix">
-                        <div class="header">
-                            <strong class="primary-font">Jack Sparrow</strong>
-                            <small class="pull-right text-muted">
-                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                            </small>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                        </p>
-                    </div>
+<!-- theme panel -->
+<div id="themes_panel">
+    <div id="themes_menu">
+        <div class="segment">
+            <h6>Theme Colour</h6>
+            <ul class="theme buttons">
+                <li>
+                    <a href="#" title="green">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_green.jpg'/>"/>
+                    </a>
                 </li>
-                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                    <div class="chat-body clearfix">
-                        <div class="header">
-                            <small class=" text-muted">
-                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                        </p>
-                    </div>
+                <li>
+                    <a href="#" title="purple">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_purple.jpg'/>"/>
+                    </a>
                 </li>
-                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                    <div class="chat-body clearfix">
-                        <div class="header">
-                            <strong class="primary-font">Jack Sparrow</strong>
-                            <small class="pull-right text-muted">
-                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                        </p>
-                    </div>
+                <li>
+                    <a href="#" title="pink">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_pink.jpg'/>"/>
+                    </a>
                 </li>
-                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                    <div class="chat-body clearfix">
-                        <div class="header">
-                            <small class=" text-muted">
-                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                        </p>
-                    </div>
+                <li>
+                    <a href="#" title="blue">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_blue.jpg'/>"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="orange">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_orange.jpg'/>"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="red">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_red.jpg'/>"/>
+                    </a>
                 </li>
             </ul>
         </div>
-        <!-- /.panel-body -->
-        <div class="panel-footer">
-            <div class="input-group">
-                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-warning btn-sm" id="btn-chat">
-                                        Send
-                                    </button>
-                                </span>
+        <div class="segment noborder">
+            <a class="reset_btn" href="#">Reset</a>
+        </div>
+    </div>
+    <div id="toggle_button">
+        <a href="#"></a>
+    </div>
+</div>
+
+<!-- begin header -->
+<header>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="index.html"><i class="icon-home"></i></a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Properties <i class="icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="properties-grid-layout-1.html" title="Properties Grid Layout 1">Properties
+                                    Grid Layout 1</a></li>
+                                <li><a href="properties-grid-layout-2.html" title="Properties Grid Layout 2">Properties
+                                    Grid Layout 2</a></li>
+                                <li><a href="properties-list-layout-1.html" title="Properties List Layout">Properties
+                                    List Layout 1</a></li>
+                                <li><a href="properties-list-layout-2.html" title="Properties List Layout">Properties
+                                    List Layout 2</a></li>
+                                <li><a href="property-page.html" title="Property Page">Property Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Agents">Agents<i class="icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="agents.html" title="All Agents">All Agents</a></li>
+                                <li><a href="agent-profile.html" title="Agent Profile">Agent Profile</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<i class="icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog-layout-1.html" title="Blog Layout 1">Blog Layout 1</a></li>
+                                <li><a href="blog-layout-2.html" title="Blog Layout 2">Blog Layout 2</a></li>
+                                <li><a href="blog-layout-3.html" title="Blog Layout 3">Blog Layout 3</a></li>
+                                <li><a href="blog-layout-4.html" title="Blog Layout 4">Blog Layout 4</a></li>
+                                <li><a href="single-post.html" title="Single Blog Post">Single Blog Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="financing.html" title="Financing">Financing</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Features<i class="icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="typography.html" title="Typography">Typography</a></li>
+                                <li><a href="tabs-and-toggle.html" title="Tabs and Toggle">Tabs and Toggle</a></li>
+                                <li><a href="buttons-and-boxes.html" title="Buttons and Boxes">Buttons and Boxes</a></li>
+                                <li><a href="columns.html" title="Columns">Columns</a></li>
+                                <li><a href="icons.html" title="Icons">Icons</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <i class="icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="page-with-sidebar.html" title="Sidebar Page">Sidebar Page</a></li>
+                                <li><a href="wide-page.html" title="Homepage 3">Wide Page</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" title="Contact us">Contact us</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
         </div>
-        <!-- /.panel-footer -->
     </div>
-    <!-- /.panel .chat-panel -->
+    <div id="logo-container">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <a class="brand" href="index.html"><span class="logo-text">Realto</span></a>
+                    <span class="tag-line hidden-phone">Your tag line here</span>
+                </div>
+                <div class="span4">
+                    <div class="phone-number pull-right"><i class="icon-phone"></i> Call Us: <strong>1 (800) 765 4321</strong></div><!--/phone-number-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #logo-container -->
+</header>
+<!-- end header -->
+<div id="home-search-container">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="widget pull-right">
+                    <div class="row">
+                        <div class="span12 head-container">
+                            <div class="row">
+                                <div class="span8 hidden-phone">
+                                    <h2 class="head-title">Welcome to Realto</h2>
+                                    <p class="head-message"><strong>Realto xHTML/CSS Template is The Best Solution To Sell House Online.</strong><br />
+                                        This template is appropriate for Real Estate Company, who need to do their business online via websites.</p>
+                                    <a class="btn btn-large btn-realto span3 header-cta" href="#" title="Buy It Now">Buy It Now!</a>
+                                </div>
+                                <div class="span4">
+                                    <div class="search-form">
+                                        <p>Find your new home</p>
+                                        <form action="#" class="row-fluid" method="post">
+                                            <select class="span12 select" name="type">
+                                                <option>Location</option>
+                                                <option value="#">New York</option>
+                                                <option value="#">Los Angeles</option>
+                                                <option value="#">Washington</option>
+                                                <option value="#">Chicago</option>
+                                                <option value="#">Miami</option>
+                                            </select>
+                                            <select class="span12 select" name="type">
+                                                <option>Property Type</option>
+                                                <option value="#">Any</option>
+                                                <option value="#">Single Family Home</option>
+                                                <option value="#">Condo</option>
+                                                <option value="#">Apartment</option>
+                                                <option value="#">Loft</option>
+                                            </select>
+                                            <select class="span6 select pull-left" name="beds">
+                                                <option>Beds</option>
+                                                <option value="#">1+ Beds</option>
+                                                <option value="#">2+ Beds</option>
+                                                <option value="#">3+ Beds</option>
+                                                <option value="#">4+ Beds</option>
+                                                <option value="#">5+ Beds</option>
+                                            </select>
+                                            <select class="span6 select pull-right" name="baths">
+                                                <option>Baths</option>
+                                                <option value="#">1+ Baths</option>
+                                                <option value="#">2+ Baths</option>
+                                                <option value="#">3+ Baths</option>
+                                                <option value="#">4+ Baths</option>
+                                                <option value="#">5+ Baths</option>
+                                            </select>
+                                            <select class="span12 select clearfix" name="status">
+                                                <option>Select Status</option>
+                                                <option value="#">For Rent</option>
+                                                <option value="#">For Sale</option>
+                                            </select>
+                                            <select class="span6 select pull-left" name="price-from">
+                                                <option>Price from</option>
+                                                <option value="#">from $100.000</option>
+                                                <option value="#">from $200.000</option>
+                                                <option value="#">from $300.000</option>
+                                                <option value="#">from $400.000</option>
+                                                <option value="#">from $500.000</option>
+                                            </select>
+                                            <select class="span6 select pull-right" name="price-to">
+                                                <option>Price to</option>
+                                                <option value="#">to $100.000</option>
+                                                <option value="#">to $200.000</option>
+                                                <option value="#">to $300.000</option>
+                                                <option value="#">to $400.000</option>
+                                                <option value="#">to $500.000</option>
+                                            </select>
+                                            <div class="clearfix">
+                                                <button class="btn pull-right span6 btn-realto-form btn-large" type="submit">Search</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- .search-form -->
+                                </div>
+                                <!-- .span4 -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .row -->
+                </div>
+                <!-- .search-holder -->
+            </div>
+            <!-- .span12 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container -->
 </div>
-<!-- /.col-lg-4 -->
-</div>
-<!-- /.row -->
-</div>
-<!-- /#page-wrapper -->
+<div id="latest-properties">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h2 class="secion-title">Properties</h2>
+            </div>
+        </div>
 
-</div>
-<!-- /#wrapper -->
+        <!-- Begin Carousel -->
+        <div class="row">
+            <div id="realto-carousel" class="carousel slide span12">
+                <div class="carousel-navigation pull-right">
+                    <a class="serif italic pull-left view-all-carousel" href="#">View all</a>
+                    <a class="left carousel-control pull-left" href="#realto-carousel" data-slide="prev">‹</a>
+                    <a class="right carousel-control pull-right" href="#realto-carousel" data-slide="next">›</a>
+                </div>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <ul class="thumbnails">
+                            <li class="span4 box-container">
+                                <div class="holder">
+                                    <a class="overlay" title="property title" href="#">
+                                        <span class="more"></span>
+                                        <img alt="image" src="images/01.jpg" class="media-object">
+                                    </a>
+                                    <span class="prop-tag">For Sale</span>
+                                    <div class="prop-info">
+                                        <h3 class="prop-title">379 Michigan Avenue New York 33139 NY</h3>
+                                        <ul class="more-info clearfix">
+                                            <li class="info-label clearfix"><span class="pull-left">Beds:</span> <span class="qty pull-right">4</span></li>
+                                            <li class="info-label clearfix"><span class="pull-left">Baths:</span> <span class="qty pull-right">2</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span4 box-container">
+                                <div class="holder">
+                                    <a class="overlay" title="property title" href="#">
+                                        <span class="more"></span>
+                                        <img alt="image" src="images/02.jpg" class="media-object">
+                                    </a>
+                                    <span class="prop-tag">For Rent</span>
+                                    <div class="prop-info">
+                                        <h3 class="prop-title">8745 Annox Avenue Orlando 33139 FL</h3>
+                                        <ul class="more-info clearfix">
+                                            <li class="info-label clearfix"><span class="pull-left">Beds:</span> <span class="qty pull-right">4</span></li>
+                                            <li class="info-label clearfix"><span class="pull-left">Baths:</span> <span class="qty pull-right">2</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span4 box-container">
+                                <div class="holder">
+                                    <a class="overlay" title="property title" href="#">
+                                        <span class="more"></span>
+                                        <img alt="image" src="images/03.jpg" class="media-object">
+                                    </a>
+                                    <span class="prop-tag">For Sale</span>
+                                    <div class="prop-info">
+                                        <h3 class="prop-title">1630 Washington Avenue Miami Beach 33139 FL</h3>
+                                        <ul class="more-info clearfix">
+                                            <li class="info-label clearfix"><span class="pull-left">Beds:</span> <span class="qty pull-right">4</span></li>
+                                            <li class="info-label clearfix"><span class="pull-left">Baths:</span> <span class="qty pull-right">2</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- .item -->
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <li class="span4 box-container">
+                                <div class="holder">
+                                    <a class="overlay" title="property title" href="#">
+                                        <span class="more"></span>
+                                        <img alt="image" src="images/04.jpg" class="media-object">
+                                    </a>
+                                    <span class="prop-tag">For Rent</span>
+                                    <div class="prop-info">
+                                        <h3 class="prop-title">1290 Collins Avenue Miami Beach 33139 FL</h3>
+                                        <ul class="more-info clearfix">
+                                            <li class="info-label clearfix"><span class="pull-left">Beds:</span> <span class="qty pull-right">4</span></li>
+                                            <li class="info-label clearfix"><span class="pull-left">Baths:</span> <span class="qty pull-right">2</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span4 box-container">
+                                <div class="holder">
+                                    <a class="overlay" title="property title" href="#">
+                                        <span class="more"></span>
+                                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/06.jpg'/>" class="media-object"/>
+                                    </a>
+                                    <span class="prop-tag">For Sale</span>
+                                    <div class="prop-info">
+                                        <h3 class="prop-title">6253 Jefferson Avenue Los Angeles 33139 CA</h3>
+                                        <ul class="more-info clearfix">
+                                            <li class="info-label clearfix"><span class="pull-left">Beds:</span> <span class="qty pull-right">4</span></li>
+                                            <li class="info-label clearfix"><span class="pull-left">Baths:</span> <span class="qty pull-right">2</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span4 box-container">
+                                <div class="holder">
+                                    <a class="overlay" title="property title" href="#">
+                                        <span class="more"></span>
+                                        <img alt="image" src="images/07.jpg" class="media-object">
+                                    </a>
+                                    <span class="prop-tag">For Rent</span>
+                                    <div class="prop-info">
+                                        <h3 class="prop-title">7654 West Avenue Miami Beach 33139 FL</h3>
+                                        <ul class="more-info clearfix">
+                                            <li class="info-label clearfix"><span class="pull-left">Beds:</span> <span class="qty pull-right">4</span></li>
+                                            <li class="info-label clearfix"><span class="pull-left">Baths:</span> <span class="qty pull-right">2</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- .item -->
 
-<#include "admin-footer.ftl">
+                </div><!-- .carousel-inner -->
+            </div>
+        </div><!--End Carousel-->
+
+    </div><!-- .container  -->
+</div><!-- #latest-properties  -->
+
+
+
+
+
+
+<!-- #latest-properties  -->
+<div class="container">
+    <div class="row">
+        <div class="home-bottom-top">
+            <div class="span4">
+                <div class="info-box">
+                    <h2 class="secion-title">Why choose us?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore
+                        magna aliqua adipisicing elit seddo eiusmod tempor.</p>
+                    <p>Sed perspiciatis unde omnisiste natus error voluptatem remopa
+                        accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <a class="serif italic" href="#" title="Continue">Continue &raquo;</a>
+                </div>
+            </div>
+            <!-- .span4 -->
+            <div class="span4">
+                <div class="info-box">
+                    <h3 class="info-head">Designed for your business</h3>
+                    <div class="row clearfix">
+                        <div class="pull-left icons hidden-phone">
+                            <i class="icon-briefcase"></i>
+                        </div>
+                        <div class="span3">
+                            <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore
+                                magna aliqua adipisicing elit seddo eiusmod tempor.</p>
+                            <a class="serif italic" href="#" title="Continue">Continue &raquo;</a>
+                        </div>
+                    </div>
+                    <!-- .clearfix -->
+                </div>
+                <!-- .info-box -->
+                <div class="info-box">
+                    <h3 class="info-head">Ample Customizations</h3>
+                    <div class="row clearfix">
+                        <div class="pull-left icons hidden-phone">
+                            <i class="icon-cogs"></i>
+                        </div>
+                        <div class="span3">
+                            <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore
+                                magna aliqua adipisicing elit seddo eiusmod tempor.</p>
+                            <a class="serif italic" href="#" title="Continue">Continue &raquo;</a>
+                        </div>
+                    </div>
+                    <!-- .clearfix -->
+                </div>
+                <!-- .info-box -->
+            </div>
+            <!-- .span4 -->
+            <div class="span4">
+                <div class="info-box">
+                    <h3 class="info-head">Fully Responsive</h3>
+                    <div class="row clearfix">
+                        <div class="pull-left icons hidden-phone">
+                            <i class="icon-move"></i>
+                        </div>
+                        <div class="span3">
+                            <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore
+                                magna aliqua adipisicing elit seddo eiusmod tempor.</p>
+                            <a class="serif italic" href="#" title="Continue">Continue &raquo;</a>
+                        </div>
+                    </div>
+                    <!-- .clearfix -->
+                </div>
+                <!-- .info-box -->
+                <div class="info-box">
+                    <h3 class="info-head">Bootstrap Compatible</h3>
+                    <div class="row clearfix">
+                        <div class="pull-left icons hidden-phone">
+                            <i class="icon-thumbs-up"></i>
+                        </div>
+                        <div class="span3">
+                            <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore
+                                magna aliqua adipisicing elit seddo eiusmod tempor.</p>
+                            <a class="serif italic" href="#" title="Continue">Continue &raquo;</a>
+                        </div>
+                    </div>
+                    <!-- .clearfix -->
+                </div>
+                <!-- .info-box -->
+            </div>
+            <!-- .span4 -->
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span12 box-container">
+            <div class="row adv-message clearfix">
+                <div class="pull-left span7">
+                    <p class="upper-line serif italic">Realto xHTML/CSS Template is The
+                        Best Solution To Sell House Online</p>
+                    <p class="lower-line">This template is appropriate for Real Estate
+                        Company, who need to do their business online via websites.</p>
+                </div>
+                <!-- .pull-left -->
+                <a class="pull-right btn btn-large btn-realto span3" href="#" title="Buy It Now">Buy
+                    It Now!</a>
+            </div>
+            <!-- .adv-message  -->
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span8">
+            <h2 class="secion-title">Meet our agents</h2>
+            <div class="row">
+                <div class="span2">
+                    <div class="home-agents widget">
+                        <a class="overlay" href="#" title="agent name">
+                            <span class="more"></span>
+                            <img alt="image" class="media-object" src="images/agent-01.jpg">
+                        </a>
+                        <p class="home-agent-name">John Doe</p>
+                        <a class="serif italic" href="#" title="View profile page">View profile
+                            page &raquo;</a>
+                    </div>
+                    <!-- .home-agents -->
+                </div>
+                <div class="span2">
+                    <div class="home-agents widget">
+                        <a class="overlay" href="#" title="agent name">
+                            <span class="more"></span>
+                            <img alt="image" class="media-object" src="images/agent-02.jpg">
+                        </a>
+                        <p class="home-agent-name">Susan Underwood</p>
+                        <a class="serif italic" href="#" title="View profile page">View profile
+                            page &raquo;</a>
+                    </div>
+                    <!-- .home-agents -->
+                </div>
+                <div class="span2">
+                    <div class="home-agents widget">
+                        <a class="overlay" href="#" title="agent name">
+                            <span class="more"></span>
+                            <img alt="image" class="media-object" src="images/agent-06.jpg">
+                        </a>
+                        <p class="home-agent-name">Erik Peterson</p>
+                        <a class="serif italic" href="#" title="View profile page">View profile
+                            page &raquo;</a>
+                    </div>
+                    <!-- .home-agents -->
+                </div>
+                <div class="span2">
+                    <div class="home-agents widget">
+                        <a class="overlay" href="#" title="agent name">
+                            <span class="more"></span>
+                            <img alt="image" class="media-object" src="images/agent-07.jpg">
+                        </a>
+                        <p class="home-agent-name">Lu Jackson</p>
+                        <a class="serif italic" href="#" title="View profile page">View profile
+                            page &raquo;</a>
+                    </div>
+                    <!-- .home-agents -->
+                </div>
+            </div>
+        </div>
+        <!-- .span8  -->
+        <div class="span4">
+            <div class="home-blog-articles widget">
+                <h2 class="secion-title">Articles from the Blog</h2>
+                <ul>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <a title="title" href="#">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing</a></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <a title="title" href="#">Duis suscipit venenatis pellentesque tempor
+                            libero</a></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <a title="title" href="#">Etiam aliquet aliquam metus in tristique</a></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <a title="title" href="#">Cras venenatis pellentesque venenatis
+                            pellentesque</a></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <a title="title" href="#">Vivamus vitae venenatis pellentesque nunc sed
+                            nisl</a></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <a title="title" href="#">In tempus venenatis pellentesquetempor</a></li>
+                    <li>
+                        <i class="icon-caret-right"></i>
+                        <a title="title" href="#">Suspendisse vulputate venenatis pellentesque
+                            quis</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- .span4  -->
+    </div>
+</div>
+
+<!-- begin footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                <div class="footer-widget">
+                    <h2 class="brand widget-title">Realto</h2>
+                    <p class="footer-tag-line">Your Company Tag Line</p>
+                    <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore
+                        magna aliqua adipisicing elit seddo eiusmod tempor.</p>
+                </div>
+                <!-- .footer-company-info -->
+            </div>
+            <!-- .span3 -->
+            <div class="span3">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Address</h3>
+                    <div class="clearfix">
+                        <ul>
+                            <li class="clearfix">
+                                <i class="icon-map-marker pull-left"></i>
+                                <p class="pull-left">1680 Washington Avenue
+                                    <br/>Miami Beach 33139 FL</p></li>
+                            <li class="clearfix">
+                                <i class="icon-phone pull-left"></i>
+                                <p class="pull-left">+1 (800) 765 4321</p></li>
+                            <li class="clearfix">
+                                <i class="icon-envelope-alt pull-left"></i>
+                                <p class="pull-left"><a href="#">realto@realto.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .clearfix -->
+                </div>
+                <!-- .footer-widget -->
+            </div>
+            <!-- .span3 -->
+            <div class="span3">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Company</h3>
+                    <ul>
+                        <li>
+                            <i class="icon-caret-right"></i>
+                            <a title="Home" href="#">Home</a></li>
+                        <li>
+                            <i class="icon-caret-right"></i>
+                            <a title="About Us" href="#">About Us</a></li>
+                        <li>
+                            <i class="icon-caret-right"></i>
+                            <a title="Properties" href="#">Properties</a></li>
+                        <li>
+                            <i class="icon-caret-right"></i>
+                            <a title="Agents" href="#">Agents</a></li>
+                        <li>
+                            <i class="icon-caret-right"></i>
+                            <a title="Blog" href="#">Blog</a></li>
+                        <li>
+                            <i class="icon-caret-right"></i>
+                            <a title="Financing" href="#">Financing</a></li>
+                        <li>
+                            <i class="icon-caret-right"></i>
+                            <a title="Contact Us" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- .footer-widget -->
+            </div>
+            <!-- .span3 -->
+            <div class="span3">
+                <div class="footer-widget">
+                    <h3 class="widget-title">Flickr</h3>
+                    <div class="flickr-widget">
+                        <ul>
+                            <li class="pull-left">
+                                <a title="image" href="#">
+                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-01.jpg'/>"/>
+                                </a>
+                            </li>
+                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-02.jpg"></a></li>
+                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-03.jpg"></a></li>
+                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-04.jpg"></a></li>
+                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-05.jpg"></a></li>
+                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-06.jpg"></a></li>
+                        </ul>
+                    </div>
+                    <!-- .flickr-widget -->
+                </div>
+                <!-- .footer-widget -->
+            </div>
+            <!-- .span3 -->
+        </div>
+    </div>
+</footer>
+
+<!-- end footer -->
+<#include "footer.ftl">

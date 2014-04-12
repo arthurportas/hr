@@ -49,6 +49,8 @@
     </div>
 </div>
 
+
+
 <!-- begin header -->
 <header>
     <div class="navbar navbar-inverse navbar-static-top">
@@ -128,6 +130,9 @@
     </div>
     <!-- #logo-container -->
 </header>
+
+
+
 <!-- end header -->
 <div id="home-search-container">
     <div class="container">
@@ -221,6 +226,9 @@
     </div>
     <!-- .container -->
 </div>
+
+
+
 <div id="latest-properties">
     <div class="container">
         <div class="row">
@@ -228,6 +236,7 @@
                 <h2 class="secion-title">Properties</h2>
             </div>
         </div>
+
 
         <!-- Begin Carousel -->
         <div class="row">
