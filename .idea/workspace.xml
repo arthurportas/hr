@@ -64,7 +64,6 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.woff" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.woff" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/.name" afterPath="$USER_HOME$/eduict/.idea/.name" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" />
@@ -77,14 +76,15 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" afterPath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" afterPath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/logback/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/logback/logback.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/misc.xml" afterPath="$USER_HOME$/eduict/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/modules.xml" afterPath="$USER_HOME$/eduict/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" afterPath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/classes/META-INF/persistence.xml" afterPath="$USER_HOME$/eduict/target/eduict/WEB-INF/classes/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/placeholder.js" afterPath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/placeholder.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/maven-archiver/pom.properties" afterPath="$USER_HOME$/eduict/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/style.css" afterPath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/workspace.xml" afterPath="$USER_HOME$/eduict/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -156,6 +156,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="spring-mvc-context.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="24" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1224">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="import.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
           <provider selected="true" editor-type-id="text-editor">
@@ -180,10 +189,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="District.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="District.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="55" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.37037036" vertical-offset="724" max-vertical-offset="1156">
+            <state line="19" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1156">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,29 +200,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Member.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Member.java">
+      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1238#1239#0" expanded="false" />
-                <element signature="e#1260#1261#0" expanded="false" />
-                <element signature="e#1293#1294#0" expanded="false" />
-                <element signature="e#1318#1319#0" expanded="false" />
-                <element signature="e#1348#1349#0" expanded="false" />
-                <element signature="e#1372#1373#0" expanded="false" />
-                <element signature="e#1411#1412#0" expanded="false" />
-                <element signature="e#1440#1441#0" expanded="false" />
-                <element signature="e#1471#1472#0" expanded="false" />
-                <element signature="e#1496#1497#0" expanded="false" />
-                <element signature="e#1537#1538#0" expanded="false" />
-                <element signature="e#1568#1569#0" expanded="false" />
-                <element signature="e#1605#1606#0" expanded="false" />
-                <element signature="e#1636#1637#0" expanded="false" />
-                <element signature="e#1689#1690#0" expanded="false" />
-                <element signature="e#1732#1733#0" expanded="false" />
-              </folding>
+            <state line="14" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -237,33 +228,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/BaseEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="22" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Country.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Country.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <folding>
-                <element signature="e#255#256#0" expanded="false" />
-                <element signature="e#290#291#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="0" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="454" column="23" selection-start="20337" selection-end="20337" vertical-scroll-proportion="-296.84616" vertical-offset="0" max-vertical-offset="8058">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="26" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.8425926" vertical-offset="860" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
@@ -274,18 +260,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="21" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0" vertical-offset="282" max-vertical-offset="714">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserKind.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/UserKind.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <folding>
-                <element signature="e#237#238#0" expanded="false" />
-                <element signature="e#264#265#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -309,7 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/sb-admin-v2/i13n/modules/user-management/messages_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/user-management/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/user-management/messages_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/user-management/messages_pt_BR.properties" />
@@ -341,7 +314,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IDistrictDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-as-spring-mvc-context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin-left-navbar.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin-form-new-user.ftl" />
@@ -360,6 +332,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/logback/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -1369,7 +1343,7 @@
       <workItem from="1396735648489" duration="23735000" />
       <workItem from="1396787920956" duration="29144000" />
       <workItem from="1396997544560" duration="662000" />
-      <workItem from="1397306018236" duration="6176000" />
+      <workItem from="1397306018236" duration="7208000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -1395,7 +1369,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59725000" />
+    <option name="totallyTimeSpent" value="60757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
@@ -1539,13 +1513,6 @@
         <state line="38" column="57" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="901" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
@@ -1632,13 +1599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="454" column="23" selection-start="20337" selection-end="20337" vertical-scroll-proportion="-296.84616" vertical-offset="0" max-vertical-offset="8058">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RegionController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="-1.1360382" vertical-offset="595" max-vertical-offset="1071">
@@ -1649,13 +1609,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="13" selection-start="989" selection-end="989" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="8" selection-start="3083" selection-end="3083" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1241">
           <folding />
         </state>
       </provider>
@@ -1681,15 +1634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="62" selection-start="738" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="527">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1745,16 +1689,6 @@
             <element signature="e#290#291#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="598" selection-end="606" vertical-scroll-proportion="9.288462" vertical-offset="585" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/UserKind.java">
@@ -1842,10 +1776,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="55" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.37037036" vertical-offset="724" max-vertical-offset="1156">
+        <state line="19" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1156">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="598" selection-end="606" vertical-scroll-proportion="9.288462" vertical-offset="585" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="454" column="23" selection-start="20337" selection-end="20337" vertical-scroll-proportion="-296.84616" vertical-offset="0" max-vertical-offset="8058">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="26" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.8425926" vertical-offset="860" max-vertical-offset="1394">
+          <folding />
         </state>
       </provider>
     </entry>
