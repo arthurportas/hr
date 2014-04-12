@@ -1,10 +1,6 @@
 package com.homerenting.domain;
 
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotEmpty;
-
 import javax.persistence.*;
-import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
@@ -12,10 +8,9 @@ import java.io.Serializable;
 
 
 @Entity
-@Table(name = "LOCALITY", uniqueConstraints = @UniqueConstraint(columnNames = "name"))
+@Table(name = "DISTRICT", uniqueConstraints = @UniqueConstraint(columnNames = "name"))
 public class District implements Serializable{
 
-   /** Default value included to remove warning. Remove or modify at will. **/
    private static final long serialVersionUID = 1L;
 
    @Id
