@@ -62,16 +62,4 @@
         <filter-name>WebResourceOptimizer</filter-name>
         <url-pattern>/wro/*</url-pattern>
     </filter-mapping>-->
-
-    <servlet>
-        <servlet-name>home</servlet-name>
-        <servlet-class>com.homerenting.mvc.HomeController</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>home</servlet-name>
-        <url-pattern>/home</url-pattern>
-    </servlet-mapping>
-
-
 </web-app>

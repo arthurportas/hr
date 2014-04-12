@@ -20,7 +20,6 @@ import org.springframework.web.servlet.ModelAndView;
 public class AdminController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(AdminController.class);
-	private static final String NEW_USER_FORM = "newUserForm";
 
     @Autowired
 	private IRegionService regionService;
