@@ -64,7 +64,6 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.woff" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.woff" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/.name" afterPath="$USER_HOME$/eduict/.idea/.name" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" />
@@ -77,6 +76,7 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" afterPath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" afterPath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/homerenting-ds.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/homerenting-ds.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/misc.xml" afterPath="$USER_HOME$/eduict/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/modules.xml" afterPath="$USER_HOME$/eduict/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" afterPath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" />
@@ -167,7 +167,7 @@
       <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="93" selection-start="794" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1224">
+            <state line="21" column="93" selection-start="794" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -182,19 +182,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homerenting-ds.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="homerenting-ds.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/homerenting-ds.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="14" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state line="15" column="8" selection-start="687" selection-end="687" vertical-scroll-proportion="0.16229117" vertical-offset="187" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="30" selection-start="551" selection-end="551" vertical-scroll-proportion="0.4097222" vertical-offset="146" max-vertical-offset="578">
+            <state line="28" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="578">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -288,8 +288,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-quickstart-ds.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/homerenting-ds.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/homerenting-ds.xml" />
       </list>
     </option>
   </component>
@@ -1149,7 +1149,7 @@
       <workItem from="1396735648489" duration="23735000" />
       <workItem from="1396787920956" duration="29144000" />
       <workItem from="1396997544560" duration="662000" />
-      <workItem from="1397306018236" duration="2588000" />
+      <workItem from="1397306018236" duration="3383000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -1175,7 +1175,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56137000" />
+    <option name="totallyTimeSpent" value="56932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
@@ -1487,13 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="8" selection-start="3083" selection-end="3083" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/test-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
@@ -1511,13 +1504,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="58" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/homerenting-ds.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="14" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
@@ -1543,6 +1529,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="8" selection-start="3083" selection-end="3083" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="93" selection-start="794" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
@@ -1552,10 +1545,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="30" selection-start="551" selection-end="551" vertical-scroll-proportion="0.4097222" vertical-offset="146" max-vertical-offset="578">
+        <state line="28" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="578">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/homerenting-ds.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="687" selection-end="687" vertical-scroll-proportion="0.16229117" vertical-offset="187" max-vertical-offset="629">
+          <folding />
         </state>
       </provider>
     </entry>
