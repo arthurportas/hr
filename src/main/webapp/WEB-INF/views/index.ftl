@@ -13,11 +13,31 @@
                         <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_green.jpg'/>"/>
                     </a>
                 </li>
-                <li><a href="#" title="grey"><img alt="" src="theme-panel/buttons/theme_purple.jpg"/></a></li>
-                <li><a href="#" title="pink"><img alt="" src="theme-panel/buttons/theme_pink.jpg"/></a></li>
-                <li><a href="#" title="blue"><img alt="" src="theme-panel/buttons/theme_blue.jpg"/></a></li>
-                <li><a href="#" title="orange"><img alt="" src="theme-panel/buttons/theme_orange.jpg"/></a></li>
-                <li><a href="#" title="red"><img alt="" src="theme-panel/buttons/theme_red.jpg"/></a></li>
+                <li>
+                    <a href="#" title="purple">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_purple.jpg'/>"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="pink">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_pink.jpg'/>"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="blue">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_blue.jpg'/>"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="orange">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_orange.jpg'/>"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="red">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_red.jpg'/>"/>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="segment noborder">
@@ -292,7 +312,7 @@
                                 <div class="holder">
                                     <a class="overlay" title="property title" href="#">
                                         <span class="more"></span>
-                                        <img alt="image" src="images/06.jpg" class="media-object">
+                                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/06.jpg'/>" class="media-object"/>
                                     </a>
                                     <span class="prop-tag">For Sale</span>
                                     <div class="prop-info">
@@ -329,6 +349,10 @@
 
     </div><!-- .container  -->
 </div><!-- #latest-properties  -->
+
+
+
+
 
 
 <!-- #latest-properties  -->

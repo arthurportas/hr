@@ -45,6 +45,7 @@
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.eot" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.svg" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
@@ -214,7 +215,7 @@
       <file leaf-file-name="index.ftl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="604" column="28" selection-start="34397" selection-end="34397" vertical-scroll-proportion="0.870229" vertical-offset="9926" max-vertical-offset="10693">
+            <state line="353" column="0" selection-start="21991" selection-end="21991" vertical-scroll-proportion="13.988345" vertical-offset="0" max-vertical-offset="11101">
               <folding />
             </state>
           </provider>
@@ -233,15 +234,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="28" column="0" selection-start="1355" selection-end="38783" vertical-scroll-proportion="-6.6153846" vertical-offset="304" max-vertical-offset="10693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="24" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
@@ -266,7 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/user-management/messages_pt_BR.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/user-management/messages_pt_PT.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/ILocalityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishService.java" />
@@ -316,6 +307,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/homerenting-ds.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl" />
       </list>
     </option>
@@ -1365,7 +1357,7 @@
       <workItem from="1396735648489" duration="23735000" />
       <workItem from="1396787920956" duration="29144000" />
       <workItem from="1396997544560" duration="662000" />
-      <workItem from="1397306018236" duration="11240000" />
+      <workItem from="1397306018236" duration="11882000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -1395,7 +1387,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64789000" />
+    <option name="totallyTimeSpent" value="65431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
@@ -1415,7 +1407,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.89413446" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25679544" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1470,11 +1462,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin-list-users.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="434" column="35" selection-start="13325" selection-end="13325" vertical-scroll-proportion="15.427957" vertical-offset="204" max-vertical-offset="7514" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/sb-admin-v2/js/admin-form-new-user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="840" selection-end="840" vertical-scroll-proportion="0.76982594" vertical-offset="112" max-vertical-offset="629" />
@@ -1757,7 +1744,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1156">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1851,9 +1838,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="337" selection-end="337" vertical-scroll-proportion="0.27546296" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="604" column="28" selection-start="34397" selection-end="34397" vertical-scroll-proportion="0.870229" vertical-offset="9926" max-vertical-offset="10693">
+        <state line="353" column="0" selection-start="21991" selection-end="21991" vertical-scroll-proportion="13.988345" vertical-offset="0" max-vertical-offset="11101">
           <folding />
         </state>
       </provider>
