@@ -8,7 +8,11 @@
         <div class="segment">
             <h6>Theme Colour</h6>
             <ul class="theme buttons">
-                <li><a href="#" title="green"><img alt="" src="theme-panel/buttons/theme_green.jpg"/></a></li>
+                <li>
+                    <a href="#" title="green">
+                        <img alt="" src="<@spring.url '/static/resources/realto-html/theme-panel/buttons/theme_green.jpg'/>"/>
+                    </a>
+                </li>
                 <li><a href="#" title="grey"><img alt="" src="theme-panel/buttons/theme_purple.jpg"/></a></li>
                 <li><a href="#" title="pink"><img alt="" src="theme-panel/buttons/theme_pink.jpg"/></a></li>
                 <li><a href="#" title="blue"><img alt="" src="theme-panel/buttons/theme_blue.jpg"/></a></li>
@@ -594,7 +598,11 @@
                     <h3 class="widget-title">Flickr</h3>
                     <div class="flickr-widget">
                         <ul>
-                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-01.jpg"></a></li>
+                            <li class="pull-left">
+                                <a title="image" href="#">
+                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-01.jpg'/>"/>
+                                </a>
+                            </li>
                             <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-02.jpg"></a></li>
                             <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-03.jpg"></a></li>
                             <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-04.jpg"></a></li>
