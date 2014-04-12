@@ -1,5 +1,5 @@
 <#import "spring.ftl" as spring />
-<#include "admin-header.ftl">
+<#include "header.ftl">
 <body>
 
 <div id="wrapper">
