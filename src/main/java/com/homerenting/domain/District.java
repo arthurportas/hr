@@ -58,7 +58,7 @@ public class District extends BaseEntity implements Serializable{
      */
     @Override
     public boolean equals(Object obj) {
-        return EqualsBuilder.reflectionEquals(this);
+        return EqualsBuilder.reflectionEquals(this, obj);
     }
 
     /**
