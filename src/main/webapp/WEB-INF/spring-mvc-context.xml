@@ -44,6 +44,8 @@
             <list>
                 <value>/WEB-INF/i18n/messages</value>
                 <value>/WEB-INF/i18n/modules/header/header</value>
+                <value>/WEB-INF/i18n/modules/header/login/login</value>
+                <value>/WEB-INF/i18n/modules/header/navigation/navigation</value>
             </list>
         </property>
         <property name="cacheSeconds" value="0"/>
