@@ -12,6 +12,8 @@
     <script src="<@spring.url '/static/resources/realto-html/js/jquery.cycle2.min.js'/>"/>
     <script src="js/jquery.cycle2.min.js"></script>
 
+    <script src="<@spring.url '/static/resources/realto-html/theme-panel/theme-panel.js'/>"/>
+    <script src="js/theme-panel.js"></script>
 
     <script src="<@spring.url '/static/resources/realto-html/js/html5shiv.js'/>"/>
     <script src="js/html5shiv.js"></script>

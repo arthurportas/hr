@@ -17,5 +17,7 @@
     <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/colors.css'/>"/>
     <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/iview.css'/>"/>
     <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/style.css'/>"/>
+    <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/theme-panel/theme-panel.css'/>"/>
+
 
 </head>

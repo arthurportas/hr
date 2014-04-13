@@ -227,7 +227,7 @@
                                 <div class="holder">
                                     <a class="overlay" title="property title" href="#">
                                         <span class="more"></span>
-                                        <img alt="image" src="images/04.jpg" class="media-object">
+                                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />
                                     </a>
                                     <span class="prop-tag">For Rent</span>
                                     <div class="prop-info">
