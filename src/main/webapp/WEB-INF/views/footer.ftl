@@ -21,6 +21,8 @@
     <script src="<@spring.url '/static/resources/realto-html/js/custom.js'/>"/>
     <script src="js/custom.js"></script>
 
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/login.js'/>"/>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
