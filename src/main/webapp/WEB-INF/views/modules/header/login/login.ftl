@@ -2,7 +2,9 @@
     <div class="phone-number pull-right">
         <i class="icon-phone"></i>
         <a data-toggle="modal" href="#myModal" id="login" class="btn btn-primary">Login</a>
-        <div class="modal" id="myModal">
+        <a href="#" id="newAnnounce" class="btn btn-success">Novo Anúncio</a>
+
+        <div class="modal fade" id="myModal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">

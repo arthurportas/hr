@@ -45,7 +45,6 @@
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.eot" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.svg" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
@@ -76,9 +75,13 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/compiler.xml" afterPath="$USER_HOME$/eduict/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" afterPath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" afterPath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/misc.xml" afterPath="$USER_HOME$/eduict/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/modules.xml" afterPath="$USER_HOME$/eduict/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" afterPath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" />
@@ -157,24 +160,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spring-mvc-context.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="58" selection-start="2674" selection-end="2686" vertical-scroll-proportion="0.0" vertical-offset="652" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/header.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="9" selection-start="550" selection-end="550" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl">
           <provider selected="true" editor-type-id="text-editor">
@@ -187,9 +172,57 @@
       <file leaf-file-name="login.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="56" selection-start="148" selection-end="153" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="476">
+            <state line="4" column="73" selection-start="250" selection-end="262" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.6296296" vertical-offset="0" max-vertical-offset="119">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_en_UK.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_es_ES.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_pt_PT.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
           </provider>
         </entry>
       </file>
@@ -213,37 +246,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+            <state line="3" column="4" selection-start="79" selection-end="79" vertical-scroll-proportion="0.11805555" vertical-offset="0" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.ftl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="footer.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.66502464" vertical-offset="121" max-vertical-offset="561">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wide-page.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/wide-page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5984">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="74" selection-start="13572" selection-end="13572" vertical-scroll-proportion="-3.0" vertical-offset="3771" max-vertical-offset="10268">
+            <state line="23" column="0" selection-start="1029" selection-end="1029" vertical-scroll-proportion="-10.384615" vertical-offset="121" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -268,9 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RegionController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin-footer.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/modules/user-management/messages_pt.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/modules/user-management/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/modules/user-management/messages_en.properties" />
@@ -306,7 +318,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ResultPageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin-form-new-user.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/header.ftl" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/header.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/header_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/header_es_ES.properties" />
@@ -316,9 +327,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/navigation/navigation.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login.ftl" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js" />
       </list>
     </option>
   </component>
@@ -1896,7 +1911,7 @@
       <workItem from="1396735648489" duration="23735000" />
       <workItem from="1396787920956" duration="29144000" />
       <workItem from="1396997544560" duration="662000" />
-      <workItem from="1397306018236" duration="20361000" />
+      <workItem from="1397306018236" duration="21131000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -1926,7 +1941,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73910000" />
+    <option name="totallyTimeSpent" value="74680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
@@ -2186,43 +2201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/navigation/navigation.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
@@ -2419,23 +2397,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1029" selection-end="1029" vertical-scroll-proportion="-10.384615" vertical-offset="121" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.6296296" vertical-offset="0" max-vertical-offset="119">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="56" selection-start="148" selection-end="153" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="476">
+        <state line="4" column="73" selection-start="250" selection-end="262" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.66502464" vertical-offset="121" max-vertical-offset="561">
+        <state line="3" column="4" selection-start="79" selection-end="79" vertical-scroll-proportion="0.11805555" vertical-offset="0" max-vertical-offset="432">
           <folding />
         </state>
       </provider>

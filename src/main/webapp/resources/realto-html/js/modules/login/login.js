@@ -1,3 +1,5 @@
-$('#login').click(function(){
-    $('#myModal').modal({show:true})
+$('a#login').click(function(){
+    $('#myModal').modal({
+        show:true
+    })
 });
