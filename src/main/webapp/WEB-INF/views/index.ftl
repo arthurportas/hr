@@ -175,7 +175,7 @@
                                 <div class="holder">
                                     <a class="overlay" title="property title" href="#">
                                         <span class="more"></span>
-                                        <img alt="image" src="images/01.jpg" class="media-object">
+                                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/01.jpg'/>" class="media-object" />
                                     </a>
                                     <span class="prop-tag">For Sale</span>
                                     <div class="prop-info">
@@ -191,7 +191,7 @@
                                 <div class="holder">
                                     <a class="overlay" title="property title" href="#">
                                         <span class="more"></span>
-                                        <img alt="image" src="images/02.jpg" class="media-object">
+                                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/02.jpg'/>" class="media-object">
                                     </a>
                                     <span class="prop-tag">For Rent</span>
                                     <div class="prop-info">
@@ -207,7 +207,7 @@
                                 <div class="holder">
                                     <a class="overlay" title="property title" href="#">
                                         <span class="more"></span>
-                                        <img alt="image" src="images/03.jpg" class="media-object">
+                                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/03.jpg'/>" class="media-object">
                                     </a>
                                     <span class="prop-tag">For Sale</span>
                                     <div class="prop-info">
@@ -259,7 +259,7 @@
                                 <div class="holder">
                                     <a class="overlay" title="property title" href="#">
                                         <span class="more"></span>
-                                        <img alt="image" src="images/07.jpg" class="media-object">
+                                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/07.jpg'/>" class="media-object">
                                     </a>
                                     <span class="prop-tag">For Rent</span>
                                     <div class="prop-info">
@@ -397,7 +397,7 @@
                     <div class="home-agents widget">
                         <a class="overlay" href="#" title="agent name">
                             <span class="more"></span>
-                            <img alt="image" class="media-object" src="images/agent-01.jpg">
+                            <img alt="image" class="media-object" src="<@spring.url '/static/resources/realto-html/images/agent-01.jpg'/>" />
                         </a>
                         <p class="home-agent-name">John Doe</p>
                         <a class="serif italic" href="#" title="View profile page">View profile
@@ -409,7 +409,7 @@
                     <div class="home-agents widget">
                         <a class="overlay" href="#" title="agent name">
                             <span class="more"></span>
-                            <img alt="image" class="media-object" src="images/agent-02.jpg">
+                            <img alt="image" class="media-object" src="<@spring.url '/static/resources/realto-html/images/agent-02.jpg'/>" />
                         </a>
                         <p class="home-agent-name">Susan Underwood</p>
                         <a class="serif italic" href="#" title="View profile page">View profile
@@ -421,7 +421,7 @@
                     <div class="home-agents widget">
                         <a class="overlay" href="#" title="agent name">
                             <span class="more"></span>
-                            <img alt="image" class="media-object" src="images/agent-06.jpg">
+                            <img alt="image" class="media-object" src="<@spring.url '/static/resources/realto-html/images/agent-06.jpg'/>" />
                         </a>
                         <p class="home-agent-name">Erik Peterson</p>
                         <a class="serif italic" href="#" title="View profile page">View profile
@@ -433,7 +433,7 @@
                     <div class="home-agents widget">
                         <a class="overlay" href="#" title="agent name">
                             <span class="more"></span>
-                            <img alt="image" class="media-object" src="images/agent-07.jpg">
+                            <img alt="image" class="media-object" src="<@spring.url '/static/resources/realto-html/images/agent-07.jpg'/>" />
                         </a>
                         <p class="home-agent-name">Lu Jackson</p>
                         <a class="serif italic" href="#" title="View profile page">View profile
@@ -558,11 +558,31 @@
                                     <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-01.jpg'/>"/>
                                 </a>
                             </li>
-                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-02.jpg"></a></li>
-                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-03.jpg"></a></li>
-                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-04.jpg"></a></li>
-                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-05.jpg"></a></li>
-                            <li class="pull-left"><a title="image" href="#"><img alt="" class="media-object" src="images/flickr-06.jpg"></a></li>
+                            <li class="pull-left">
+                                <a title="image" href="#">
+                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-02.jpg'/>"/>
+                                </a>
+                            </li>
+                            <li class="pull-left">
+                                <a title="image" href="#">
+                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-03.jpg'/>"/>
+                                </a>
+                            </li>
+                            <li class="pull-left">
+                                <a title="image" href="#">
+                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-04.jpg'/>"/>
+                                </a>
+                            </li>
+                            <li class="pull-left">
+                                <a title="image" href="#">
+                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-05.jpg'/>"/>
+                                </a>
+                            </li>
+                            <li class="pull-left">
+                                <a title="image" href="#">
+                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-06.jpg'/>"/>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <!-- .flickr-widget -->

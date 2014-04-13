@@ -8,7 +8,7 @@
             </button>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li class="active"><a href="index.html"><i class="icon-home"></i></a></li>
+                    <li class="active"><a href="/"><i class="icon-home"></i></a></li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Properties <i class="icon-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="properties-grid-layout-1.html" title="Properties Grid Layout 1">Properties
