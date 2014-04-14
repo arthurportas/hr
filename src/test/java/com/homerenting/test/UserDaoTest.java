@@ -22,6 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 @TransactionConfiguration(defaultRollback = true)
 public class UserDaoTest {
+
 	@Autowired
 	private IUserDao userDao;
 

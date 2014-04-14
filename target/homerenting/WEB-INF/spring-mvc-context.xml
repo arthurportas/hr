@@ -11,9 +11,9 @@
 
     <context:annotation-config />
 	<context:component-scan base-package="com.homerenting.mvc" />
-    <context:component-scan base-package="com.homerenting.services" />
-    <context:component-scan base-package="com.homerenting.repo" />
-    <context:component-scan base-package="com.homerenting.domain" />
+    <context:component-scan base-package="com.homerenting.interceptors" />
+    <context:component-scan base-package="com.homerenting.validators" />
+    <context:component-scan base-package="com.homerenting.converters" />
 
 	<!-- freemarker config -->
 	<bean id="freemarkerConfig"
@@ -50,6 +50,8 @@
             </list>
         </property>
         <property name="cacheSeconds" value="0"/>
+        <property name="fileEncodings" value="UTF-8" />
+        <property name="defaultEncoding" value="UTF-8" />
     </bean>
 
     <mvc:interceptors>
@@ -63,7 +65,7 @@
     </bean>
 
     <!-- Data Validation -->
-    <bean id="loginFormValidator" class="com.homerenting.mvc.LoginFormValidator"/>
+    <bean id="loginFormValidator" class="com.homerenting.validators.LoginFormValidator"/>
 
 
 

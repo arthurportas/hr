@@ -2,7 +2,7 @@ package com.homerenting.mvc;
 
 import com.homerenting.domain.User;
 import com.homerenting.services.IUserService;
-import com.homerenting.services.IUserServiceImpl;
+import com.homerenting.services.UserServiceImpl;
 import com.homerenting.validators.LoginFormValidator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,13 +25,7 @@ public class LoginController {
     @Autowired
     LoginFormValidator loginFormValidator;
 
-    IUserService userService;
-
-    @Autowired
-    public LoginController(IUserServiceImpl userService) {
-        this.userService = userService;
-    }
-
+    IUserService userService = new UserServiceImpl();
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public ModelAndView login(@ModelAttribute("login") User user,

@@ -4,7 +4,7 @@
    xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema
    http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
 
-  <!-- <datasource jndi-name="java:jboss/datasources/PostgreSQLDS"
+   <!--<datasource jndi-name="java:jboss/datasources/PostgreSQLDS"
       pool-name="homerenting" enabled="true"
       use-java-context="true">
       <connection-url>jdbc:h2:mem:homerenting;DB_CLOSE_DELAY=-1</connection-url>

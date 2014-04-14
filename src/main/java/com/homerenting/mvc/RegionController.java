@@ -2,7 +2,6 @@ package com.homerenting.mvc;
 
 import com.homerenting.domain.Region;
 import com.homerenting.services.IRegionService;
-import com.homerenting.services.IRegionServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;

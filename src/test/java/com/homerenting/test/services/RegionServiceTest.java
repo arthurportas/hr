@@ -2,7 +2,7 @@ package com.homerenting.test.services;
 
 import com.homerenting.domain.Region;
 import com.homerenting.repo.IRegionDao;
-import com.homerenting.services.IRegionServiceImpl;
+import com.homerenting.services.RegionServiceImpl;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +30,7 @@ public class RegionServiceTest {
     private IRegionDao victim;
 
     @InjectMocks
-    private IRegionServiceImpl regionService;
+    private RegionServiceImpl regionService;
 
     @Before
     public void init() {

@@ -1,4 +1,10 @@
 <div class="span4">
+
+<#if LOGGEDIN_USER??>
+    tretas->${LOGGEDIN_USER}
+</#if>
+
+
     <div class="phone-number pull-right">
         <!-- Button trigger modal -->
         <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -8,9 +14,7 @@
 
         <a href="#" id="newAnnounce" class="btn btn-success">Novo Anúncio</a>
 
-    <#if LOGGEDIN_USER??>
-    tretas->${LOGGEDIN_USER}
-    </#if>
+
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -40,7 +44,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Sign In</button>
+                        <button type="button" class="btn btn-primary login">Sign In</button>
                     </div>
                 </div>
             </div>
