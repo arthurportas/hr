@@ -1,5 +1,3 @@
-$('a#login').click(function(){
-    $('#myModal').modal({
-        show:true
-    })
+$('button.login').click(function(){
+    //ajax call
 });

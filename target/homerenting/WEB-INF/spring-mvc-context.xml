@@ -29,6 +29,7 @@
 		<property name="cache" value="true" />
 		<property name="prefix" value="" />
 		<property name="suffix" value=".ftl" />
+        <property name="exposeSessionAttributes"><value>true</value></property>
 	</bean>
 
 	<mvc:resources mapping="/static/**" location="/" />
@@ -43,6 +44,9 @@
         <property name="basenames">
             <list>
                 <value>/WEB-INF/i18n/messages</value>
+                <value>/WEB-INF/i18n/modules/header/header</value>
+                <value>/WEB-INF/i18n/modules/header/login/login</value>
+                <value>/WEB-INF/i18n/modules/header/navigation/navigation</value>
             </list>
         </property>
         <property name="cacheSeconds" value="0"/>
@@ -57,6 +61,11 @@
     <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
         <property name="cookieMaxAge" value="100000"/>
     </bean>
+
+    <!-- Data Validation -->
+    <bean id="loginFormValidator" class="com.homerenting.mvc.LoginFormValidator"/>
+
+
 
 	<!-- JSR-303
 	<bean id="validator"

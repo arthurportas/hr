@@ -15,18 +15,17 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:test-context.xml",
-"classpath:/META-INF/spring/applicationContext.xml"})
+@ContextConfiguration(locations = {"classpath:test-context.xml",
+        "classpath:/META-INF/spring/applicationContext.xml"})
 @Transactional
-@TransactionConfiguration(defaultRollback=true)
-public class MemberDaoTest
-{
+@TransactionConfiguration(defaultRollback = true)
+public class MemberDaoTest {
+
     @Autowired
     private MemberDao memberDao;
 
     @Test
-    public void testFindById()
-    {
+    public void testFindById() {
         Member member = memberDao.findById(0l);
 
         Assert.assertEquals("John Smith", member.getName());
@@ -36,8 +35,7 @@ public class MemberDaoTest
     }
 
     @Test
-    public void testFindByEmail()
-    {
+    public void testFindByEmail() {
         Member member = memberDao.findByEmail("john.smith@mailinator.com");
 
         Assert.assertEquals("John Smith", member.getName());
@@ -47,8 +45,7 @@ public class MemberDaoTest
     }
 
     @Test
-    public void testRegister()
-    {
+    public void testRegister() {
         Member member = new Member();
         member.setEmail("jane.doe@mailinator.com");
         member.setName("Jane Doe");
@@ -57,7 +54,7 @@ public class MemberDaoTest
         memberDao.register(member);
         Long id = member.getId();
         Assert.assertNotNull(id);
-        
+
         Assert.assertEquals(2, memberDao.findAllOrderedByName().size());
         Member newMember = memberDao.findById(id);
 
@@ -68,8 +65,7 @@ public class MemberDaoTest
     }
 
     @Test
-    public void testFindAllOrderedByName()
-    {
+    public void testFindAllOrderedByName() {
         Member member = new Member();
         member.setEmail("jane.doe@mailinator.com");
         member.setName("Jane Doe");

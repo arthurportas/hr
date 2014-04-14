@@ -29,8 +29,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class UserController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(UserController.class);
-	private static final String NEW_USER_FORM = "newUserForm";
-	
+
 	@Autowired
 	private IUserDao userDao;
 
