@@ -1,4 +1,4 @@
-package com.homerenting.mvc;
+package com.homerenting.validators;
 
 import com.homerenting.domain.User;
 import org.springframework.validation.Errors;

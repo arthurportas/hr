@@ -1,4 +1,4 @@
-package com.homerenting.mvc;
+package com.homerenting.interceptors;
 
 import com.homerenting.domain.User;
 import org.springframework.stereotype.Component;

@@ -3,6 +3,7 @@ package com.homerenting.mvc;
 import com.homerenting.domain.User;
 import com.homerenting.services.IUserService;
 import com.homerenting.services.IUserServiceImpl;
+import com.homerenting.validators.LoginFormValidator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

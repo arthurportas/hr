@@ -1,5 +1,43 @@
 -- You can use this file to load seed data into the database using SQL statements
 insert into Member (id, name, email, phone_number) values (0, 'John Smith', 'john.smith@mailinator.com', '2125551212')
+
+/*
+CREATE TABLE users (
+  USER_ID INT(10) UNSIGNED NOT NULL,
+  USERNAME VARCHAR(45) NOT NULL,
+  PASSWORD VARCHAR(45) NOT NULL,
+  ENABLED tinyint(1) NOT NULL,
+  PRIMARY KEY (USER_ID)
+);
+
+CREATE TABLE user_roles (
+  USER_ROLE_ID INT(10) UNSIGNED NOT NULL,
+  USER_ID INT(10) UNSIGNED NOT NULL,
+  AUTHORITY VARCHAR(45) NOT NULL,
+  PRIMARY KEY (USER_ROLE_ID),
+  KEY FK_user_roles (USER_ID),
+  CONSTRAINT FK_user_roles FOREIGN KEY (USER_ID) REFERENCES users (USER_ID)
+);
+
+INSERT INTO users (USER_ID, USERNAME,PASSWORD, ENABLED)
+VALUES (1, 'arthurportas', '123456', TRUE);
+INSERT INTO users (USER_ID, USERNAME,PASSWORD, ENABLED)
+VALUES (2, 'hmft', '123456', TRUE);
+INSERT INTO users (USER_ID, USERNAME,PASSWORD, ENABLED)
+VALUES (3, 'teste', '123456', TRUE);
+
+
+INSERT INTO user_roles (USER_ROLE_ID, USER_ID,AUTHORITY)
+VALUES (1, 1, 'ROLE_USER');
+INSERT INTO user_roles (USER_ROLE_ID, USER_ID,AUTHORITY)
+VALUES (1, 1, 'ROLE_ADMIN');
+INSERT INTO user_roles (USER_ROLE_ID, USER_ID,AUTHORITY)
+VALUES (1, 2, 'ROLE_USER');
+INSERT INTO user_roles (USER_ROLE_ID, USER_ID,AUTHORITY)
+VALUES (1, 2, 'ROLE_ADMIN');
+INSERT INTO user_roles (USER_ROLE_ID, USER_ID,AUTHORITY)
+VALUES (1, 3, 'ROLE_GUEST');
+*/
 /*
 
 insert into User (id, firstName, lastName, email, address, zipcode, city, country, userKind, company, nif, phoneNumber, cellPhone, fax, password) values (0, 'arthur', 'portas', 'arthurportas@gmail.com', 'rua a voz dos ridiculos, 40, 1º h2', '4250551', 'porto', 'portugal', 'particular', '', '221446834', '220109606', '935705832', '', 'tretas')
