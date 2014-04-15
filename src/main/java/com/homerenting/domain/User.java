@@ -26,7 +26,10 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name="USER",uniqueConstraints = @UniqueConstraint(columnNames = "email"))
-@NamedQueries({ @NamedQuery(name = "User.FIND_ALL", query = "select u from User u") })
+@NamedQueries({
+        @NamedQuery(name = "User.FIND_ALL", query = "select u from User u"),
+        @NamedQuery(name = "User.FIND_BY_EMAIL", query = "select u from User u where u.email=:email")
+})
 @XmlRootElement(name = "user")
 @XmlAccessorType(XmlAccessType.PROPERTY)
 public class User extends BaseEntity implements Serializable {
@@ -34,6 +37,7 @@ public class User extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	public static final String FIND_ALL = "User.FIND_ALL";
+    public static final String FIND_BY_EMAIL = "User.FIND_BY_EMAIL";
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)

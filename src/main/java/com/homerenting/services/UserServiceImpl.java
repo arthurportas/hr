@@ -2,7 +2,6 @@ package com.homerenting.services;
 
 import com.homerenting.domain.User;
 import com.homerenting.repo.IUserDao;
-import com.homerenting.repo.UserDaoImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,7 +12,8 @@ import java.util.List;
 @Transactional
 public class UserServiceImpl implements IUserService {
 
-    private IUserDao userDao = new UserDaoImpl();
+    @Autowired
+    private IUserDao userDao;
 
     @Override
     public User getById(Long id) {

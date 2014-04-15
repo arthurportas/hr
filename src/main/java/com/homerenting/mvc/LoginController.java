@@ -1,6 +1,7 @@
 package com.homerenting.mvc;
 
 import com.homerenting.domain.User;
+import com.homerenting.repo.IUserDao;
 import com.homerenting.services.IUserService;
 import com.homerenting.services.UserServiceImpl;
 import com.homerenting.validators.LoginFormValidator;
@@ -25,7 +26,8 @@ public class LoginController {
     @Autowired
     LoginFormValidator loginFormValidator;
 
-    IUserService userService = new UserServiceImpl();
+    @Autowired
+    private IUserService userService;
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public ModelAndView login(@ModelAttribute("login") User user,
@@ -33,7 +35,7 @@ public class LoginController {
                               SessionStatus status,
                               HttpServletRequest request) {
 
-        String viewName = "/home";
+        String viewName = "home";
 
         ModelAndView mav = new ModelAndView(viewName);
         loginFormValidator.validate(user, result);
@@ -49,7 +51,7 @@ public class LoginController {
         if(!userExists){
             mav.getModel().put("ERROR", "Invalid UserName and Password");
         }else{
-            viewName = "/home";//TODO redirect to view where use came from
+            viewName = "index";//TODO redirect to view where use came from
             request.getSession().setAttribute("LOGGEDIN_USER", userExists);
         }
         mav.setViewName(viewName);

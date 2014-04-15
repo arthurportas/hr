@@ -22,7 +22,10 @@
     <script src="js/custom.js"></script>
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/login/login.js'/>"/>
-    <script src="js/custom.js"></script>
+    <script src="js/login.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/sha256.jquery.debug.js'/>"/>
+    <script src="js/sha256.jquery.debug.js"></script>
 </body>
 
 </html>

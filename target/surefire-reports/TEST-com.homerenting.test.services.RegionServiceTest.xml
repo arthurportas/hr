@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.224" errors="0" skipped="0" tests="1" name="com.homerenting.test.services.RegionServiceTest">
+<testsuite failures="0" time="0.225" errors="0" skipped="0" tests="1" name="com.homerenting.test.services.RegionServiceTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib"/>
@@ -11,7 +11,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7537"/>
+    <property name="idea.launcher.port" value="7533"/>
     <property name="user.country" value="PT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
@@ -63,5 +63,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.224" classname="com.homerenting.test.services.RegionServiceTest" name="testRegionExists"/>
+  <testcase time="0.225" classname="com.homerenting.test.services.RegionServiceTest" name="testRegionExists"/>
 </testsuite>

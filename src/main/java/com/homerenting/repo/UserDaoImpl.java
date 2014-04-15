@@ -21,11 +21,7 @@ public class UserDaoImpl extends GenericDaoImpl<User> implements IUserDao {
 	private EntityManager em;
 
 	public User findByEmail(String email) {
-		CriteriaBuilder builder = em.getCriteriaBuilder();
-		CriteriaQuery<User> criteria = builder.createQuery(User.class);
-		Root<User> user = criteria.from(User.class);
-		criteria.select(user).where(builder.equal(user.get("email"), email));
-		return em.createQuery(criteria).getSingleResult();
+		return (User) em.createNamedQuery(User.FIND_BY_EMAIL).setParameter("email", email).getSingleResult();
 	}
 
     @Override
