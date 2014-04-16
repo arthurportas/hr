@@ -40,6 +40,13 @@ public class UserController {
 		return "index";
 	}
 
+    @RequestMapping(value = "/passwd", method = RequestMethod.GET)
+    public String changeUserPassword(Model model) {
+        //TODO
+
+        return "index";
+    }
+
 	@RequestMapping(value = "/addUser", method = RequestMethod.GET)
 	public String registerNewUser(@ModelAttribute("newUser") @Valid User newUser,
 			BindingResult result, Model model) {

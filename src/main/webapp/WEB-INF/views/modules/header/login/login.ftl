@@ -25,6 +25,7 @@
                         <h4 class="modal-title" id="myModalLabel">Login</h4>
                     </div>
                     <div class="modal-body">
+                        <div class=""></div>
                         <div class="login-container">
                             <form role="form" class="login">
                                     <div class="form-group">

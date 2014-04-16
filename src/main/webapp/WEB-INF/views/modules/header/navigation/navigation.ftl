@@ -8,26 +8,10 @@
             </button>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li class="active"><a href="/"><i class="icon-home"></i></a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Properties <i class="icon-caret-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="properties-grid-layout-1.html" title="Properties Grid Layout 1">Properties
-                                Grid Layout 1</a></li>
-                            <li><a href="properties-grid-layout-2.html" title="Properties Grid Layout 2">Properties
-                                Grid Layout 2</a></li>
-                            <li><a href="properties-list-layout-1.html" title="Properties List Layout">Properties
-                                List Layout 1</a></li>
-                            <li><a href="properties-list-layout-2.html" title="Properties List Layout">Properties
-                                List Layout 2</a></li>
-                            <li><a href="property-page.html" title="Property Page">Property Page</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Agents">Agents<i class="icon-caret-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="agents.html" title="All Agents">All Agents</a></li>
-                            <li><a href="agent-profile.html" title="Agent Profile">Agent Profile</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="index.html"><i class="icon-home"></i></a></li>
+                    <li><a href="#" title="News">News</a></li>
+                    <li><a href="#" title="Professionals">Professionals</a></li>
+                    <li><a href="financing.html" title="Financing">Financing</a></li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<i class="icon-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog-layout-1.html" title="Blog Layout 1">Blog Layout 1</a></li>
@@ -59,4 +43,3 @@
             <!--/.nav-collapse -->
         </div>
     </div>
-</div>

@@ -17,7 +17,7 @@
                                         <p>Find your new home</p>
                                         <form action="#" class="row-fluid" method="post">
                                             <select class="span12 select" name="type">
-                                                <option>Location</option>
+                                                <option>Distrito</option>
                                                 <option value="#">New York</option>
                                                 <option value="#">Los Angeles</option>
                                                 <option value="#">Washington</option>
@@ -25,28 +25,20 @@
                                                 <option value="#">Miami</option>
                                             </select>
                                             <select class="span12 select" name="type">
-                                                <option>Property Type</option>
+                                                <option>Concelho</option>
+                                                <option value="#">New York</option>
+                                                <option value="#">Los Angeles</option>
+                                                <option value="#">Washington</option>
+                                                <option value="#">Chicago</option>
+                                                <option value="#">Miami</option>
+                                            </select>
+                                            <select class="span12 select" name="type">
+                                                <option>Tipo</option>
                                                 <option value="#">Any</option>
                                                 <option value="#">Single Family Home</option>
                                                 <option value="#">Condo</option>
                                                 <option value="#">Apartment</option>
                                                 <option value="#">Loft</option>
-                                            </select>
-                                            <select class="span6 select pull-left" name="beds">
-                                                <option>Beds</option>
-                                                <option value="#">1+ Beds</option>
-                                                <option value="#">2+ Beds</option>
-                                                <option value="#">3+ Beds</option>
-                                                <option value="#">4+ Beds</option>
-                                                <option value="#">5+ Beds</option>
-                                            </select>
-                                            <select class="span6 select pull-right" name="baths">
-                                                <option>Baths</option>
-                                                <option value="#">1+ Baths</option>
-                                                <option value="#">2+ Baths</option>
-                                                <option value="#">3+ Baths</option>
-                                                <option value="#">4+ Baths</option>
-                                                <option value="#">5+ Baths</option>
                                             </select>
                                             <select class="span12 select clearfix" name="status">
                                                 <option>Select Status</option>
