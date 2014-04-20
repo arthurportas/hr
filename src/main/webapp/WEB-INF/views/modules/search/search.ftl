@@ -80,7 +80,7 @@
         <option><@spring.messageText "DISTRICT", "Distrito"/></option>
 -->
         <#list districts as d>
-            <option value="${d.districtId}">${d.name?string?cap_first}</option>
+            <option value="${d.districtId}">${d.districtName?string?cap_first}</option>
         </#list>
     </select>
 </#macro>

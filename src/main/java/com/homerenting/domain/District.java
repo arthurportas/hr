@@ -1,9 +1,6 @@
 package com.homerenting.domain;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.codehaus.jackson.annotate.JsonManagedReference;
 
 import javax.persistence.*;
@@ -16,13 +13,13 @@ import java.util.Set;
 
 
 @Entity
-@Table(name = "DISTRICT", uniqueConstraints = @UniqueConstraint(columnNames = "name"))
+@Table(name = "DISTRICT", uniqueConstraints = @UniqueConstraint(columnNames = "DISTRICT_NAME"))
 @NamedQueries({
         @NamedQuery(name = "District.FIND_ALL", query = "SELECT d from District d"),
         @NamedQuery(name = "District.FIND_ALL_REGIONS",
                 query = "SELECT d from District d WHERE  d.districtId= :id")
 })
-public class District extends BaseEntity implements Serializable {
+public class District implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -38,8 +35,8 @@ public class District extends BaseEntity implements Serializable {
     @NotNull
     @Size(min = 1, max = 25)
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
-    @Column(name = "NAME", unique = true, nullable = false)
-    private String name = StringUtils.EMPTY;
+    @Column(name = "DISTRICT_NAME", unique = true, nullable = false)
+    private String districtName = StringUtils.EMPTY;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "district")
     @JsonManagedReference
@@ -53,14 +50,13 @@ public class District extends BaseEntity implements Serializable {
         this.districtId = districtId;
     }
 
-    public String getName() {
-        return name;
+    public String getDistrictName() {
+        return districtName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDistrictName(String districtName) {
+        this.districtName = districtName;
     }
-
 
     public Set<Region> getRegions() {
         return this.regions;
@@ -68,31 +64,5 @@ public class District extends BaseEntity implements Serializable {
 
     public void setRegions(Set<Region> regions) {
         this.regions = regions;
-    }
-
-    /**
-     * HashCode
-     */
-    @Override
-    public int hashCode() {
-        return HashCodeBuilder.reflectionHashCode(this);
-    }
-
-    /**
-     * Equals
-     *
-     * @param obj
-     */
-    @Override
-    public boolean equals(Object obj) {
-        return EqualsBuilder.reflectionEquals(this, obj);
-    }
-
-    /**
-     * ToString
-     */
-    @Override
-    public String toString() {
-        return ToStringBuilder.reflectionToString(this);
     }
 }

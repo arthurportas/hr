@@ -27,7 +27,7 @@ public class IDistrictDaoImpl implements IDistrictDao {
         CriteriaQuery<District> criteria = builder.createQuery(District.class);
         Root<District> district = criteria.from(District.class);
 
-        criteria.select(district).where(builder.equal(district.get("name"), name));
+        criteria.select(district).where(builder.equal(district.get("districtName"), name));
         return em.createQuery(criteria).getSingleResult();
     }
 
@@ -36,7 +36,7 @@ public class IDistrictDaoImpl implements IDistrictDao {
         CriteriaQuery<District> criteria = cb.createQuery(District.class);
         Root<District> district = criteria.from(District.class);
 
-        criteria.select(district).orderBy(cb.asc(district.get("name")));
+        criteria.select(district).orderBy(cb.asc(district.get("districtName")));
         return em.createQuery(criteria).getResultList();
     }
 
