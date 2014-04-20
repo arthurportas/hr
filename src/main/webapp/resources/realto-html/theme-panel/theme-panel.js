@@ -52,9 +52,9 @@ jQuery(function(){
 	
 	/* Minor fix for IE9 */
 	/*-----------------------------------------------------------------------*/
-	if ($.browser.msie && $.browser.version.substr(0,1)==9) {
+	/*if ($.browser.msie && $.browser.version.substr(0,1)==9) {
 		jQuery("#color").css('padding','3px 1px 2px 1px');
-	}
+	}*/
 	
 	
 	/* Show or hide themes panel
@@ -68,9 +68,9 @@ jQuery(function(){
 	jQuery('#toggle_button').click(function() {
 		
 		/* On hide turn off colorpicker wheel */
-		if ($.browser.msie && $.browser.version.substr(0,1)<=8)
+		/*if ($.browser.msie && $.browser.version.substr(0,1)<=8)
 			jQuery('#colorpicker').hide();
-		else
+		else*/
 			jQuery('#colorpicker').fadeOut('fast');
 		
 		var themes_panel = jQuery(this).parent();

@@ -19,4 +19,5 @@ public interface IRegionService {
     public List<Region> getAllByNamePattern(String name);
 
     public void save(Region region);
+
 }

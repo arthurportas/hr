@@ -26,6 +26,9 @@
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/login/sha256.jquery.debug.js'/>"/>
     <script src="js/sha256.jquery.debug.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/search/search.js'/>"/>
+    <script src="js/search.js"></script>
 </body>
 
 </html>

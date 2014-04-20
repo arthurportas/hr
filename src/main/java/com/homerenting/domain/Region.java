@@ -1,5 +1,7 @@
 package com.homerenting.domain;
 
+import org.codehaus.jackson.annotate.JsonBackReference;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -27,19 +29,25 @@ public class Region implements Serializable{
 
    @Id
    @GeneratedValue
-   private Long id;
+   @Column(name = "REGION_ID", unique = true, nullable = false)
+   private Long regionId;
 
    @NotNull
    @Size(min = 1, max = 25)
    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
    private String name;
 
-   public Long getId() {
-      return id;
+   @ManyToOne(fetch = FetchType.LAZY)
+   @JoinColumn(name = "DISTRICT_ID", nullable = false)
+   @JsonBackReference
+   private District district;
+
+   public Long getRegionId() {
+      return this.regionId;
    }
 
-   public void setId(Long id) {
-      this.id = id;
+   public void setRegionId(Long regionId) {
+      this.regionId = regionId;
    }
 
    public String getName() {
@@ -50,4 +58,12 @@ public class Region implements Serializable{
       this.name = name;
    }
 
+
+    public District getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(District district) {
+        this.district = district;
+    }
 }

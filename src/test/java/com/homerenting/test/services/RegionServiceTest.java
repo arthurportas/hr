@@ -41,7 +41,7 @@ public class RegionServiceTest {
                 @Override
                 public Region answer(InvocationOnMock invocation) throws Throwable {
                     Region region = new Region();
-                    region.setId(0L);
+                    region.setRegionId(0L);
                     region.setName("amarante");
                     return region;
                 }

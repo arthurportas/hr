@@ -335,7 +335,7 @@ a.overlay {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: #fff url('../images/more-icon.png') no-repeat center center;
+	background: #fff url('/static/resources/realto-html/images/more-icon.png') no-repeat center center;
 }
 a.overlay:hover .more {
 	-webkit-opacity: 0.5;
@@ -349,7 +349,7 @@ a.overlay:hover .more {
 #home-search-container {
 	padding: 20px 0;
 	min-height: 340px;
-	background: url('http://placehold.it/1920x600') no-repeat center center;
+	background: url('/static/resources/realto-html/images/wide.jpg') no-repeat center center;
 }
 .head-title, .head-message, .header-cta {
 	-moz-animation: fadein 3s; /* Firefox */

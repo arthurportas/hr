@@ -47,6 +47,9 @@
                 <value>/WEB-INF/i18n/modules/header/header</value>
                 <value>/WEB-INF/i18n/modules/header/login/login</value>
                 <value>/WEB-INF/i18n/modules/header/navigation/navigation</value>
+                <value>/WEB-INF/i18n/modules/footer/footer</value>
+                <value>/WEB-INF/i18n/modules/latestProperties/latest-properties</value>
+                <value>/WEB-INF/i18n/modules/search/search</value>
             </list>
         </property>
         <property name="cacheSeconds" value="0"/>

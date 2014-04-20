@@ -14,24 +14,16 @@
                                 </div>
                                 <div class="span4">
                                     <div class="search-form">
-                                        <p>Find your new home</p>
+                                        <p><@spring.messageText "FIND.YOUR.NEW.HOME", "Encontre uma nova Casa"/></p>
                                         <form action="#" class="row-fluid" method="post">
-                                            <select class="span12 select" name="type">
-                                                <option>Distrito</option>
-                                                <option value="#">New York</option>
-                                                <option value="#">Los Angeles</option>
-                                                <option value="#">Washington</option>
-                                                <option value="#">Chicago</option>
-                                                <option value="#">Miami</option>
-                                            </select>
-                                            <select class="span12 select" name="type">
-                                                <option>Concelho</option>
-                                                <option value="#">New York</option>
-                                                <option value="#">Los Angeles</option>
-                                                <option value="#">Washington</option>
-                                                <option value="#">Chicago</option>
-                                                <option value="#">Miami</option>
-                                            </select>
+
+                                            <@renderDistricts />
+
+                                            <@renderRegions />
+
+
+
+
                                             <select class="span12 select" name="type">
                                                 <option>Tipo</option>
                                                 <option value="#">Any</option>
@@ -40,11 +32,10 @@
                                                 <option value="#">Apartment</option>
                                                 <option value="#">Loft</option>
                                             </select>
-                                            <select class="span12 select clearfix" name="status">
-                                                <option>Select Status</option>
-                                                <option value="#">For Rent</option>
-                                                <option value="#">For Sale</option>
-                                            </select>
+
+                                            <@renderStatus />
+
+
                                             <select class="span6 select pull-left" name="price-from">
                                                 <option>Price from</option>
                                                 <option value="#">from $100.000</option>
@@ -82,3 +73,33 @@
     </div>
     <!-- .container -->
 </div>
+
+<#macro renderDistricts>
+    <select class="span12 select districts" name="type">
+<#--
+        <option><@spring.messageText "DISTRICT", "Distrito"/></option>
+-->
+        <#list districts as d>
+            <option value="${d.districtId}">${d.name?string?cap_first}</option>
+        </#list>
+    </select>
+</#macro>
+
+<#macro renderRegions><#--fetched by ajax-->
+    <select class="span12 select regions" name="type">
+        <#list regions as r>
+            <option value="${r.regionId}">${r.name?string?cap_first}</option>
+        </#list>
+    </select>
+</#macro>
+
+<#macro renderStatus>
+    <select class="span12 select clearfix status" name="status">
+        <#list status as s>
+<#--
+            <option value="${s.value}"><@spring.messageText "FOR.${(s.value)?string?upper_case}"/></option>
+-->
+            <option value="${s.value}">${s.value?string?cap_first}</option>
+        </#list>
+    </select>
+</#macro>

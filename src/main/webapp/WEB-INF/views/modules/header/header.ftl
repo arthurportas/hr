@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="span8">
                     <a class="brand" href="index.html"><span class="logo-text">ImoWeb</span></a>
-                    <span class="tag-line hidden-phone"><@spring.message "tag.line" /></span>
+                    <span class="tag-line hidden-phone"><@spring.message "TAG.LINE" /></span>
                 </div>
                 <#include "login/login.ftl">
             </div>
