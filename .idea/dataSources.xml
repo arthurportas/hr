@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="496236345">
+  <component name="DataSourceManagerImpl" format="xml" hash="2592312998">
     <data-source source="LOCAL" name="MySQL - homerenting@localhost" uuid="57dbb455-bf3c-43b3-9d4e-37c2f6b6617c">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
@@ -13,6 +13,19 @@
         <property name="tinyInt1isBit" value="false" />
       </driver-properties>
       <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - imoweb@localhost" uuid="50ad5890-9bc3-4415-8388-1a8c1f505571">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/imoweb</jdbc-url>
+      <user-name>Arthur</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Servers/jboss-as-7.1.1.Final/modules/org/postgresql/main/postgresql-9.3-1101.jdbc4.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

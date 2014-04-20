@@ -44,7 +44,7 @@ public class DistrictServiceTest {
                 public Region answer(InvocationOnMock invocation) throws Throwable {
                     Region region = new Region();
                     region.setRegionId(0L);
-                    region.setName("amarante");
+                    region.setRegionName("amarante");
                     return region;
                 }
             });

@@ -10,11 +10,11 @@ import java.io.Serializable;
 
 
 @Entity
-@Table(name = "REGION", uniqueConstraints = @UniqueConstraint(columnNames = "name"))
+@Table(name = "REGION", uniqueConstraints = @UniqueConstraint(columnNames = "REGION_NAME"))
 @NamedQueries({
     @NamedQuery(name = "Region.FIND_ALL", query = "SELECT r from Region r"),
-    @NamedQuery(name = "Region.FIND_BY_NAME", query = "SELECT r from Region r WHERE r.name LIKE :regionName"),
-    @NamedQuery(name = "Region.FIND_BY_NAME_PATTERN", query = "SELECT r from Region r WHERE r.name LIKE :regionName")
+    @NamedQuery(name = "Region.FIND_BY_NAME", query = "SELECT r from Region r WHERE r.regionName LIKE :regionName"),
+    @NamedQuery(name = "Region.FIND_BY_NAME_PATTERN", query = "SELECT r from Region r WHERE r.regionName LIKE :regionName")
 })
 public class Region implements Serializable{
 
@@ -35,7 +35,8 @@ public class Region implements Serializable{
    @NotNull
    @Size(min = 1, max = 25)
    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
-   private String name;
+   @Column(name = "REGION_NAME", unique = true, nullable = false)
+   private String regionName;
 
    @ManyToOne(fetch = FetchType.LAZY)
    @JoinColumn(name = "DISTRICT_ID", nullable = false)
@@ -50,12 +51,12 @@ public class Region implements Serializable{
       this.regionId = regionId;
    }
 
-   public String getName() {
-      return name;
+   public String getRegionName() {
+      return this.regionName;
    }
 
-   public void setName(String name) {
-      this.name = name;
+   public void setRegionName(String regionName) {
+      this.regionName = regionName;
    }
 
 

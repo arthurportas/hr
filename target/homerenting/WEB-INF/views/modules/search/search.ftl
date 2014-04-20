@@ -88,7 +88,7 @@
 <#macro renderRegions><#--fetched by ajax-->
     <select class="span12 select regions" name="type">
         <#list regions as r>
-            <option value="${r.regionId}">${r.name?string?cap_first}</option>
+            <option value="${r.regionId}">${r.regionName?string?cap_first}</option>
         </#list>
     </select>
 </#macro>
