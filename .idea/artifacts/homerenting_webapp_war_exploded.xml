@@ -8,6 +8,7 @@
           <element id="module-output" name="homerenting-webapp" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: postgresql:postgresql:8.4-702.jdbc4" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.6.RELEASE" />
