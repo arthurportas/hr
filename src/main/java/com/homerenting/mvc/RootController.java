@@ -37,7 +37,7 @@ public class RootController {
 	public ModelAndView index(Model model) {
         slf4jLogger.info("==ModelAndView index(Model model)==");
         ModelAndView mav = new ModelAndView();
-        mav.setViewName("/WEB-INF/views/index");
+        mav.setViewName("index");
         final List<District> districts = districtService.getAllOrderedByName();
         mav.addObject("districts", districts);
         mav.addObject("regions", districts.get(0).getRegions());

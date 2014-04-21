@@ -3,6 +3,7 @@ package com.homerenting.domain.modules.header.navigation;
 
 public enum  Nav {
 
+
     CONTACTS("contacts");
 
     private final String navEntry;

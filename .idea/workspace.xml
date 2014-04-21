@@ -66,7 +66,9 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/School_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/School_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/User_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/User_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.js" afterPath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.js" />
@@ -198,10 +200,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RootController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="918">
+            <state line="39" column="25" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.9050926" vertical-offset="272" max-vertical-offset="918">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -212,13 +214,8 @@
       <file leaf-file-name="RootControllerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/controllers/RootControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1398039361000" expanded="true" signature="303:311" placeholder="{...}" />
-                <marker date="1398039361000" expanded="true" signature="374:382" placeholder="{...}" />
-                <marker date="1398039361000" expanded="true" signature="439:447" placeholder="{...}" />
-              </folding>
+            <state line="23" column="0" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="510">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -261,10 +258,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.ftl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contact.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="38" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.81280786" vertical-offset="588" max-vertical-offset="1037">
+            <state line="15" column="28" selection-start="551" selection-end="551" vertical-scroll-proportion="-0.0" vertical-offset="255" max-vertical-offset="1037">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nav.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -275,17 +281,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="209" column="0" selection-start="9932" selection-end="9970" vertical-scroll-proportion="-10.076923" vertical-offset="3291" max-vertical-offset="3723">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DistrictController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="816">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -309,7 +304,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/header_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/header_es_ES.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/header.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
@@ -354,12 +348,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/contacts/contacts_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/ImoWeb.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/controllers/RootControllerTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/test-framework.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/modules/navigation/NavigationTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
       </list>
     </option>
   </component>
@@ -2379,7 +2374,7 @@
       <workItem from="1396997544560" duration="662000" />
       <workItem from="1397306018236" duration="58240000" />
       <workItem from="1397934928533" duration="27609000" />
-      <workItem from="1397995403046" duration="22617000" />
+      <workItem from="1397995403046" duration="23030000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2409,11 +2404,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162015000" />
+    <option name="totallyTimeSpent" value="162428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25555557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2428,7 +2423,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27110156" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.6695279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2488,13 +2483,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA-sources.jar!/org/jboss/logging/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="0" selection-start="3138" selection-end="3138" vertical-scroll-proportion="0.3131579" vertical-offset="1105" max-vertical-offset="38522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.6.RELEASE/spring-webmvc-3.2.6.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="858" column="0" selection-start="39104" selection-end="39104" vertical-scroll-proportion="0.2793427" vertical-offset="13328" max-vertical-offset="21199">
@@ -2843,27 +2831,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="918">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/controllers/RootControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1398039361000" expanded="true" signature="303:311" placeholder="{...}" />
-            <marker date="1398039361000" expanded="true" signature="374:382" placeholder="{...}" />
-            <marker date="1398039361000" expanded="true" signature="439:447" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="420" column="42" selection-start="15813" selection-end="15813" vertical-scroll-proportion="-4.6363635" vertical-offset="6936" max-vertical-offset="9826">
@@ -2903,8 +2870,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="38" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.81280786" vertical-offset="588" max-vertical-offset="1037">
+        <state line="15" column="28" selection-start="551" selection-end="551" vertical-scroll-proportion="-0.0" vertical-offset="255" max-vertical-offset="1037">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/controllers/RootControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="25" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.9050926" vertical-offset="272" max-vertical-offset="918">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
