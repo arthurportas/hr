@@ -69,8 +69,9 @@
         <property name="cookieMaxAge" value="100000"/>
     </bean>
 
-    <!-- Data Validation -->
+    <!-- Data Validation beans-->
     <bean id="loginFormValidator" class="com.homerenting.validators.LoginFormValidator"/>
+    <bean id="contactFormValidator" class="com.homerenting.validators.ContactFormValidator"/>
 
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="host" value="smtp.gmail.com"/>

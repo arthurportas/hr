@@ -1,11 +1,17 @@
 package com.homerenting.mvc;
 
+import com.homerenting.domain.modules.header.contacts.EmailContact;
+import com.homerenting.validators.ContactFormValidator;
+import com.homerenting.validators.LoginFormValidator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.SimpleMailMessage;
+import org.springframework.http.HttpStatus;
+import org.springframework.mail.*;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -19,28 +25,69 @@ public class MailController {
     @Autowired
     private JavaMailSender mailSender;
 
-    @RequestMapping(value="/one", method = RequestMethod.POST)
-    public String sendOneEmail(HttpServletRequest request) {
-        // takes input from e-mail form
-        String recipientAddress = request.getParameter("recipient");
-        String subject = request.getParameter("subject");
-        String message = request.getParameter("message");
+    @Autowired
+    ContactFormValidator contactFormValidator;
 
-        // prints debug info
-        System.out.println("To: " + recipientAddress);
-        System.out.println("Subject: " + subject);
-        System.out.println("Message: " + message);
+    @RequestMapping(value="/one/plain", method = RequestMethod.POST,
+            headers = {"Content-type=application/json"})
+    @ResponseStatus(HttpStatus.OK)
+    public ModelAndView sendOneEmail(@RequestBody EmailContact emailContact,
+                               BindingResult result,
+                               SessionStatus status,
+                               HttpServletRequest request) {
+
+        String viewName = "mail-error";
+
+        ModelAndView mav = new ModelAndView(viewName);
+        contactFormValidator.validate(emailContact, result);
+
+        if (result.hasErrors()){
+            return mav;
+        }
 
         // creates a simple e-mail object
         SimpleMailMessage email = new SimpleMailMessage();
-        email.setTo(recipientAddress);
-        email.setSubject(subject);
-        email.setText(message);
+        email.setFrom(emailContact.getEmailFrom());
+        email.setTo(emailContact.getEmailFrom());//to should be hardcoded as it's company contact
+        email.setSubject("subject");
+        email.setText(emailContact.getMessage());
 
         // sends the e-mail
-        mailSender.send(email);
+        try {
+            mailSender.send(email);
+            mav.setViewName("mail-success");
+            return mav;
+        }catch (MailException me){
+            //log
+            if(me instanceof MailParseException){
 
-        // forwards to the view named "Result"
-        return "mail-result";
+            }else if (me instanceof MailAuthenticationException){
+
+            }else if (me instanceof MailSendException){
+
+            }
+        }
+        return mav;
+    }
+    @RequestMapping(value="/one/plain/html", method = RequestMethod.POST, headers = {"Content-type=application/json"})
+    public String sendOneEmailHTML(@RequestBody EmailContact emailContact) {
+
+        //validator??
+
+        // creates a simple e-mail object
+        SimpleMailMessage email = new SimpleMailMessage();
+        email.setFrom(emailContact.getEmailFrom());
+        email.setTo(emailContact.getEmailFrom());//to should be hardcoded as it's company contact
+        email.setSubject("subject");
+        email.setText(emailContact.getMessage());
+
+        // sends the e-mail
+        try {
+            mailSender.send(email);
+            return "mail-success";
+        }catch (MailException me){
+            //log
+        }
+        return "mail-error";
     }
 }

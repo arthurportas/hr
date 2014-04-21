@@ -29,6 +29,9 @@
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/search/search.js'/>"/>
     <script src="js/search.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/contacts/contacts.js'/>"/>
+    <script src="js/contacts.js"></script>
 </body>
 
 </html>

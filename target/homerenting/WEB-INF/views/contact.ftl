@@ -1,7 +1,6 @@
 <#import "spring.ftl" as spring />
 <#include "header.ftl">
 <body>
-
 <#include "modules/header/header.ftl">
 <div class="container page-content">
     <div class="row">
@@ -23,16 +22,21 @@
                             <i class="icon-twitter"></i>
                             twitter.com/realto</li>
                     </ul>
+
                     <div class="row-fluid">
-                        <form action="#" class="margin300" method="post">
-                            <input class="span6" placeholder="Please, insert your name" type="text">
-                            <input class="span6 pull-right" placeholder="Please, insert your email" type="text">
-                            <textarea class="span12" placeholder="Write your message" rows="6"></textarea>
+
+                        <div class="contacts-alert"></div>
+
+                        <form class="margin300" method="post">
+                            <input class="span6 contacts-email-name" placeholder="Please, insert your name" type="text" name="name">
+                            <input class="span6 pull-right contacts-email-from" placeholder="Please, insert your email" type="text" name="emailFrom">
+                            <textarea class="span12 contacts-email-msg" placeholder="Write your message" rows="6" name="message"></textarea>
                             <div class="clearfix">
-                                <button class="btn btn-realto span6" type="submit">Submit</button>
+                                <button class="btn btn-realto span6 contacts-email">Submit</button>
                             </div>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -52,4 +56,5 @@
     </div>
     <!-- .row -->
 </div>
+<#include "modules/footer/footer.ftl">
 <#include "footer.ftl">
