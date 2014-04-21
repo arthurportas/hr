@@ -33,7 +33,7 @@ public class DistrictController {
     @ResponseStatus(HttpStatus.OK)
     public ModelAndView getById(@PathVariable Long id) {
         ModelAndView mav = new ModelAndView();
-        mav.setViewName("regionsByDistrict");
+        mav.setViewName("regions-by-district");
         mav.addObject("regions", districtService.getById(id).getRegions());
         return mav;
     }

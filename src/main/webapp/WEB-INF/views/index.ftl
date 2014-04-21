@@ -6,7 +6,7 @@
 <#include "modules/theme-chooser/theme-chooser.ftl">
 <#include "modules/search/search.ftl">
 
-<#include "modules/latestProperties/latestProperties.ftl">
+<#include "modules/latestProperties/latest-properties.ftl">
 
 
 <div class="container">

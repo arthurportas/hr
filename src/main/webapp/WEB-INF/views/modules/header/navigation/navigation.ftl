@@ -54,7 +54,7 @@
                             <li><a href="wide-page.html" title="Homepage 3">Wide Page</a></li>
                         </ul>
                     </li>-->
-                    <li><a href="contact.html" title="Contatos">Contatos</a></li>
+                    <li><a href="/contacts" title="Contatos">Contatos</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
