@@ -73,6 +73,7 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/bootstrap.min.css" afterPath="$USER_HOME$/eduict/target/eduict/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.min.js" afterPath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.min.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/compiler.xml" afterPath="$USER_HOME$/eduict/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" afterPath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" afterPath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" />
@@ -252,10 +253,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NavigationPageObject.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NavigationPageObject.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/modules/navigation/NavigationPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="33" selection-start="125" selection-end="125" vertical-scroll-proportion="0.19630484" vertical-offset="0" max-vertical-offset="433">
+            <state line="5" column="33" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.ftl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="38" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.81280786" vertical-offset="588" max-vertical-offset="1037">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="209" column="0" selection-start="9932" selection-end="9970" vertical-scroll-proportion="-10.076923" vertical-offset="3291" max-vertical-offset="3723">
               <folding />
             </state>
           </provider>
@@ -268,24 +287,6 @@
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneContact.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/PhoneContact.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="25" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MobileContact.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/MobileContact.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="26" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -346,7 +347,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MailController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/navigation/navigation.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ContactController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/contacts/contacts.properties" />
@@ -360,6 +360,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/test-framework.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/modules/navigation/NavigationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl" />
       </list>
     </option>
   </component>
@@ -2379,7 +2380,7 @@
       <workItem from="1396997544560" duration="662000" />
       <workItem from="1397306018236" duration="58240000" />
       <workItem from="1397934928533" duration="27609000" />
-      <workItem from="1397995403046" duration="21049000" />
+      <workItem from="1397995403046" duration="21850000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2409,11 +2410,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160447000" />
+    <option name="totallyTimeSpent" value="161248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25555557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2423,14 +2424,14 @@
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32777777" sideWeight="0.3304721" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31111112" sideWeight="0.16523606" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27110156" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32777777" sideWeight="0.6695279" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.6695279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2708,20 +2709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="0" selection-start="9992" selection-end="10015" vertical-scroll-proportion="-4.4615383" vertical-offset="3372" max-vertical-offset="3723">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="6" selection-start="2581" selection-end="2581" vertical-scroll-proportion="-34.653847" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/navigation/navigation.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="42" selection-start="4263" selection-end="4263" vertical-scroll-proportion="-10.384615" vertical-offset="682" max-vertical-offset="1156">
@@ -2733,7 +2720,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="38" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2903,7 +2890,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/modules/navigation/NavigationPageObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="125" selection-end="125" vertical-scroll-proportion="0.19630484" vertical-offset="0" max-vertical-offset="433">
+        <state line="5" column="33" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="0" selection-start="9932" selection-end="9970" vertical-scroll-proportion="-10.076923" vertical-offset="3291" max-vertical-offset="3723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="38" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.81280786" vertical-offset="588" max-vertical-offset="1037">
           <folding />
         </state>
       </provider>

@@ -52,4 +52,5 @@
     </div>
     <!-- .row -->
 </div>
+<#include "modules/footer/footer.ftl">
 <#include "footer.ftl">
