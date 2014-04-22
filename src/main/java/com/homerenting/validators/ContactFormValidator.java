@@ -1,7 +1,8 @@
 package com.homerenting.validators;
 
-import com.homerenting.domain.User;
 import com.homerenting.domain.modules.header.contacts.EmailContact;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
@@ -9,6 +10,11 @@ import org.springframework.validation.Validator;
  * Created by Arthur on 14/04/14.
  */
 public class ContactFormValidator implements Validator {
+
+    public static final String COMPONENT_NAME = "contactFormValidator";
+
+    private static final Logger slf4jLogger = LoggerFactory.getLogger(ContactFormValidator.class);
+
     /**
      * Can this {@link org.springframework.validation.Validator} {@link #validate(Object, org.springframework.validation.Errors) validate}
      * instances of the supplied {@code clazz}?
@@ -41,6 +47,8 @@ public class ContactFormValidator implements Validator {
      */
     @Override
     public void validate(Object target, Errors errors) {
+
+        slf4jLogger.info("==void validate(Object target, Errors errors)==");
 
         EmailContact emailData = (EmailContact)target;
 

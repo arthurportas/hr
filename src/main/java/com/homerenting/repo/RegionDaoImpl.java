@@ -13,7 +13,7 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class IRegionDaoImpl implements IRegionDao {
+public class RegionDaoImpl implements IRegionDao {
 
     @Autowired
     private EntityManager em;

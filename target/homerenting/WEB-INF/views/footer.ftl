@@ -32,6 +32,9 @@
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/contacts/contacts.js'/>"/>
     <script src="js/contacts.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/jquery.blockUI.js'/>"/>
+    <script src="js/jquery.blockUI.js"></script>
 </body>
 
 </html>

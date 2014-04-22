@@ -13,6 +13,7 @@
        <class>com.homerenting.domain.District</class>
        <class>com.homerenting.domain.Parish</class>
        <class>com.homerenting.domain.Region</class>
+       <class>com.homerenting.domain.Property</class>
        <validation-mode>CALLBACK</validation-mode>
       <properties>
 		 <property name="jboss.entity.manager.factory.jndi.name" value="java:jboss/spring-quickstart/persistence" />

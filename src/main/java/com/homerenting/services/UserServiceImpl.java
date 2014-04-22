@@ -12,6 +12,9 @@ import java.util.List;
 @Transactional
 public class UserServiceImpl implements IUserService {
 
+    public static final String COMPONENT_NAME = "userServiceImpl";
+
+
     @Autowired
     private IUserDao userDao;
 

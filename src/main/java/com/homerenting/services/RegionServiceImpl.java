@@ -12,6 +12,7 @@ import java.util.List;
 @Transactional
 public class RegionServiceImpl implements IRegionService {
 
+    public static final String COMPONENT_NAME = "regionServiceImpl";
     private IRegionDao regionDao;
 
     @Autowired

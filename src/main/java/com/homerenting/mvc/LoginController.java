@@ -1,7 +1,6 @@
 package com.homerenting.mvc;
 
 import com.homerenting.domain.User;
-import com.homerenting.repo.IUserDao;
 import com.homerenting.services.IUserService;
 import com.homerenting.services.UserServiceImpl;
 import com.homerenting.validators.LoginFormValidator;
@@ -22,11 +21,14 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class LoginController {
 
+    public static final String COMPONENT_NAME = "loginController";
+
     private static final Logger slf4jLogger = LoggerFactory.getLogger(LoginController.class);
 
     @Autowired
     LoginFormValidator loginFormValidator;
 
+    @Qualifier(UserServiceImpl.COMPONENT_NAME)
     @Autowired
     private IUserService userService;
 
@@ -35,7 +37,10 @@ public class LoginController {
                               BindingResult result,
                               SessionStatus status,
                               HttpServletRequest request) {
-
+        slf4jLogger.info("==ModelAndView login(@ModelAttribute(\"login\") User user,\n" +
+                "                              BindingResult result,\n" +
+                "                              SessionStatus status,\n" +
+                "                              HttpServletRequest request)==");
         String viewName = "home";
 
         ModelAndView mav = new ModelAndView(viewName);
@@ -50,7 +55,7 @@ public class LoginController {
         status.setComplete();
 
         if(!userExists){
-            mav.getModel().put("ERROR", "Invalid UserName and Password");
+            mav.getModel().put("ERROR", "Invalid UserName and Password");//TODO display friendly errors on frontend
         }else{
             viewName = "index";//TODO redirect to view where use came from
             request.getSession().setAttribute("LOGGEDIN_USER", userExists);

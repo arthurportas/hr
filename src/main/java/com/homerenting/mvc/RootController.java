@@ -2,7 +2,9 @@ package com.homerenting.mvc;
 
 import com.homerenting.domain.District;
 import com.homerenting.domain.modules.header.search.PropertyStatus;
+import com.homerenting.domain.modules.header.search.PropertyKind;
 import com.homerenting.services.IDistrictService;
+import com.homerenting.services.IPropertyService;
 import com.homerenting.services.IRegionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,6 +34,10 @@ public class RootController {
     @Autowired
     private IRegionService regionService;
 
+    @Qualifier("propertyServiceImpl")
+    @Autowired
+    private IPropertyService propertyService;
+
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
 	public ModelAndView index(Model model) {
@@ -42,6 +48,7 @@ public class RootController {
         mav.addObject("districts", districts);
         mav.addObject("regions", districts.get(0).getRegions());
         //mav.addObject("regions", regionService.getAllOrderedByName());
+        mav.addObject("propertyKinds", Arrays.asList(PropertyKind.values()));
         mav.addObject("status", Arrays.asList(PropertyStatus.values()));
 		return mav;
 	}

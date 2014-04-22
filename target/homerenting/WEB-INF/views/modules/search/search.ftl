@@ -97,9 +97,8 @@
 <#macro renderPropertyKind>
     <select class="span12 select" name="type">
         <option value="#"><@spring.messageText "ANY", "Qualquer"/></option>
-        <option value="#">Single Family Home</option>
-        <option value="#">Condo</option>
-        <option value="#">Apartment</option>
-        <option value="#">Loft</option>
+        <#list propertyKinds as pk>
+            <option value="${pk.value}"><@spring.messageText "${(pk.value)?string?upper_case}", "${pk.value}"/></option>
+        </#list>
     </select>
 </#macro>

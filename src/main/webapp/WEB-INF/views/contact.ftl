@@ -23,7 +23,7 @@
                             twitter.com/realto</li>
                     </ul>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid contacts-blockUI">
 
                         <div class="contacts-alert"></div>
 

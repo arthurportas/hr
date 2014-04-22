@@ -10,12 +10,12 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class IParishServiceImpl implements IParishService {
+public class ParishServiceImpl implements IParishService {
 
     private IParishDao parishDao;
 
     @Autowired
-    public IParishServiceImpl(IParishDao parishDao) {
+    public ParishServiceImpl(IParishDao parishDao) {
         this.parishDao = parishDao;
     }
 
