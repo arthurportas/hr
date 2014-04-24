@@ -66,9 +66,7 @@
 
 <#macro renderDistricts>
     <select class="span12 select districts" name="type">
-<#--
         <option><@spring.messageText "DISTRICT", "Distrito"/></option>
--->
         <#list districts as d>
             <option value="${d.districtId}">${d.districtName?string?cap_first}</option>
         </#list>
@@ -77,6 +75,7 @@
 
 <#macro renderRegions><#--fetched by ajax-->
     <select class="span12 select regions" name="type">
+        <option><@spring.messageText "ANY", "Indiferente"/></option>
         <#list regions as r>
             <option value="${r.regionId}">${r.regionName?string?cap_first}</option>
         </#list>
@@ -85,18 +84,16 @@
 
 <#macro renderStatus>
     <select class="span12 select clearfix status" name="status">
+        <option><@spring.messageText "BUSINESS.KIND", "Tipo de Negócio"/></option>
         <#list status as s>
-
             <option value="${s.value}"><@spring.messageText "${(s.value)?string?upper_case}", "${s.value}"/></option>
-
-            <#--<option value="${s.value}">${s.value?string?cap_first}</option>-->
         </#list>
     </select>
 </#macro>
 
 <#macro renderPropertyKind>
     <select class="span12 select" name="type">
-        <option value="#"><@spring.messageText "ANY", "Qualquer"/></option>
+        <option value="#"><@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/></option>
         <#list propertyKinds as pk>
             <option value="${pk.value}"><@spring.messageText "${(pk.value)?string?upper_case}", "${pk.value}"/></option>
         </#list>

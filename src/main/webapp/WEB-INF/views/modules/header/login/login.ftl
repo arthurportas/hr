@@ -8,11 +8,11 @@
     <div class="phone-number pull-right">
         <!-- Button trigger modal -->
         <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            <i class="icon-user"></i> Entrar</a>
+            <i class="icon-user"></i> <@spring.messageText "LOGIN", "Entrar"/></a>
         </button>
 
 
-        <a href="#" id="newAnnounce" class="btn btn-success">Novo Anúncio</a>
+        <a href="/announces" id="newAnnounce" class="btn btn-success"><@spring.messageText "INSERT.ANNOUNCE", "Inserir Anúncio"/></a>
 
 
 
@@ -22,7 +22,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Login</h4>
+                        <h4 class="modal-title" id="myModalLabel"><@spring.messageText "LOGIN", "Entrar"/></h4>
                     </div>
                     <div class="modal-body">
                         <div class=""></div>
