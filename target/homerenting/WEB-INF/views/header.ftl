@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/style.css'/>"/>
     <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/theme-panel/theme-panel.css'/>"/>
     <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/modules/login/login.css'/>"/>
+    <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/modules/announces/bwizard.css'/>"/>
+
 
 
     <!-- Favicon and touch icons  -->

@@ -14,7 +14,8 @@ public class ResultPageController {
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(ResultPageController.class);
 
 	@RequestMapping(value = "/results", method = RequestMethod.GET)
-	public String displayResults    (Model model) {
+	public String displayResults (Model model) {
+        slf4jLogger.info("==String displayResults (Model model)==");
 		return "results";
 	}
 

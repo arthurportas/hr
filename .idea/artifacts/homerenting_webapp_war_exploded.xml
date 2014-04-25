@@ -61,8 +61,8 @@
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:2.41.0" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-remote-driver:2.41.0" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-api:2.41.0" />
-          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.1" />
-          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.2.1" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-exec:1.1" />
           <element id="library" level="project" name="Maven: net.java.dev.jna:jna:3.4.0" />
           <element id="library" level="project" name="Maven: net.java.dev.jna:platform:3.4.0" />
@@ -72,7 +72,7 @@
           <element id="library" level="project" name="Maven: xalan:serializer:2.7.1" />
           <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.4.01" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
-          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpmime:4.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpmime:4.2.1" />
           <element id="library" level="project" name="Maven: net.sourceforge.htmlunit:htmlunit-core-js:2.13" />
           <element id="library" level="project" name="Maven: xerces:xercesImpl:2.11.0" />
           <element id="library" level="project" name="Maven: net.sourceforge.nekohtml:nekohtml:1.9.19" />
@@ -94,6 +94,9 @@
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.0.7" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.0.7" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+          <element id="library" level="project" name="Maven: com.cloudinary:cloudinary:1.0.8" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
+          <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" />
         </element>
       </element>
     </root>

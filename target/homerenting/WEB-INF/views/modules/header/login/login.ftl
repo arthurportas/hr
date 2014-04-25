@@ -8,7 +8,7 @@
     <div class="phone-number pull-right">
         <!-- Button trigger modal -->
         <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            <i class="icon-user"></i><@spring.messageText "LOGIN", "Entrar"/></a>
+            <i class="icon-user"></i> <@spring.messageText "LOGIN", "Entrar"/></a>
         </button>
 
 

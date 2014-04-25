@@ -35,6 +35,11 @@
 
     <script src="<@spring.url '/static/resources/realto-html/js/jquery.blockUI.js'/>"/>
     <script src="js/jquery.blockUI.js"></script>
-</body>
 
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/announces/bwizard.js'/>"/>
+    <script src="js/bwizard.js"></script>
+<script type="text/javascript">
+    $("#wizard").bwizard();
+</script>
+</body>
 </html>

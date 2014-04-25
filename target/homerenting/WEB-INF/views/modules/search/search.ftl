@@ -15,7 +15,7 @@
                                 <div class="span4">
                                     <div class="search-form">
                                         <p><@spring.messageText "FIND.YOUR.NEW.HOME", "Encontre uma nova Casa"/></p>
-                                        <form action="#" class="row-fluid" method="post">
+                                        <form action="results" class="row-fluid" method="GET">
 
                                             <@renderDistricts />
 
