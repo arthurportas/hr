@@ -2166,7 +2166,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="OpenShift Deployment.openshift">
+  <component name="RunManager" selected="JBoss Server.homerenting">
     <configuration default="false" name="RegionServiceTest.testRegionExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -2830,7 +2830,7 @@
       <workItem from="1398383246183" duration="715000" />
       <workItem from="1398384932296" duration="1138000" />
       <workItem from="1398424419674" duration="391000" />
-      <workItem from="1398424872874" duration="2328000" />
+      <workItem from="1398424872874" duration="2688000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2860,7 +2860,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196666000" />
+    <option name="totallyTimeSpent" value="197026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
