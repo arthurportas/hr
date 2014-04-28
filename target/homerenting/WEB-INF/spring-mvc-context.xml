@@ -2,18 +2,24 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 		                http://www.springframework.org/schema/context
 		                http://www.springframework.org/schema/context/spring-context-3.0.xsd
 		                http://www.springframework.org/schema/mvc
-		                http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+		                http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+                        http://www.springframework.org/schema/util
+                        http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
     <context:annotation-config/>
     <context:component-scan base-package="com.homerenting.mvc"/>
     <context:component-scan base-package="com.homerenting.interceptors"/>
     <context:component-scan base-package="com.homerenting.validators"/>
     <context:component-scan base-package="com.homerenting.converters"/>
+    <context:component-scan base-package="com.homerenting.external"/>
+
+    <util:properties id="cloudinaryProperties" location="classpath:cloudinary.properties" />
 
     <!-- freemarker config -->
     <bean id="freemarkerConfig"
@@ -87,6 +93,25 @@
         </property>
     </bean>
 
+    <bean id="cloudinaryConfigMap" class="java.util.HashMap">
+        <constructor-arg>
+            <map key-type="java.lang.String" value-type="java.lang.String">
+                <entry key="api_key" value="681112152891473" />
+                <entry key="api_secret" value="c0KWZ6xfEd736Fub0D-aJghi_tY" />
+                <entry key="cloud_name" value="homerenting" />
+                <entry key="callback" value="/static/resources/realto-html/js/modules/announces/html/cloudinary_cors.html" />
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="cloudinary" class="com.cloudinary.Cloudinary">
+        <constructor-arg index="0" ref="cloudinaryConfigMap" />
+    </bean>
+
+    <bean id="cloudinarySingleton" class="com.homerenting.external.CloudinaryManager"
+          init-method="init" destroy-method="destroy">
+        <property name="cloudinary" ref="cloudinary" />
+    </bean>
     <!-- JSR-303
     <bean id="validator"
         class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">

@@ -43,4 +43,21 @@
         $("#wizard").bwizard();
     </script>
     </body>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/announces/jquery.ui.widget.js'/>"/>
+    <script src="js/jquery.ui.widget.js"></script>
+
+    <#--<script src="<@spring.url '/static/resources/realto-html/js/modules/announces/jquery.iframe-transport.js'/>"/>
+    <script src="js/jquery.iframe-transport.js"></script>-->
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/announces/jquery.fileupload.js'/>"/>
+    <script src="js/jquery.fileupload.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/announces/jquery.cloudinary.js'/>"/>
+    <script src="js/jquery.cloudinary.js"></script>
+
+    <script type="text/javascript">
+        $.cloudinary.config({"api_key": "681112152891473","cloud_name": "homerenting"});
+    </script>
+
 </html>

@@ -8,6 +8,7 @@ import com.homerenting.services.IRegionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,14 +22,17 @@ public class AdminController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(AdminController.class);
 
+    @Qualifier("regionServiceImpl")
     @Autowired
 	private IRegionService regionService;
 
+    @Qualifier("parishServiceImpl")
     @Autowired
     private IParishService parishService;
 
+    @Qualifier("districtServiceImpl")
     @Autowired
-    private IDistrictService localityService;
+    private IDistrictService districtService;
 
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public String displayAdminLogin(Model model) {
@@ -47,7 +51,7 @@ public class AdminController {
         mav.setViewName("admin-form-new-user");
         mav.addObject("countries", Country.values());
         mav.addObject("regions", regionService.getAllOrderedByName());
-        mav.addObject("localities", localityService.getAllOrderedByName());
+        mav.addObject("localities", districtService.getAllOrderedByName());
         mav.addObject("parishes", parishService.getAllOrderedByName());
         mav.addObject("userTypes", UserType.values());
         return mav;

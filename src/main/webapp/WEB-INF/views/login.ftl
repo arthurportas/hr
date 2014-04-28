@@ -7,27 +7,26 @@
         <div class="span8">
             <div class="box-container">
                 <div class="padding30">
-                    <h2 class="page-title">Contact us</h2>
-                    <ul class="unstyled">
-                        <li>
-                            <i class="icon-envelope-alt"></i>
-                            Email: realto@realto.com</li>
-                        <li>
-                            <i class="icon-phone"></i>
-                            Phone: +1 786 345 6789</li>
-                        <li>
-                            <i class="icon-linkedin"></i>
-                            linkedin.com/realto</li>
-                        <li>
-                            <i class="icon-twitter"></i>
-                            twitter.com/realto</li>
-                    </ul>
+                    <h2 class="page-title">Login</h2>
 
                     <div class="row-fluid">
+                        <form name='loginForm' action="<@spring.url 'j_spring_security_check'/>" method='POST'>
+                            <table>
+                                <tr>
+                                    <td>User:</td>
+                                    <td><input type='text' name='j_username' value=''></td>
+                                </tr>
+                                <tr>
+                                    <td>Password:</td>
+                                    <td><input type='password' name='j_password' /></td>
+                                </tr>
+                                <tr>
+                                    <td colspan='2'><input name="submit" type="submit" value="submit" /></td>
+                                </tr>
+                            </table>
 
-
+                        </form>
                     </div>
-
                 </div>
             </div>
         </div>

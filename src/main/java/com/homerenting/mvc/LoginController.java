@@ -8,6 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -15,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
@@ -32,7 +33,7 @@ public class LoginController {
     @Autowired
     private IUserService userService;
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ModelAndView login(@ModelAttribute("login") User user,
                               BindingResult result,
                               SessionStatus status,
@@ -58,6 +59,11 @@ public class LoginController {
             mav.getModel().put("ERROR", "Invalid UserName and Password");//TODO display friendly errors on frontend
         }else{
             viewName = "index";//TODO redirect to view where use came from
+            Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+            String name = auth.getName(); //get logged in username
+
+            mav.addObject("username", name);
+
             request.getSession().setAttribute("LOGGEDIN_USER", userExists);
         }
         mav.setViewName(viewName);

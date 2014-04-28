@@ -92,12 +92,14 @@
                             </li>
                             <li class="pull-left">
                                 <a title="image" href="#">
-                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-05.jpg'/>"/>
+                                    <#--<img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-05.jpg'/>"/>-->
+                                    <img alt="" class="media-object" src="http://res.cloudinary.com/homerenting/image/upload/v1398720691/flickr-05_r40hki.jpg" />
                                 </a>
                             </li>
                             <li class="pull-left">
                                 <a title="image" href="#">
-                                    <img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-06.jpg'/>"/>
+                                    <#--<img alt="" class="media-object" src="<@spring.url '/static/resources/realto-html/images/flickr-06.jpg'/>"/>-->
+                                    <img alt="" class="media-object" src="http://res.cloudinary.com/homerenting/image/upload/v1398720690/flickr-06_ifrj9o.jpg" />
                                 </a>
                             </li>
                         </ul>

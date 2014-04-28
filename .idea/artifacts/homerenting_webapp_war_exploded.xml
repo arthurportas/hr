@@ -21,6 +21,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.3.RELEASE" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:20041127.091804" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.0" />
