@@ -63,4 +63,10 @@ public class LoginController {
         mav.setViewName(viewName);
         return mav;
     }
+
+    @RequestMapping(value = "/login/new", method = RequestMethod.GET)
+    public ModelAndView loginForm() {
+        ModelAndView mav = new ModelAndView("login");
+        return mav;
+    }
 }

@@ -7,7 +7,7 @@
         <div class="span8">
             <div class="box-container">
                 <div class="padding30">
-                    <h2 class="page-title">Contact us</h2>
+                    <h2 class="page-title"><@spring.messageText "CONTACT.US", "Contatos"/></h2>
                     <ul class="unstyled">
                         <li>
                             <i class="icon-envelope-alt"></i>
@@ -20,7 +20,8 @@
                             linkedin.com/realto</li>
                         <li>
                             <i class="icon-twitter"></i>
-                            twitter.com/realto</li>
+                            twitter.com/realto
+                        </li>
                     </ul>
 
                     <div class="row-fluid contacts-blockUI">
@@ -28,11 +29,11 @@
                         <div class="contacts-alert"></div>
 
                         <form class="margin300" method="post">
-                            <input class="span6 contacts-email-name" placeholder="Please, insert your name" type="text" name="name">
-                            <input class="span6 pull-right contacts-email-from" placeholder="Please, insert your email" type="text" name="emailFrom">
-                            <textarea class="span12 contacts-email-msg" placeholder="Write your message" rows="6" name="message"></textarea>
+                            <input class="span6 contacts-email-name" placeholder="<@spring.messageText "PLEASE.INSERT.YOUR.NAME", "Pf, preencha o nome"/>" type="text" name="name">
+                            <input class="span6 pull-right contacts-email-from" placeholder="<@spring.messageText "PLEASE.INSERT.YOUR.EMAIL", "Pf, preencha o seu email"/>" type="text" name="emailFrom">
+                            <textarea class="span12 contacts-email-msg" placeholder="<@spring.messageText "WRITE.YOUR.MESSAGE", "Escreva mensagem"/>" rows="6" name="message"></textarea>
                             <div class="clearfix">
-                                <button class="btn btn-realto span6 contacts-email">Submit</button>
+                                <button class="btn btn-realto span6 contacts-email"><@spring.messageText "SUBMIT", "Enviar"/></button>
                             </div>
                         </form>
                     </div>
@@ -41,18 +42,7 @@
             </div>
         </div>
         <!-- .span8 -->
-        <div class="span4 widget">
-            <div class="widget map box-container padding30">
-                <h3 class="widget-title">Get Directions</h3>
-                <iframe src="http://maps.google.it/maps?f=q&amp;source=s_q&amp;hl=it&amp;geocode=&amp;q=miami+beach+collins+ave+1220&amp;aq=&amp;sll=25.861386,-80.120888&amp;sspn=0.205136,0.347786&amp;ie=UTF8&amp;hq=&amp;hnear=1220+Collins+Ave,+Miami+Beach,+Miami-Dade,+Florida+33139,+Stati+Uniti&amp;t=m&amp;z=14&amp;ll=25.783255,-80.131265&amp;output=embed"></iframe>
-                <dl class="margin0">
-                    <dt>Realto</dt>
-                    <dd class="margin0">1680 Washington Avenue</dd>
-                    <dd class="margin0">Miami Beach, FL 33139</dd>
-                </dl>
-            </div>
-        </div>
-        <!-- .span4 -->
+        <#include "modules/directions/directions.ftl">
     </div>
     <!-- .row -->
 </div>

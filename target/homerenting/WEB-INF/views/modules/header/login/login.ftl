@@ -7,16 +7,13 @@
 
     <div class="phone-number pull-right">
         <!-- Button trigger modal -->
-        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        <a href="/login/new" class="btn btn-primary btn-lg">
             <i class="icon-user"></i> <@spring.messageText "LOGIN", "Entrar"/></a>
-        </button>
-
-
+        </a>
         <a href="/announces" id="newAnnounce" class="btn btn-success"><@spring.messageText "INSERT.ANNOUNCE", "Inserir Anúncio"/></a>
 
-
-
         <!-- Modal -->
+<#--
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -50,5 +47,6 @@
                 </div>
             </div>
         </div>
+-->
     </div><!--/phone-number-->
 </div>
