@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="Started spring security on boffice&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/external/CloudinaryManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/external/CloudinarySingleton.java" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__cglib_cglib_nodep_2_2.xml" />
@@ -45,23 +43,8 @@
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__org_springframework_spring_web_3_1_1_RELEASE.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__org_springframework_spring_webmvc_3_1_1_RELEASE.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UploadsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/UrlBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/canvas-to-blob.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/cloudinary.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/html/cloudinary_cors.html" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/jquery.cloudinary.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/jquery.fileupload-image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/jquery.fileupload-process.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/jquery.fileupload-validate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/jquery.fileupload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/jquery.iframe-transport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/jquery.ui.widget.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/load-image.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/uploads.ftl" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.eot" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.svg" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
@@ -80,27 +63,20 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.ttf" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.ttf" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.woff" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.woff" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/.name" afterPath="$USER_HOME$/eduict/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AdminController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/School_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/School_.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/User_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/User_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.js" afterPath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/bootstrap.min.css" afterPath="$USER_HOME$/eduict/target/eduict/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.min.js" afterPath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.min.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/compiler.xml" afterPath="$USER_HOME$/eduict/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" afterPath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" afterPath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/footer/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/footer/footer.ftl" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/misc.xml" afterPath="$USER_HOME$/eduict/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/modules.xml" afterPath="$USER_HOME$/eduict/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" afterPath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" />
@@ -108,9 +84,7 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/placeholder.js" afterPath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/placeholder.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/maven-archiver/pom.properties" afterPath="$USER_HOME$/eduict/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/style.css" afterPath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/workspace.xml" afterPath="$USER_HOME$/eduict/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -192,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.ftl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="37" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.5862069" vertical-offset="170" max-vertical-offset="935">
+            <state line="24" column="37" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-9.153846" vertical-offset="170" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
@@ -219,10 +193,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="10251">
+            <state line="303" column="21" selection-start="12320" selection-end="12320" vertical-scroll-proportion="11.569445" vertical-offset="153" max-vertical-offset="10353">
               <folding />
             </state>
           </provider>
@@ -341,10 +315,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/footer/footer.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/UrlBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -2771,7 +2745,7 @@
       <workItem from="1398424419674" duration="391000" />
       <workItem from="1398424872874" duration="10053000" />
       <workItem from="1398709556700" duration="12214000" />
-      <workItem from="1398723884387" duration="3240000" />
+      <workItem from="1398723884387" duration="3802000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2801,7 +2775,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219845000" />
+    <option name="totallyTimeSpent" value="220407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
@@ -2815,7 +2789,7 @@
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31111112" sideWeight="0.16523606" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31111112" sideWeight="0.16523606" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22083333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3177,13 +3151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="10251">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="43" selection-start="1226" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1411">
@@ -3216,7 +3183,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="37" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.5862069" vertical-offset="170" max-vertical-offset="935">
+        <state line="24" column="37" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-9.153846" vertical-offset="170" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="303" column="21" selection-start="12320" selection-end="12320" vertical-scroll-proportion="11.569445" vertical-offset="153" max-vertical-offset="10353">
           <folding />
         </state>
       </provider>
