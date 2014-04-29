@@ -3,6 +3,8 @@ package com.homerenting.mvc;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,9 @@ public class ContactController {
         slf4jLogger.info("==ModelAndView contact(Model model)==");
         ModelAndView mav = new ModelAndView();
         mav.setViewName("contact");
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        mav.addObject("username", name);
 		return mav;
 	}
 }

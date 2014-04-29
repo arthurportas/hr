@@ -1,16 +1,20 @@
 <div class="span4">
-
-<#if LOGGEDIN_USER??>
-    tretas->${LOGGEDIN_USER}
-</#if>
-
-
     <div class="phone-number pull-right">
+        <#if username?has_content && username!= "anonymousUser" >
+            ${username}
+            <a href="<@spring.url 'j_spring_security_logout'/>" id="logout" class="btn btn-warning">
+                <@spring.messageText "LOGOUT", "Sair"/>
+            </a>
+        <#else>
+            <a href="/login/new" class="btn btn-primary btn-lg">
+                <i class="icon-user"></i> <@spring.messageText "LOGIN", "Entrar"/></a>
+            </a>
+            <a href="/announces" id="newAnnounce" class="btn btn-success">
+                <@spring.messageText "INSERT.ANNOUNCE", "Inserir Anúncio"/>
+            </a>
+        </#if>
+
         <!-- Button trigger modal -->
-        <a href="/login/new" class="btn btn-primary btn-lg">
-            <i class="icon-user"></i> <@spring.messageText "LOGIN", "Entrar"/></a>
-        </a>
-        <a href="/announces" id="newAnnounce" class="btn btn-success"><@spring.messageText "INSERT.ANNOUNCE", "Inserir Anúncio"/></a>
 
         <!-- Modal -->
 <#--

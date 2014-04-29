@@ -23,9 +23,6 @@
                                 <tr>
                                     <td colspan='2'><input name="submit" type="submit" value="submit" /></td>
                                 </tr>
-                                <tr>
-                                    <td colspan='2'><input name="reset" type="reset" /></td>
-                                </tr>
                             </table>
 
                         </form>

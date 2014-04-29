@@ -7,6 +7,7 @@
         <div class="span8">
             <div class="box-container">
                 <div class="padding30">
+
                     <h2 class="page-title">Contact us</h2>
                     <#--<ul class="unstyled">
                         <li>

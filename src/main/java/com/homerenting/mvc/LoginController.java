@@ -61,7 +61,6 @@ public class LoginController {
             viewName = "index";//TODO redirect to view where use came from
             Authentication auth = SecurityContextHolder.getContext().getAuthentication();
             String name = auth.getName(); //get logged in username
-
             mav.addObject("username", name);
 
             request.getSession().setAttribute("LOGGEDIN_USER", userExists);
@@ -73,6 +72,12 @@ public class LoginController {
     @RequestMapping(value = "/login/new", method = RequestMethod.GET)
     public ModelAndView loginForm() {
         ModelAndView mav = new ModelAndView("login");
+        return mav;
+    }
+
+    @RequestMapping(value = "/loginfailed", method = RequestMethod.GET)
+    public ModelAndView loginError() {
+        ModelAndView mav = new ModelAndView("loginfailed");
         return mav;
     }
 }

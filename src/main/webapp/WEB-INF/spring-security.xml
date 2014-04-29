@@ -7,14 +7,18 @@
 
 	<http auto-config="true">
 		<intercept-url pattern="/announces*" access="ROLE_USER" />
-
-		<form-login login-page="/login/new" default-target-url="/welcome" authentication-failure-url="/loginfailed" />
+        <intercept-url pattern="/boffice*" access="ROLE_ADMIN" />
+        <intercept-url pattern="/**" access='ROLE_ANONYMOUS,ROLE_USER,ROLE_ADMIN'/>
+        <!-- access denied page -->
+        <access-denied-handler error-page="/403" />
+		<form-login login-page="/login/new" default-target-url="/announces" authentication-failure-url="/loginfailed" />
 	</http>
 
 	<authentication-manager>
 		<authentication-provider>
 			<user-service>
 				<user name="arthur" password="123456" authorities="ROLE_USER" />
+                <user name="helder" password="123456" authorities="ROLE_USER" />
 			</user-service>
 		</authentication-provider>
 	</authentication-manager>

@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,6 +33,9 @@ public class LawController {
         slf4jLogger.info("==ModelAndView saleTerms(Model model)==");
         ModelAndView mav = new ModelAndView();
         mav.setViewName("saleTerms");
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        mav.addObject("username", name);
 		return mav;
 	}
 
@@ -39,6 +44,9 @@ public class LawController {
         slf4jLogger.info("==ModelAndView rentalTerms(Model model)==");
         ModelAndView mav = new ModelAndView();
         mav.setViewName("rentalTerms");
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        mav.addObject("username", name);
         return mav;
     }
 }
