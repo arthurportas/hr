@@ -60,4 +60,7 @@
         $.cloudinary.config({"api_key": "681112152891473","cloud_name": "homerenting"});
     </script>
 
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/tabs-addon.js'/>"/>
+    <script src="js/tabs-addon.js"></script>
+
 </html>

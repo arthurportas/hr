@@ -20,6 +20,7 @@
         <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/theme-panel/theme-panel.css'/>"/>
         <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/modules/login/login.css'/>"/>
         <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/modules/announces/bwizard.css'/>"/>
+        <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/modules/login/preview.min.css'/>"/>
 
         <!-- Favicon and touch icons  -->
         <link href="<@spring.url '/static/resources/realto-html/ico/apple-touch-icon-144-precomposed.png'/>" rel="apple-touch-icon-precomposed" sizes="144x144">
