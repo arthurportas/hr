@@ -6,12 +6,14 @@
                     <div class="row">
                         <div class="span12 head-container">
                             <div class="row">
-                                <div class="span8 hidden-phone">
+
+                               <#--<div class="span8 hidden-phone">
                                     <h2 class="head-title">Welcome to Realto</h2>
                                     <p class="head-message"><strong>Realto xHTML/CSS Template is The Best Solution To Sell House Online.</strong><br />
                                         This template is appropriate for Real Estate Company, who need to do their business online via websites.</p>
                                     <a class="btn btn-large btn-realto span3 header-cta" href="#" title="Buy It Now">Buy It Now!</a>
-                                </div>
+                                </div>-->
+
                                 <div class="span4">
                                     <div class="search-form">
                                         <p><@spring.messageText "FIND.YOUR.NEW.HOME", "Encontre uma nova Casa"/></p>
