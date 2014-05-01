@@ -4,29 +4,28 @@
 <#include "modules/header/header.ftl">
 <div class="container page-content">
     <div class="row">
-        <div class="span12">
+        <div class="span8">
             <div class="box-container">
                 <div class="padding30">
                     <#--<h2 class="page-title">Login</h2>-->
                     <div class="row-fluid" id="demo-1">
-                    <div class="span8 "><#--offset1-->
-                    <div class="tabbable custom-tabs tabs-animated flat flat-all hide-label-980 shadow track-url auto-scroll">
-                        <@renderTabs />
-                    <div class="tab-content ">
-                    <#import "modules/header/login/login-panel1.ftl" as tab1>
-                        <@tab1.renderTab1 />
-                    <#import "modules/header/login/register-panel1.ftl" as tab2>
-                        <@tab2.renderTab2 />
-                    <#import "modules/header/login/forgot-password-panel1.ftl" as tab3>
-                        <@tab3.renderTab3 />
-                    </div>
-
-                    </div>
-                    </div>
+                        <div><#-- class="span8" offset1-->
+                            <div class="tabbable custom-tabs tabs-animated flat flat-all hide-label-980 shadow track-url auto-scroll">
+                                <@renderTabs />
+                                <div class="tab-content ">
+                                <#import "modules/header/login/login-panel1.ftl" as tab1>
+                                    <@tab1.renderTab1 />
+                                <#import "modules/header/login/register-panel1.ftl" as tab2>
+                                    <@tab2.renderTab2 />
+                                <#import "modules/header/login/forgot-password-panel1.ftl" as tab3>
+                                    <@tab3.renderTab3 />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <!-- .span8 -->
 <#--        <div class="span4 widget">
             <div class="widget map box-container padding30">

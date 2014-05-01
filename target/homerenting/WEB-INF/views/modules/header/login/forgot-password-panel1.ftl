@@ -9,34 +9,53 @@
 
 <#macro renderTab3ForgotPasswordForm>
     <div class="span5">
-        <h4><i class="icon-unlock"></i>&nbsp;&nbsp;Password Recovery</h4>
+        <h4><i class="icon-unlock"></i>&nbsp;&nbsp;
+            <@spring.messageText "PASSWORD.RECOVERY", "Recuperar Password"/>
+        </h4>
 
-        <label>Email</label>
-        <input type="text" class="input-block-level" />
-        <label>Security Question</label>
-        <select class="input-block-level">
-            <option disabled="disabled" selected="selected" />---Select---
-            <option />Which Is Your First Mobile
-            <option />What Is Your Pet Name
-            <option />What Is Your Mother Name
-            <option />Which Is Your First Game
-        </select>
-        <label>Answer</label>
-        <input type="text" class="input-block-level" />
-        <br />
-        <br />
-        <a href="#" class=" btn  ">Recover Password&nbsp;&nbsp;&nbsp;<i class="icon-chevron-sign-right"></i></a>
+        <form name='recover-user-password-form' action="" method='POST' role="form">
+
+            <div class="form-group">
+                <label for="recover-user-password-form-email">
+                    Email
+                </label>
+                <input type="text" name="recover-user-password-form-email" class="input-block-level form-control"
+                       id="recover-user-password-form-email" placeholder="<@spring.messageText "ENTER.EMAIL", "Introduza Email"/>"/>
+            </div>
+
+
+            <div class="form-group">
+                <label for="recover-user-password-form-security-question">
+                    <@spring.messageText "SECURITY.QUESTION", "Questão de Segurança"/>
+                </label>
+
+                <@renderSecurityQuestions />
+
+            </div>
+
+            <div class="form-group">
+                <label for="recover-user-password-form-security-question-answer">
+                    <@spring.messageText "ANSWER", "Resposta"/>
+                </label>
+                <input type="text" name="recover-user-password-form-security-question-answer" class="input-block-level form-control"
+                       id="recover-user-password-form-security-question-answer" placeholder="<@spring.messageText "ENTER.ANSWER", "Introduza Resposta"/>"/>
+            </div>
+
+            <button name="submit" type="submit" class="btn btn-default" value="submit">
+                <@spring.messageText "RECOVER.PASSWORD", "Recuperar Password"/><i class="icon-chevron-sign-right"></i>
+            </button>
+
+        </form>
     </div>
 </#macro>
 
 <#macro renderTab3Help>
     <div class="span7">
-        <h4><i class="icon-question"></i>&nbsp;&nbsp;Help</h4>
+        <h4><i class="icon-question"></i>&nbsp;&nbsp;<@spring.messageText "HELP", "Ajuda"/></h4>
         <div class="box">
-            <p>Getting Error With Password Recovery Click Here For <a href="/support">Support</a></p>
+            <p><@spring.messageText "GETTING.ERROR.WITH.PASSWORD.RECOVERY", "Dificuldade na Recuperação de Password Click Aqui Para"/>
+                <a href="/support"><@spring.messageText "SUPPORT", "Suporte"/></a></p>
             <ul>
-
-
                 <li>Vestibulum pharetra lectus montes lacus!</li>
                 <li>Iaculis lectus augue pulvinar taciti.</li>
             </ul>
@@ -54,4 +73,18 @@
 
         </div>
     </div>
+</#macro>
+
+<#macro renderSecurityQuestions>
+    <select class="input-block-level" id="recover-user-password-form-security-question">
+        <option disabled="disabled" selected="selected" />
+        ---<@spring.messageText "SELECT", "Selecione"/>---<#--TODO: BE enum for this-->
+        <#--<#list securityQuestions as sq>
+            <option value="${sq.value}"><@spring.messageText "WHICH.IS.YOUR.${(sq.value)?string?upper_case}", "${sq.value?string?capitalize}"/></option>
+        </#list>-->
+        <option />Which Is Your First Mobile
+        <option />What Is Your Pet Name
+        <option />What Is Your Mother Name
+        <option />Which Is Your First Game
+    </select>
 </#macro>

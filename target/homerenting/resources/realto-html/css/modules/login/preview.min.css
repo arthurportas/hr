@@ -590,7 +590,7 @@ body .tabbable.grey .tab-pane a:hover {
 }
 
 .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane input, .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane select, .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane textarea, .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane .add-on, .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane label, .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane .btn, .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane .btn-mini, .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane .btn-small, .tabbable.custom-tabs.flat-all > .tab-content > .tab-pane .btn-large {
-    border-radius: 0
+    /*border-radius: 0*/
 }
 
 .tabbable.custom-tabs.mini > .nav-tabs > li > a {

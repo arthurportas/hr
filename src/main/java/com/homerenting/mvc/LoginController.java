@@ -1,6 +1,7 @@
 package com.homerenting.mvc;
 
 import com.homerenting.domain.User;
+import com.homerenting.domain.modules.header.login.SecurityQuestions;
 import com.homerenting.services.CompanyMOTDServiceImpl;
 import com.homerenting.services.ICompanyMOTDService;
 import com.homerenting.services.IUserService;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
+import java.security.Security;
 
 @Controller(LoginController.COMPONENT_NAME)
 public class LoginController {
@@ -81,6 +83,7 @@ public class LoginController {
         slf4jLogger.info("==ModelAndView loginForm()==");
         ModelAndView mav = new ModelAndView("login");
         mav.addObject("motd", motdService.getById(1L));
+        mav.addObject("securityQuestions", SecurityQuestions.values());
         return mav;
     }
 
