@@ -16,11 +16,13 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * Created by Arthur on 21/04/14.
  */
-@Controller
+@Controller(MailController.COMPONENT_NAME)
 @RequestMapping("/email")
 public class MailController {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(MailController.class);
+
+    public static final String COMPONENT_NAME = "mailController";
 
     @Autowired
     private JavaMailSender mailSender;
@@ -51,7 +53,7 @@ public class MailController {
         email.setFrom(emailContact.getEmailFrom());
         email.setTo(emailContact.getEmailFrom());//to should be hardcoded as it's company contact
         email.setSubject("subject");
-        email.setText(emailContact.getMessage());
+        email.setText(emailContact.getEmailMessage());
 
         // sends the e-mail
         try {

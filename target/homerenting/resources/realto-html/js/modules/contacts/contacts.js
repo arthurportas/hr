@@ -1,14 +1,14 @@
 $('button.contacts-email').click(function(e){
 
     e.preventDefault();
-    var name = $('.contacts-email-name').val();
+    var emailName = $('.contacts-email-name').val();
     var emailFrom = $('.contacts-email-from').val();
-    var message = $('.contacts-email-msg').val();
+    var emailMessage = $('.contacts-email-msg').val();
 
     $.ajax({
         type: "POST",
         url: "/email/one/plain",
-        data: JSON.stringify({ name: name, emailFrom: emailFrom, message: message }),
+        data: JSON.stringify({ emailName: emailName, emailFrom: emailFrom, emailMessage: emailMessage }),
         contentType: 'application/json',
         beforeSend: function() {
             $('div.contacts-blockUI').block({

@@ -14,10 +14,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.security.Principal;
 
-@Controller
+@Controller(HTTPCodesController.COMPONENT_NAME)
 public class HTTPCodesController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(HTTPCodesController.class);
+
+    public static final String COMPONENT_NAME = "httpCodesController";
 
 	@RequestMapping(value = "/403", method = RequestMethod.GET)
 	public ModelAndView accessDenied(Principal user) {

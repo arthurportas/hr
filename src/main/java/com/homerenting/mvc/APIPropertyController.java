@@ -3,6 +3,8 @@ package com.homerenting.mvc;
 import com.homerenting.domain.Property;
 import com.homerenting.services.IPropertyService;
 import com.homerenting.services.PropertyServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
@@ -14,9 +16,13 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@Controller
+@Controller(APIPropertyController.COMPONENT_NAME)
 @RequestMapping("api")
 public class APIPropertyController {
+
+    private static final Logger slf4jLogger = LoggerFactory.getLogger(APIPropertyController.class);
+
+    public static final String COMPONENT_NAME = "apiPropertyController";
 
     @Qualifier(PropertyServiceImpl.COMPONENT_NAME)
     @Autowired
@@ -26,6 +32,7 @@ public class APIPropertyController {
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public List<Property> displaySortedProperties(Model model) {
+        slf4jLogger.info("==List<Property> displaySortedProperties(Model model)==");
         return propertyService.getAllOrderedByName();
     }
 
@@ -33,6 +40,7 @@ public class APIPropertyController {
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public List<Property> getAllByNamePattern(@PathVariable String namePattern) {
+        slf4jLogger.info("==List<Property> getAllByNamePattern(@PathVariable String namePattern)==");
         return propertyService.getAllByNamePattern(namePattern);
     }
 
@@ -40,6 +48,7 @@ public class APIPropertyController {
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public Property getByName(@PathVariable String name) {
+        slf4jLogger.info("==Property getByName(@PathVariable String name)==");
         return propertyService.getByName(name);
     }
 
@@ -47,6 +56,7 @@ public class APIPropertyController {
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public Property getById(@PathVariable Long id) {
+        slf4jLogger.info("==Property getById(@PathVariable Long id)==");
         return propertyService.getById(id);
     }
 
@@ -55,6 +65,7 @@ public class APIPropertyController {
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
     public String registerNewProperty(@Valid @ModelAttribute("newProperty") Property newProperty, BindingResult result, Model model) {
+        slf4jLogger.info("==String registerNewProperty(@Valid @ModelAttribute(\"newProperty\") Property newProperty, BindingResult result, Model model)==");
         if (!result.hasErrors()) {
             propertyService.save(newProperty);
             return "redirect:/";

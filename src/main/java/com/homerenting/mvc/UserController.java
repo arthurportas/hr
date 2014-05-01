@@ -9,6 +9,7 @@ import javax.validation.Valid;
 import com.homerenting.domain.User;
 import com.homerenting.domain.UserKind;
 import com.homerenting.repo.IUserDao;
+import com.homerenting.repo.UserDaoImpl;
 import com.neovisionaries.i18n.CountryCode;
 
 import org.codehaus.jackson.JsonGenerationException;
@@ -17,6 +18,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -25,16 +27,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller
+@Controller(UserController.COMPONENT_NAME)
 public class UserController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(UserController.class);
 
-	@Autowired
+    public static final String COMPONENT_NAME = "userController";
+
+    @Qualifier(UserDaoImpl.COMPONENT_NAME)
+    @Autowired
 	private IUserDao userDao;
 
 	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	public String displaySortedMembers(Model model) {
+        slf4jLogger.info("==String displaySortedMembers(Model model)==");
 		model.addAttribute("newUser", new User());
 		model.addAttribute("users", userDao.findAllOrderedByName());
 		return "index";
@@ -42,14 +48,15 @@ public class UserController {
 
     @RequestMapping(value = "/passwd", method = RequestMethod.GET)
     public String changeUserPassword(Model model) {
-        //TODO
-
+        slf4jLogger.info("==String changeUserPassword(Model model)==");
         return "index";
     }
 
 	@RequestMapping(value = "/addUser", method = RequestMethod.GET)
 	public String registerNewUser(@ModelAttribute("newUser") @Valid User newUser,
 			BindingResult result, Model model) {
+        slf4jLogger.info("==String registerNewUser(@ModelAttribute(\"newUser\") @Valid User newUser,\n" +
+                "\t\t\tBindingResult result, Model model)==");
 		if (!result.hasErrors()) {
 		//userDao.create(newUser);
 		return "cool";	

@@ -29,9 +29,9 @@
                         <div class="contacts-alert"></div>
 
                         <form class="margin300" method="post">
-                            <input class="span6 contacts-email-name" placeholder="<@spring.messageText "PLEASE.INSERT.YOUR.NAME", "Pf, preencha o nome"/>" type="text" name="name">
+                            <input class="span6 contacts-email-name" placeholder="<@spring.messageText "PLEASE.INSERT.YOUR.NAME", "Pf, preencha o nome"/>" type="text" name="emailName">
                             <input class="span6 pull-right contacts-email-from" placeholder="<@spring.messageText "PLEASE.INSERT.YOUR.EMAIL", "Pf, preencha o seu email"/>" type="text" name="emailFrom">
-                            <textarea class="span12 contacts-email-msg" placeholder="<@spring.messageText "WRITE.YOUR.MESSAGE", "Escreva mensagem"/>" rows="6" name="message"></textarea>
+                            <textarea class="span12 contacts-email-msg" placeholder="<@spring.messageText "WRITE.YOUR.MESSAGE", "Escreva mensagem"/>" rows="6" name="emailMessage"></textarea>
                             <div class="clearfix">
                                 <button class="btn btn-realto span6 contacts-email"><@spring.messageText "SUBMIT", "Enviar"/></button>
                             </div>

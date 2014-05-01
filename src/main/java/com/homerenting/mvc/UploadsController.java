@@ -7,10 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+@Controller(UploadsController.COMPONENT_NAME)
 public class UploadsController {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(UploadsController.class);
+
+    public static final String COMPONENT_NAME = "uploadsController";
 
     @RequestMapping(value = "/uploads", method = RequestMethod.GET)
     public ModelAndView handleUploads() {

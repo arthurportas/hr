@@ -10,13 +10,13 @@
                     <#--<h2 class="page-title">Login</h2>-->
                     <div class="row-fluid" id="demo-1">
                     <div class="span10 offset1">
-                    <div class="tabbable custom-tabs tabs-animated  flat flat-all hide-label-980 shadow track-url auto-scroll">
+                    <div class="tabbable custom-tabs tabs-animated flat flat-all hide-label-980 shadow track-url auto-scroll">
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#panel1" data-toggle="tab" class="active "><i class="icon-lock"></i>&nbsp;<span>Login Panel</span></a></li>
                         <li><a href="#panel2" data-toggle="tab"><i class="icon-user"></i>&nbsp;<span>Register Panel</span></a></li>
                         <li><a href="#panel3" data-toggle="tab"><i class="icon-key"></i>&nbsp;<span>Forgot Password</span></a></li>
-                        <li><a href="#panel4" data-toggle="tab"><i class="icon-envelope-alt"></i>&nbsp;<span>Contact Us</span></a></li>
                     </ul>
+
                     <div class="tab-content ">
                         <div class="tab-pane active" id="panel1">
                             <div class="row-fluid">
@@ -25,10 +25,12 @@
                                     <form name='loginForm' action="<@spring.url 'j_spring_security_check'/>" method='POST'>
                                         <label>Username</label>
                                         <input type="text" name='j_username' class="input-block-level" />
-                                        <label>Password<a href="#" class="pull-right"><i class="icon-question-sign"></i>&nbsp;Forgot Password</a> </label>
+                                        <label>Password<a href="/login/new#panel3" class="pull-right"><i class="icon-question-sign"></i>&nbsp;Forgot Password</a> </label>
                                         <input type="password" name='j_password' class="input-block-level" />
                                         <label>
-                                            <button type="button" data-toggle="button" class="btn btn-mini custom-checkbox active"><i class="icon-ok"></i></button>
+<#--
+                                            <button type="button" name="_spring_security_remember_me" data-toggle="button" class="btn btn-mini custom-checkbox active"><i class="icon-ok"></i></button>
+-->                                     <input type="checkbox" name="_spring_security_remember_me" />
                                             &nbsp;&nbsp;&nbsp;Remember Me
                                         </label>
                                         <br />
@@ -44,9 +46,13 @@
                                         <a class="icon-facebook facebook"></a>
                                         <a class="icon-twitter twitter"></a>
                                         <a class="icon-google-plus google-plus"></a>
+<#--
                                         <a class="icon-pinterest pinterest"></a>
+-->
                                         <a class="icon-linkedin linked-in"></a>
+<#--
                                         <a class="icon-github github"></a>
+-->
                                     </div>
                                 </div>
                                 <div class="span4">
@@ -61,7 +67,7 @@
                                     </div>
                                     <div class="box">
                                         Don't Have An Account.<br />
-                                        Click Here For <a href="#" data-toggle="tab">Free Register</a>
+                                        Click Here For <a href="/login/new#panel2" data-toggle="tab">Free Register</a>
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +86,7 @@
                                     <input type="password" class="input-block-level" />
                                     <label>
                                         <button type="button" data-toggle="button" class="btn btn-mini custom-checkbox active"><i class="icon-ok"></i></button>
-                                        &nbsp;&nbsp;&nbsp;I Aggree With <a href="#">Terms &amp; Conditions</a>
+                                        &nbsp;&nbsp;&nbsp;I Aggree With <a href="/terms">Terms &amp; Conditions</a>
                                     </label>
                                     <br />
 
@@ -93,9 +99,13 @@
                                         <a class="icon-facebook facebook"></a>
                                         <a class="icon-twitter twitter"></a>
                                         <a class="icon-google-plus google-plus"></a>
+<#--
                                         <a class="icon-pinterest pinterest"></a>
+-->
                                         <a class="icon-linkedin linked-in"></a>
+<#--
                                         <a class="icon-github github"></a>
+-->
                                     </div>
                                 </div>
                                 <div class="span4">
@@ -110,12 +120,11 @@
                                     </div>
                                     <div class="box">
                                         Already Have An Account.<br />
-                                        Click Here For <a href="#" data-toggle="tab">Login</a>
+                                        Click Here For <a href="/login/new#panel1" data-toggle="tab">Login</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="tab-pane" id="panel3">
                             <div class="row-fluid">
                                 <div class="span5">
@@ -140,7 +149,7 @@
                                 <div class="span7">
                                     <h4><i class="icon-question"></i>&nbsp;&nbsp;Help</h4>
                                     <div class="box">
-                                        <p>Getting Error With Password Recovery Click Here For <a href="#">Support</a></p>
+                                        <p>Getting Error With Password Recovery Click Here For <a href="/support">Support</a></p>
                                         <ul>
 
 
@@ -165,7 +174,7 @@
 
 
                         </div>
-                        <div id="panel4" class="tab-pane">
+                        <#--<div id="panel4" class="tab-pane">
                             <div class="row-fluid">
                                 <div class="span5">
                                     <h4><i class="icon-envelope-alt"></i>&nbsp;&nbsp;Contact Us</h4>
@@ -214,7 +223,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
                     </div>
 

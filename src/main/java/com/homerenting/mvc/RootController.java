@@ -3,9 +3,7 @@ package com.homerenting.mvc;
 import com.homerenting.domain.District;
 import com.homerenting.domain.modules.header.search.PropertyStatus;
 import com.homerenting.domain.modules.header.search.PropertyKind;
-import com.homerenting.services.IDistrictService;
-import com.homerenting.services.IPropertyService;
-import com.homerenting.services.IRegionService;
+import com.homerenting.services.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,10 +21,12 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.Arrays;
 import java.util.List;
 
-@Controller
+@Controller(RootController.COMPONENT_NAME)
 public class RootController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(RootController.class);
+
+    public static final String COMPONENT_NAME = "rootController";
 
     @Qualifier("districtServiceImpl")
     @Autowired
@@ -39,6 +39,10 @@ public class RootController {
     @Qualifier("propertyServiceImpl")
     @Autowired
     private IPropertyService propertyService;
+
+    @Qualifier(CompanyMOTDServiceImpl.COMPONENT_NAME)
+    @Autowired
+    private ICompanyMOTDService motdService;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
@@ -55,6 +59,7 @@ public class RootController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
+        mav.addObject("motd", motdService.getById(1L));
 		return mav;
 	}
 }

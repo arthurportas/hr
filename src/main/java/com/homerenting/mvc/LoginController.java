@@ -19,12 +19,12 @@ import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 
-@Controller
+@Controller(LoginController.COMPONENT_NAME)
 public class LoginController {
 
-    public static final String COMPONENT_NAME = "loginController";
-
     private static final Logger slf4jLogger = LoggerFactory.getLogger(LoginController.class);
+
+    public static final String COMPONENT_NAME = "loginController";
 
     @Autowired
     LoginFormValidator loginFormValidator;
@@ -71,12 +71,14 @@ public class LoginController {
 
     @RequestMapping(value = "/login/new", method = RequestMethod.GET)
     public ModelAndView loginForm() {
+        slf4jLogger.info("==ModelAndView loginForm()==");
         ModelAndView mav = new ModelAndView("login");
         return mav;
     }
 
     @RequestMapping(value = "/loginfailed", method = RequestMethod.GET)
     public ModelAndView loginError() {
+        slf4jLogger.info("==ModelAndView loginError()==");
         ModelAndView mav = new ModelAndView("loginfailed");
         return mav;
     }

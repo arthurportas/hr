@@ -56,11 +56,11 @@ public class ContactFormValidator implements Validator {
             errors.rejectValue("emailFrom", "error.empty.field", "empty email from");
         }
 
-        if (emailData.getName() == null || emailData.getName().length() == 0) {
+        if (emailData.getEmailName() == null || emailData.getEmailName().length() == 0) {
             errors.rejectValue("name", "error.empty.field", "empty name");
         }
 
-        if (emailData.getMessage() == null || emailData.getMessage().length() == 0) {
+        if (emailData.getEmailMessage() == null || emailData.getEmailMessage().length() == 0) {
             errors.rejectValue("message", "error.empty.field", "empty message");
         }
     }

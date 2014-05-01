@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.neovisionaries.i18n.CountryCode;
 
-@Controller
+@Controller(CountryController.COMPONENT_NAME)
 public class CountryController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(CountryController.class);
-	
+    public static final String COMPONENT_NAME = "countryController";
 
 	@RequestMapping(value = "/country", method = RequestMethod.GET)
 	@ResponseBody

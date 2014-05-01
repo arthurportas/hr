@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 
-@Controller
+@Controller(ResultPageController.COMPONENT_NAME)
 public class ResultPageController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(ResultPageController.class);
+
+    public static final String COMPONENT_NAME = "resultPageController";
 
 	@RequestMapping(value = "/results", method = RequestMethod.GET)
 	public ModelAndView displayResults (Model model) {

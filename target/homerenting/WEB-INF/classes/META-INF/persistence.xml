@@ -14,6 +14,9 @@
        <class>com.homerenting.domain.Parish</class>
        <class>com.homerenting.domain.Region</class>
        <class>com.homerenting.domain.Property</class>
+       <class>com.homerenting.domain.CompanyMOTD</class>
+       <class>com.homerenting.domain.Apartment</class>
+       <class>com.homerenting.domain.modules.header.contacts.EmailContact</class>
        <validation-mode>CALLBACK</validation-mode>
       <properties>
 		 <property name="jboss.entity.manager.factory.jndi.name" value="java:jboss/spring-quickstart/persistence" />

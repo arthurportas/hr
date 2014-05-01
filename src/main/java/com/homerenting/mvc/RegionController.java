@@ -2,7 +2,11 @@ package com.homerenting.mvc;
 
 import com.homerenting.domain.Region;
 import com.homerenting.services.IRegionService;
+import com.homerenting.services.RegionServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,21 +16,23 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@Controller
+@Controller(RegionController.COMPONENT_NAME)
 @RequestMapping("api")
 public class RegionController {
 
-    private IRegionService regionService;
+    private static final Logger slf4jLogger = LoggerFactory.getLogger(RegionController.class);
 
+    public static final String COMPONENT_NAME = "regionController";
+
+    @Qualifier(RegionServiceImpl.COMPONENT_NAME)
     @Autowired
-    public RegionController(IRegionService regionService) {
-        this.regionService = regionService;
-    }
+    private IRegionService regionService;
 
     @RequestMapping(value = "regions", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public List<Region> displaySortedRegions(Model model) {
+        slf4jLogger.info("==List<Region> displaySortedRegions(Model model)==");
         return regionService.getAllOrderedByName();
     }
 
@@ -34,6 +40,7 @@ public class RegionController {
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public List<Region> getAllByNamePattern(@PathVariable String namePattern) {
+        slf4jLogger.info("==List<Region> getAllByNamePattern(@PathVariable String namePattern)==");
         return regionService.getAllByNamePattern(namePattern);
     }
 
@@ -41,6 +48,7 @@ public class RegionController {
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public Region getByName(@PathVariable String name) {
+        slf4jLogger.info("==Region getByName(@PathVariable String name)==");
         return regionService.getByName(name);
     }
 
@@ -48,6 +56,7 @@ public class RegionController {
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public Region getById(@PathVariable Long id) {
+        slf4jLogger.info("==Region getById(@PathVariable Long id)==");
         return regionService.getById(id);
     }
 
@@ -56,6 +65,7 @@ public class RegionController {
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
     public String registerNewRegion(@Valid @ModelAttribute("newRegion") Region newRegion, BindingResult result, Model model) {
+        slf4jLogger.info("==String registerNewRegion(@Valid @ModelAttribute(\"newRegion\") Region newRegion, BindingResult result, Model model)==");
         if (!result.hasErrors()) {
             regionService.save(newRegion);
             return "redirect:/";
