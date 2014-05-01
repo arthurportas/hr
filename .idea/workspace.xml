@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="Started spring security on boffice&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Company.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/CompanyMOTD.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/CompanyMOTDServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/FinancingController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ICompanyMOTDDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ICompanyMOTDService.java" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__cglib_cglib_nodep_2_2.xml" />
@@ -50,15 +43,18 @@
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__org_springframework_spring_web_3_1_1_RELEASE.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__org_springframework_spring_webmvc_3_1_1_RELEASE.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/security/Roles.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/SupportController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/TermsAndConditionsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/company.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/financing.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/federated-login.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel2.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel3.ftl" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war.xml" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/eduict/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/support.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/terms.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel2.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel3.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel2.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel3.ftl" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.eot" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.svg" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/classes/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
@@ -71,81 +67,47 @@
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/classes/fonts/glyphicons-halflings-regular.woff" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/classes/js/bootstrap.js" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/classes/js/bootstrap.min.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IDistrictDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/DistrictDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_social_spring_social_core_1_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_social_spring_social_facebook_1_0_3_RELEASE.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/deployments/ROOT.war" afterPath="$USER_HOME$/eduict/deployments/ROOT.war" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict.war" afterPath="$USER_HOME$/eduict/target/eduict.war" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.eot" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.eot" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.ttf" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.ttf" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.woff" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.woff" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/.name" afterPath="$USER_HOME$/eduict/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/APIDistrictController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/APIDistrictController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/APIPropertyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/APIPropertyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AnnounceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AnnounceController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Answer_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Apartment.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Apartment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ContactController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ContactController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/validators/ContactFormValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/validators/ContactFormValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/CountryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/CountryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/EmailContact.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/EmailContact.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HTTPCodesController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HTTPCodesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LawController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LawController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Locality_.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MailController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MailController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MemberController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MemberController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/MemberDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/MemberDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/MemberDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/MemberDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MemberRestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MemberRestController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Member_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/NewsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/NewsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ParishController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ParishController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ProfessionalsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ProfessionalsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/Question_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RegionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RegionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ResultPageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ResultPageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/School_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/School_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ServicesController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ServicesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UploadsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UploadsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserRestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserRestController.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/User_.java" afterPath="$USER_HOME$/eduict/target/generated-sources/annotations/com/eduict/model/User_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.js" afterPath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/bootstrap.min.css" afterPath="$USER_HOME$/eduict/target/eduict/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.min.js" afterPath="$USER_HOME$/eduict/target/eduict/resources/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/announces/bwizard.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/announces/bwizard.css" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/compiler.xml" afterPath="$USER_HOME$/eduict/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/contacts/contacts.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/contacts/contacts.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" afterPath="$USER_HOME$/eduict/target/eduict/WEB-INF/eduict-ds.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" afterPath="$USER_HOME$/eduict/.idea/artifacts/eduict_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/footer/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/footer/footer.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" afterPath="$USER_HOME$/eduict/target/eduict/resources/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/import.sql" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/misc.xml" afterPath="$USER_HOME$/eduict/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/modules.xml" afterPath="$USER_HOME$/eduict/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/navigation/navigation.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/navigation/navigation.ftl" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" afterPath="$USER_HOME$/eduict/target/classes/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/WEB-INF/classes/META-INF/persistence.xml" afterPath="$USER_HOME$/eduict/target/eduict/WEB-INF/classes/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/placeholder.js" afterPath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/placeholder.js" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/maven-archiver/pom.properties" afterPath="$USER_HOME$/eduict/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/login/preview.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/login/preview.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rentalTerms.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rentalTerms.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/saleTerms.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/saleTerms.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/style.css" afterPath="$USER_HOME$/eduict/target/eduict/boffice/modules/login/style.css" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/eduict/.idea/workspace.xml" afterPath="$USER_HOME$/eduict/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -235,97 +197,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="navigation.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/navigation/navigation.ftl">
+      <file leaf-file-name="login-panel1.ftl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="25" selection-start="1104" selection-end="1104" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="731">
-              <folding>
-                <element signature="tag#button#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="23" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRestController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserRestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="50" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="595">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RootController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="4" selection-start="1504" selection-end="1613" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1207">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/NewsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="55" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfessionalsController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ProfessionalsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="55" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FinancingController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/FinancingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="55" selection-start="1739" selection-end="1739" vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LawController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LawController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="4" selection-start="791" selection-end="944" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="969">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServicesController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ServicesController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="55" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ContactController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="8" selection-start="1677" selection-end="1724" vertical-scroll-proportion="0.7338129" vertical-offset="102" max-vertical-offset="578">
+            <state line="67" column="9" selection-start="2661" selection-end="2661" vertical-scroll-proportion="0.7296037" vertical-offset="826" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
@@ -350,19 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Apartment.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/footer/footer.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/company.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Company.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/EmailContact.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/validators/ContactFormValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/contacts/contacts.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/announces/bwizard.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/login/preview.min.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LawController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AnnounceController.java" />
@@ -375,7 +237,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HTTPCodesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MailController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MemberController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MemberRestController.java" />
@@ -401,6 +262,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ProfessionalsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/FinancingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ServicesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/federated-login.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" />
       </list>
     </option>
   </component>
@@ -474,6 +349,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
@@ -485,7 +361,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -511,10 +387,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="homerenting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2495,11 +2367,11 @@
       <recent name="com.homerenting.repo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/login" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -3175,7 +3047,7 @@
       <workItem from="1398424419674" duration="391000" />
       <workItem from="1398424872874" duration="10053000" />
       <workItem from="1398709556700" duration="12214000" />
-      <workItem from="1398723884387" duration="30788000" />
+      <workItem from="1398723884387" duration="40473000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -3205,10 +3077,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247393000" />
+    <option name="totallyTimeSpent" value="257078000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="812" extended-state="6" />
+    <frame x="1" y="22" width="1440" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3224,7 +3096,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22083333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19098713" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.6695279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3232,7 +3104,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35" sideWeight="0.84549356" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35" sideWeight="0.84549356" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -3322,177 +3194,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/contacts/contacts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/announces/bwizard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="39" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="2397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/login/preview.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="255" selection-end="255" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="8687">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AnnounceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="1006" selection-end="1071" vertical-scroll-proportion="0.36690646" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/APIDistrictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="77" selection-start="757" selection-end="857" vertical-scroll-proportion="-0.8094059" vertical-offset="701" max-vertical-offset="1105">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/CountryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="683" selection-end="683" vertical-scroll-proportion="-0.3261391" vertical-offset="204" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/APIPropertyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="4" selection-start="862" selection-end="930" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1411">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="397" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HTTPCodesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="923" selection-end="923" vertical-scroll-proportion="-1.6091127" vertical-offset="909" max-vertical-offset="1326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="51" selection-start="3277" selection-end="3277" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MemberRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="96" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="705" selection-end="861" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="52" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ParishController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="701" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1071">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="785" selection-end="953" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RegionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="745" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ResultPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/SupportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="661" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/TermsAndConditionsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="4" selection-start="801" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
@@ -3656,13 +3357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="55" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ProfessionalsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="55" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="578">
@@ -3681,21 +3375,207 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="4" selection-start="791" selection-end="944" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="969">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ServicesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="55" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="578">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ContactController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="8" selection-start="1677" selection-end="1724" vertical-scroll-proportion="0.7338129" vertical-offset="102" max-vertical-offset="578">
+        <state line="38" column="8" selection-start="1677" selection-end="1724" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/neovisionaries/nv-i18n/1.1/nv-i18n-1.1-sources.jar!/com/neovisionaries/i18n/CountryCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="12" selection-start="3435" selection-end="3435" vertical-scroll-proportion="-76.71759" vertical-offset="34128" max-vertical-offset="39678">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="4" selection-start="1063" selection-end="1172" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ServicesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="8" selection-start="1684" selection-end="1731" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="0" selection-start="2611" selection-end="2611" vertical-scroll-proportion="0.0" vertical-offset="1030" max-vertical-offset="1751">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel2.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel3.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel2.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel3.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel2.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel3.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="65" selection-end="65" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="371" selection-end="371" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="82" selection-end="82" vertical-scroll-proportion="0.08478803" vertical-offset="0" max-vertical-offset="1122">
+          <folding>
+            <marker date="1398948471000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398948471000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398948471000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="359" selection-end="359" vertical-scroll-proportion="0.5762712" vertical-offset="0" max-vertical-offset="413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="27" selection-start="369" selection-end="369" vertical-scroll-proportion="0.5762712" vertical-offset="0" max-vertical-offset="413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="345" selection-end="359" vertical-scroll-proportion="0.5762712" vertical-offset="0" max-vertical-offset="413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="33" selection-start="3043" selection-end="3043" vertical-scroll-proportion="-9.807693" vertical-offset="884" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="115" selection-end="133" vertical-scroll-proportion="-3.148148" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="776" selection-end="776" vertical-scroll-proportion="-7.3461537" vertical-offset="81" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="34" selection-start="3348" selection-end="3348" vertical-scroll-proportion="0.2659091" vertical-offset="1260" max-vertical-offset="1700">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="168" selection-end="168" vertical-scroll-proportion="0.16425121" vertical-offset="0" max-vertical-offset="1054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/federated-login.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="18" selection-start="107" selection-end="107" vertical-scroll-proportion="0.23181818" vertical-offset="0" max-vertical-offset="440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/company.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="342" column="21" selection-start="13727" selection-end="13727" vertical-scroll-proportion="-14.615385" vertical-offset="5434" max-vertical-offset="10965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="9" selection-start="2661" selection-end="2661" vertical-scroll-proportion="0.7296037" vertical-offset="826" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>

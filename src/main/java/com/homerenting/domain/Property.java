@@ -1,12 +1,15 @@
 package com.homerenting.domain;
 
 import com.homerenting.domain.modules.header.search.PropertyKind;
+import com.homerenting.domain.modules.header.search.PropertyStatus;
+import com.neovisionaries.i18n.CountryCode;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.Date;
 
 
 @Entity
@@ -48,27 +51,57 @@ public class Property implements Serializable {
     @Enumerated(EnumType.STRING)
     private PropertyKind propertyKind;
 
-    public void setPropertyId(Long propertyId) {
-        this.propertyId = propertyId;
-    }
+    @NotNull
+    @Size(min = 1, max = 25)
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "PROPERTY_TITLE", unique = true, nullable = false)
+    private String propertyTitle;
 
-    public Long getPropertyId() {
-        return propertyId;
-    }
+    @NotNull
+    @Size(min = 1, max = 25)
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "PROPERTY_DESCRIPTION", unique = true, nullable = false)
+    private String propertyDescription;
 
-    public void setPropertyName(String propertyName) {
-        this.propertyName = propertyName;
-    }
+    private float propertyPrice;
 
-    public String getPropertyName() {
-        return propertyName;
-    }
+    private boolean isPriceNegotiable;
 
-    public void setPropertyKind(PropertyKind propertyKind) {
-        this.propertyKind = propertyKind;
-    }
+    private boolean possibleExchange;
 
-    public PropertyKind getPropertyKind() {
-        return propertyKind;
-    }
+    private PropertyStatus propertyStatus;
+
+    private int usefullArea;
+
+
+    private int bruteArea;
+
+    private Date yearOfConstruction;
+
+    private CountryCode countryCode;
+
+    @NotNull
+    @Size(min = 1, max = 25)
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "PROPERTY_DISTRICT", unique = true, nullable = false)
+    private String propertyDistrict;
+
+    @NotNull
+    @Size(min = 1, max = 25)
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "PROPERTY_REGION", unique = true, nullable = false)
+    private String propertyRegion;
+
+    @NotNull
+    @Size(min = 1, max = 25)
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "PROPERTY_PARISH", unique = true, nullable = false)
+    private String propertyParish;
+
+
+
+
+
+
+
 }

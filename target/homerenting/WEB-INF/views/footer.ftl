@@ -63,4 +63,10 @@
     <script src="<@spring.url '/static/resources/realto-html/js/modules/login/tabs-addon.js'/>"/>
     <script src="js/tabs-addon.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("a.recover-password").tooltip();
+        });
+    </script>
+
 </html>

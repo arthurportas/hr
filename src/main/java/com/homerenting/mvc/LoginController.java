@@ -1,6 +1,8 @@
 package com.homerenting.mvc;
 
 import com.homerenting.domain.User;
+import com.homerenting.services.CompanyMOTDServiceImpl;
+import com.homerenting.services.ICompanyMOTDService;
 import com.homerenting.services.IUserService;
 import com.homerenting.services.UserServiceImpl;
 import com.homerenting.validators.LoginFormValidator;
@@ -32,6 +34,10 @@ public class LoginController {
     @Qualifier(UserServiceImpl.COMPONENT_NAME)
     @Autowired
     private IUserService userService;
+
+    @Qualifier(CompanyMOTDServiceImpl.COMPONENT_NAME)
+    @Autowired
+    private ICompanyMOTDService motdService;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ModelAndView login(@ModelAttribute("login") User user,
@@ -66,6 +72,7 @@ public class LoginController {
             request.getSession().setAttribute("LOGGEDIN_USER", userExists);
         }
         mav.setViewName(viewName);
+        mav.addObject("motd", motdService.getById(1L));
         return mav;
     }
 
@@ -73,6 +80,7 @@ public class LoginController {
     public ModelAndView loginForm() {
         slf4jLogger.info("==ModelAndView loginForm()==");
         ModelAndView mav = new ModelAndView("login");
+        mav.addObject("motd", motdService.getById(1L));
         return mav;
     }
 
@@ -80,6 +88,7 @@ public class LoginController {
     public ModelAndView loginError() {
         slf4jLogger.info("==ModelAndView loginError()==");
         ModelAndView mav = new ModelAndView("loginfailed");
+        mav.addObject("motd", motdService.getById(1L));
         return mav;
     }
 }
