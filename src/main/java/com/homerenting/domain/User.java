@@ -2,14 +2,7 @@ package com.homerenting.domain;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -25,14 +18,14 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-@Table(name="USER",uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name="USER",uniqueConstraints = @UniqueConstraint(columnNames = "USER_EMAIL"))
 @NamedQueries({
         @NamedQuery(name = "User.FIND_ALL", query = "select u from User u"),
         @NamedQuery(name = "User.FIND_BY_EMAIL", query = "select u from User u where u.email=:email")
 })
 @XmlRootElement(name = "user")
 @XmlAccessorType(XmlAccessType.PROPERTY)
-public class User extends BaseEntity implements Serializable {
+public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -41,81 +34,99 @@ public class User extends BaseEntity implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	private Long id;
+    @Column(name = "USER_ID", unique = true, nullable = false)
+	private Long userId;
 
 	@NotEmpty(message = "firstName may not be empty")
 	@Size(min = 1, max = 40)
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "USER_FIRST_NAME", unique = true, nullable = false)
 	private String firstName = StringUtils.EMPTY;
 
 	@NotEmpty(message = "lastName may not be empty")
 	@Size(min = 1, max = 40)
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "USER_LAST_NAME", unique = true, nullable = false)
 	private String lastName = StringUtils.EMPTY;
 
 	@NotEmpty(message = "email may not be empty")
 	@Size(min = 1, max = 40, message = "email must be greater than 1 and less than 40")
 	@Email(message = "email not valid")
+    @Column(name = "USER_EMAIL", unique = true, nullable = false)
 	private String email = StringUtils.EMPTY;
 	
 	@NotEmpty(message = "address may not be empty")
 	@Size(min = 1, max = 200, message = "address must be greater than 1 and less than 200")
 	@Pattern(regexp = "[A-Za-z0-9 ]*", message = "must contain only numbers,letters or spaces")
+    @Column(name = "USER_ADDRESS", unique = true, nullable = false)
 	private String address = StringUtils.EMPTY;
 
 	@NotEmpty(message = "zipCode may not be empty")
 	@Size(min = 1, max = 10, message = "zipCode must be greater than 1 and less than 10")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
+    @Column(name = "USER_ZIP_CODE", unique = true, nullable = false)
 	private String zipCode = StringUtils.EMPTY;
 
 	@NotEmpty(message = "city may not be empty")
 	@Size(min = 1, max = 10, message = "city must be greater than 1 and less than 10")
 	@Pattern(regexp = "[A-Za-z]*", message = "must contain only letters")
+    @Column(name = "USER_CITY", unique = true, nullable = false)
 	private String city = StringUtils.EMPTY;
 
 	@NotEmpty(message = "country may not be empty")
 	@Size(min = 1, max = 10, message = "country must be greater than 1 and less than 10")
 	@Pattern(regexp = "[A-Za-z]*", message = "must contain only letters")
+    @Column(name = "USER_COUNTRY", unique = true, nullable = false)
 	private String country = StringUtils.EMPTY;
 
 	@NotEmpty(message = "userKind may not be empty")
 	@Size(min = 0, max = 12, message = "userKind must be less than 12")
 	@Pattern(regexp = "[A-Za-z]*", message = "must contain only letters")
-	private String userKind = StringUtils.EMPTY;/*particular-empresarial*/
+    @Column(name = "USER_KIND", unique = true, nullable = false)
+    @Enumerated(EnumType.STRING)
+	private UserKind userKind;
 
 	@Size(min = 0, max = 10, message = "company must be greater than 1 and less than 10")
 	@Pattern(regexp = "[A-Za-z0-9 ]*", message = "must contain only numbers,letters or spaces")
+    @Column(name = "USER_COMPANY", unique = true, nullable = false)
 	private String company = StringUtils.EMPTY;
 
 	@NotEmpty(message = "nif may not be empty")
 	@Size(min = 9, max = 9, message = "nif must be exactly 9 numbers")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
+    @Column(name = "USER_NIF", unique = true, nullable = false)
 	private String nif = StringUtils.EMPTY;
 
 	@Size(min = 1, max = 10)
 	@Pattern(regexp = "[0-9]*", message = "phoneNumber must contain only numbers")
+    @Column(name = "USER_PHONE_NUMBER", unique = true, nullable = false)
 	private String phoneNumber = StringUtils.EMPTY;
 
 	@NotEmpty(message = "cellPhone may not be empty")
 	@Size(min = 9, max = 9, message = "cellPhone must be exactly 9 numbers")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
+    @Column(name = "USER_CELL_PHONE", unique = true, nullable = false)
 	private String cellPhone = StringUtils.EMPTY;
 
 	@Size(min = 0, max = 9, message = "fax must be exactly 9 numbers")
 	@Pattern(regexp = "[0-9]*", message = "must contain only numbers")
+    @Column(name = "USER_FAX", unique = true, nullable = false)
 	private String fax = StringUtils.EMPTY;
 
 	@NotEmpty(message = "password may not be empty")
 	@Size(min = 5, max = 20, message = "password must be 5 digits or more")
+    @Column(name = "USER_PASSWORD", unique = true, nullable = false)
 	private String password;/* SHA-1 */
 
 	/* ==========================GETTERS/SETTERS======================= */
 
 	public Long getId() {
-		return id;
+		return this.userId;
 	}
 
 	@XmlElement
 	public void setId(Long id) {
-		this.id = id;
+		this.userId = id;
 	}
 
 	public String getFirstName() {
@@ -181,12 +192,12 @@ public class User extends BaseEntity implements Serializable {
 		this.country = country;
 	}
 
-	public String getUserKind() {
+	public UserKind getUserKind() {
 		return userKind;
 	}
 
 	@XmlElement
-	public void setUserKind(String userKind) {
+	public void setUserKind(UserKind userKind) {
 		this.userKind = userKind;
 	}
 
@@ -244,43 +255,4 @@ public class User extends BaseEntity implements Serializable {
 		this.password = password;
 	}
 
-	/* ==========================CONSTRUCTOR======================= */
-
-	public User() {
-
-	}
-
-	/* ====================HASHCODE,EQUALS,TOSTRING================= */
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.realtv.domain.BaseEntity#hashCode()
-	 */
-
-	@Override
-	public int hashCode() {
-		return HashCodeBuilder.reflectionHashCode(this);
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.realtv.domain.BaseEntity#equals()
-	 */
-
-	@Override
-	public boolean equals(Object obj) {
-		return EqualsBuilder.reflectionEquals(this, obj);
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.realtv.domain.BaseEntity#toString()
-	 */
-
-	@Override
-	public String toString() {
-		return ToStringBuilder.reflectionToString(this);
-	}
 }

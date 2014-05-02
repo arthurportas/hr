@@ -2,6 +2,7 @@ package com.homerenting.test;
 
 import java.util.List;
 
+import com.homerenting.domain.UserKind;
 import junit.framework.Assert;
 
 import com.homerenting.domain.User;
@@ -59,7 +60,7 @@ public class UserDaoTest {
 		user.setZipCode("4100");
 		user.setCity("gaia");
 		user.setCountry("portugal");
-		user.setUserKind("particular");
+		user.setUserKind(UserKind.CORPORATE);
 		user.setNif("999999999");
 		user.setPhoneNumber("212555212");
 		user.setCellPhone("999222999");
@@ -89,7 +90,7 @@ public class UserDaoTest {
 		user.setZipCode("4100");
 		user.setCity("gaia");
 		user.setCountry("portugal");
-		user.setUserKind("particular");
+		user.setUserKind(UserKind.PRIVATE);
 		user.setNif("999999999");
 		user.setPhoneNumber("212555212");
 		user.setCellPhone("999222999");

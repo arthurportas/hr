@@ -78,13 +78,9 @@
 <#macro renderSecurityQuestions>
     <select class="input-block-level" id="recover-user-password-form-security-question">
         <option disabled="disabled" selected="selected" />
-        ---<@spring.messageText "SELECT", "Selecione"/>---<#--TODO: BE enum for this-->
-        <#--<#list securityQuestions as sq>
-            <option value="${sq.value}"><@spring.messageText "WHICH.IS.YOUR.${(sq.value)?string?upper_case}", "${sq.value?string?capitalize}"/></option>
-        </#list>-->
-        <option />Which Is Your First Mobile
-        <option />What Is Your Pet Name
-        <option />What Is Your Mother Name
-        <option />Which Is Your First Game
+        ---<@spring.messageText "SELECT", "Selecione"/>---
+        <#list securityQuestions as sq>
+            <option value="${sq.value}"><@spring.messageText "WHICH.IS.YOUR.${(sq.value)?string?upper_case?replace(' ' '.')}", "${sq.value?string?capitalize}"/></option>
+        </#list>
     </select>
 </#macro>
