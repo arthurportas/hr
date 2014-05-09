@@ -40,6 +40,22 @@
         </property>
     </bean>
 
+    <!-- Freemarker & templates -->
+    <!-- Factory bean that creates a FreeMarker Configuration and provides it as
+         bean reference. This bean is intended for any kind of usage of FreeMarker
+         in application code, e.g. for generating email content. -->
+    <!-- FreeMarker Configuration is the Main entry point into the FreeMarker API, this class encapsulates the
+         various configuration parameters with which FreeMarker is run -->
+    <bean class="org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean" id="freemarkerConfiguration">
+        <!-- Turn this off to always load via SpringTemplateLoader -->
+        <property name="preferFileSystemAccess" value="false"></property>
+        <property name="templateLoaderPath" value="classpath:/"></property>
+    </bean>
+
+    <bean class="com.homerenting.services.MailServiceImpl" id="mailService">
+        <property name="freemarkerConfiguration" ref="freemarkerConfiguration"></property>
+    </bean>
+
     <mvc:resources mapping="/static/**" location="/"/>
 
     <mvc:default-servlet-handler/>

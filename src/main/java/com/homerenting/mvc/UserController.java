@@ -1,13 +1,9 @@
 package com.homerenting.mvc;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.ServletContext;
 import javax.validation.Valid;
 
 import com.homerenting.domain.AccountTokens;
@@ -17,7 +13,9 @@ import com.homerenting.domain.UserShortProfile;
 import com.homerenting.domain.helpers.TokenGenerator;
 import com.homerenting.repo.IUserDao;
 import com.homerenting.repo.UserDaoImpl;
+import com.homerenting.services.IMailService;
 import com.homerenting.services.IUserShortProfileService;
+import com.homerenting.services.MailServiceImpl;
 import com.homerenting.services.UserShortProfileServiceImpl;
 import com.homerenting.validators.RegisterFormValidator;
 
@@ -29,7 +27,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.mail.*;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -46,9 +43,6 @@ public class UserController {
 
     public static final String COMPONENT_NAME = "userController";
 
-    @Autowired
-    private ServletContext servletContext;
-
     @Qualifier(UserDaoImpl.COMPONENT_NAME)
     @Autowired
 	private IUserDao userDao;
@@ -62,6 +56,10 @@ public class UserController {
 
     @Autowired
     private JavaMailSender mailSender;
+
+    @Qualifier(MailServiceImpl.COMPONENT_NAME)
+    @Autowired
+    private IMailService  mailService;
 
 	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	public String displaySortedMembers(Model model) {
@@ -141,69 +139,24 @@ public class UserController {
             return mav;
         }
 
-        /*if(userShortProfileService.getByEmail(newUser.getEmail())!=null){
+        if(userShortProfileService.getByEmail(newUser.getEmail())!=null){
             //user already exists
-            //TODO add a nice view for this
             mav.setViewName("user-already-exists");
             return mav;
-        }*/
+        }
         userShortProfileService.save(newUser);
 
         String token = TokenGenerator.getUUID();
         AccountTokens accountTokens = new AccountTokens();
         accountTokens.setToken(token);
 
-
         newUser.setToken(accountTokens);
 
         userShortProfileService.update(newUser);
+        //TODO: sender email inside property
+        mailService.sendUserRegistrationMessage("arthurportas@gmail.com", newUser.getEmail(), "subject", token);
 
-        // creates a simple e-mail object
-        SimpleMailMessage email = new SimpleMailMessage();
-        email.setFrom("arthurportas@gmail.com");
-        email.setTo(newUser.getEmail());
-
-        email.setSubject("subject");
-
-        String msg = StringUtils.EMPTY;
-
-        /*InputStream inputStream = null;
-        try {
-            inputStream = servletContext.getResourceAsStream("/WEB-INF/templates/user-register-confirmation-email.ftl");
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-            msg = bufferedReader.readLine();
-        }catch (IOException ioe){
-
-        }
-        finally {
-            if (inputStream != null) {
-                try {
-                    inputStream.close();
-                }catch (IOException ioe){
-
-                }
-            }
-        }*/
-
-        email.setText("nice-UUID.randomUUID();" + msg +token);
-
-        // sends the e-mail
-        try {
-            mailSender.send(email);
-            mav.setViewName("user-register-success");
-            return mav;
-        }catch (MailException me){
-            if(me instanceof MailParseException){
-                slf4jLogger.info("==MailParseException==");
-                slf4jLogger.info(me.getMessage());
-            }else if (me instanceof MailAuthenticationException){
-                slf4jLogger.info("==MailAuthenticationException==");
-                slf4jLogger.info(me.getMessage());
-            }else if (me instanceof MailSendException){
-                slf4jLogger.info("==MailSendException==");
-                slf4jLogger.info(me.getMessage());
-            }
-        }
+        mav.setViewName("user-register-success");
         return mav;
     }
 
