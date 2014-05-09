@@ -3,7 +3,6 @@ package com.homerenting.domain;
 import java.io.Serializable;
 
 import javax.persistence.*;
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -11,9 +10,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -33,7 +29,7 @@ public class UserShortProfile implements Serializable {
     public static final String FIND_BY_EMAIL = "UserShortProfile.FIND_BY_EMAIL";
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_SHORT_PROFILE_ID", unique = true, nullable = false)
 	private Long userId;
 
@@ -44,9 +40,15 @@ public class UserShortProfile implements Serializable {
 	private String email = StringUtils.EMPTY;
 
 	@NotEmpty(message = "password may not be empty")
-	@Size(min = 5, max = 20, message = "password must be 5 digits or more")
+	@Size(min = 5, max = 200, message = "password must be 5 digits or more")
     @Column(name = "USER_PASSWORD", unique = true, nullable = false)
 	private String password;/* SHA-1 */
+
+    private boolean isAccountEnabled = false;
+
+    @OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @JoinColumn(name="ACCOUNT_TOKEN_ID", unique= true, nullable=true, insertable=true, updatable=true)
+    private AccountTokens token;
 
 	/* ==========================GETTERS/SETTERS======================= */
 
@@ -55,7 +57,7 @@ public class UserShortProfile implements Serializable {
 	}
 
 	@XmlElement
-	public void setId(Long id) {
+	public void setId(final Long id) {
 		this.userId = id;
 	}
 
@@ -64,7 +66,7 @@ public class UserShortProfile implements Serializable {
 	}
 
 	@XmlElement
-	public void setEmail(String email) {
+	public void setEmail(final String email) {
 		this.email = email;
 	}
 	
@@ -74,8 +76,26 @@ public class UserShortProfile implements Serializable {
 	}
 
 	@XmlElement
-	public void setPassword(String password) {
+	public void setPassword(final String password) {
 		this.password = password;
 	}
+
+    public boolean isAccountEnabled() {
+        return isAccountEnabled;
+    }
+
+    @XmlElement
+    public void setAccountEnabled(final boolean isAccountEnabled) {
+        this.isAccountEnabled = isAccountEnabled;
+    }
+
+    public AccountTokens getToken() {
+        return token;
+    }
+
+    @XmlElement
+    public void setToken(final AccountTokens token) {
+        this.token = token;
+    }
 
 }

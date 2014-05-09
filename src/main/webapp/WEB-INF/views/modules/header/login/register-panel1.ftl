@@ -13,48 +13,53 @@
         <h4><i class="icon-user"></i>&nbsp;&nbsp;
             <@spring.messageText "REGISTER.HERE", "Registar-me Aqui"/>
         </h4>
+        <div class="register-user-form-alert"></div>
+        <div class="register-user-blockUI">
+            <form name='register-user-form' action="" method='POST' role="form">
 
-        <form name='register-user-form' action="" method='POST' role="form">
+                <div class="form-group">
+                    <label for="register-user-form-username">
+                        <@spring.messageText "Email", "Email"/>
+                    </label>
+                    <div class="register-user-form-username-alert"></div>
+                    <input type="text" name="register-user-form-username" class="input-block-level form-control register-user-form-username"
+                            id="register-user-form-username" placeholder="<@spring.messageText "ENTER.EMAIL", "Introduza Email"/>"/>
+                </div>
 
-            <div class="form-group">
-                <label for="register-user-form-username">
-                    <@spring.messageText "USERNAME", "Utilizador"/>
-                </label>
-                <input type="text" name="register-user-form-username" class="input-block-level form-control"
-                        id="register-user-form-username" placeholder="<@spring.messageText "ENTER.EMAIL", "Introduza Email"/>"/>
-            </div>
+                <div class="form-group">
+                    <label for="register-user-form-password">
+                        <@spring.messageText "PASSWORD", "Password"/>
+                    </label>
+                    <div class="register-user-form-password-alert"></div>
+                    <input type="password" name="register-user-form-password" class="input-block-level form-control register-user-form-password"
+                           id="register-user-form-password" placeholder="<@spring.messageText "ENTER.PASSWORD", "Introduza Password"/>"/>
+                </div>
 
-            <div class="form-group">
-                <label for="register-user-form-password">
-                    <@spring.messageText "PASSWORD", "Password"/>
-                </label>
-                <input type="password" name="register-user-form-password" class="input-block-level"
-                       id="register-user-form-password" placeholder="<@spring.messageText "ENTER.PASSWORD", "Introduza Password"/>"/>
-            </div>
+                <div class="form-group">
+                    <label for="register-user-form-repeat-password">
+                        <@spring.messageText "REPEAT.PASSWORD", "Repetir Password"/>
+                    </label>
+                    <div class="register-user-form-repeat-password-alert"></div>
+                    <input type="password" name="register-user-form-repeat-password" class="input-block-level form-control register-user-form-repeat-password"
+                            id="register-user-form-repeat-password" placeholder="<@spring.messageText "REPEAT.PASSWORD", "Repetir Password"/>"/>
+                </div>
 
-            <div class="form-group">
-                <label for="register-user-form-repeat-password">
-                    <@spring.messageText "REPEAT.PASSWORD", "Repetir Password"/>
-                </label>
-                <input type="password" name="register-user-form-repeat-password" class="input-block-level"
-                        id="register-user-form-repeat-password" placeholder="<@spring.messageText "REPEAT.PASSWORD", "Repetir Password"/>"/>
-            </div>
+                <div class="form-group">
+                    <label>
+                        <button type="button" data-toggle="button" class="btn btn-mini custom-checkbox active">
+                            <i class="icon-ok"></i>
+                        </button>
+                        &nbsp;&nbsp;&nbsp;<@spring.messageText "I.AGREE.WITH", "Concordo com"/>
+                        <a href="/terms" class="terms-and-conditions" data-toggle="tab" data-toggle="tooltip" data-placement="top"
+                           title="<@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/>"><@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/></a>
+                    </label>
+                </div>
 
-            <div class="form-group">
-                <label>
-                    <button type="button" data-toggle="button" class="btn btn-mini custom-checkbox active">
-                        <i class="icon-ok"></i>
-                    </button>
-                    &nbsp;&nbsp;&nbsp;<@spring.messageText "I.AGREE.WITH", "Concordo com"/>
-                    <a href="/terms" class="terms-and-conditions" data-toggle="tab" data-toggle="tooltip" data-placement="top"
-                       title="<@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/>"><@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/></a>
-                </label>
-            </div>
-
-            <button name="submit" type="submit" class="btn btn-default" value="submit">
-                <@spring.messageText "REGISTER.NOW", "Registar Agora"/><i class="icon-chevron-sign-right"></i>
-            </button>
-        </form>
+                <button name="submit" id="register-user-form-submit" class="btn btn-default register-user-form-submit disabled" value="submit">
+                    <@spring.messageText "REGISTER.NOW", "Registar Agora"/><i class="icon-chevron-sign-right"></i>
+                </button>
+            </form>
+        </div>
     </div>
 </#macro>
 
