@@ -2,7 +2,9 @@ package com.homerenting.mvc;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.validation.Valid;
 
@@ -11,6 +13,7 @@ import com.homerenting.domain.User;
 import com.homerenting.domain.UserKind;
 import com.homerenting.domain.UserShortProfile;
 import com.homerenting.domain.helpers.TokenGenerator;
+import com.homerenting.domain.modules.header.navigation.EmailTemplates;
 import com.homerenting.repo.IUserDao;
 import com.homerenting.repo.UserDaoImpl;
 import com.homerenting.services.IMailService;
@@ -19,7 +22,6 @@ import com.homerenting.services.MailServiceImpl;
 import com.homerenting.services.UserShortProfileServiceImpl;
 import com.homerenting.validators.RegisterFormValidator;
 
-import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -27,9 +29,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
-import org.springframework.mail.*;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -43,6 +44,9 @@ public class UserController {
 
     public static final String COMPONENT_NAME = "userController";
 
+    //@Value("${base.url}")//TODO: inject property
+    private String baseURL = "http://homerenting-afmp.rhcloud.com";
+
     @Qualifier(UserDaoImpl.COMPONENT_NAME)
     @Autowired
 	private IUserDao userDao;
@@ -53,9 +57,6 @@ public class UserController {
 
     @Autowired
     RegisterFormValidator registerFormValidator;
-
-    @Autowired
-    private JavaMailSender mailSender;
 
     @Qualifier(MailServiceImpl.COMPONENT_NAME)
     @Autowired
@@ -154,7 +155,14 @@ public class UserController {
 
         userShortProfileService.update(newUser);
         //TODO: sender email inside property
-        mailService.sendUserRegistrationMessage("arthurportas@gmail.com", newUser.getEmail(), "subject", token);
+        //mailService.sendUserRegistrationMessage("arthurportas@gmail.com", newUser.getEmail(), "subject", token);
+
+        Map<String,Object> data = new HashMap<String,Object>();
+        data.put("user", newUser.getEmail());
+        data.put("portalName", "ImoWeb");
+        data.put("activationURL", baseURL + "/user/account/activate/" + newUser.getEmail() + "/" + token);
+        mailService.sendUserRegistrationMessageWithTemplate("arthurportas@gmail.com", newUser.getEmail(),
+                "subject", EmailTemplates.USER_REGISTER_CONFIRMATION.getValue(), data);
 
         mav.setViewName("user-register-success");
         return mav;
@@ -184,6 +192,12 @@ public class UserController {
         if(userShortProfileService.isAccountActivationTokenValid(user, token)){
             userShortProfileService.activateAccount(user);
             //TODO send email with account activation
+            Map<String,Object> data = new HashMap<String,Object>();
+            data.put("user", user.getEmail());
+            data.put("portalName", "ImoWeb");
+            mailService.sendUserRegistrationMessageWithTemplate("arthurportas@gmail.com", user.getEmail(),
+                    "subject", EmailTemplates.USER_ACCOUNT_ACTIVATION.getValue(), data);
+
             viewName = "account-activation-success";
             mav.setViewName(viewName);
             return mav;

@@ -16,6 +16,8 @@ public interface IMailService {
 
     public void sendUserRegistrationMessage(final String from, final String to, final String subject, final String body);
 
+    public void sendUserRegistrationMessageWithTemplate(final String from, final String to, final String subject, final String template, final Map<String,Object> model);
+
     public void sendUserRegistrationMessageHTML(final String from, final String to);
 
     public void sendUserRegistrationMessageHTML(final String from, final String to, final String subject);

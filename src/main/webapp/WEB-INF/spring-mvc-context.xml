@@ -49,10 +49,11 @@
     <bean class="org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean" id="freemarkerConfiguration">
         <!-- Turn this off to always load via SpringTemplateLoader -->
         <property name="preferFileSystemAccess" value="false"></property>
-        <property name="templateLoaderPath" value="classpath:/"></property>
+        <property name="templateLoaderPath" value="/WEB-INF/templates/email/"></property>
+        <property name="defaultEncoding" value="UTF-8"></property>
     </bean>
 
-    <bean class="com.homerenting.services.MailServiceImpl" id="mailService">
+    <bean class="com.homerenting.services.MailServiceImpl" id="mailServiceImpl">
         <property name="freemarkerConfiguration" ref="freemarkerConfiguration"></property>
     </bean>
 
@@ -74,6 +75,7 @@
                 <value>/WEB-INF/i18n/modules/footer/footer</value>
                 <value>/WEB-INF/i18n/modules/latestProperties/latest-properties</value>
                 <value>/WEB-INF/i18n/modules/search/search</value>
+                <value>/company</value>
             </list>
         </property>
         <property name="cacheSeconds" value="0"/>
