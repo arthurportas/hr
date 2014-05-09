@@ -40,6 +40,23 @@
         </property>
     </bean>
 
+    <!-- Freemarker & templates -->
+    <!-- Factory bean that creates a FreeMarker Configuration and provides it as
+         bean reference. This bean is intended for any kind of usage of FreeMarker
+         in application code, e.g. for generating email content. -->
+    <!-- FreeMarker Configuration is the Main entry point into the FreeMarker API, this class encapsulates the
+         various configuration parameters with which FreeMarker is run -->
+    <bean class="org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean" id="freemarkerConfiguration">
+        <!-- Turn this off to always load via SpringTemplateLoader -->
+        <property name="preferFileSystemAccess" value="false"></property>
+        <property name="templateLoaderPath" value="/WEB-INF/templates/email/"></property>
+        <property name="defaultEncoding" value="UTF-8"></property>
+    </bean>
+
+    <bean class="com.homerenting.services.MailServiceImpl" id="mailServiceImpl">
+        <property name="freemarkerConfiguration" ref="freemarkerConfiguration"></property>
+    </bean>
+
     <mvc:resources mapping="/static/**" location="/"/>
 
     <mvc:default-servlet-handler/>
@@ -58,6 +75,7 @@
                 <value>/WEB-INF/i18n/modules/footer/footer</value>
                 <value>/WEB-INF/i18n/modules/latestProperties/latest-properties</value>
                 <value>/WEB-INF/i18n/modules/search/search</value>
+                <value>/company</value>
             </list>
         </property>
         <property name="cacheSeconds" value="0"/>
@@ -78,6 +96,7 @@
     <!-- Data Validation beans-->
     <bean id="loginFormValidator" class="com.homerenting.validators.LoginFormValidator"/>
     <bean id="contactFormValidator" class="com.homerenting.validators.ContactFormValidator"/>
+    <bean id="registerFormValidator" class="com.homerenting.validators.RegisterFormValidator"/>
 
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="host" value="smtp.gmail.com"/>

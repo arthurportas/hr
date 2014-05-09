@@ -69,7 +69,17 @@
             $("a.register-panel-login").tooltip();
             $("a.terms-and-conditions").tooltip();
             $("a.register-free").tooltip();
+            $('button.register-user-form-submit').attr("disabled", true);
         });
     </script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/email-available.js'/>"/>
+        <script src="js/email-available.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/passwords-match.js'/>"/>
+    <script src="js/passwords-match.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/register-user.js'/>"/>
+    <script src="js/register-user.js"></script>
 
 </html>
