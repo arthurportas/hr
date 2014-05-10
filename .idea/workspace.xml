@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="Mail service with templates working&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/email/password-recovery.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/passwords-match.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/passwords-match.js" />
+    <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -118,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgot-password-panel1.ftl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="forgot-password-panel1.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="21" selection-start="929" selection-end="1730" vertical-scroll-proportion="0.57393485" vertical-offset="468" max-vertical-offset="1547">
+            <state line="41" column="21" selection-start="929" selection-end="1730" vertical-scroll-proportion="-8.807693" vertical-offset="468" max-vertical-offset="1547">
               <folding />
             </state>
           </provider>
@@ -163,10 +159,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register-panel1.ftl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="register-panel1.ftl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="24" selection-start="3115" selection-end="3115" vertical-scroll-proportion="-14.307693" vertical-offset="563" max-vertical-offset="1768">
+            <state line="48" column="119" selection-start="2585" selection-end="2585" vertical-scroll-proportion="0.63408524" vertical-offset="563" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -268,9 +264,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/email/password-recovery.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/passwords-match.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
       </list>
     </option>
   </component>
@@ -1935,7 +1931,7 @@
       <workItem from="1398709556700" duration="12214000" />
       <workItem from="1398723884387" duration="63329000" />
       <workItem from="1399056758931" duration="19349000" />
-      <workItem from="1399328788598" duration="30507000" />
+      <workItem from="1399328788598" duration="31188000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -1973,11 +1969,15 @@
       <created>1399679605675</created>
       <updated>1399679605675</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Recover pasword - removed security question&#10;">
+      <created>1399681654631</created>
+      <updated>1399681654631</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329790000" />
+    <option name="totallyTimeSpent" value="330471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="6" />
@@ -2083,7 +2083,8 @@
     <MESSAGE value="UserShortProfile registration with token verification working" />
     <MESSAGE value="Mail service working&#10;" />
     <MESSAGE value="Mail service with templates working&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mail service with templates working&#10;" />
+    <MESSAGE value="Recover pasword - removed security question&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recover pasword - removed security question&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2427,13 +2428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="24" selection-start="3115" selection-end="3115" vertical-scroll-proportion="-14.307693" vertical-offset="563" max-vertical-offset="1768">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
@@ -2473,7 +2467,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="21" selection-start="929" selection-end="1730" vertical-scroll-proportion="0.57393485" vertical-offset="468" max-vertical-offset="1547">
+        <state line="41" column="21" selection-start="929" selection-end="1730" vertical-scroll-proportion="-8.807693" vertical-offset="468" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="119" selection-start="2585" selection-end="2585" vertical-scroll-proportion="0.63408524" vertical-offset="563" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
