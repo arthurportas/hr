@@ -51,7 +51,9 @@
                         </button>
                         &nbsp;&nbsp;&nbsp;<@spring.messageText "I.AGREE.WITH", "Concordo com"/>
                         <a href="/terms" class="terms-and-conditions" data-toggle="tab" data-toggle="tooltip" data-placement="top"
-                           title="<@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/>"><@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/></a>
+                           title="<@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/>">
+                            <@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/>
+                        </a>
                     </label>
                 </div>
 

@@ -13,8 +13,7 @@ $('input.register-user-form-repeat-password').focusout(function(e){
                    $("register-user-form-repeat-password-alert").remove();
                });
            }, 3000);
-           $('button.register-user-form-submit').removeClass("disabled");
-           $('button.register-user-form-submit').attr("disabled", false);
+
        } else {
            $('div.register-user-form-repeat-password-alert').html("");
            setTimeout(function(){
@@ -24,4 +23,8 @@ $('input.register-user-form-repeat-password').focusout(function(e){
            }, 3000);
        }
     };
+});
+$('input.register-user-form-repeat-password').keyup(function(e){
+    $('button.register-user-form-submit').removeClass("disabled");
+    $('button.register-user-form-submit').attr("disabled", false);
 });
