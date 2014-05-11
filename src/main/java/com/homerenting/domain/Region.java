@@ -59,12 +59,11 @@ public class Region implements Serializable{
       this.regionName = regionName;
    }
 
-
-    public District getDistrict() {
+   public District getDistrict() {
         return district;
     }
 
-    public void setDistrict(District district) {
+   public void setDistrict(District district) {
         this.district = district;
     }
 }

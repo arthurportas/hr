@@ -24,8 +24,8 @@ public class AccountTokens implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	public static final String FIND_ALL = "AccountTokens.FIND_ALL";
-    public static final String FIND_BY_TOKEN = "AccountTokens.FIND_BY_TOKEN";
 
+    public static final String FIND_BY_TOKEN = "AccountTokens.FIND_BY_TOKEN";
 
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

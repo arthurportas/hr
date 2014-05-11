@@ -1,6 +1,8 @@
 package com.homerenting.repo;
 
 import com.homerenting.domain.UserShortProfile;
+import com.homerenting.domain.modules.header.security.Role;
+import com.homerenting.domain.modules.header.security.Roles;
 import org.apache.commons.exec.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +15,10 @@ import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Repository(UserShortProfileDaoImpl.COMPONENT_NAME)
 @Transactional
@@ -72,5 +77,20 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
         slf4jLogger.info("==boolean isAccountActivationTokenValid(String token)==");
         final String userToken = this.findByEmail(user.getEmail()).getToken().getToken();
         return userToken.equals(token) ? true : false;
+    }
+
+    @Override
+    public List<Role> addRoles(List<Role> roles) {
+        slf4jLogger.info("==boolean addRoles(List<Role> roles)==");
+        Set<Role> userRoles =  new HashSet<Role>();
+        List<Role> addedRoles = new ArrayList<Role>();
+        for(Role r : roles) {
+            Role role = new Role();
+            role.setName(r.getName());
+            if(userRoles.add(role)) {
+                addedRoles.add(role);
+            }
+        }
+        return addedRoles;
     }
 }

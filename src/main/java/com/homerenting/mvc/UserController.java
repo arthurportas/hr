@@ -1,10 +1,7 @@
 package com.homerenting.mvc;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import javax.validation.Valid;
 
@@ -14,6 +11,8 @@ import com.homerenting.domain.UserKind;
 import com.homerenting.domain.UserShortProfile;
 import com.homerenting.domain.helpers.TokenGenerator;
 import com.homerenting.domain.modules.header.navigation.EmailTemplates;
+import com.homerenting.domain.modules.header.security.Role;
+import com.homerenting.domain.modules.header.security.Roles;
 import com.homerenting.repo.IUserDao;
 import com.homerenting.repo.UserDaoImpl;
 import com.homerenting.services.IMailService;
@@ -29,7 +28,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -153,7 +151,17 @@ public class UserController {
 
         newUser.setToken(accountTokens);
 
+    //    userShortProfileService.update(newUser);
+
+        Set<Role> roles = new HashSet<Role>();
+
+        Role role = new Role();
+        role.setName(Roles.ROLE_USER);//TODO:put this roles as default
+
+        roles.add(role);
+        newUser.setRoles(roles);
         userShortProfileService.update(newUser);
+
         //TODO: sender email inside property
         //mailService.sendUserRegistrationMessage("arthurportas@gmail.com", newUser.getEmail(), "subject", token);
 
@@ -191,7 +199,6 @@ public class UserController {
         final UserShortProfile user = userShortProfileService.getByEmail(email);
         if(userShortProfileService.isAccountActivationTokenValid(user, token)){
             userShortProfileService.activateAccount(user);
-            //TODO send email with account activation
             Map<String,Object> data = new HashMap<String,Object>();
             data.put("user", user.getEmail());
             data.put("portalName", "ImoWeb");

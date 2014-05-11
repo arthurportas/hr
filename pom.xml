@@ -18,7 +18,7 @@
         <maven.compiler.target>1.6</maven.compiler.target>
 
         <!-- Spring version -->
-        <version.spring>3.2.6.RELEASE</version.spring>
+        <version.spring>3.2.8.RELEASE</version.spring>
         <org.springframework.security.version>3.2.3.RELEASE</org.springframework.security.version>
         <!-- Spring Third Party dependencies -->
         <version.aopalliance>1.0</version.aopalliance>
@@ -534,6 +534,13 @@
             <groupId>com.cloudinary</groupId>
             <artifactId>cloudinary</artifactId>
             <version>1.0.8</version>
+        </dependency>
+
+        <!-- reCaptcha -->
+        <dependency>
+            <groupId>net.tanesha.recaptcha4j</groupId>
+            <artifactId>recaptcha4j</artifactId>
+            <version>0.0.7</version>
         </dependency>
 
     </dependencies>

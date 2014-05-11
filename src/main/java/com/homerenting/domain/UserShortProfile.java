@@ -1,6 +1,9 @@
 package com.homerenting.domain;
 
 import java.io.Serializable;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -9,7 +12,10 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.homerenting.domain.modules.header.security.Role;
+import com.homerenting.domain.modules.header.security.Roles;
 import org.apache.commons.lang3.StringUtils;
+import org.codehaus.jackson.annotate.JsonManagedReference;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -49,6 +55,10 @@ public class UserShortProfile implements Serializable {
     @OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinColumn(name="ACCOUNT_TOKEN_ID", unique= true, nullable=true, insertable=true, updatable=true)
     private AccountTokens token;
+
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "userShortProfile")
+    @JsonManagedReference
+    private Set<Role> roles = new HashSet<Role>();
 
 	/* ==========================GETTERS/SETTERS======================= */
 
@@ -98,4 +108,17 @@ public class UserShortProfile implements Serializable {
         this.token = token;
     }
 
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    @XmlElement
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+    /* ==========================CONSTRUCTOR======================= */
+    public UserShortProfile() {
+
+    }
 }
