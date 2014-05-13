@@ -18,12 +18,12 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-@Table(name="USER",uniqueConstraints = @UniqueConstraint(columnNames = "USER_EMAIL"))
+@Table(name="USERS",uniqueConstraints = @UniqueConstraint(columnNames = "USER_EMAIL"))
 @NamedQueries({
         @NamedQuery(name = "User.FIND_ALL", query = "select u from User u"),
         @NamedQuery(name = "User.FIND_BY_EMAIL", query = "select u from User u where u.email=:email")
 })
-@XmlRootElement(name = "user")
+@XmlRootElement(name = "users")
 @XmlAccessorType(XmlAccessType.PROPERTY)
 public class User implements Serializable {
 

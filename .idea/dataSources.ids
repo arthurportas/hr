@@ -3589,12 +3589,56 @@
       <column name="viewowner" sqlType="name" length="2147483647" precision="0" nullable="true" jdbcType="12"/>
       <column name="definition" sqlType="text" length="2147483647" precision="0" nullable="true" jdbcType="12"/>
     </table>
+    <table name="account_tokens" schema="public" catalog="imoweb" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgnYWNjb3VudF90b2tlbnNfaWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
+      <column name="account_tokens_token" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="account_tokens_pkey" columns="id"/>
+      <exported-key name="fkcd52e332e4b2f341" table="user_short_profile" schema="public" catalog="imoweb" columns="account_token_id"/>
+      <index name="account_tokens_account_tokens_token_key" unique="true" columns="account_tokens_token"/>
+    </table>
+    <table name="account_tokens_id_seq" schema="public" catalog="imoweb" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="apartment" schema="public" catalog="imoweb" type="TABLE">
+      <column name="apartment_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="apartment_description" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="apartment_pkey" columns="apartment_id"/>
+      <index name="apartment_apartment_description_key" unique="true" columns="apartment_description"/>
+    </table>
+    <table name="company" schema="public" catalog="imoweb" type="TABLE">
+      <column name="company_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="company_name" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="company_pkey" columns="company_id"/>
+      <index name="company_company_name_key" unique="true" columns="company_name"/>
+    </table>
+    <table name="company_motd" schema="public" catalog="imoweb" type="TABLE">
+      <column name="company_motd_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="company_motd_motd" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="company_motd_pkey" columns="company_motd_id"/>
+      <index name="company_motd_company_motd_motd_key" unique="true" columns="company_motd_motd"/>
+    </table>
     <table name="district" schema="public" catalog="imoweb" type="TABLE">
       <column name="district_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <column name="name" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="district_name" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
       <primary-key name="district_pkey" columns="district_id"/>
       <exported-key name="fk8fdb1af4e6232873" table="region" schema="public" catalog="imoweb" columns="district_id"/>
-      <index name="district_name_key" unique="true" columns="name"/>
+      <index name="district_district_name_key" unique="true" columns="district_name"/>
+    </table>
+    <table name="email_contact" schema="public" catalog="imoweb" type="TABLE">
+      <column name="email_contact_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="email_contact_from" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="email_contact_message" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="email_contact_name" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="email_contact_pkey" columns="email_contact_id"/>
     </table>
     <table name="energie_certificate" schema="public" catalog="imoweb" type="TABLE">
       <column name="id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
@@ -3634,6 +3678,32 @@
       <primary-key name="parish_pkey" columns="id"/>
       <index name="parish_name_key" unique="true" columns="name"/>
     </table>
+    <table name="property" schema="public" catalog="imoweb" type="TABLE">
+      <column name="property_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="brutearea" sqlType="int4" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="countrycode" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="ispricenegotiable" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="possibleexchange" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="property_description" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="property_district" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="property_kind" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="property_name" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="property_parish" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="propertyprice" sqlType="float4" length="8" precision="8" nullable="false" jdbcType="7"/>
+      <column name="property_region" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="propertystatus" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="property_title" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="usefullarea" sqlType="int4" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="yearofconstruction" sqlType="timestamp" length="29" precision="6" nullable="true" jdbcType="93"/>
+      <primary-key name="property_pkey" columns="property_id"/>
+      <index name="property_property_description_key" unique="true" columns="property_description"/>
+      <index name="property_property_district_key" unique="true" columns="property_district"/>
+      <index name="property_property_kind_key" unique="true" columns="property_kind"/>
+      <index name="property_property_name_key" unique="true" columns="property_name"/>
+      <index name="property_property_parish_key" unique="true" columns="property_parish"/>
+      <index name="property_property_region_key" unique="true" columns="property_region"/>
+      <index name="property_property_title_key" unique="true" columns="property_title"/>
+    </table>
     <table name="region" schema="public" catalog="imoweb" type="TABLE">
       <column name="region_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="region_name" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
@@ -3641,6 +3711,51 @@
       <primary-key name="region_pkey" columns="region_id"/>
       <foreign-key name="fk8fdb1af4e6232873" columns="district_id" ref-table="district" ref-schema="public" ref-catalog="" ref-columns="district_id" update-rule="3" delete-rule="3" deferrability="2"/>
       <index name="region_region_name_key" unique="true" columns="region_name"/>
+    </table>
+    <table name="role" schema="public" catalog="imoweb" type="TABLE">
+      <column name="id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgncm9sZV9pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
+      <column name="role_name" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="user_short_profile_id" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="role_pkey" columns="id"/>
+      <foreign-key name="fk2678768aedee79" columns="user_short_profile_id" ref-table="user_short_profile" ref-schema="public" ref-catalog="" ref-columns="user_short_profile_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="role_role_name_key" unique="true" columns="role_name"/>
+    </table>
+    <table name="role_id_seq" schema="public" catalog="imoweb" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+    </table>
+    <table name="user_short_profile" schema="public" catalog="imoweb" type="TABLE">
+      <column name="user_short_profile_id" sqlType="bigserial" length="19" precision="0" nullable="false" jdbcType="-5" def="bmV4dHZhbCgndXNlcl9zaG9ydF9wcm9maWxlX3VzZXJfc2hvcnRfcHJvZmlsZV9pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
+      <column name="user_short_profile_email" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="isaccountenabled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="user_password" sqlType="varchar" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="account_token_id" sqlType="int8" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="user_short_profile_pkey" columns="user_short_profile_id"/>
+      <foreign-key name="fkcd52e332e4b2f341" columns="account_token_id" ref-table="account_tokens" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk2678768aedee79" table="role" schema="public" catalog="imoweb" columns="user_short_profile_id"/>
+      <index name="user_short_profile_account_token_id_key" unique="true" columns="account_token_id"/>
+      <index name="user_short_profile_user_password_key" unique="true" columns="user_password"/>
+      <index name="user_short_profile_user_short_profile_email_key" unique="true" columns="user_short_profile_email"/>
+    </table>
+    <table name="user_short_profile_user_short_profile_id_seq" schema="public" catalog="imoweb" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" length="2147483647" precision="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" length="1" precision="0" nullable="false" jdbcType="-7"/>
     </table>
     <procedure name="_pg_char_max_length" schema="information_schema" catalog="imoweb" type="2">
       <prototype>

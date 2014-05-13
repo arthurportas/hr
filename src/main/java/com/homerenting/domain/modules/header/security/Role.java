@@ -1,8 +1,6 @@
 package com.homerenting.domain.modules.header.security;
 
 import com.homerenting.domain.UserShortProfile;
-import com.homerenting.domain.modules.header.search.PropertyKind;
-import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.annotate.JsonBackReference;
 import org.hibernate.validator.constraints.NotEmpty;
 

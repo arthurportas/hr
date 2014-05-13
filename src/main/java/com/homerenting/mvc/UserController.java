@@ -197,17 +197,21 @@ public class UserController {
         String viewName = "account-activation-error";
         ModelAndView mav = new ModelAndView(viewName);
         final UserShortProfile user = userShortProfileService.getByEmail(email);
-        if(userShortProfileService.isAccountActivationTokenValid(user, token)){
-            userShortProfileService.activateAccount(user);
-            Map<String,Object> data = new HashMap<String,Object>();
-            data.put("user", user.getEmail());
-            data.put("portalName", "ImoWeb");
-            mailService.sendUserRegistrationMessageWithTemplate("arthurportas@gmail.com", user.getEmail(),
-                    "subject", EmailTemplates.USER_ACCOUNT_ACTIVATION.getValue(), data);
+        if(!user.isAccountEnabled()){
+            if(userShortProfileService.isAccountActivationTokenValid(user, token)){
+                userShortProfileService.activateAccount(user);
+                Map<String,Object> data = new HashMap<String,Object>();
+                data.put("user", user.getEmail());
+                data.put("portalName", "ImoWeb");
+                mailService.sendUserRegistrationMessageWithTemplate("arthurportas@gmail.com", user.getEmail(),
+                        "subject", EmailTemplates.USER_ACCOUNT_ACTIVATION.getValue(), data);
 
-            viewName = "account-activation-success";
-            mav.setViewName(viewName);
-            return mav;
+                viewName = "account-activation-success";
+                mav.setViewName(viewName);
+                return mav;
+            }
+        }else{
+            //account already active
         }
         return mav;
     }

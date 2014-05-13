@@ -121,7 +121,7 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
                 <version>${version.spring}</version>
-                <scope>test</scope>
+                <!--<scope>test</scope>-->
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -257,7 +257,9 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
+<!--
             <scope>test</scope>
+-->
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>

@@ -24,7 +24,7 @@
             </div>
 
 
-            <div class="form-group">
+            <#--<div class="form-group">
                 <label for="recover-user-password-form-security-question">
                     <@spring.messageText "SECURITY.QUESTION", "Questão de Segurança"/>
                 </label>
@@ -39,7 +39,7 @@
                 </label>
                 <input type="text" name="recover-user-password-form-security-question-answer" class="input-block-level form-control"
                        id="recover-user-password-form-security-question-answer" placeholder="<@spring.messageText "ENTER.ANSWER", "Introduza Resposta"/>"/>
-            </div>
+            </div>-->
 
             <button name="submit" type="submit" class="btn btn-default" value="submit">
                 <@spring.messageText "RECOVER.PASSWORD", "Recuperar Password"/><i class="icon-chevron-sign-right"></i>

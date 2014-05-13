@@ -16,6 +16,7 @@
         <class>com.homerenting.domain.modules.header.contacts.EmailContact</class>
         <class>com.homerenting.domain.UserShortProfile</class>
         <class>com.homerenting.domain.AccountTokens</class>
+        <class>com.homerenting.domain.modules.header.security.Role</class>
 
         <properties>
             <property name="hibernate.dialect"

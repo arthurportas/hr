@@ -18,10 +18,17 @@
 
 	<authentication-manager>
 		<authentication-provider>
-			<user-service>
+            <jdbc-user-service
+                    data-source-ref="dataSource"
+                               users-by-username-query=
+                                       "select user_short_profile_email,user_password from user_short_profile where user_short_profile_email=?;"
+                               authorities-by-username-query=
+                                       "select u.user_short_profile_id, r.role_name, r.user_short_profile_id from user_short_profile u, role r where u.user_short_profile_id = r.user_short_profile_id and u.user_short_profile_email=?;" />
+
+			<!--<user-service>
 				<user name="arthur" password="123456" authorities="ROLE_USER" />
                 <user name="helder" password="123456" authorities="ROLE_USER" />
-			</user-service>
+			</user-service>-->
 		</authentication-provider>
 	</authentication-manager>
 
