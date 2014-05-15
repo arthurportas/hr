@@ -7,6 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -72,5 +74,11 @@ public class UserShortProfileServiceImpl implements IUserShortProfileService{
         slf4jLogger.info("==void activateAccount(UserShortProfile user)==");
         user.setAccountEnabled(true);
         userShortProfileDao.update(user);
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        slf4jLogger.info("==UserDetails loadUserByUsername(String username) throws UsernameNotFoundException==");
+        return userShortProfileDao._loadUserByUsername(username);
     }
 }

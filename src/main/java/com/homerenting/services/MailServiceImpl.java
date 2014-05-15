@@ -168,4 +168,53 @@ public class MailServiceImpl implements IMailService{
     public void sendAccountActivatedMessageHTML(final String from, final String to, final String subject, final String body) {
 
     }
+
+    @Override
+    public void sendUserPasswordChangeRequestMessage(String from, String to, String subject, Map<String, Object> model, String template) {
+
+    }
+
+    @Override
+    public void sendUserPasswordChangeRequestMessage(String from, String to, String subject) {
+
+    }
+
+    @Override
+    public void sendUserPasswordChangeRequestMessage(String from, String to, String subject, String body) {
+
+    }
+
+    @Override
+    public void sendUserPasswordChangeRequestMessageWithTemplate(String from, String to, String subject, String template, Map<String, Object> model) {
+        slf4jLogger.info("==void sendUserPasswordChangeRequestMessageWithTemplate(String from, String to, String subject, String template, Map<String, Object> model)==");
+        SimpleMailMessage email = new SimpleMailMessage();
+        email.setFrom(from);
+        email.setTo(to);
+        email.setSubject(subject);
+        String text = StringUtils.EMPTY;
+        try {
+            text = FreeMarkerTemplateUtils.processTemplateIntoString(freemarkerConfiguration.getTemplate(template, "UTF-8"), model);
+        } catch (IOException ioe) {
+            slf4jLogger.info("==IOException==");
+            slf4jLogger.info(ioe.getMessage());
+        } catch (TemplateException te) {
+            slf4jLogger.info("==TemplateException==");
+            slf4jLogger.info(te.getMessage());
+        }
+        email.setText(text);
+        try {
+            mailSender.send(email);
+        }catch (MailException me){
+            if(me instanceof MailParseException){
+                slf4jLogger.info("==MailParseException==");
+                slf4jLogger.info(me.getMessage());
+            }else if (me instanceof MailAuthenticationException){
+                slf4jLogger.info("==MailAuthenticationException==");
+                slf4jLogger.info(me.getMessage());
+            }else if (me instanceof MailSendException){
+                slf4jLogger.info("==MailSendException==");
+                slf4jLogger.info(me.getMessage());
+            }
+        }
+    }
 }

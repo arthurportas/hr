@@ -38,7 +38,11 @@ public class RootController {
 
     @Qualifier("propertyServiceImpl")
     @Autowired
-    private IPropertyService propertyService;
+    private IPropertyService propertyService;//should act as a facade dor apartment service villas etc
+
+    @Qualifier(ApartmentServiceImpl.COMPONENT_NAME)
+    @Autowired
+    private IApartmentService apartmentService;
 
     @Qualifier(CompanyMOTDServiceImpl.COMPONENT_NAME)
     @Autowired
@@ -59,6 +63,9 @@ public class RootController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
+
+        mav.addObject("apartments", apartmentService.getHighlitedApartments());
+
         mav.addObject("motd", motdService.getById(1L));
 		return mav;
 	}

@@ -12,7 +12,7 @@ import java.io.Serializable;
  * Created by Arthur on 10/05/14.
  */
 @Entity
-@Table(name = "ROLE", uniqueConstraints = @UniqueConstraint(columnNames = "ROLE_NAME"))
+@Table(name = "ROLE")
 @NamedQueries({
         @NamedQuery(name = "Role.FIND_ALL", query = "SELECT r from Role r")
 })
@@ -26,14 +26,13 @@ public class Role implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-    @NotEmpty(message = "role name not be empty")
-    @Column(name = "ROLE_NAME", unique = true, nullable = false)
+    @Column(name = "ROLE_NAME", nullable = false)
     @Enumerated(EnumType.STRING)
     private Roles name;
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "USER_SHORT_PROFILE_ID", nullable = false)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "USER_SHORT_PROFILE_FK", referencedColumnName = "USER_SHORT_PROFILE_ID", nullable = false)
     @JsonBackReference
     private UserShortProfile userShortProfile;
 

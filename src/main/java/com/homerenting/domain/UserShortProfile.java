@@ -13,14 +13,18 @@ import javax.xml.bind.annotation.XmlRootElement;
 import com.homerenting.domain.modules.header.security.Role;
 import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.annotate.JsonManagedReference;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name="USER_SHORT_PROFILE",uniqueConstraints = @UniqueConstraint(columnNames = "USER_SHORT_PROFILE_EMAIL"))
 @NamedQueries({
-        @NamedQuery(name = "UserShortProfile.FIND_ALL", query = "select u from UserShortProfile u"),
-        @NamedQuery(name = "UserShortProfile.FIND_BY_EMAIL", query = "select u from UserShortProfile u where u.email=:email")
+        @NamedQuery(name = "UserShortProfile.FIND_ALL", query = "SELECT u FROM UserShortProfile u"),
+        @NamedQuery(name = "UserShortProfile.FIND_BY_EMAIL",
+                query = "SELECT u FROM UserShortProfile u " +
+                        "WHERE u.email=:email")
 })
 @XmlRootElement(name = "userShortProfile")
 @XmlAccessorType(XmlAccessType.PROPERTY)
@@ -53,7 +57,8 @@ public class UserShortProfile implements Serializable {
     @JoinColumn(name="ACCOUNT_TOKEN_ID", unique= true, nullable=true, insertable=true, updatable=true)
     private AccountTokens token;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "userShortProfile")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "userShortProfile", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Fetch(value = FetchMode.JOIN)
     @JsonManagedReference
     private Set<Role> roles = new HashSet<Role>();
 

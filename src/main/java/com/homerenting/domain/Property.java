@@ -5,9 +5,7 @@ import com.homerenting.domain.modules.header.search.PropertyStatus;
 import com.neovisionaries.i18n.CountryCode;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -63,19 +61,29 @@ public class Property implements Serializable {
     @Column(name = "PROPERTY_DESCRIPTION", unique = true, nullable = false)
     private String propertyDescription;
 
+    @NotNull
+    @Digits(integer=10, fraction=2,message = "must contain only numbers")
+    @Column(name = "PROPERTY_PRICE", nullable = false)
     private float propertyPrice;
 
-    private boolean isPriceNegotiable;
+    @Column(name = "PROPERTY_PRICE_NEGOTIABLE", nullable = false)
+    private boolean isPriceNegotiable = true;
 
-    private boolean possibleExchange;
+    @Column(name = "PROPERTY_POSSIBLE_EXCHANGE", nullable = false)
+    private boolean possibleExchange = false;
 
+    @Column(name = "PROPERTY_STATUS", nullable = false)
     private PropertyStatus propertyStatus;
 
+    @Column(name = "PROPERTY_USEFULL_AREA", nullable = false)
     private int usefullArea;
 
-
+    @Column(name = "PROPERTY_BRUTE_AREA", nullable = false)
     private int bruteArea;
 
+    @NotNull
+    @Past
+    @Column(name = "PROPERTY_YEAR_OF_CONSTRUCTION", nullable = false)
     private Date yearOfConstruction;
 
     private CountryCode countryCode;
@@ -97,11 +105,5 @@ public class Property implements Serializable {
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
     @Column(name = "PROPERTY_PARISH", unique = true, nullable = false)
     private String propertyParish;
-
-
-
-
-
-
 
 }

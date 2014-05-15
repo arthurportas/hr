@@ -13,19 +13,19 @@
         <access-denied-handler error-page="/403" />
 		<form-login login-page="/login/new" default-target-url="/announces" authentication-failure-url="/loginfailed" />
         <logout delete-cookies="JSESSIONID" />
-        <remember-me key="uniqueAndSecret" token-validity-seconds="86400"/><!--valid for one day-->
+        <remember-me user-service-ref="authService" key="uniqueAndSecret" token-validity-seconds="86400"/><!--valid for one day-->
 	</http>
 
 	<authentication-manager>
-		<authentication-provider>
-            <jdbc-user-service
+		<authentication-provider user-service-ref="authService">
+            <!--<jdbc-user-service
                     data-source-ref="dataSource"
                                users-by-username-query=
                                        "select user_short_profile_email,user_password from user_short_profile where user_short_profile_email=?;"
                                authorities-by-username-query=
                                        "select u.user_short_profile_id, r.role_name, r.user_short_profile_id from user_short_profile u, role r where u.user_short_profile_id = r.user_short_profile_id and u.user_short_profile_email=?;" />
 
-			<!--<user-service>
+			--><!--<user-service>
 				<user name="arthur" password="123456" authorities="ROLE_USER" />
                 <user name="helder" password="123456" authorities="ROLE_USER" />
 			</user-service>-->

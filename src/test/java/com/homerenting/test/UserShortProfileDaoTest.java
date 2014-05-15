@@ -47,6 +47,11 @@ public class UserShortProfileDaoTest {
                 .put("password", PASSWORD)
                 .build();
     }
+    @Test
+    @Ignore
+    public void testAccount(){
+       Assert.assertNotNull("User should not be null", userDao.findByEmail("arthurportas@gmail.com"));
+    }
 	@Test
     @Ignore
 	public void testAccountTokenAssociation() {

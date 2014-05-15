@@ -136,5 +136,9 @@
         class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
         <property name="validationMessageSource" ref="messageSource" />
     </bean>-->
+
+    <bean id="authService" class="com.homerenting.repo.UserShortProfileDaoImpl"></bean>
+
+
     <mvc:annotation-driven/>
 </beans>

@@ -11,6 +11,7 @@
         <property name="username" value="root" />
         <property name="password" value="password" />
     </bean>-->
+
     <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName" value="java:jboss/datasources/PostgreSQLDS" />
     </bean>

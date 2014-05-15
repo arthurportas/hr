@@ -1,6 +1,7 @@
 package com.homerenting.mvc;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 import javax.validation.Valid;
@@ -68,10 +69,42 @@ public class UserController {
 		return "index";
 	}
 
-    @RequestMapping(value = "/passwd", method = RequestMethod.GET)
-    public String changeUserPassword(Model model) {
-        slf4jLogger.info("==String changeUserPassword(Model model)==");
-        return "index";
+    @RequestMapping(value = "/passwd/{email}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public ModelAndView userChangePasswordRequest(@PathVariable String email) {
+        slf4jLogger.info("==String changeUserPassword(@PathVariable String email)==");
+        String viewName = "password-change-request-error";//view does not exists
+        ModelAndView mav = new ModelAndView(viewName);
+        final UserShortProfile user = userShortProfileService.getByEmail(email);
+        if(user!=null){
+            String token = TokenGenerator.getUUID();
+            Map<String,Object> data = new HashMap<String,Object>();
+            data.put("user", user.getEmail());
+            data.put("portalName", "ImoWeb");
+            data.put("passwordChangeURL", baseURL + "/passwd/" + user.getEmail() + "/" + token);
+            SimpleDateFormat gmtDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            gmtDateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
+            data.put("timeStamp", gmtDateFormat.format(new Date()));
+
+            mailService.sendUserPasswordChangeRequestMessageWithTemplate("arthurportas@gmail.com", user.getEmail(),
+                    "subject", EmailTemplates.PASSWORD_RECOVERY.getValue(), data);
+            viewName = "password-change-request-email-sent";//view does not exists
+            mav = new ModelAndView(viewName);
+            return mav;
+        }else{
+            viewName = "password-change-email-unknown";//view does not exists
+            mav = new ModelAndView(viewName);
+            return mav;
+        }
+    }
+
+    @RequestMapping(value = "/passwd/{email}/{token}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public ModelAndView userChangePasswordRequestWithToken(@PathVariable String email, @PathVariable String token) {
+        slf4jLogger.info("==String userChangePasswordRequestWithToken(@PathVariable String email, @PathVariable String token)==");
+        String viewName = "password-change-request-token-error";//view does not exists
+        ModelAndView mav = new ModelAndView(viewName);
+        return mav;
     }
 
 	@RequestMapping(value = "/addUser", method = RequestMethod.GET)
@@ -151,8 +184,6 @@ public class UserController {
 
         newUser.setToken(accountTokens);
 
-    //    userShortProfileService.update(newUser);
-
         Set<Role> roles = new HashSet<Role>();
 
         Role role = new Role();
@@ -160,6 +191,8 @@ public class UserController {
 
         roles.add(role);
         newUser.setRoles(roles);
+        role.setUserShortProfile(newUser);
+
         userShortProfileService.update(newUser);
 
         //TODO: sender email inside property
@@ -212,6 +245,9 @@ public class UserController {
             }
         }else{
             //account already active
+            viewName = "account-already-active";//this view does not exists
+            mav.setViewName(viewName);
+            return mav;
         }
         return mav;
     }

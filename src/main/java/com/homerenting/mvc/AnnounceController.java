@@ -1,6 +1,8 @@
 package com.homerenting.mvc;
 
+import com.homerenting.services.ApartmentServiceImpl;
 import com.homerenting.services.CompanyMOTDServiceImpl;
+import com.homerenting.services.IApartmentService;
 import com.homerenting.services.ICompanyMOTDService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +29,10 @@ public class AnnounceController {
     @Autowired
     private ICompanyMOTDService motdService;
 
+    @Qualifier(ApartmentServiceImpl.COMPONENT_NAME)
+    @Autowired
+    private IApartmentService apartmentService;
+
 	@RequestMapping(value = "/announces", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
 	public ModelAndView newAnnounce(Model model) {
@@ -37,6 +43,8 @@ public class AnnounceController {
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
         mav.addObject("motd", motdService.getById(1L));
+
+
 		return mav;
 	}
 }

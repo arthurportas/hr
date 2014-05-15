@@ -14,13 +14,16 @@ import java.io.Serializable;
 @Entity
 @Table(name = "APARTMENT", uniqueConstraints = @UniqueConstraint(columnNames = "APARTMENT_DESCRIPTION"))
 @NamedQueries({
-        @NamedQuery(name = "Apartment.FIND_ALL", query = "SELECT a from Apartment a")
+        @NamedQuery(name = "Apartment.FIND_ALL", query = "SELECT a FROM Apartment a"),
+        @NamedQuery(name = "Apartment.FIND_ALL_HIGHLIGHTED", query = "SELECT a FROM Apartment a")
 })
 public class Apartment implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     public static final String FIND_ALL = "Apartment.FIND_ALL";
+
+    public static final String FIND_ALL_HIGHLIGHTED = "Apartment.FIND_ALL_HIGHLIGHTED";
 
     @Id
     @GeneratedValue
