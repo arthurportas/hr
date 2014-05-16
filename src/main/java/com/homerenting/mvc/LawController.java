@@ -33,6 +33,9 @@ public class LawController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
+        if(auth.isAuthenticated() && name!="anonymousUser") {
+            mav.addObject("personalArea", "personal");
+        }
         mav.addObject("motd", motdService.getById(1L));
 		return mav;
 	}
@@ -45,6 +48,9 @@ public class LawController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
+        if(auth.isAuthenticated() && name!="anonymousUser") {
+            mav.addObject("personalArea", "personal");
+        }
         mav.addObject("motd", motdService.getById(1L));
         return mav;
     }

@@ -57,8 +57,10 @@ public class UserShortProfile implements Serializable {
     @JoinColumn(name="ACCOUNT_TOKEN_ID", unique= true, nullable=true, insertable=true, updatable=true)
     private AccountTokens token;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "userShortProfile", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Fetch(value = FetchMode.JOIN)
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="USER_SHORT_PROFILE_ROLE",
+            joinColumns={@JoinColumn(name="USER_SHORT_PROFILE_ID")},
+            inverseJoinColumns={@JoinColumn(name="ROLE_ID")})
     @JsonManagedReference
     private Set<Role> roles = new HashSet<Role>();
 

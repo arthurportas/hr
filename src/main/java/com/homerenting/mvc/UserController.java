@@ -184,14 +184,11 @@ public class UserController {
 
         newUser.setToken(accountTokens);
 
-        Set<Role> roles = new HashSet<Role>();
 
         Role role = new Role();
-        role.setName(Roles.ROLE_USER);//TODO:put this roles as default
+        role.setRoleName(Roles.ROLE_USER);//TODO:put this roles as default
 
-        roles.add(role);
-        newUser.setRoles(roles);
-        role.setUserShortProfile(newUser);
+        newUser.getRoles().add(role);
 
         userShortProfileService.update(newUser);
 

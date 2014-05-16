@@ -7,6 +7,8 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Arthur on 10/05/14.
@@ -24,45 +26,45 @@ public class Role implements Serializable {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "ROLE_ID", unique = true, nullable = false)
+    private Long roleId;
 
     @Column(name = "ROLE_NAME", nullable = false)
     @Enumerated(EnumType.STRING)
-    private Roles name;
+    private Roles roleName;
 
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "USER_SHORT_PROFILE_FK", referencedColumnName = "USER_SHORT_PROFILE_ID", nullable = false)
+    @ManyToMany(mappedBy="roles")
     @JsonBackReference
-    private UserShortProfile userShortProfile;
+    private Set<UserShortProfile> users = new HashSet<UserShortProfile>();
 
-	/* ==========================GETTERS/SETTERS======================= */
+    	/* ==========================GETTERS/SETTERS======================= */
 
-    public Long getId() {
-        return this.id;
+
+    public Long getRoleId() {
+        return roleId;
     }
 
     @XmlElement
-    public void setId(Long id) {
-        this.id = id;
+    public void setRoleId(Long roleId) {
+        this.roleId = roleId;
     }
 
-
-    public Roles getName() {
-        return name;
-    }
-
-    @XmlElement
-    public void setName(Roles name) {
-        this.name = name;
-    }
-
-    public UserShortProfile getUserShortProfile() {
-        return userShortProfile;
+    public Roles getRoleName() {
+        return roleName;
     }
 
     @XmlElement
-    public void setUserShortProfile(UserShortProfile userShortProfile) {
-        this.userShortProfile = userShortProfile;
+    public void setRoleName(Roles roleName) {
+        this.roleName = roleName;
     }
+
+    public Set<UserShortProfile> getUsers() {
+        return users;
+    }
+
+    @XmlElement
+    public void setUsers(Set<UserShortProfile> users) {
+        this.users = users;
+    }
+
 }

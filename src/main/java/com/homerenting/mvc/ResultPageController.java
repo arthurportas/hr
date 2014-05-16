@@ -26,6 +26,9 @@ public class ResultPageController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
+        if(auth.isAuthenticated() && name!="anonymousUser") {
+            mav.addObject("personalArea", "personal");
+        }
 		return mav;
 	}
 

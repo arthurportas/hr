@@ -17,10 +17,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+@Controller(AdminController.COMPONENT_NAME)
 public class AdminController {
 	
 	private static final Logger slf4jLogger = LoggerFactory.getLogger(AdminController.class);
+
+    public static final String COMPONENT_NAME = "adminController";
+
 
     @Qualifier("regionServiceImpl")
     @Autowired

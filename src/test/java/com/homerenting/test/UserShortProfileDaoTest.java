@@ -35,23 +35,29 @@ public class UserShortProfileDaoTest {
 	@Autowired
 	private IUserShortProfileDao userDao;
 
-    private final String EMAIL = "arthurportas@gmail.com";
+    private final String EMAIL = "arthur.m@iol.pt";
     private final String PASSWORD = "123456";
 
     private ImmutableMap mockData;
 
     @Before
     public void init() {
-        ImmutableMap.<String,String>builder()
+        mockData = ImmutableMap.<String,String>builder()
                 .put("email", EMAIL)
                 .put("password", PASSWORD)
                 .build();
     }
+
     @Test
-    @Ignore
     public void testAccount(){
-       Assert.assertNotNull("User should not be null", userDao.findByEmail("arthurportas@gmail.com"));
+       Assert.assertNotNull("User should not be null", userDao.findByEmail(this.EMAIL));
     }
+
+
+
+
+
+
 	@Test
     @Ignore
 	public void testAccountTokenAssociation() {

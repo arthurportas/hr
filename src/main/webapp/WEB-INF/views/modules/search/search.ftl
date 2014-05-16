@@ -26,23 +26,10 @@
 
                                             <@renderStatus />
 
+                                            <@renderPriceFrom />
 
-                                            <select class="span6 select pull-left" name="price-from">
-                                                <option><@spring.messageText "PRICE.FROM", "Preço desde"/></option>
-                                                <option value="#"><@spring.messageText "FROM", "desde"/> $100.000</option>
-                                                <option value="#"><@spring.messageText "FROM", "desde"/> $200.000</option>
-                                                <option value="#"><@spring.messageText "FROM", "desde"/> $300.000</option>
-                                                <option value="#"><@spring.messageText "FROM", "desde"/> $400.000</option>
-                                                <option value="#"><@spring.messageText "FROM", "desde"/> $500.000</option>
-                                            </select>
-                                            <select class="span6 select pull-right" name="price-to">
-                                                <option><@spring.messageText "PRICE.TO", "Preço até"/></option>
-                                                <option value="#"><@spring.messageText "TO", "até"/> $100.000</option>
-                                                <option value="#"><@spring.messageText "TO", "até"/> $200.000</option>
-                                                <option value="#"><@spring.messageText "TO", "até"/> $300.000</option>
-                                                <option value="#"><@spring.messageText "TO", "até"/> $400.000</option>
-                                                <option value="#"><@spring.messageText "TO", "até"/> $500.000</option>
-                                            </select>
+                                            <@renderPriceTo />
+
                                             <div class="clearfix">
                                                 <button class="btn pull-right span6 btn-realto-form btn-large" type="submit"><@spring.messageText "SEARCH", "Pesquisar"/></button>
                                             </div>
@@ -67,7 +54,8 @@
 
 <#macro renderDistricts>
     <select class="span12 select districts" name="type">
-        <option><@spring.messageText "DISTRICT", "Distrito"/></option>
+        <option disabled="disabled" selected="selected" />
+        ---<@spring.messageText "DISTRICT", "Distrito"/>---
         <#list districts as d>
             <option value="${d.districtId}">${d.districtName?string?cap_first}</option>
         </#list>
@@ -76,7 +64,8 @@
 
 <#macro renderRegions><#--fetched by ajax-->
     <select class="span12 select regions" name="type">
-        <option><@spring.messageText "ANY", "Indiferente"/></option>
+        <option disabled="disabled" selected="selected" />
+        ---<@spring.messageText "ANY", "Indiferente"/>---
         <#list regions as r>
             <option value="${r.regionId}">${r.regionName?string?cap_first}</option>
         </#list>
@@ -85,7 +74,9 @@
 
 <#macro renderStatus>
     <select class="span12 select clearfix status" name="status">
-        <option><@spring.messageText "BUSINESS.KIND", "Tipo de Negócio"/></option>
+        <option disabled="disabled" selected="selected" />
+        ---<@spring.messageText "BUSINESS.KIND", "Tipo de Negócio"/>---
+
         <#list status as s>
             <option value="${s.value}"><@spring.messageText "${(s.value)?string?upper_case}", "${s.value}"/></option>
         </#list>
@@ -94,9 +85,37 @@
 
 <#macro renderPropertyKind>
     <select class="span12 select" name="type">
-        <option value="#"><@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/></option>
+        <option disabled="disabled" selected="selected" />
+        ---<@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/>---
+
         <#list propertyKinds as pk>
             <option value="${pk.value}"><@spring.messageText "${(pk.value)?string?upper_case}", "${pk.value}"/></option>
         </#list>
+    </select>
+</#macro>
+
+<#macro renderPriceFrom>
+    <select class="span6 select pull-left" name="price-from">
+        <option disabled="disabled" selected="selected" />
+        ---<@spring.messageText "PRICE.FROM", "Preço desde"/>---
+
+        <option value="#"><@spring.messageText "FROM", "desde"/> $100.000</option>
+        <option value="#"><@spring.messageText "FROM", "desde"/> $200.000</option>
+        <option value="#"><@spring.messageText "FROM", "desde"/> $300.000</option>
+        <option value="#"><@spring.messageText "FROM", "desde"/> $400.000</option>
+        <option value="#"><@spring.messageText "FROM", "desde"/> $500.000</option>
+    </select>
+</#macro>
+
+<#macro renderPriceTo>
+    <select class="span6 select pull-right" name="price-to">
+        <option disabled="disabled" selected="selected" />
+        ---<@spring.messageText "PRICE.TO", "Preço até"/>---
+
+        <option value="#"><@spring.messageText "TO", "até"/> $100.000</option>
+        <option value="#"><@spring.messageText "TO", "até"/> $200.000</option>
+        <option value="#"><@spring.messageText "TO", "até"/> $300.000</option>
+        <option value="#"><@spring.messageText "TO", "até"/> $400.000</option>
+        <option value="#"><@spring.messageText "TO", "até"/> $500.000</option>
     </select>
 </#macro>

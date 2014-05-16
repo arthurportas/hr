@@ -109,7 +109,7 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
         List<Role> addedRoles = new ArrayList<Role>();
         for(Role r : roles) {
             Role role = new Role();
-            role.setName(r.getName());
+            role.setRoleName(r.getRoleName());
             if(userRoles.add(role)) {
                 addedRoles.add(role);
             }
@@ -134,9 +134,9 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
 
         for (Iterator<Role> it = details.getRoles().iterator(); it.hasNext(); ) {
             Role role = it.next();
-            if (role.getName().equals(Roles.ROLE_USER)){
+            if (role.getRoleName().equals(Roles.ROLE_USER)){
                 authorities.add(userAuthority);
-            }else if(role.getName().equals(Roles.ROLE_ADMIN)){
+            }else if(role.getRoleName().equals(Roles.ROLE_ADMIN)){
                 authorities.add(adminAuthority);
             }
         }

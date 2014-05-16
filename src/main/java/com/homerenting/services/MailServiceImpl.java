@@ -5,6 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.mail.*;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -28,9 +29,11 @@ public class MailServiceImpl implements IMailService{
 
     public static final String COMPONENT_NAME = "mailServiceImpl";
 
+    @Qualifier("mailSender")
     @Autowired
-    private JavaMailSender mailSender;
+    private JavaMailSender appMailSender;
 
+    @Qualifier("freemarkerConfiguration")
     @Autowired
     private Configuration freemarkerConfiguration;
 
@@ -55,7 +58,7 @@ public class MailServiceImpl implements IMailService{
                 message.setText(text, true);
             }
         };
-        mailSender.send(preparator);
+        appMailSender.send(preparator);
 
     }
 
@@ -75,7 +78,7 @@ public class MailServiceImpl implements IMailService{
         email.setSubject(subject);
         email.setText(body);
         try {
-            mailSender.send(email);
+            appMailSender.send(email);
         }catch (MailException me){
             if(me instanceof MailParseException){
                 slf4jLogger.info("==MailParseException==");
@@ -109,7 +112,7 @@ public class MailServiceImpl implements IMailService{
         }
         email.setText(text);
         try {
-            mailSender.send(email);
+            appMailSender.send(email);
         }catch (MailException me){
             if(me instanceof MailParseException){
                 slf4jLogger.info("==MailParseException==");
@@ -203,7 +206,7 @@ public class MailServiceImpl implements IMailService{
         }
         email.setText(text);
         try {
-            mailSender.send(email);
+            appMailSender.send(email);
         }catch (MailException me){
             if(me instanceof MailParseException){
                 slf4jLogger.info("==MailParseException==");
@@ -216,5 +219,9 @@ public class MailServiceImpl implements IMailService{
                 slf4jLogger.info(me.getMessage());
             }
         }
+    }
+
+    public void setAppMailSender(JavaMailSender appMailSender) {
+        this.appMailSender = appMailSender;
     }
 }

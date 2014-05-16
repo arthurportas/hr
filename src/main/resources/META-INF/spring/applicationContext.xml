@@ -21,4 +21,36 @@
 
 	<tx:annotation-driven />
 
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.gmail.com"/>
+        <property name="port" value="587"/>
+        <property name="username" value="arthurportas@gmail.com"/>
+        <property name="password" value="xKoninha"/>
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.transport.protocol">smtp</prop>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Freemarker & templates -->
+    <!-- Factory bean that creates a FreeMarker Configuration and provides it as
+         bean reference. This bean is intended for any kind of usage of FreeMarker
+         in application code, e.g. for generating email content. -->
+    <!-- FreeMarker Configuration is the Main entry point into the FreeMarker API, this class encapsulates the
+         various configuration parameters with which FreeMarker is run -->
+    <bean class="org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean" id="freemarkerConfiguration">
+        <!-- Turn this off to always load via SpringTemplateLoader -->
+        <property name="preferFileSystemAccess" value="false"></property>
+        <property name="templateLoaderPath" value="/WEB-INF/templates/email/"></property>
+        <property name="defaultEncoding" value="UTF-8"></property>
+    </bean>
+
+    <bean class="com.homerenting.services.MailServiceImpl" id="mailServiceImpl">
+        <property name="freemarkerConfiguration" ref="freemarkerConfiguration"></property>
+        <property name="appMailSender" ref="mailSender"></property>
+    </bean>
+
 </beans>
