@@ -1,12 +1,16 @@
 package com.homerenting.domain;
 
 import com.homerenting.domain.modules.header.search.*;
+import com.homerenting.domain.modules.header.security.Role;
+import com.homerenting.external.CloudinaryImage;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 
 @Entity
@@ -53,6 +57,11 @@ public class Property implements Serializable {
     @Column(name = "PROPERTY_TIPOLOGY", unique = false, nullable = true)
     @Enumerated(EnumType.STRING)
     private Tipologies tipology;
+
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "PROPERTY_VILLAGE_TIPOLOGY", unique = false, nullable = true)
+    @Enumerated(EnumType.STRING)
+    private VillageTipologies vilageTipology;
 
     @NotNull
     @Size(min = 1, max = 75)
@@ -127,6 +136,10 @@ public class Property implements Serializable {
     @NotNull
     @Column(name = "PROPERTY_IS_HIGHLIGHTED", nullable = false)
     private boolean isHighlighted = false;
+
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL, mappedBy="property")
+    @Column(name = "PROPERTY_IMAGES", nullable = true)
+    private Set<CloudinaryImage> images = new HashSet<CloudinaryImage>();
 
     	/* ==========================GETTERS/SETTERS======================= */
 
@@ -303,5 +316,23 @@ public class Property implements Serializable {
     @XmlElement
     public void setHighlighted(boolean isHighlighted) {
         this.isHighlighted = isHighlighted;
+    }
+
+    public VillageTipologies getVilageTipology() {
+        return vilageTipology;
+    }
+
+    @XmlElement
+    public void setVilageTipology(VillageTipologies vilageTipology) {
+        this.vilageTipology = vilageTipology;
+    }
+
+    public Set<CloudinaryImage> getImages() {
+        return images;
+    }
+
+    @XmlElement
+    public void setImages(Set<CloudinaryImage> images) {
+        this.images = images;
     }
 }

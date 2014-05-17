@@ -16,16 +16,19 @@
                      data-cycle-next="#next"
                         >
 
+                    <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
+                    <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
                     <img alt="image" src="http://placehold.it/770x437" class="media-object">
-                    <img alt="image" src="http://placehold.it/770x437" class="media-object">
-                    <img alt="image" src="http://placehold.it/770x437" class="media-object">
-                    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+                    <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
                     <img alt="image" src="http://placehold.it/770x437" class="media-object">
                     <img alt="image" src="http://placehold.it/770x437" class="media-object">
                     <img alt="image" src="http://placehold.it/770x437" class="media-object">
                     <img alt="image" src="http://placehold.it/770x437" class="media-object">
 
                 </div><!-- .cycle-slideshow -->
+
+
+
                 <div id="adv-custom-pager"></div>
                 <div class="clearfix">
                     <div class="clearfix padding30">
@@ -118,6 +121,8 @@
                     </div>
                 </div>
             </div>
+
+
             <!-- .agent-box -->
             <div class="search-form widget">
                 <p>Find your new home</p>
@@ -181,6 +186,9 @@
                 </form>
             </div>
             <!-- .search-form -->
+
+
+
         </div>
         <!-- .span4 -->
     </div>
