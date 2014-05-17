@@ -17,6 +17,8 @@
         <class>com.homerenting.domain.UserShortProfile</class>
         <class>com.homerenting.domain.AccountTokens</class>
         <class>com.homerenting.domain.modules.header.security.Role</class>
+        <class>com.homerenting.external.CloudinaryImage</class>
+
 
         <properties>
             <property name="hibernate.dialect"
