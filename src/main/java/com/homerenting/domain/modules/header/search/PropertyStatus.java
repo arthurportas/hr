@@ -5,8 +5,9 @@ package com.homerenting.domain.modules.header.search;
  */
 public enum PropertyStatus {
 
-    SALE("sale"),
-    RENTAL("rental");
+    NEW("new"),
+    USED("used"),
+    RESTORED("restored");
 
     private final String propertyStatus;
 

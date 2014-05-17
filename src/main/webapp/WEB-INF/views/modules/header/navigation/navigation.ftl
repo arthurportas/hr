@@ -36,7 +36,7 @@
 
                     <#if personalArea?has_content>
                         <li>
-                            <a href="#" title="<@spring.messageText "PERSONAL.AREA", "Área Pessoal"/>"><@spring.messageText "PERSONAL.AREA", "Área Pessoal"/></a>
+                            <a href="/personal" title="<@spring.messageText "PERSONAL.AREA", "Área Pessoal"/>"><@spring.messageText "PERSONAL.AREA", "Área Pessoal"/></a>
                         </li>
                     </#if>
                 </ul>

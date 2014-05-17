@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Service
+@Service(PropertyServiceImpl.COMPONENT_NAME)
 @Transactional
 public class PropertyServiceImpl implements IPropertyService {
 
@@ -49,5 +49,15 @@ public class PropertyServiceImpl implements IPropertyService {
     @Override
     public void save(Property property) {
         propertyDao.register(property);
+    }
+
+    @Override
+    public List<Property> getAllHighLighted() {
+        return propertyDao.findAllHighLighted();
+    }
+
+    @Override
+    public List<Property> getRandomHighLighted() {
+        return null;//TODO implement this
     }
 }

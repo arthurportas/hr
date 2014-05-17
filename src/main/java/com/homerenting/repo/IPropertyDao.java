@@ -19,4 +19,6 @@ public interface IPropertyDao {
 
     public void register(Property property);
 
+    public List<Property> findAllHighLighted();
+
 }

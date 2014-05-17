@@ -20,4 +20,7 @@ public interface IPropertyService {
 
     public void save(Property property);
 
+    public List<Property> getAllHighLighted();
+
+    public List<Property> getRandomHighLighted();
 }

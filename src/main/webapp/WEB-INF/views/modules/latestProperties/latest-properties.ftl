@@ -71,9 +71,11 @@
                         </ul>
                     </div><!-- .item -->
 
+                    <@renderHighlightedProperties />
 
-                    <div class="item">
+<#--                    <div class="item">
                         <ul class="thumbnails">
+
                             <li class="span4 box-container">
                                 <div class="holder">
                                     <a class="overlay" title="property title" href="#">
@@ -123,7 +125,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div><!-- .item -->
+                    </div><!-- .item &ndash;&gt;
 
 
                     <div class="item">
@@ -177,7 +179,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div><!-- .item -->
+                    </div><!-- .item &ndash;&gt;-->
 
                 </div><!-- .carousel-inner -->
             </div>
@@ -186,3 +188,68 @@
     </div><!-- .container  -->
 </div><!-- #latest-properties  -->
 <!-- #latest-properties  -->
+
+<#macro renderHighlightedProperties>
+    <div class="item">
+        <ul class="thumbnails">
+            <#list highlightedProperties as p>
+                <li class="span4 box-container">
+                    <div class="holder">
+                        <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">
+                            <span class="more"></span>
+                            <img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />
+                        </a>
+                        <span class="prop-tag">
+                            <@spring.messageText "FOR.${p.businessType?upper_case}", "${p.businessType?cap_first}"/>
+                        </span>
+                        <div class="prop-info">
+                            <h3 class="prop-title">${p.propertyTitle}</h3>
+                            <ul class="more-info clearfix">
+                                <li class="info-label clearfix"><span class="pull-left"></span>${p.tipology?upper_case} em <span class="qty pull-right">${p.propertyRegion?cap_first}</span></li>
+                                <li class="info-label clearfix"><span class="pull-left">${p.propertyPrice?string}€</span><#-- <span class="qty pull-right">2</span>--></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </#list>
+
+
+
+
+
+
+            <#--<li class="span4 box-container">
+                <div class="holder">
+                    <a class="overlay" title="property title" href="#">
+                        <span class="more"></span>
+                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/06.jpg'/>" class="media-object"/>
+                    </a>
+                    <span class="prop-tag">For Sale</span>
+                    <div class="prop-info">
+                        <h3 class="prop-title">6253 Jefferson Avenue Los Angeles 33139 CA</h3>
+                        <ul class="more-info clearfix">
+                            <li class="info-label clearfix"><span class="pull-left"><@spring.messageText "BEDS", "Quartos"/>:</span> <span class="qty pull-right">4</span></li>
+                            <li class="info-label clearfix"><span class="pull-left"><@spring.messageText "BATHS", "Casas de Banho"/>:</span> <span class="qty pull-right">2</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="span4 box-container">
+                <div class="holder">
+                    <a class="overlay" title="property title" href="#">
+                        <span class="more"></span>
+                        <img alt="image" src="<@spring.url '/static/resources/realto-html/images/07.jpg'/>" class="media-object">
+                    </a>
+                    <span class="prop-tag">For Rent</span>
+                    <div class="prop-info">
+                        <h3 class="prop-title">7654 West Avenue Miami Beach 33139 FL</h3>
+                        <ul class="more-info clearfix">
+                            <li class="info-label clearfix"><span class="pull-left"><@spring.messageText "BEDS", "Quartos"/>:</span> <span class="qty pull-right">4</span></li>
+                            <li class="info-label clearfix"><span class="pull-left"><@spring.messageText "BATHS", "Casas de Banho"/>:</span> <span class="qty pull-right">2</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>-->
+        </ul>
+    </div><!-- .item -->
+</#macro>

@@ -72,4 +72,10 @@ public class PropertyDaoImpl implements IPropertyDao {
         em.persist(property);
         return;
     }
+
+    @Override
+    public List<Property> findAllHighLighted() {
+        slf4jLogger.info("==List<Property> findAllHighLighted()==");//TODO: maxresults in config
+        return em.createNamedQuery(Property.FIND_ALL_HIGHLIGHTED).setMaxResults(37).getResultList();
+    }
 }

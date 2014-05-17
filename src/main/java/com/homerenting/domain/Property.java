@@ -1,7 +1,6 @@
 package com.homerenting.domain;
 
-import com.homerenting.domain.modules.header.search.PropertyKind;
-import com.homerenting.domain.modules.header.search.PropertyStatus;
+import com.homerenting.domain.modules.header.search.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
@@ -15,8 +14,8 @@ import java.util.Date;
 @NamedQueries({
         @NamedQuery(name = "Property.FIND_ALL", query = "SELECT p from Property p"),
         @NamedQuery(name = "Property.FIND_BY_NAME", query = "SELECT p from Property p WHERE p.propertyName LIKE :propertyName"),
-        @NamedQuery(name = "Property.FIND_BY_NAME_PATTERN", query = "SELECT p from Property p WHERE p.propertyName LIKE :propertyName")
-
+        @NamedQuery(name = "Property.FIND_BY_NAME_PATTERN", query = "SELECT p from Property p WHERE p.propertyName LIKE :propertyName"),
+        @NamedQuery(name = "Property.FIND_ALL_HIGHLIGHTED", query = "SELECT p from Property p WHERE p.isHighlighted = TRUE"),
 })
 public class Property implements Serializable {
 
@@ -31,6 +30,8 @@ public class Property implements Serializable {
 
     public static final String FIND_BY_NAME_PATTERN = "Property.FIND_BY_NAME_PATTERN";
 
+    public static final String FIND_ALL_HIGHLIGHTED = "Property.FIND_ALL_HIGHLIGHTED";
+
     @Id
     @GeneratedValue
     @Column(name = "PROPERTY_ID", unique = true, nullable = false)
@@ -43,20 +44,24 @@ public class Property implements Serializable {
     private String propertyName;
 
     @NotNull
-    @Size(min = 1, max = 25)
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
     @Column(name = "PROPERTY_KIND", unique = false, nullable = false)
     @Enumerated(EnumType.STRING)
     private PropertyKind propertyKind;
 
+    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
+    @Column(name = "PROPERTY_TIPOLOGY", unique = false, nullable = true)
+    @Enumerated(EnumType.STRING)
+    private Tipologies tipology;
+
     @NotNull
-    @Size(min = 1, max = 25)
+    @Size(min = 1, max = 75)
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
     @Column(name = "PROPERTY_TITLE", unique = false, nullable = false)
     private String propertyTitle;
 
     @NotNull
-    @Size(min = 1, max = 25)
+    @Size(min = 1, max = 250)
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
     @Column(name = "PROPERTY_DESCRIPTION", unique = false, nullable = false)
     private String propertyDescription;
@@ -74,7 +79,10 @@ public class Property implements Serializable {
     @Column(name = "PROPERTY_POSSIBLE_EXCHANGE", nullable = false)
     private boolean possibleExchange = false;
 
-    @NotNull
+    @Column(name = "PROPERTY_BUSINESS_TYPE", unique = false, nullable = false)
+    @Enumerated(EnumType.STRING)
+    private BusinessType businessType;
+
     @Column(name = "PROPERTY_STATUS", nullable = false)
     @Enumerated(EnumType.STRING)
     private PropertyStatus propertyStatus;
@@ -88,8 +96,7 @@ public class Property implements Serializable {
     @NotNull
     @Past
     @Column(name = "PROPERTY_YEAR_OF_CONSTRUCTION", nullable = false)
-    @Temporal(TemporalType.DATE)
-    private Date yearOfConstruction;
+    private int yearOfConstruction;
 
     @NotNull
     @Column(name = "PROPERTY_COUNTRY", nullable = false)
@@ -112,6 +119,14 @@ public class Property implements Serializable {
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
     @Column(name = "PROPERTY_PARISH", unique = false, nullable = false)
     private String propertyParish;
+
+    @Column(name = "PROPERTY_ENERGY_EFFICIENCY", nullable = true)
+    @Enumerated(EnumType.STRING)
+    private EnergyEfficiency energyEfficiency;
+
+    @NotNull
+    @Column(name = "PROPERTY_IS_HIGHLIGHTED", nullable = false)
+    private boolean isHighlighted = false;
 
     	/* ==========================GETTERS/SETTERS======================= */
 
@@ -140,6 +155,15 @@ public class Property implements Serializable {
     @XmlElement
     public void setPropertyKind(PropertyKind propertyKind) {
         this.propertyKind = propertyKind;
+    }
+
+    public Tipologies getTipology() {
+        return tipology;
+    }
+
+    @XmlElement
+    public void setTipology(Tipologies tipology) {
+        this.tipology = tipology;
     }
 
     public String getPropertyTitle() {
@@ -187,6 +211,15 @@ public class Property implements Serializable {
         this.possibleExchange = possibleExchange;
     }
 
+    public BusinessType getBusinessType() {
+        return businessType;
+    }
+
+    @XmlElement
+    public void setBusinessType(BusinessType businessType) {
+        this.businessType = businessType;
+    }
+
     public PropertyStatus getPropertyStatus() {
         return propertyStatus;
     }
@@ -214,12 +247,12 @@ public class Property implements Serializable {
         this.bruteArea = bruteArea;
     }
 
-    public Date getYearOfConstruction() {
+    public int getYearOfConstruction() {
         return yearOfConstruction;
     }
 
     @XmlElement
-    public void setYearOfConstruction(Date yearOfConstruction) {
+    public void setYearOfConstruction(int yearOfConstruction) {
         this.yearOfConstruction = yearOfConstruction;
     }
 
@@ -254,8 +287,21 @@ public class Property implements Serializable {
         return propertyParish;
     }
 
+    public EnergyEfficiency getEnergyEfficiency() {
+        return energyEfficiency;
+    }
+
     @XmlElement
-    public void setPropertyParish(String propertyParish) {
-        this.propertyParish = propertyParish;
+    public void setEnergyEfficiency(EnergyEfficiency energyEfficiency) {
+        this.energyEfficiency = energyEfficiency;
+    }
+
+    public boolean isHighlighted() {
+        return isHighlighted;
+    }
+
+    @XmlElement
+    public void setHighlighted(boolean isHighlighted) {
+        this.isHighlighted = isHighlighted;
     }
 }

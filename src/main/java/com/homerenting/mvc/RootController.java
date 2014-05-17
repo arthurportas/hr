@@ -1,6 +1,7 @@
 package com.homerenting.mvc;
 
 import com.homerenting.domain.District;
+import com.homerenting.domain.modules.header.search.BusinessType;
 import com.homerenting.domain.modules.header.search.PropertyStatus;
 import com.homerenting.domain.modules.header.search.PropertyKind;
 import com.homerenting.services.*;
@@ -66,7 +67,8 @@ public class RootController {
         if(auth.isAuthenticated() && name!="anonymousUser") {
             mav.addObject("personalArea", "personal");
         }
-        mav.addObject("apartments", apartmentService.getHighlitedApartments());
+        mav.addObject("apartments", apartmentService.getHighlitedApartments());//TODO-just for test
+        mav.addObject("highlightedProperties", propertyService.getAllHighLighted());
 
         mav.addObject("motd", motdService.getById(1L));
 		return mav;

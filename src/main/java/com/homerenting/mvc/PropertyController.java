@@ -36,7 +36,7 @@ public class PropertyController {
         return propertyService.getAllOrderedByName();
     }
 
-    @RequestMapping("properties/all/{namePattern}")
+    @RequestMapping("/properties/all/{namePattern}")
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public List<Property> getAllByNamePattern(@PathVariable String namePattern) {
@@ -44,22 +44,22 @@ public class PropertyController {
         return propertyService.getAllByNamePattern(namePattern);
     }
 
-    @RequestMapping("property/one/{name}")
+    @RequestMapping("/property/one/{id}")
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
-    public Property getByName(@PathVariable String name) {
-        slf4jLogger.info("==Property getByName(@PathVariable String name)==");
-        return propertyService.getByName(name);
+    public Property getByName(@PathVariable Long id) {
+        slf4jLogger.info("==Property getByName(@PathVariable String id)==");
+        return propertyService.getById(id);
     }
 
-    @RequestMapping("property/{id}")
+    @RequestMapping("/property/{id}")
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public ModelAndView getById(@PathVariable Long id) {
         slf4jLogger.info("==ModelAndView getById(@PathVariable Long id)==");
         ModelAndView mav = new ModelAndView();
-        mav.setViewName("propertyKinds");
-        mav.addObject("propertyKinds", propertyService.getById(id));
+        mav.setViewName("propertyDetail");
+        mav.addObject("property", propertyService.getById(id));
         return mav;
     }
 
