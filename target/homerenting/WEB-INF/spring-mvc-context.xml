@@ -53,8 +53,23 @@
         <property name="defaultEncoding" value="UTF-8"></property>
     </bean>
 
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.gmail.com"/>
+        <property name="port" value="587"/>
+        <property name="username" value="arthurportas@gmail.com"/>
+        <property name="password" value="xKoninha"/>
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.transport.protocol">smtp</prop>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+            </props>
+        </property>
+    </bean>
+
     <bean class="com.homerenting.services.MailServiceImpl" id="mailServiceImpl">
         <property name="freemarkerConfiguration" ref="freemarkerConfiguration"></property>
+        <property name="appMailSender" ref="mailSender"></property>
     </bean>
 
     <mvc:resources mapping="/static/**" location="/"/>
@@ -98,20 +113,6 @@
     <bean id="contactFormValidator" class="com.homerenting.validators.ContactFormValidator"/>
     <bean id="registerFormValidator" class="com.homerenting.validators.RegisterFormValidator"/>
 
-    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-        <property name="host" value="smtp.gmail.com"/>
-        <property name="port" value="587"/>
-        <property name="username" value="arthurportas@gmail.com"/>
-        <property name="password" value="xKoninha"/>
-        <property name="javaMailProperties">
-            <props>
-                <prop key="mail.transport.protocol">smtp</prop>
-                <prop key="mail.smtp.auth">true</prop>
-                <prop key="mail.smtp.starttls.enable">true</prop>
-            </props>
-        </property>
-    </bean>
-
     <bean id="cloudinaryConfigMap" class="java.util.HashMap">
         <constructor-arg>
             <map key-type="java.lang.String" value-type="java.lang.String">
@@ -136,5 +137,9 @@
         class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
         <property name="validationMessageSource" ref="messageSource" />
     </bean>-->
+
+    <bean id="authService" class="com.homerenting.repo.UserShortProfileDaoImpl"></bean>
+
+
     <mvc:annotation-driven/>
 </beans>

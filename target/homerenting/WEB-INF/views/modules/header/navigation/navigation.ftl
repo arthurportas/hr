@@ -13,13 +13,13 @@
                         <a href="/"><i class="icon-home"></i></a>
                     </li>
                     <li>
-                        <a href="/news" title="News"><@spring.messageText "NEWS", "Notícias"/></a>
+                        <a href="/news" title="<@spring.messageText "NEWS", "Notícias"/>"><@spring.messageText "NEWS", "Notícias"/></a>
                     </li>
                     <li>
-                        <a href="/professionals" title="Professionals"><@spring.messageText "PROFESSIONALS", "Profissionais"/></a>
+                        <a href="/professionals" title="<@spring.messageText "PROFESSIONALS", "Profissionais"/>"><@spring.messageText "PROFESSIONALS", "Profissionais"/></a>
                     </li>
                     <li>
-                        <a href="/financing" title="Financing"><@spring.messageText "FINANCING", "Financiamento"/></a>
+                        <a href="/financing" title="<@spring.messageText "FINANCING", "Financiamento"/>"><@spring.messageText "FINANCING", "Financiamento"/></a>
                     </li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><@spring.messageText "LAW", "Legislação"/><i class="icon-caret-down"></i></a>
                         <ul class="dropdown-menu">
@@ -28,12 +28,17 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="/services" title="Financing"><@spring.messageText "SERVICES", "Serviços"/></a>
+                        <a href="/services" title="<@spring.messageText "SERVICES", "Serviços"/>"><@spring.messageText "SERVICES", "Serviços"/></a>
                     </li>
                     <li>
-                        <a href="/contacts" title="Contactos"><@spring.messageText "CONTACTS", "Contatos"/></a>
+                        <a href="/contacts" title="<@spring.messageText "CONTACTS", "Contatos"/>"><@spring.messageText "CONTACTS", "Contatos"/></a>
                     </li>
 
+                    <#if personalArea?has_content>
+                        <li>
+                            <a href="/personal" title="<@spring.messageText "PERSONAL.AREA", "Área Pessoal"/>"><@spring.messageText "PERSONAL.AREA", "Área Pessoal"/></a>
+                        </li>
+                    </#if>
                 </ul>
             </div>
             <!--/.nav-collapse -->
