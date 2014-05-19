@@ -7,7 +7,6 @@ $('select.districts').change(function(){
         url: "/district/" + districtID
     })
         .done(function(html) {
-            alert( "success" );
             el.empty().append(html);
         })
         .fail(function(html) {
@@ -17,3 +16,44 @@ $('select.districts').change(function(){
             alert( "complete-" + html );
         });
 });
+
+$('select.regions').change(function(){
+
+    var districtID = $('select.districts').val();
+
+    var el = $('.instant-results');
+
+    var jqxhr = $.ajax({
+        type: "GET",
+        url: "/properties/district/" + districtID
+    })
+        .done(function(html) {
+            el.empty().append(html);
+        })
+        .fail(function(html) {
+            alert( "error" );
+        })
+        .always(function(html) {
+            alert( "complete-" + html );
+        });
+});
+/*$('select.business-kind').change(function(){
+
+    var districtID = $('select.districts').val();
+
+    var el = $('.instant-results');
+
+    var jqxhr = $.ajax({
+        type: "GET",
+        url: "/properties/district/" + districtID
+    })
+        .done(function(html) {
+            el.empty().append(html);
+        })
+        .fail(function(html) {
+            alert( "error" );
+        })
+        .always(function(html) {
+            alert( "complete-" + html );
+        });
+});*/

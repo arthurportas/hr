@@ -21,4 +21,6 @@ public interface IPropertyDao {
 
     public List<Property> findAllHighLighted();
 
+    public List<Property> findAllByDistrict(final Long districtId);
+
 }

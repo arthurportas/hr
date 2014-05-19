@@ -60,4 +60,11 @@ public class PropertyServiceImpl implements IPropertyService {
     public List<Property> getRandomHighLighted() {
         return null;//TODO implement this
     }
+
+    @Override
+    public List<Property> getAllByDistrict(final Long districtId) {
+        return propertyDao.findAllByDistrict(districtId);
+    }
+
+
 }

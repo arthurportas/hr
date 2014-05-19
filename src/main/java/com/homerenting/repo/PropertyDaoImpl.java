@@ -78,4 +78,10 @@ public class PropertyDaoImpl implements IPropertyDao {
         slf4jLogger.info("==List<Property> findAllHighLighted()==");//TODO: maxresults in config
         return em.createNamedQuery(Property.FIND_ALL_HIGHLIGHTED).setMaxResults(37).getResultList();
     }
+
+    @Override
+    public List<Property> findAllByDistrict(final Long districtId) {
+        slf4jLogger.info("==List<Property> findAllByDistrict(final int districtId)==");
+        return em.createNamedQuery(Property.FIND_ALL_BY_DISTRICT).setParameter("districtId", districtId).getResultList();
+    }
 }

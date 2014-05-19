@@ -6,10 +6,10 @@
             <div class="row">
                 <div class="root-page-alert"></div>
                 <div class="span8">
-                    <img alt="" class="media-object" src="http://res.cloudinary.com/homerenting/image/upload/v1399029625/logo_imoweb_vdxsai.png" />
+                    <#--<img alt="" class="media-object" src="http://res.cloudinary.com/homerenting/image/upload/v1399029625/logo_imoweb_vdxsai.png" />-->
 
-                <#--<a class="brand" href="index.html"><span class="logo-text">ImoWeb</span></a>
-                <span class="tag-line hidden-phone"><@spring.message "TAG.LINE" /></span>-->
+                <a class="brand" href="index.html"><span class="logo-text">ImoWeb</span></a>
+                <span class="tag-line hidden-phone"><@spring.message "TAG.LINE" /></span>
                 </div>
                 <#include "login/login.ftl">
             </div>

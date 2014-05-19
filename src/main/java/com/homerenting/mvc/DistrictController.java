@@ -3,6 +3,8 @@ package com.homerenting.mvc;
 import com.homerenting.domain.District;
 import com.homerenting.services.DistrictServiceImpl;
 import com.homerenting.services.IDistrictService;
+import com.homerenting.services.IPropertyService;
+import com.homerenting.services.PropertyServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

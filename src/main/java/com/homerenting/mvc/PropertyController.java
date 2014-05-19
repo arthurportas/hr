@@ -1,6 +1,8 @@
 package com.homerenting.mvc;
 
 import com.homerenting.domain.Property;
+import com.homerenting.services.CompanyMOTDServiceImpl;
+import com.homerenting.services.ICompanyMOTDService;
 import com.homerenting.services.IPropertyService;
 import com.homerenting.services.PropertyServiceImpl;
 import org.slf4j.Logger;
@@ -8,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,13 +24,17 @@ import java.util.List;
 @Controller(PropertyController.COMPONENT_NAME)
 public class PropertyController {
 
-    private static final Logger slf4jLogger = LoggerFactory.getLogger(ProfessionalsController.class);
+    private static final Logger slf4jLogger = LoggerFactory.getLogger(PropertyController.class);
 
     public static final String COMPONENT_NAME = "propertyController";
 
     @Qualifier(PropertyServiceImpl.COMPONENT_NAME)
     @Autowired
     private IPropertyService propertyService;
+
+    @Qualifier(CompanyMOTDServiceImpl.COMPONENT_NAME)
+    @Autowired
+    private ICompanyMOTDService motdService;
 
     @RequestMapping(value = "properties", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
@@ -44,7 +52,19 @@ public class PropertyController {
         return propertyService.getAllByNamePattern(namePattern);
     }
 
-    @RequestMapping("/property/one/{id}")
+    @RequestMapping(value = "/properties/district/{id}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public ModelAndView getNumPropertiesByDistrict(@PathVariable Long id) {
+        slf4jLogger.info("== ModelAndView getNumPropertiesByDistrict(@PathVariable Long id)==");
+        ModelAndView mav = new ModelAndView();
+        String vieName= "num-properties-per-district";
+        mav.addObject("numProperties", propertyService.getAllByDistrict(id).size());
+        mav.setViewName(vieName);
+        return mav;
+    }
+
+    @RequestMapping(value = "/property/one/{id}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public Property getByName(@PathVariable Long id) {
@@ -52,7 +72,7 @@ public class PropertyController {
         return propertyService.getById(id);
     }
 
-    @RequestMapping("/property/{id}")
+    @RequestMapping(value = "/property/{id}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody
     public ModelAndView getById(@PathVariable Long id) {
@@ -60,6 +80,13 @@ public class PropertyController {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("propertyDetail");
         mav.addObject("property", propertyService.getById(id));
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        mav.addObject("username", name);
+        if(auth.isAuthenticated() && name!="anonymousUser") {
+            mav.addObject("personalArea", "personal");
+        }
+        mav.addObject("motd", motdService.getById(1L));
         return mav;
     }
 

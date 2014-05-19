@@ -7,6 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -42,10 +43,17 @@ public class District implements Serializable {
     @JsonManagedReference
     private Set<Region> regions = new HashSet<Region>(0);
 
+    @OneToMany(fetch = FetchType.EAGER, mappedBy="propertyDistrict")
+    private Set<Property> properties = new HashSet<Property>(0);
+
+    	/* ==========================GETTERS/SETTERS======================= */
+
+
     public Long getDistrictId() {
         return this.districtId;
     }
 
+    @XmlElement
     public void setDistrictId(Long districtId) {
         this.districtId = districtId;
     }
@@ -54,6 +62,7 @@ public class District implements Serializable {
         return districtName;
     }
 
+    @XmlElement
     public void setDistrictName(String districtName) {
         this.districtName = districtName;
     }
@@ -62,7 +71,17 @@ public class District implements Serializable {
         return this.regions;
     }
 
+    @XmlElement
     public void setRegions(Set<Region> regions) {
         this.regions = regions;
+    }
+
+    public Set<Property> getProperties() {
+        return properties;
+    }
+
+    @XmlElement
+    public void setProperties(Set<Property> properties) {
+        this.properties = properties;
     }
 }

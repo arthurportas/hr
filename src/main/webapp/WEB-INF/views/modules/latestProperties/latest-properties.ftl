@@ -32,12 +32,16 @@
 <#macro renderActiveHighlightedProperties>
     <div class="item active">
         <ul class="thumbnails">
-            <#list highlightedProperties as p><#--should begin index 3-->
+            <#list highlightedProperties as p>
                 <li class="span4 box-container">
                     <div class="holder">
                         <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">
                             <span class="more"></span>
-                            <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
+                            <#if (p.images?size > 0) >
+                                <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
+                            <#else>
+                                <img alt="image" src="http://placehold.it/800x454" class="media-object" />
+                            </#if>
                             <#--<img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />-->
                         </a>
                         <span class="prop-tag">
@@ -73,7 +77,11 @@
                     <div class="holder">
                         <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">
                             <span class="more"></span>
-                            <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
+                            <#if (p.images?size > 0) >
+                                <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
+                            <#else>
+                                <img alt="image" src="http://placehold.it/800x454" class="media-object" />
+                            </#if>
                             <#--<img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />-->
                         </a>
                         <span class="prop-tag">

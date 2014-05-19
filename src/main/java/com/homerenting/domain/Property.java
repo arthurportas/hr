@@ -16,10 +16,12 @@ import java.util.Set;
 @Entity
 @Table(name = "PROPERTY", uniqueConstraints = @UniqueConstraint(columnNames = "PROPERTY_NAME"))
 @NamedQueries({
-        @NamedQuery(name = "Property.FIND_ALL", query = "SELECT p from Property p"),
-        @NamedQuery(name = "Property.FIND_BY_NAME", query = "SELECT p from Property p WHERE p.propertyName LIKE :propertyName"),
-        @NamedQuery(name = "Property.FIND_BY_NAME_PATTERN", query = "SELECT p from Property p WHERE p.propertyName LIKE :propertyName"),
-        @NamedQuery(name = "Property.FIND_ALL_HIGHLIGHTED", query = "SELECT p from Property p WHERE p.isHighlighted = TRUE"),
+        @NamedQuery(name = "Property.FIND_ALL", query = "SELECT p FROM Property p"),
+        @NamedQuery(name = "Property.FIND_BY_NAME", query = "SELECT p FROM Property p WHERE p.propertyName LIKE :propertyName"),
+        @NamedQuery(name = "Property.FIND_BY_NAME_PATTERN", query = "SELECT p FROM Property p WHERE p.propertyName LIKE :propertyName"),
+        @NamedQuery(name = "Property.FIND_ALL_HIGHLIGHTED", query = "SELECT p FROM Property p WHERE p.isHighlighted = TRUE"),
+        @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId"),
+
 })
 public class Property implements Serializable {
 
@@ -35,6 +37,13 @@ public class Property implements Serializable {
     public static final String FIND_BY_NAME_PATTERN = "Property.FIND_BY_NAME_PATTERN";
 
     public static final String FIND_ALL_HIGHLIGHTED = "Property.FIND_ALL_HIGHLIGHTED";
+
+    public static final String FIND_ALL_BY_DISTRICT = "Property.FIND_ALL_BY_DISTRICT";
+
+    public static final String FIND_ALL_BY_DISTRICT_AND_REGION = "Property.FIND_ALL_BY_DISTRICT_AND_REGION";
+
+    public static final String FIND_ALL_BY_STARTING_PRICE = "Property.FIND_ALL_BY_STARTING_PRICE";
+
 
     @Id
     @GeneratedValue
@@ -111,11 +120,9 @@ public class Property implements Serializable {
     @Column(name = "PROPERTY_COUNTRY", nullable = false)
     private String country;
 
-    @NotNull
-    @Size(min = 1, max = 25)
-    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
-    @Column(name = "PROPERTY_DISTRICT", unique = false, nullable = false)
-    private String propertyDistrict;
+    @ManyToOne
+    @JoinColumn(name="districtId")
+    private District propertyDistrict;
 
     @NotNull
     @Size(min = 1, max = 25)
@@ -278,15 +285,6 @@ public class Property implements Serializable {
         this.country = country;
     }
 
-    public String getPropertyDistrict() {
-        return propertyDistrict;
-    }
-
-    @XmlElement
-    public void setPropertyDistrict(String propertyDistrict) {
-        this.propertyDistrict = propertyDistrict;
-    }
-
     public String getPropertyRegion() {
         return propertyRegion;
     }
@@ -335,4 +333,14 @@ public class Property implements Serializable {
     public void setImages(Set<CloudinaryImage> images) {
         this.images = images;
     }
+
+    public District getPropertyDistrict() {
+        return this.propertyDistrict;
+    }
+
+    @XmlElement
+    public void setPropertyDistrict(District propertyDistrict) {
+        this.propertyDistrict = propertyDistrict;
+    }
+
 }
