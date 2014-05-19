@@ -363,10 +363,10 @@ INSERT INTO APARTMENT(APARTMENT_ID, APARTMENT_DESCRIPTION) VALUES (1000002, 'Peq
 --INSERT INTO USERS (id, firstName, lastName, email, address, zipcode, city, country, userKind, company, nif, phoneNumber, cellPhone, fax, password) values (0, 'arthur', 'portas', 'arthurportas@gmail.com', 'rua a voz dos ridiculos, 40, 1� h2', '4250551', 'porto', 'portugal', 'particular', '', '221446834', '220109606', '935705832', '', 'tretas')
 
 --PARISH is equivalent to FREGUESIA
-INSERT INTO PARISH(id, name) VALUES (1, 'ramalde');
-INSERT INTO PARISH(id, name) VALUES (2, 'aldoar');
-INSERT INTO PARISH(id, name) VALUES (3, 'paranhos');
-INSERT INTO PARISH(id, name) VALUES (4, 'cedofeita');
-INSERT INTO PARISH(id, name) VALUES (5, 'sé');
+INSERT INTO PARISH(PARISH_ID, PARISH_NAME, REGION_ID) VALUES (1000, 'ramalde', 11);
+INSERT INTO PARISH(PARISH_ID, PARISH_NAME, REGION_ID) VALUES (1001, 'aldoar', 11);
+INSERT INTO PARISH(PARISH_ID, PARISH_NAME, REGION_ID) VALUES (1002, 'paranhos', 11);
+INSERT INTO PARISH(PARISH_ID, PARISH_NAME, REGION_ID) VALUES (1003, 'cedofeita', 11);
+INSERT INTO PARISH(PARISH_ID, PARISH_NAME, REGION_ID) VALUES (1004, 'sé', 11);
 
 

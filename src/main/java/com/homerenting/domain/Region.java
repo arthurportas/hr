@@ -1,6 +1,7 @@
 package com.homerenting.domain;
 
 import org.codehaus.jackson.annotate.JsonBackReference;
+import org.codehaus.jackson.annotate.JsonManagedReference;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -46,6 +47,10 @@ public class Region implements Serializable{
     @JsonBackReference
     private District district;
 
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "region")
+    @JsonManagedReference
+    private Set<Parish> parishs = new HashSet<Parish>(0);
+
     @OneToMany(fetch = FetchType.EAGER, mappedBy="propertyRegion")
     private Set<Property> properties = new HashSet<Property>(0);
 
@@ -78,6 +83,15 @@ public class Region implements Serializable{
         this.district = district;
     }
 
+    public Set<Parish> getParishs() {
+        return parishs;
+    }
+
+    @XmlElement
+    public void setParishs(Set<Parish> parishs) {
+        this.parishs = parishs;
+    }
+
     public Set<Property> getProperties() {
         return properties;
     }
@@ -86,4 +100,6 @@ public class Region implements Serializable{
     public void setProperties(Set<Property> properties) {
         this.properties = properties;
     }
+
+
 }
