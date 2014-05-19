@@ -21,7 +21,8 @@ import java.util.Set;
         @NamedQuery(name = "Property.FIND_BY_NAME_PATTERN", query = "SELECT p FROM Property p WHERE p.propertyName LIKE :propertyName"),
         @NamedQuery(name = "Property.FIND_ALL_HIGHLIGHTED", query = "SELECT p FROM Property p WHERE p.isHighlighted = TRUE"),
         @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId"),
-
+        @NamedQuery(name = "Property.FIND_ALL_BY_REGION", query = "SELECT p FROM Property p WHERE p.propertyRegion.regionId  = :regionId"),
+        @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT_AND_REGION", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId AND p.propertyRegion.regionId  = :regionId")
 })
 public class Property implements Serializable {
 
@@ -39,6 +40,8 @@ public class Property implements Serializable {
     public static final String FIND_ALL_HIGHLIGHTED = "Property.FIND_ALL_HIGHLIGHTED";
 
     public static final String FIND_ALL_BY_DISTRICT = "Property.FIND_ALL_BY_DISTRICT";
+
+    public static final String FIND_ALL_BY_REGION = "Property.FIND_ALL_BY_REGION";
 
     public static final String FIND_ALL_BY_DISTRICT_AND_REGION = "Property.FIND_ALL_BY_DISTRICT_AND_REGION";
 
@@ -124,11 +127,9 @@ public class Property implements Serializable {
     @JoinColumn(name="districtId")
     private District propertyDistrict;
 
-    @NotNull
-    @Size(min = 1, max = 25)
-    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
-    @Column(name = "PROPERTY_REGION", unique = false, nullable = false)
-    private String propertyRegion;
+    @ManyToOne
+    @JoinColumn(name="regionId")
+    private Region propertyRegion;
 
     @NotNull
     @Size(min = 1, max = 25)
@@ -285,12 +286,12 @@ public class Property implements Serializable {
         this.country = country;
     }
 
-    public String getPropertyRegion() {
+    public Region getPropertyRegion() {
         return propertyRegion;
     }
 
     @XmlElement
-    public void setPropertyRegion(String propertyRegion) {
+    public void setPropertyRegion(Region propertyRegion) {
         this.propertyRegion = propertyRegion;
     }
 

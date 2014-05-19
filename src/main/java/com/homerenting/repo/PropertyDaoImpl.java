@@ -81,7 +81,22 @@ public class PropertyDaoImpl implements IPropertyDao {
 
     @Override
     public List<Property> findAllByDistrict(final Long districtId) {
-        slf4jLogger.info("==List<Property> findAllByDistrict(final int districtId)==");
+        slf4jLogger.info("==List<Property> findAllByDistrict(final Long districtId)==");
         return em.createNamedQuery(Property.FIND_ALL_BY_DISTRICT).setParameter("districtId", districtId).getResultList();
+    }
+
+    @Override
+    public List<Property> findAllByRegion(Long regionId) {
+        slf4jLogger.info("==List<Property> findAllByDistrict(final Long regionId)==");
+        return em.createNamedQuery(Property.FIND_ALL_BY_REGION).setParameter("regionId", regionId).getResultList();
+    }
+
+    @Override
+    public List<Property> findAllByDistrictAndRegion(Long districtId, Long regionId) {
+        slf4jLogger.info("==List<Property> findAllByDistrictAndRegion(Long districtId, Long regionId)==");
+        return em.createNamedQuery(Property.FIND_ALL_BY_DISTRICT_AND_REGION)
+                .setParameter("districtId", districtId)
+                .setParameter("regionId", regionId)
+                .getResultList();
     }
 }

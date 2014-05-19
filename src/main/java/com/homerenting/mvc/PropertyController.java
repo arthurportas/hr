@@ -64,6 +64,30 @@ public class PropertyController {
         return mav;
     }
 
+    @RequestMapping(value = "/properties/region/{id}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public ModelAndView getNumPropertiesByRegion(@PathVariable Long id) {
+        slf4jLogger.info("==ModelAndView getNumPropertiesByRegion(@PathVariable Long id)==");
+        ModelAndView mav = new ModelAndView();
+        String vieName= "num-properties-per-region";
+        mav.addObject("numProperties", propertyService.getAllByRegion(id).size());
+        mav.setViewName(vieName);
+        return mav;
+    }
+
+    @RequestMapping(value = "/properties/{propertyId}/region/{regionId}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public ModelAndView getNumPropertiesDistrictAndByRegion(@PathVariable Long propertyId, @PathVariable Long regionId) {
+        slf4jLogger.info("==ModelAndView getNumPropertiesDistrictAndByRegion(@PathVariable Long propertyId, @PathVariable Long regionId)==");
+        ModelAndView mav = new ModelAndView();
+        String vieName= "num-properties-per-district-region";
+        mav.addObject("numProperties", propertyService.getAllByDistrictAndRegion(propertyId, regionId).size());
+        mav.setViewName(vieName);
+        return mav;
+    }
+
     @RequestMapping(value = "/property/one/{id}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody

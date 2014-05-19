@@ -66,5 +66,13 @@ public class PropertyServiceImpl implements IPropertyService {
         return propertyDao.findAllByDistrict(districtId);
     }
 
+    @Override
+    public List<Property> getAllByRegion(final Long regionId) {
+        return propertyDao.findAllByRegion(regionId);
+    }
 
+    @Override
+    public List<Property> getAllByDistrictAndRegion(Long districtId, Long regionId) {
+        return propertyDao.findAllByDistrictAndRegion(districtId, regionId);
+    }
 }

@@ -55,7 +55,7 @@
                                     ${p.tipology!""}
                                     ${p.vilageTipology!""}
                                     <@spring.messageText "IN", "em"/>
-                                    <span class="qty pull-right">${p.propertyRegion?cap_first}</span>
+                                    <span class="qty pull-right">${p.propertyRegion.regionName?cap_first}</span>
                                 </li>
                                 <li class="info-label clearfix">
                                     <span class="pull-left">${p.propertyPrice?string.number}€</span><#-- <span class="qty pull-right">2</span>-->
@@ -95,7 +95,7 @@
                                         ${p.tipology!""}
                                         ${p.vilageTipology!""}
                                     <@spring.messageText "IN", "em"/>
-                                    <span class="qty pull-right">${p.propertyRegion?cap_first}</span>
+                                    <span class="qty pull-right">${p.propertyRegion.regionName?cap_first}</span>
                                 </li>
                                 <li class="info-label clearfix">
                                     <span class="pull-left">${p.propertyPrice?string.number}€</span><#-- <span class="qty pull-right">2</span>-->

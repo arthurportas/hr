@@ -23,4 +23,8 @@ public interface IPropertyDao {
 
     public List<Property> findAllByDistrict(final Long districtId);
 
+    public List<Property> findAllByRegion(final Long regionId);
+
+    public List<Property> findAllByDistrictAndRegion(final Long districtId, final Long regionId);
+
 }

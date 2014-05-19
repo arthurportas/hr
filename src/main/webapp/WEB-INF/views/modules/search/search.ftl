@@ -100,7 +100,7 @@
 
 <#macro renderDistricts>
     <select class="span12 select districts" name="type">
-        <option disabled="disabled" selected="selected" />
+        <option disabled="disabled" selected="selected" value="null"/>
         ---<@spring.messageText "DISTRICT", "Distrito"/>---
         <#list districts as d>
             <option value="${d.districtId}">${d.districtName?string?cap_first}</option>
@@ -110,7 +110,7 @@
 
 <#macro renderRegions><#--fetched by ajax-->
     <select class="span12 select regions" name="type">
-        <option disabled="disabled" selected="selected" />
+        <option disabled="disabled" selected="selected" value="null"/>
         ---<@spring.messageText "REGION", "Concelho"/>---
         <#list regions as r>
             <option value="${r.regionId}">${r.regionName?string?cap_first}</option>
@@ -120,7 +120,7 @@
 
 <#macro renderStatus>
     <select class="span12 select clearfix status business-kind" name="status">
-        <option disabled="disabled" selected="selected" />
+        <option disabled="disabled" selected="selected" value="null"/>
         ---<@spring.messageText "BUSINESS.KIND", "Tipo de Negócio"/>---
 
         <#list status as s>
@@ -131,7 +131,7 @@
 
 <#macro renderPropertyKind>
     <select class="span12 select" name="type">
-        <option disabled="disabled" selected="selected" />
+        <option disabled="disabled" selected="selected" value="null"/>
         ---<@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/>---
 
         <#list propertyKinds as pk>

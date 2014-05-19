@@ -25,4 +25,8 @@ public interface IPropertyService {
     public List<Property> getRandomHighLighted();
 
     public List<Property> getAllByDistrict(final Long districtId);
+
+    public List<Property> getAllByRegion(final Long regionId);
+
+    public List<Property> getAllByDistrictAndRegion(Long districtId, Long regionId);
 }
