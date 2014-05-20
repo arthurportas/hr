@@ -34,7 +34,7 @@
           <factory-entry name="primary" value="50ad5890-9bc3-4415-8388-1a8c1f505571" />
           <factory-entry name="testPU" />
         </datasource-mapping>
-        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/test/resources/META-INF/test-persistence.xml" />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>
   </component>

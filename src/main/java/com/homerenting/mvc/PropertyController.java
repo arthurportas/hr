@@ -1,6 +1,7 @@
 package com.homerenting.mvc;
 
 import com.homerenting.domain.Property;
+import com.homerenting.domain.modules.header.search.PropertyKind;
 import com.homerenting.services.CompanyMOTDServiceImpl;
 import com.homerenting.services.ICompanyMOTDService;
 import com.homerenting.services.IPropertyService;
@@ -84,6 +85,30 @@ public class PropertyController {
         ModelAndView mav = new ModelAndView();
         String vieName= "num-properties-per-district-region";
         mav.addObject("numProperties", propertyService.getAllByDistrictAndRegion(propertyId, regionId).size());
+        mav.setViewName(vieName);
+        return mav;
+    }
+
+    @RequestMapping(value = "/properties/{propertyId}/region/{regionId}/property-kind/{propertyKind}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public ModelAndView getNumPropertiesDistrictRegionAndKind(@PathVariable Long propertyId, @PathVariable Long regionId, @PathVariable String propertyKind) {
+        slf4jLogger.info("==ModelAndView getNumPropertiesDistrictRegionAndKind(@PathVariable Long propertyId, @PathVariable Long regionId, @PathVariable String propertyKind)==");
+        ModelAndView mav = new ModelAndView();
+        String vieName= "num-properties-per-district-region-kind";
+        mav.addObject("numProperties", propertyService.getAllByDistrictRegionAndKind(propertyId, regionId, propertyKind).size());
+        mav.setViewName(vieName);
+        return mav;
+    }
+
+    @RequestMapping(value = "/properties/property-kind/{propertyKind}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public ModelAndView getNumPropertiesByPropertyKind(@PathVariable String propertyKind) {
+        slf4jLogger.info("==ModelAndView getNumPropertiesByPropertyKind(@PathVariable String propertyKind)==");
+        ModelAndView mav = new ModelAndView();
+        String vieName= "num-properties-per-property-kind";
+        mav.addObject("numProperties", propertyService.getAllByPropertyKind(propertyKind).size());
         mav.setViewName(vieName);
         return mav;
     }

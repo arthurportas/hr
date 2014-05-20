@@ -1,6 +1,7 @@
 package com.homerenting.repo;
 
 import com.homerenting.domain.Property;
+import com.homerenting.domain.modules.header.search.PropertyKind;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -97,6 +98,25 @@ public class PropertyDaoImpl implements IPropertyDao {
         return em.createNamedQuery(Property.FIND_ALL_BY_DISTRICT_AND_REGION)
                 .setParameter("districtId", districtId)
                 .setParameter("regionId", regionId)
+                .getResultList();
+    }
+
+    @Override
+    public List<Property> findAllByPropertyKind(String propertyKind) {
+        slf4jLogger.info("==List<Property> findAllByPropertyKind(String propertyKind)==");
+        return em.createNamedQuery(Property.FIND_ALL_BY_PROPERTY_KIND)
+                .setParameter("propertyKind", propertyKind)
+                .getResultList();
+    }
+
+    @Override
+    public List<Property> findAllByDistrictRegionAndKind(Long districtId, Long regionId, String propertyKind) {
+        slf4jLogger.info("==List<Property> findAllByDistrictRegionAndKind(Long districtId, Long regionId, String propertyKind)==");
+
+        return em.createNamedQuery(Property.FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND)
+                .setParameter("districtId", districtId)
+                .setParameter("regionId", regionId)
+                .setParameter("propertyKind", propertyKind)
                 .getResultList();
     }
 }

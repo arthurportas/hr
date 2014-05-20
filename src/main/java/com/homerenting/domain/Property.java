@@ -22,7 +22,10 @@ import java.util.Set;
         @NamedQuery(name = "Property.FIND_ALL_HIGHLIGHTED", query = "SELECT p FROM Property p WHERE p.isHighlighted = TRUE"),
         @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId"),
         @NamedQuery(name = "Property.FIND_ALL_BY_REGION", query = "SELECT p FROM Property p WHERE p.propertyRegion.regionId  = :regionId"),
-        @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT_AND_REGION", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId AND p.propertyRegion.regionId  = :regionId")
+        @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT_AND_REGION", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId AND p.propertyRegion.regionId  = :regionId"),
+        @NamedQuery(name = "Property.FIND_ALL_BY_PROPERTY_KIND", query = "SELECT p FROM Property p WHERE p.propertyKind.propertyKindName  LIKE :propertyKind"),
+        @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId AND p.propertyRegion.regionId  = :regionId AND p.propertyKind.propertyKindName  LIKE :propertyKind"),
+
 })
 public class Property implements Serializable {
 
@@ -47,6 +50,9 @@ public class Property implements Serializable {
 
     public static final String FIND_ALL_BY_STARTING_PRICE = "Property.FIND_ALL_BY_STARTING_PRICE";
 
+    public static final String FIND_ALL_BY_PROPERTY_KIND = "Property.FIND_ALL_BY_PROPERTY_KIND";
+
+    public static final String FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND = "Property.FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND";
 
     @Id
     @GeneratedValue
@@ -59,10 +65,8 @@ public class Property implements Serializable {
     @Column(name = "PROPERTY_NAME", unique = true, nullable = false)
     private String propertyName;
 
-    @NotNull
-    @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
-    @Column(name = "PROPERTY_KIND", unique = false, nullable = false)
-    @Enumerated(EnumType.STRING)
+    @ManyToOne
+    @JoinColumn(name="propertyKindId")
     private PropertyKind propertyKind;
 
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")

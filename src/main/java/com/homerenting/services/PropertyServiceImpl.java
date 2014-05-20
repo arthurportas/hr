@@ -1,6 +1,7 @@
 package com.homerenting.services;
 
 import com.homerenting.domain.Property;
+import com.homerenting.domain.modules.header.search.PropertyKind;
 import com.homerenting.repo.IPropertyDao;
 import com.homerenting.repo.PropertyDaoImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,5 +75,15 @@ public class PropertyServiceImpl implements IPropertyService {
     @Override
     public List<Property> getAllByDistrictAndRegion(Long districtId, Long regionId) {
         return propertyDao.findAllByDistrictAndRegion(districtId, regionId);
+    }
+
+    @Override
+    public List<Property> getAllByPropertyKind(String propertyKind) {
+        return propertyDao.findAllByPropertyKind(propertyKind);
+    }
+
+    @Override
+    public List<Property> getAllByDistrictRegionAndKind(Long districtId, Long regionId, String propertyKind) {
+        return propertyDao.findAllByDistrictRegionAndKind(districtId,regionId,propertyKind);
     }
 }

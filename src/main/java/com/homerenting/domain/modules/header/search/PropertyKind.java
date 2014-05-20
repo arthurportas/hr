@@ -14,13 +14,13 @@ public enum PropertyKind {
     FARM("farm"),
     WAREHOUSE("warehouse");
 
-    private final String propertyKind;
+    private final String value;
 
     private PropertyKind(String propertyKind) {
-        this.propertyKind = propertyKind;
+        this.value = propertyKind;
     }
 
     public String getValue(){
-        return this.propertyKind;
+        return this.value;
     }
 }

@@ -130,7 +130,7 @@
 </#macro>
 
 <#macro renderPropertyKind>
-    <select class="span12 select" name="type">
+    <select class="span12 select property-kind" name="type">
         <option disabled="disabled" selected="selected" value="null"/>
         ---<@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/>---
 

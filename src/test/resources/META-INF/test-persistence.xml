@@ -18,6 +18,7 @@
         <class>com.homerenting.domain.AccountTokens</class>
         <class>com.homerenting.domain.modules.header.security.Role</class>
         <class>com.homerenting.external.CloudinaryImage</class>
+        <class>com.homerenting.domain.PropertyKind</class>
 
 
         <properties>

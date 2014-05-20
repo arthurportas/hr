@@ -21,6 +21,7 @@
        <class>com.homerenting.domain.AccountTokens</class>
        <class>com.homerenting.domain.modules.header.security.Role</class>
        <class>com.homerenting.external.CloudinaryImage</class>
+       <class>com.homerenting.domain.PropertyKind</class>
        <validation-mode>CALLBACK</validation-mode>
       <properties>
 		 <property name="jboss.entity.manager.factory.jndi.name" value="java:jboss/spring-quickstart/persistence" />

@@ -66,3 +66,33 @@ $('select.regions').change(function(){
             alert( "complete-" + html );
         });
 });*/
+$('select.property-kind').change(function(){
+
+    var districtID = $('select.districts').val(),
+        regionID = $('select.regions').val(),
+        propertyKind = $('select.property-kind').val(),
+        endpoint;
+
+    if(districtID != null) {
+        endpoint = "/properties/" + districtID + "/region/" + regionID + "/property-kind/" + propertyKind;
+    } else {
+        endpoint = "/properties/property-kind/" + propertyKind;
+    }
+
+
+    var el = $('.instant-results');
+
+     var jqxhr = $.ajax({
+        type: "GET",
+        url: endpoint
+     })
+     .done(function(html) {
+        el.empty().append(html);
+     })
+     .fail(function(html) {
+        alert( "error" );
+     })
+     .always(function(html) {
+        //alert( "complete-" + html );
+     });
+ });
