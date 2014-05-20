@@ -96,3 +96,28 @@ $('select.property-kind').change(function(){
         //alert( "complete-" + html );
      });
  });
+$('select.business-kind').change(function(){
+
+    var districtID = $('select.districts').val(),
+        regionID = $('select.regions').val(),
+        propertyKind = $('select.property-kind').val(),
+        businessKind = $('select.business-kind').val(),
+        endpoint;
+
+    endpoint = "/properties/business-kind/" + businessKind
+    var el = $('.instant-results');
+
+    var jqxhr = $.ajax({
+        type: "GET",
+        url: endpoint
+    })
+        .done(function(html) {
+            el.empty().append(html);
+        })
+        .fail(function(html) {
+            alert( "error" );
+        })
+        .always(function(html) {
+            //alert( "complete-" + html );
+        });
+});

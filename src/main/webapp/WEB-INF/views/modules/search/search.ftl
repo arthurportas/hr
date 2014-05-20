@@ -119,11 +119,11 @@
 </#macro>
 
 <#macro renderStatus>
-    <select class="span12 select clearfix status business-kind" name="status">
+    <select class="span12 select clearfix status business-type" name="status">
         <option disabled="disabled" selected="selected" value="null"/>
-        ---<@spring.messageText "BUSINESS.KIND", "Tipo de Negócio"/>---
+        ---<@spring.messageText "BUSINESS.TYPE", "Tipo de Negócio"/>---
 
-        <#list status as s>
+        <#list busynessType as s>
             <option value="${s.value}"><@spring.messageText "${(s.value)?string?upper_case}", "${s.value}"/></option>
         </#list>
     </select>

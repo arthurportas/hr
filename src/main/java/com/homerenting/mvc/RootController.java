@@ -57,10 +57,10 @@ public class RootController {
         mav.setViewName("index");
         final List<District> districts = districtService.getAllOrderedByName();
         mav.addObject("districts", districts);
-        mav.addObject("regions", districts.get(0).getRegions());
+        mav.addObject("regions", districts.get(0).getRegions());//Todo fetch client district
         //mav.addObject("regions", regionService.getAllOrderedByName());
         mav.addObject("propertyKinds", Arrays.asList(PropertyKind.values()));
-        mav.addObject("status", Arrays.asList(PropertyStatus.values()));
+        mav.addObject("busynessType", Arrays.asList(PropertyStatus.values()));
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);

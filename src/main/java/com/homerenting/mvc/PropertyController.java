@@ -113,6 +113,18 @@ public class PropertyController {
         return mav;
     }
 
+    @RequestMapping(value = "/properties/business-kind/{businessKind}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public ModelAndView getNumPropertiesByBusinessKind(@PathVariable String businessKind) {
+        slf4jLogger.info("==ModelAndView getNumPropertiesByBusinessKind(@PathVariable String businessKind)==");
+        ModelAndView mav = new ModelAndView();
+        String vieName= "num-properties-per-business-kind";
+     //   mav.addObject("numProperties", propertyService.getAllByPropertyKind(businessKind).size());//TODO
+        mav.setViewName(vieName);
+        return mav;
+    }
+
     @RequestMapping(value = "/property/one/{id}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.FOUND)
     @ResponseBody

@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PropertyKind.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-district-region-kind.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-property-kind.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-business-kind.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyKind.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyKind.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/import.sql" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -87,23 +79,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java" line="27" class="com.homerenting.repo.CompanyMOTDDaoImpl" package="com.homerenting.repo">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="&#13;&#13;JAVA" />
-        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -113,32 +89,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="213" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="search.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="46" selection-start="6711" selection-end="6711" vertical-scroll-proportion="-11.0" vertical-offset="1958" max-vertical-offset="2924">
+            <state line="125" column="27" selection-start="6464" selection-end="6476" vertical-scroll-proportion="-11.653846" vertical-offset="1822" max-vertical-offset="2924">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js">
+      <file leaf-file-name="search_en_UK.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="55" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.24900399" vertical-offset="776" max-vertical-offset="1428">
+            <state line="22" column="13" selection-start="372" selection-end="372" vertical-scroll-proportion="-11.222222" vertical-offset="71" max-vertical-offset="578">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_es_ES.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="13" selection-start="398" selection-end="398" vertical-scroll-proportion="-12.851851" vertical-offset="27" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_pt_PT.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="13" selection-start="405" selection-end="405" vertical-scroll-proportion="-13.740741" vertical-offset="3" max-vertical-offset="544">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RootController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="63" selection-start="2569" selection-end="2569" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1054">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BusinessType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/BusinessType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="12" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding>
-                <element signature="e#1235#1716#0" expanded="false" />
-                <marker date="1400615932000" expanded="true" signature="1961:2075" placeholder="{...}" />
+                <element signature="e#331#332#0" expanded="false" />
+                <element signature="e#371#372#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import.sql" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="465" column="106" selection-start="44505" selection-end="44505" vertical-scroll-proportion="0.5883777" vertical-offset="7662" max-vertical-offset="8976">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="District.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="4" selection-start="1390" selection-end="1532" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1122">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parish.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="850">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,69 +188,9 @@
       <file leaf-file-name="Region.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="4" selection-start="1771" selection-end="1910" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1360">
+            <state line="51" column="20" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1360">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyKind.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/PropertyKind.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-              <folding>
-                <element signature="e#1249#1259#0" expanded="true" />
-                <element signature="e#1803#1804#0" expanded="true" />
-                <element signature="e#1836#1837#0" expanded="true" />
-                <element signature="e#1911#1912#0" expanded="true" />
-                <element signature="e#1955#1956#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="129" selection-start="4754" selection-end="4754" vertical-scroll-proportion="0.0" vertical-offset="1132" max-vertical-offset="2414">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyKind.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyKind.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="296" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding>
-                <element signature="e#461#462#0" expanded="false" />
-                <element signature="e#494#495#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="70" selection-start="4322" selection-end="4322" vertical-scroll-proportion="0.0" vertical-offset="1357" max-vertical-offset="1972">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="import.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="353" column="63" selection-start="33077" selection-end="33077" vertical-scroll-proportion="-12.481482" vertical-offset="5664" max-vertical-offset="6681">
-              <folding>
-                <marker date="1400614172000" expanded="true" signature="29557:30234" placeholder="INSERT INTO ..." />
-                <marker date="1400614172000" expanded="true" signature="33014:33765" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -249,7 +231,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/BusinessType.java" />
         <option value="$PROJECT_DIR$/src/test/resources/import.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_es_ES.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_en_UK.properties" />
@@ -261,27 +242,28 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-district.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyKind.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PropertyKind.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
       </list>
     </option>
   </component>
@@ -341,6 +323,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
@@ -2617,7 +2600,7 @@
       <workItem from="1399328788598" duration="49487000" />
       <workItem from="1400008239796" duration="48044000" />
       <workItem from="1400331002710" duration="41023000" />
-      <workItem from="1400612171356" duration="3931000" />
+      <workItem from="1400612171356" duration="10574000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2695,14 +2678,18 @@
       <created>1400541733311</created>
       <updated>1400541733311</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added relation between Property(1-N)PropertyKind&#10;Ajax call to properties number by kind and district region and kind&#10;">
+      <created>1400616228583</created>
+      <updated>1400616228583</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441768000" />
+    <option name="totallyTimeSpent" value="448411000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="812" extended-state="6" />
+    <frame x="-1" y="22" width="1440" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2817,7 +2804,8 @@
     <MESSAGE value="Ajax mechanism for number of properties per district, on region selection&#10;" />
     <MESSAGE value="Ajax mechanism for number of properties per district and region working.&#10;Trigger is region selection&#10;" />
     <MESSAGE value="Added relation between Region(1-N)Parish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added relation between Region(1-N)Parish" />
+    <MESSAGE value="Added relation between Property(1-N)PropertyKind&#10;Ajax call to properties number by kind and district region and kind&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added relation between Property(1-N)PropertyKind&#10;Ajax call to properties number by kind and district region and kind&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2831,20 +2819,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/EnergieCertificate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-0.0037453184" vertical-offset="155" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/EnergyEfficiency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="12" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
@@ -2872,16 +2846,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/postgresql/postgresql/8.4-702.jdbc4/postgresql-8.4-702.jdbc4-sources.jar!/org/postgresql/core/v3/QueryExecutorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2160" column="0" selection-start="86388" selection-end="86388" vertical-scroll-proportion="0.0" vertical-offset="36217" max-vertical-offset="36618" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/BusinessType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="155" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding>
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#371#372#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_en_UK.properties">
@@ -2993,7 +2957,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="92" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="3791" />
+        <state line="21" column="92" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="3791">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/CloudinaryImage.java">
@@ -3045,13 +3011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="9" selection-start="2867" selection-end="2867" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="10" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07157895" vertical-offset="0" max-vertical-offset="475" />
@@ -3075,46 +3034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="41" selection-start="422" selection-end="464" vertical-scroll-proportion="0.9012048" vertical-offset="17" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="457" selection-end="457" vertical-scroll-proportion="0.9180723" vertical-offset="27" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="33" selection-start="420" selection-end="420" vertical-scroll-proportion="0.8310502" vertical-offset="27" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="335" selection-end="335" vertical-scroll-proportion="-10.962963" vertical-offset="10" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="34" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="663" />
@@ -3122,7 +3041,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-district.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java">
@@ -3146,15 +3067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="94" selection-start="5284" selection-end="5284" vertical-scroll-proportion="-63.423077" vertical-offset="0" max-vertical-offset="1972">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="4" selection-start="1390" selection-end="1532" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1122">
-          <folding>
-            <element signature="e#1653#1663#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3192,13 +3104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="49" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="58" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.23652695" vertical-offset="261" max-vertical-offset="612">
@@ -3209,13 +3114,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="7" selection-start="1345" selection-end="1395" vertical-scroll-proportion="0.5389408" vertical-offset="218" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="4" selection-start="1771" selection-end="1910" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
@@ -3240,13 +3138,6 @@
             <element signature="e#1911#1912#0" expanded="true" />
             <element signature="e#1955#1956#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="46" selection-start="6711" selection-end="6711" vertical-scroll-proportion="-11.0" vertical-offset="1958" max-vertical-offset="2924">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3292,41 +3183,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="28" selection-start="2784" selection-end="2797" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="1870">
+          <folding>
+            <element signature="e#1235#1716#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-business-kind.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="129" selection-start="4754" selection-end="4754" vertical-scroll-proportion="0.0" vertical-offset="1132" max-vertical-offset="2414">
+        <state line="122" column="7" selection-start="5911" selection-end="5911" vertical-scroll-proportion="0.0" vertical-offset="1642" max-vertical-offset="2618">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="213" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4420">
+        <state line="110" column="23" selection-start="5271" selection-end="5271" vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="4454">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="405" selection-end="405" vertical-scroll-proportion="-8.074074" vertical-offset="156" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="372" selection-end="372" vertical-scroll-proportion="-11.222222" vertical-offset="71" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="398" selection-end="398" vertical-scroll-proportion="-12.851851" vertical-offset="27" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="405" selection-end="405" vertical-scroll-proportion="-13.740741" vertical-offset="3" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="27" selection-start="6464" selection-end="6476" vertical-scroll-proportion="-11.653846" vertical-offset="1822" max-vertical-offset="2924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/BusinessType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding>
+            <element signature="e#331#332#0" expanded="false" />
+            <element signature="e#371#372#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="96" selection-end="96" vertical-scroll-proportion="0.14196242" vertical-offset="0" max-vertical-offset="479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="63" selection-start="2569" selection-end="2569" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="4" selection-start="1390" selection-end="1532" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="20" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="353" column="63" selection-start="33077" selection-end="33077" vertical-scroll-proportion="-12.481482" vertical-offset="5664" max-vertical-offset="6681">
-          <folding>
-            <marker date="1400614172000" expanded="true" signature="29557:30234" placeholder="INSERT INTO ..." />
-            <marker date="1400614172000" expanded="true" signature="33014:33765" placeholder="INSERT INTO ..." />
-          </folding>
+        <state line="465" column="106" selection-start="44505" selection-end="44505" vertical-scroll-proportion="0.5883777" vertical-offset="7662" max-vertical-offset="8976">
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="55" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.24900399" vertical-offset="776" max-vertical-offset="1428">
-          <folding>
-            <element signature="e#1235#1716#0" expanded="false" />
-            <marker date="1400615932000" expanded="true" signature="1961:2075" placeholder="{...}" />
-          </folding>
-        </state>
       </provider>
     </entry>
   </component>

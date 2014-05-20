@@ -25,7 +25,7 @@ import java.util.Set;
         @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT_AND_REGION", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId AND p.propertyRegion.regionId  = :regionId"),
         @NamedQuery(name = "Property.FIND_ALL_BY_PROPERTY_KIND", query = "SELECT p FROM Property p WHERE p.propertyKind.propertyKindName  LIKE :propertyKind"),
         @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId AND p.propertyRegion.regionId  = :regionId AND p.propertyKind.propertyKindName  LIKE :propertyKind"),
-
+        //@NamedQuery(name = "Property.FIND_ALL_BY_BUSINESS_KIND", query = "SELECT p FROM Property p WHERE p.propertyKind.propertyKindName  LIKE :propertyKind")
 })
 public class Property implements Serializable {
 
@@ -53,6 +53,8 @@ public class Property implements Serializable {
     public static final String FIND_ALL_BY_PROPERTY_KIND = "Property.FIND_ALL_BY_PROPERTY_KIND";
 
     public static final String FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND = "Property.FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND";
+
+    public static final String FIND_ALL_BY_BUSINESS_KIND= "Property.FIND_ALL_BY_BUSINESS_KIND";
 
     @Id
     @GeneratedValue
