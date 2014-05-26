@@ -1,14 +1,18 @@
 package com.homerenting.domain;
 
 import com.homerenting.domain.modules.header.search.*;
-import com.homerenting.domain.modules.header.security.Role;
 import com.homerenting.external.CloudinaryImage;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.search.annotations.Analyzer;
+import org.hibernate.search.annotations.DocumentId;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.Index;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,6 +31,10 @@ import java.util.Set;
         @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId AND p.propertyRegion.regionId  = :regionId AND p.propertyKind.propertyKindName  LIKE :propertyKind"),
         //@NamedQuery(name = "Property.FIND_ALL_BY_BUSINESS_KIND", query = "SELECT p FROM Property p WHERE p.propertyKind.propertyKindName  LIKE :propertyKind")
 })
+@Indexed
+@Analyzer(impl = org.apache.lucene.analysis.standard.StandardAnalyzer.class)
+//@Cache(usage= CacheConcurrencyStrategy.TRANSACTIONAL,
+//        region="PROPERTY")
 public class Property implements Serializable {
 
     /**
@@ -59,6 +67,7 @@ public class Property implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "PROPERTY_ID", unique = true, nullable = false)
+    @DocumentId
     private Long propertyId;
 
     @NotNull
@@ -68,7 +77,7 @@ public class Property implements Serializable {
     private String propertyName;
 
     @ManyToOne
-    @JoinColumn(name="propertyKindId")
+    @JoinColumn(name="PROPERTY_KIND_ID", unique= false, nullable=false, insertable=true, updatable=true)
     private PropertyKind propertyKind;
 
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
@@ -91,6 +100,7 @@ public class Property implements Serializable {
     @Size(min = 1, max = 250)
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
     @Column(name = "PROPERTY_DESCRIPTION", unique = false, nullable = false)
+    @Field(index=Index.YES)
     private String propertyDescription;
 
     @NotNull

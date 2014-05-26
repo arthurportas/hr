@@ -23,7 +23,7 @@
         <!-- Spring Third Party dependencies -->
         <version.aopalliance>1.0</version.aopalliance>
 
-        <hibernate.version>4.1.4.Final</hibernate.version>
+        <hibernate.version>4.3.5.Final</hibernate.version>
 
         <hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
 
@@ -62,17 +62,6 @@
     <dependencyManagement>
 
         <dependencies>
-            <!-- Define the version of JBoss' Java EE 6 APIs we want to import. Any
-                dependencies from org.jboss.spec will have their version defined by this
-                BOM -->
-            <!-- JBoss distributes a complete set of Java EE 6 APIs including a Bill
-                of Materials (BOM). A BOM specifies the versions of a "stack" (or a collection)
-                of artifacts. We use this here so that we always get the correct versions
-                of artifacts. Here we use the jboss-javaee-web-6.0 stack (you can read this
-                as the JBoss stack of the Java EE Web Profile 6 APIs), and we use version
-                3.0.0.Final which is the latest release of the stack. You can actually use
-                this stack with any version of JBoss AS that implements Java EE 6, not just
-                JBoss AS 7! -->
             <dependency>
                 <groupId>org.jboss.spec</groupId>
                 <artifactId>jboss-javaee-web-6.0</artifactId>
@@ -87,11 +76,7 @@
                 <artifactId>spring-aop</artifactId>
                 <version>${version.spring}</version>
             </dependency>
-            <!--<dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-asm</artifactId>
-                <version>${version.spring}</version>
-            </dependency>-->
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
@@ -180,11 +165,7 @@
 
         <!-- Import the JPA API using the provided scope It is included in JBoss
             AS 7 / EAP 6 -->
-        <dependency>
-            <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.0-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
+
 
         <!-- JSR-303 (Bean Validation) Implementation -->
         <!-- Provides portable constraints such as @Email -->
@@ -193,7 +174,6 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>${hibernate.validator.version}</version>
-            <scope>provided</scope>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
@@ -212,11 +192,36 @@
         </dependency>-->
 
         <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.0.Final</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
             <version>${hibernate.version}</version>
-            <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search-orm</artifactId>
+            <version>4.5.1.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search-analyzers</artifactId>
+            <version>4.5.1.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.xml.parsers</groupId>
+            <artifactId>jaxp-ri</artifactId>
+            <version>1.4.5</version>
+            <scope>runtime</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>postgresql</groupId>
@@ -257,9 +262,9 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-<!--
-            <scope>test</scope>
--->
+            <!--
+                        <scope>test</scope>
+            -->
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>

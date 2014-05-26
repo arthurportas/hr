@@ -82,4 +82,7 @@
     <script src="<@spring.url '/static/resources/realto-html/js/modules/login/register-user.js'/>"/>
     <script src="js/register-user.js"></script>
 
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/search/geo-location.js'/>"/>
+    <script src="js/geo-location.js"></script>
+
 </html>

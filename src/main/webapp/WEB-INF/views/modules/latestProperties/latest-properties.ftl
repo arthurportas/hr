@@ -24,7 +24,6 @@
                 </div><!-- .carousel-inner -->
             </div>
         </div><!--End Carousel-->
-
     </div><!-- .container  -->
 </div><!-- #latest-properties  -->
 <!-- #latest-properties  -->
@@ -71,9 +70,11 @@
 
 <#macro renderHighlightedProperties>
     <div class="item">
-        <ul class="thumbnails">
-            <#list highlightedProperties as p><#--should begin index 3-->
-                <li class="span4 box-container">
+        <#list remaingHighlightedProperties as p><#--TODO: fix index for ul write-->
+            <#if ((p_index == 0) || (p_index % 3 == 0))>
+                <ul class="thumbnails ${p_index}">
+            </#if>
+                <li class="span4 box-container ${p_index}">
                     <div class="holder">
                         <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">
                             <span class="more"></span>
@@ -104,7 +105,9 @@
                         </div>
                     </div>
                 </li>
-            </#list>
-        </ul>
+            <#if ((p_index != 0) && (p_index % 3 == 0))>
+                </ul>
+            </#if>
+        </#list>
     </div><!-- .item -->
 </#macro>

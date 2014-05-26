@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "PARISH", uniqueConstraints = @UniqueConstraint(columnNames = "PARISH_NAME"))
+@Table(name = "PARISH")
 public class Parish implements Serializable{
 
     /** Default value included to remove warning. Remove or modify at will. **/
@@ -24,7 +24,7 @@ public class Parish implements Serializable{
     @NotNull
     @Size(min = 1, max = 25)
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
-    @Column(name = "PARISH_NAME", unique = true, nullable = false)
+    @Column(name = "PARISH_NAME", unique = false, nullable = false)
     private String parishName;
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -38,7 +38,7 @@ public class Parish implements Serializable{
    }
 
     @XmlElement
-    public void setparishId(Long id) {
+    public void setParishId(Long id) {
       this.parishId = parishId;
    }
 

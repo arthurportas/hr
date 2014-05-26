@@ -2,6 +2,9 @@ package com.homerenting.repo;
 
 import com.homerenting.domain.Property;
 import com.homerenting.domain.modules.header.search.PropertyKind;
+import org.hibernate.search.jpa.FullTextEntityManager;
+import org.hibernate.search.jpa.Search;
+import org.hibernate.search.query.dsl.QueryBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +15,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import java.awt.print.Book;
 import java.util.List;
 
 @Repository(PropertyDaoImpl.COMPONENT_NAME)
@@ -21,6 +25,8 @@ public class PropertyDaoImpl implements IPropertyDao {
     private static final Logger slf4jLogger = LoggerFactory.getLogger(PropertyDaoImpl.class);
 
     public static final String COMPONENT_NAME = "propertyDaoImpl";
+
+    private int maxResults;
 
     @Autowired
     private EntityManager em;
@@ -77,7 +83,9 @@ public class PropertyDaoImpl implements IPropertyDao {
     @Override
     public List<Property> findAllHighLighted() {
         slf4jLogger.info("==List<Property> findAllHighLighted()==");//TODO: maxresults in config
-        return em.createNamedQuery(Property.FIND_ALL_HIGHLIGHTED).setMaxResults(37).getResultList();
+        return em.createNamedQuery(Property.FIND_ALL_HIGHLIGHTED)
+                .setMaxResults(37)
+                .getResultList();
     }
 
     @Override

@@ -9,42 +9,44 @@
 
                                 <div class="span8 hidden-phone">
 
+                                    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
+                                    <article>
+                                        <p>Finding your location: <span id="status">checking...</span></p>
+                                    </article>
 
-
-
-                                    <div class="item active">
-                                        <ul class="thumbnails">
-                                            <li class="span4 box-container">
-                                                <div class="holder">
-                                                    <#assign p = highlightedProperties[0] />
-                                                    <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">
-                                                        <span class="more"></span>
-                                                        <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
-                                                    <#--<img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />-->
-                                                    </a>
-                                                    <span class="prop-tag">
-                                                    <@spring.messageText "FOR.${p.businessType?upper_case}", "${p.businessType?cap_first}"/>
-                                                    </span>
-                                                    <div class="prop-info">
-                                                        <h3 class="prop-title">${p.propertyTitle}</h3>
-                                                        <ul class="more-info clearfix">
-                                                            <li class="info-label clearfix">
-                                                                <span class="pull-left"></span>
-                                                            ${p.tipology!""}
-                                                            ${p.vilageTipology!""}
-                                                            <@spring.messageText "IN", "em"/>
-                                                                <span class="qty pull-right">${p.propertyRegion?cap_first}</span>
-                                                            </li>
-                                                            <li class="info-label clearfix">
-                                                                <span class="pull-left">${p.propertyPrice?string.number}€</span><#-- <span class="qty pull-right">2</span>-->
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div><!-- .item -->
+                                    <#--<div class="item active">-->
+                                        <#--<ul class="thumbnails">-->
+                                            <#--<li class="span4 box-container">-->
+                                                <#--<div class="holder">-->
+                                                    <#--<#assign p = highlightedProperties[0] />-->
+                                                    <#--<a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">-->
+                                                        <#--<span class="more"></span>-->
+                                                        <#--<img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />-->
+                                                    <#--&lt;#&ndash;<img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />&ndash;&gt;-->
+                                                    <#--</a>-->
+                                                    <#--<span class="prop-tag">-->
+                                                    <#--<@spring.messageText "FOR.${p.businessType?upper_case}", "${p.businessType?cap_first}"/>-->
+                                                    <#--</span>-->
+                                                    <#--<div class="prop-info">-->
+                                                        <#--<h3 class="prop-title">${p.propertyTitle}</h3>-->
+                                                        <#--<ul class="more-info clearfix">-->
+                                                            <#--<li class="info-label clearfix">-->
+                                                                <#--<span class="pull-left"></span>-->
+                                                            <#--${p.tipology!""}-->
+                                                            <#--${p.vilageTipology!""}-->
+                                                            <#--<@spring.messageText "IN", "em"/>-->
+                                                                <#--<span class="qty pull-right">${p.propertyRegion?cap_first}</span>-->
+                                                            <#--</li>-->
+                                                            <#--<li class="info-label clearfix">-->
+                                                                <#--<span class="pull-left">${p.propertyPrice?string.number}€</span>&lt;#&ndash; <span class="qty pull-right">2</span>&ndash;&gt;-->
+                                                            <#--</li>-->
+                                                        <#--</ul>-->
+                                                    <#--</div>-->
+                                                <#--</div>-->
+                                            <#--</li>-->
+                                        <#--</ul>-->
+                                    <#--</div><!-- .item &ndash;&gt;-->
 
 
 
@@ -58,7 +60,10 @@
 
                                 <div class="span4">
                                     <div class="search-form">
-                                        <p><@spring.messageText "FIND.YOUR.NEW.HOME", "Encontre uma nova Casa"/></p>
+
+                                        <p>
+                                            <@spring.messageText "FIND.YOUR.NEW.HOME", "Encontre uma nova Casa"/>
+                                        </p>
                                         <form action="results" class="row-fluid" method="GET">
 
                                             <@renderDistricts />

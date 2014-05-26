@@ -10,19 +10,6 @@ public enum  Nav {
     LAW("law"),
     CONTACTS("contacts");
 
-    /*
-    enum LAW_ITEMS{
-        RENTAL("rental"),
-        SALE("sale");
-
-        public final String lawItems;
-
-        public LAW_ITEMS(String lawItem) {
-
-        }
-
-    };*/
-
     private final String navEntry;
 
     private Nav(String navEntry) {

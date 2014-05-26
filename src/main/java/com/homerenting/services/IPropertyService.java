@@ -1,7 +1,6 @@
 package com.homerenting.services;
 
 import com.homerenting.domain.Property;
-import com.homerenting.domain.modules.header.search.PropertyKind;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

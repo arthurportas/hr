@@ -1,7 +1,6 @@
 package com.homerenting.repo;
 
 import com.homerenting.domain.Property;
-import com.homerenting.domain.modules.header.search.PropertyKind;
 
 import java.util.List;
 

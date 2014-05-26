@@ -18,13 +18,13 @@ public class AuthenticationEventListener implements ApplicationListener<Abstract
 
     @Override
     public void onApplicationEvent(AbstractAuthenticationEvent authenticationEvent) {
-
+        slf4jLogger.info("==void onApplicationEvent(AbstractAuthenticationEvent authenticationEvent)==");
         if (authenticationEvent instanceof InteractiveAuthenticationSuccessEvent) {
             // ignores to prevent duplicate logging with AuthenticationSuccessEvent
                     return;
         }
         Authentication authentication = authenticationEvent.getAuthentication();
         String auditMessage = "Login attempt with username: " + authentication.getName() + "\t\tSuccess: " + authentication.isAuthenticated();
-        slf4jLogger.info("==" + auditMessage +"==");
+        slf4jLogger.debug("==" + auditMessage +"==");
     }
 }

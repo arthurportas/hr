@@ -2,17 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-business-kind.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/geo-location.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_1_4_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_1_4_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/AuthenticationEventListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/AuthenticationEventListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/EmailContact.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/EmailContact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/FacebookContact.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/FacebookContact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/ImoWeb.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/ImoWeb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/LinkedInContact.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/LinkedInContact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/MobileContact.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/MobileContact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/PhoneContact.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/PhoneContact.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/login/SecurityQuestions.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/login/SecurityQuestions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/TwitterContact.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/TwitterContact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/import.sql" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -89,55 +118,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="search.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
+      <file leaf-file-name="LinkedInContact.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/LinkedInContact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="27" selection-start="6464" selection-end="6476" vertical-scroll-proportion="-11.653846" vertical-offset="1822" max-vertical-offset="2924">
+            <state line="9" column="32" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailTemplates.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="33" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_en_UK.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties">
+      <file leaf-file-name="PropertyServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="372" selection-end="372" vertical-scroll-proportion="-11.222222" vertical-offset="71" max-vertical-offset="578">
+            <state line="56" column="44" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="533" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_es_ES.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties">
+      <file leaf-file-name="Nav.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="398" selection-end="398" vertical-scroll-proportion="-12.851851" vertical-offset="27" max-vertical-offset="510">
+            <state line="10" column="25" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_pt_PT.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties">
+      <file leaf-file-name="UrlBuilder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/UrlBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="405" selection-end="405" vertical-scroll-proportion="-13.740741" vertical-offset="3" max-vertical-offset="544">
+            <state line="10" column="13" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
+      <file leaf-file-name="PropertyDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="63" selection-start="2569" selection-end="2569" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1054">
+            <state line="21" column="0" selection-start="796" selection-end="810" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
               <folding />
             </state>
           </provider>
@@ -147,10 +178,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/BusinessType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="12" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <folding>
-                <element signature="e#331#332#0" expanded="false" />
-                <element signature="e#371#372#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,7 +186,7 @@
       <file leaf-file-name="import.sql" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="465" column="106" selection-start="44505" selection-end="44505" vertical-scroll-proportion="0.5883777" vertical-offset="7662" max-vertical-offset="8976">
+            <state line="471" column="113" selection-start="45030" selection-end="45030" vertical-scroll-proportion="0.7950617" vertical-offset="7685" max-vertical-offset="15504">
               <folding />
             </state>
           </provider>
@@ -167,29 +195,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="District.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java">
+      <file leaf-file-name="RootController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="4" selection-start="1390" selection-end="1532" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1122">
-              <folding />
+            <state line="78" column="0" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1428">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parish.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java">
+      <file leaf-file-name="latest-properties.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="850">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Region.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="20" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1360">
-              <folding />
+            <state line="72" column="81" selection-start="3683" selection-end="3683" vertical-scroll-proportion="-2.25" vertical-offset="1107" max-vertical-offset="1513">
+              <folding>
+                <element signature="tag#li#0;tag#ul#0;tag#div#2" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,29 +236,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AnnounceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ContactController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/FinancingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LawController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/NewsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ProfessionalsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ResultPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ServicesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/SupportController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/TermsAndConditionsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/navigation/navigation.ftl" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/personal.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PersonalAreaController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/EnergyEfficiency.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/BusinessType.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/import.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_es_ES.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_pt_PT.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/external/CloudinaryImage.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/header.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Tipologies.java" />
@@ -243,26 +245,47 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-district.ftl" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyKind.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PropertyKind.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_es_ES.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/search/search_pt_PT.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/geo-location.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/AuthenticationEventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IGenericDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/EmailContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/ImoWeb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/FacebookContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/LinkedInContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/MobileContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/PhoneContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/TwitterContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/login/SecurityQuestions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
       </list>
     </option>
@@ -323,7 +346,6 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
@@ -593,44 +615,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="latestProperties" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -654,626 +638,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="navigation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="email" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'search'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="latestProperties" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'latest-properties'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'header'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="navigation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'navigation'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'login'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="realto-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="realto-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="realto-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="realto-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="realto-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1530,6 +894,10 @@
               <option name="myItemId" value="homerenting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interceptors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1738,10 +1106,6 @@
               <option name="myItemId" value="header" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1766,52 +1130,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contacts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homerenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2600,7 +1918,7 @@
       <workItem from="1399328788598" duration="49487000" />
       <workItem from="1400008239796" duration="48044000" />
       <workItem from="1400331002710" duration="41023000" />
-      <workItem from="1400612171356" duration="10574000" />
+      <workItem from="1400612171356" duration="42769000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2682,21 +2000,25 @@
       <created>1400616228583</created>
       <updated>1400616228583</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added parish items&#10;">
+      <created>1400623882109</created>
+      <updated>1400623882109</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448411000" />
+    <option name="totallyTimeSpent" value="480606000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="22" width="1440" height="812" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25555557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2706,20 +2028,20 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22083333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17453505" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44166666" sideWeight="0.6695279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2638889" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.275" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.5010352" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13519314" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08011445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2805,7 +2127,8 @@
     <MESSAGE value="Ajax mechanism for number of properties per district and region working.&#10;Trigger is region selection&#10;" />
     <MESSAGE value="Added relation between Region(1-N)Parish" />
     <MESSAGE value="Added relation between Property(1-N)PropertyKind&#10;Ajax call to properties number by kind and district region and kind&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added relation between Property(1-N)PropertyKind&#10;Ajax call to properties number by kind and district region and kind&#10;" />
+    <MESSAGE value="Added parish items&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added parish items&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2819,379 +2142,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/EnergyEfficiency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="30" selection-start="28276" selection-end="29037" vertical-scroll-proportion="0.65102637" vertical-offset="5762" max-vertical-offset="6103">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PersonalAreaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="9" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/postgresql/postgresql/8.4-702.jdbc4/postgresql-8.4-702.jdbc4-sources.jar!/org/postgresql/core/v3/QueryExecutorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2160" column="0" selection-start="86388" selection-end="86388" vertical-scroll-proportion="0.0" vertical-offset="36217" max-vertical-offset="36618" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_en_UK.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.2592592" vertical-offset="0" max-vertical-offset="238" />
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_pt_PT.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.2592592" vertical-offset="0" max-vertical-offset="238" />
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties_es_ES.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="174" selection-end="174" vertical-scroll-proportion="-5.037037" vertical-offset="0" max-vertical-offset="238" />
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Terrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="157" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="4" selection-start="1278" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3196">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#5561#5562#0" expanded="false" />
-            <element signature="e#5586#5587#0" expanded="false" />
-            <element signature="e#5630#5631#0" expanded="false" />
-            <element signature="e#5653#5654#0" expanded="false" />
-            <element signature="e#5686#5687#0" expanded="false" />
-            <element signature="e#5709#5710#0" expanded="false" />
-            <element signature="e#5769#5770#0" expanded="false" />
-            <element signature="e#5802#5803#0" expanded="false" />
-            <element signature="e#5834#5835#0" expanded="false" />
-            <element signature="e#5856#5857#0" expanded="false" />
-            <element signature="e#5914#5915#0" expanded="false" />
-            <element signature="e#5945#5946#0" expanded="false" />
-            <element signature="e#5974#5975#0" expanded="false" />
-            <element signature="e#5993#5994#0" expanded="false" />
-            <element signature="e#6045#6046#0" expanded="false" />
-            <element signature="e#6070#6071#0" expanded="false" />
-            <element signature="e#6102#6103#0" expanded="false" />
-            <element signature="e#6123#6124#0" expanded="false" />
-            <element signature="e#6179#6180#0" expanded="false" />
-            <element signature="e#6208#6209#0" expanded="false" />
-            <element signature="e#6239#6240#0" expanded="false" />
-            <element signature="e#6260#6261#0" expanded="false" />
-            <element signature="e#6316#6317#0" expanded="false" />
-            <element signature="e#6345#6346#0" expanded="false" />
-            <element signature="e#6373#6374#0" expanded="false" />
-            <element signature="e#6391#6392#0" expanded="false" />
-            <element signature="e#6441#6442#0" expanded="false" />
-            <element signature="e#6464#6465#0" expanded="false" />
-            <element signature="e#6495#6496#0" expanded="false" />
-            <element signature="e#6516#6517#0" expanded="false" />
-            <element signature="e#6572#6573#0" expanded="false" />
-            <element signature="e#6601#6602#0" expanded="false" />
-            <element signature="e#6635#6636#0" expanded="false" />
-            <element signature="e#6657#6658#0" expanded="false" />
-            <element signature="e#6717#6718#0" expanded="false" />
-            <element signature="e#6748#6749#0" expanded="false" />
-            <element signature="e#6779#6780#0" expanded="false" />
-            <element signature="e#6800#6801#0" expanded="false" />
-            <element signature="e#6856#6857#0" expanded="false" />
-            <element signature="e#6885#6886#0" expanded="false" />
-            <element signature="e#6912#6913#0" expanded="false" />
-            <element signature="e#6929#6930#0" expanded="false" />
-            <element signature="e#6977#6978#0" expanded="false" />
-            <element signature="e#6998#6999#0" expanded="false" />
-            <element signature="e#7033#7034#0" expanded="false" />
-            <element signature="e#7058#7059#0" expanded="false" />
-            <element signature="e#7122#7123#0" expanded="false" />
-            <element signature="e#7159#7160#0" expanded="false" />
-            <element signature="e#7192#7193#0" expanded="false" />
-            <element signature="e#7215#7216#0" expanded="false" />
-            <element signature="e#7275#7276#0" expanded="false" />
-            <element signature="e#7308#7309#0" expanded="false" />
-            <element signature="e#7335#7336#0" expanded="false" />
-            <element signature="e#7352#7353#0" expanded="false" />
-            <element signature="e#7400#7401#0" expanded="false" />
-            <element signature="e#7421#7422#0" expanded="false" />
-            <element signature="e#7453#7454#0" expanded="false" />
-            <element signature="e#7475#7476#0" expanded="false" />
-            <element signature="e#7533#7534#0" expanded="false" />
-            <element signature="e#7564#7565#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/security/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="959" selection-end="1086" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="92" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="3791">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/CloudinaryImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="48" selection-start="1853" selection-end="1864" vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="1887">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2148#2156#0" expanded="false" />
-            <element signature="e#2440#2441#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2560#2561#0" expanded="false" />
-            <element signature="e#2618#2619#0" expanded="false" />
-            <element signature="e#2672#2673#0" expanded="false" />
-            <element signature="e#2722#2723#0" expanded="false" />
-            <element signature="e#2824#2825#0" expanded="false" />
-            <element signature="e#2902#2903#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="false" />
-            <element signature="e#3008#3009#0" expanded="false" />
-            <element signature="e#3112#3113#0" expanded="false" />
-            <element signature="e#3192#3193#0" expanded="false" />
-            <element signature="e#3234#3235#0" expanded="false" />
-            <element signature="e#3267#3268#0" expanded="false" />
-            <element signature="e#3340#3341#0" expanded="false" />
-            <element signature="e#3384#3385#0" expanded="false" />
-            <element signature="e#3421#3422#0" expanded="false" />
-            <element signature="e#3452#3453#0" expanded="false" />
-            <element signature="e#3518#3519#0" expanded="false" />
-            <element signature="e#3558#3559#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/header.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="97" selection-start="254" selection-end="409" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Tipologies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="141" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="44" selection-start="2608" selection-end="2608" vertical-scroll-proportion="-6.269231" vertical-offset="2404" max-vertical-offset="15215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/latestProperties/latest-properties.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07157895" vertical-offset="0" max-vertical-offset="475" />
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/header.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475" />
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/DistrictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="45" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="34" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-district.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.21935484" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-region.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-district-region.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="94" selection-start="5284" selection-end="5284" vertical-scroll-proportion="-63.423077" vertical-offset="0" max-vertical-offset="1972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/UserShortProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="102" selection-start="2313" selection-end="2376" vertical-scroll-proportion="0.0" vertical-offset="536" max-vertical-offset="1581">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2701#2707#0" expanded="false" />
-            <element signature="e#2806#2807#0" expanded="false" />
-            <element signature="e#2831#2832#0" expanded="false" />
-            <element signature="e#2881#2882#0" expanded="false" />
-            <element signature="e#2904#2905#0" expanded="false" />
-            <element signature="e#2933#2934#0" expanded="false" />
-            <element signature="e#2952#2953#0" expanded="false" />
-            <element signature="e#3010#3011#0" expanded="false" />
-            <element signature="e#3035#3036#0" expanded="false" />
-            <element signature="e#3069#3070#0" expanded="false" />
-            <element signature="e#3091#3092#0" expanded="false" />
-            <element signature="e#3155#3156#0" expanded="false" />
-            <element signature="e#3186#3187#0" expanded="false" />
-            <element signature="e#3227#3228#0" expanded="false" />
-            <element signature="e#3266#3267#0" expanded="false" />
-            <element signature="e#3351#3352#0" expanded="false" />
-            <element signature="e#3407#3408#0" expanded="false" />
-            <element signature="e#3446#3447#0" expanded="false" />
-            <element signature="e#3474#3475#0" expanded="false" />
-            <element signature="e#3545#3546#0" expanded="false" />
-            <element signature="e#3579#3580#0" expanded="false" />
-            <element signature="e#3614#3615#0" expanded="false" />
-            <element signature="e#3642#3643#0" expanded="false" />
-            <element signature="e#3703#3704#0" expanded="false" />
-            <element signature="e#3737#3738#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="58" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.23652695" vertical-offset="261" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="7" selection-start="1345" selection-end="1395" vertical-scroll-proportion="0.5389408" vertical-offset="218" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyKind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="296" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#461#462#0" expanded="false" />
-            <element signature="e#494#495#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/PropertyKind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <folding>
-            <element signature="e#1249#1259#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
-            <element signature="e#1911#1912#0" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-property-kind.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="461">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-district-region-kind.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="55" selection-start="992" selection-end="992" vertical-scroll-proportion="0.82254696" vertical-offset="133" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="110" selection-start="979" selection-end="979" vertical-scroll-proportion="0.75156575" vertical-offset="133" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="90" selection-start="2614" selection-end="2614" vertical-scroll-proportion="0.68058455" vertical-offset="966" max-vertical-offset="1445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="70" selection-start="4322" selection-end="4322" vertical-scroll-proportion="0.0" vertical-offset="1357" max-vertical-offset="1972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="28" selection-start="2784" selection-end="2797" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="1870">
-          <folding>
-            <element signature="e#1235#1716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/num-properties-per-business-kind.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="479">
@@ -3202,13 +2152,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="122" column="7" selection-start="5911" selection-end="5911" vertical-scroll-proportion="0.0" vertical-offset="1642" max-vertical-offset="2618">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="23" selection-start="5271" selection-end="5271" vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="4454">
           <folding />
         </state>
       </provider>
@@ -3253,33 +2196,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="27" selection-start="6464" selection-end="6476" vertical-scroll-proportion="-11.653846" vertical-offset="1822" max-vertical-offset="2924">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/BusinessType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding>
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#371#372#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/PropertyStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="3" selection-start="96" selection-end="96" vertical-scroll-proportion="0.14196242" vertical-offset="0" max-vertical-offset="479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="63" selection-start="2569" selection-end="2569" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
@@ -3298,16 +2217,322 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="3914" selection-end="3914" vertical-scroll-proportion="-11.115385" vertical-offset="1173" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/geo-location.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="-2.8461537" vertical-offset="22" max-vertical-offset="3009">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/fine-search/fine-search.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="33" selection-start="8102" selection-end="8102" vertical-scroll-proportion="-39.557693" vertical-offset="0" max-vertical-offset="3927">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="170" column="61" selection-start="6753" selection-end="6753" vertical-scroll-proportion="-49.03846" vertical-offset="1615" max-vertical-offset="11203">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="850">
+        <state line="30" column="34" selection-start="960" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="816">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="74" selection-start="1754" selection-end="1754" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/infrastructure.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="27" selection-start="954" selection-end="967" vertical-scroll-proportion="0.95695364" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="69" selection-start="1303" selection-end="1379" vertical-scroll-proportion="-8.84" vertical-offset="119" max-vertical-offset="2567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/interceptors/AuthenticationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-search-engine/4.5.1.Final/hibernate-search-engine-4.5.1.Final.jar!/org/hibernate/search/annotations/Index.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="148" selection-end="159" vertical-scroll-proportion="-2.04" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="75" selection-start="1058" selection-end="1058" vertical-scroll-proportion="15.96" vertical-offset="756" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-search-orm/4.5.1.Final/hibernate-search-orm-4.5.1.Final.jar!/org/hibernate/search/MassIndexer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="9" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.57615894" vertical-offset="472" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/AuthenticationEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="495" selection-end="495" vertical-scroll-proportion="0.023026315" vertical-offset="112" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="16" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="1" selection-start="454" selection-end="464" vertical-scroll-proportion="0.3853211" vertical-offset="129" max-vertical-offset="714">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="17" selection-start="910" selection-end="910" vertical-scroll-proportion="0.5382263" vertical-offset="300" max-vertical-offset="850">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/TimeStampHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="0.5198777" vertical-offset="0" max-vertical-offset="327">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/TokenGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="178" selection-end="178" vertical-scroll-proportion="0.48318043" vertical-offset="12" max-vertical-offset="425">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IGenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="3" selection-start="7373" selection-end="7385" vertical-scroll-proportion="0.0" vertical-offset="2631" max-vertical-offset="4794">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/AccountTokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="736" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/EmailContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="10" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1785">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/ImoWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="30" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/FacebookContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/MobileContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="37" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/PhoneContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="29" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/login/SecurityQuestions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="24" selection-start="74" selection-end="78" vertical-scroll-proportion="0.0787037" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/TwitterContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/Nav.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/UrlBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/BusinessType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.12171838" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/LinkedInContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.12171838" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="44" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="533" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="796" selection-end="810" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1428">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="81" selection-start="3683" selection-end="3683" vertical-scroll-proportion="-2.25" vertical-offset="1107" max-vertical-offset="1513">
+          <folding>
+            <element signature="tag#li#0;tag#ul#0;tag#div#2" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="465" column="106" selection-start="44505" selection-end="44505" vertical-scroll-proportion="0.5883777" vertical-offset="7662" max-vertical-offset="8976">
+        <state line="471" column="113" selection-start="45030" selection-end="45030" vertical-scroll-proportion="0.7950617" vertical-offset="7685" max-vertical-offset="15504">
           <folding />
         </state>
       </provider>

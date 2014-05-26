@@ -1,6 +1,6 @@
 package com.homerenting.domain.modules.header.login;
 
-
+/*NOT IN USE-26/MAY/2014*/
 public enum SecurityQuestions {
 
     FIRST_MOBILE("first mobile"),

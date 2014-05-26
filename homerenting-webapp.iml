@@ -59,17 +59,50 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:hibernate-validator:4.2.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:hibernate-entitymanager:4.1.4.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.logging:jboss-logging:3.1.0.GA" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:hibernate-core:4.1.4.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: antlr:antlr:2.7.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: dom4j:dom4j:1.6.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.javassist:javassist:3.15.0-GA" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:4.2.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-entitymanager:4.3.5.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:4.3.5.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.4.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.18.1-GA" level="project" />
+    <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss:jandex:1.1.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-search-orm:4.5.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-search-engine:4.5.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-search-analyzers:4.5.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.solr:solr-analysis-extras:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.solr:solr-core:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.solr:solr-solrj:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.6.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-highlighter:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-memory:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-kuromoji:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-misc:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-phonetic:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:20041127.091804" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-spatial:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-spellchecker:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-grouping:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-smartcn:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-stempel:3.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.avro:avro:1.7.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.3" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-facet:3.6.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.xml.parsers:jaxp-ri:1.4.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.xml.parsers:jaxp-api:1.4.5" level="project" />
     <orderEntry type="library" name="Maven: postgresql:postgresql:8.4-702.jdbc4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.2.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
@@ -90,7 +123,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:3.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.1" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:20041127.091804" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.social:spring-social-config:1.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.social:spring-social-web:1.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
@@ -111,16 +143,12 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.yaml:snakeyaml:1.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: cglib:cglib-nodep:2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.h2database:h2:1.3.165" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-simple:1.6.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.6.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:12.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.20" level="project" />
     <orderEntry type="library" name="Maven: ro.isdc.wro4j:wro4j-core:1.4.6" level="project" />
-    <orderEntry type="library" name="Maven: commons-io:commons-io:2.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.6.4" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: ro.isdc.wro4j:wro4j-extensions:1.4.6" level="project" />
@@ -161,7 +189,6 @@
     <orderEntry type="library" name="Maven: net.sourceforge.htmlunit:htmlunit:2.13" level="project" />
     <orderEntry type="library" name="Maven: xalan:xalan:2.7.1" level="project" />
     <orderEntry type="library" name="Maven: xalan:serializer:2.7.1" level="project" />
-    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:4.2.1" level="project" />
     <orderEntry type="library" name="Maven: net.sourceforge.htmlunit:htmlunit-core-js:2.13" level="project" />
@@ -186,7 +213,6 @@
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.0.7" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" name="Maven: com.cloudinary:cloudinary:1.0.8" level="project" />
-    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: net.tanesha.recaptcha4j:recaptcha4j:0.0.7" level="project" />
   </component>

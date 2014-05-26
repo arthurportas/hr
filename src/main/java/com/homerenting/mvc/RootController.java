@@ -2,7 +2,6 @@ package com.homerenting.mvc;
 
 import com.homerenting.domain.District;
 import com.homerenting.domain.modules.header.search.BusinessType;
-import com.homerenting.domain.modules.header.search.PropertyStatus;
 import com.homerenting.domain.modules.header.search.PropertyKind;
 import com.homerenting.services.*;
 import org.slf4j.Logger;
@@ -60,16 +59,19 @@ public class RootController {
         mav.addObject("regions", districts.get(0).getRegions());//Todo fetch client district
         //mav.addObject("regions", regionService.getAllOrderedByName());
         mav.addObject("propertyKinds", Arrays.asList(PropertyKind.values()));
-        mav.addObject("busynessType", Arrays.asList(PropertyStatus.values()));
+        mav.addObject("busynessType", Arrays.asList(BusinessType.values()));
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
         if(auth.isAuthenticated() && name!="anonymousUser") {
             mav.addObject("personalArea", "personal");
         }
-        mav.addObject("apartments", apartmentService.getHighlitedApartments());//TODO-just for test
-        mav.addObject("highlightedProperties", propertyService.getAllHighLighted());
-
+        final List highlighted = propertyService.getAllHighLighted();
+        List firstThreeHighlighted = highlighted.subList(0, 3);
+        int hightlightedListSize = highlighted.size();
+        List remaingHighlighted = highlighted.subList(3, hightlightedListSize);
+        mav.addObject("highlightedProperties", firstThreeHighlighted);
+        mav.addObject("remaingHighlightedProperties", remaingHighlighted);
         mav.addObject("motd", motdService.getById(1L));
 		return mav;
 	}

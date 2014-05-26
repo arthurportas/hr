@@ -9,15 +9,14 @@ public enum EmailTemplates {
     ANNOUNCE_EXPIRED("announce-expired.ftl"),
     PASSWORD_RECOVERY("password-recovery.ftl");
 
+    private final String emailTemplate;
 
-    private final String value;
-
-    private EmailTemplates(String value) {
-        this.value = value;
+    private EmailTemplates(String emailTemplate) {
+        this.emailTemplate = emailTemplate;
     }
 
     public String getValue(){
-        return this.value;
+        return this.emailTemplate;
     }
 
 }
