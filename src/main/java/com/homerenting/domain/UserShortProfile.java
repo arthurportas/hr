@@ -125,4 +125,6 @@ public class UserShortProfile implements Serializable {
     public UserShortProfile() {
 
     }
+    /* ==========================HASHCODE/EQUALS/TOSTRING======================= */
+
 }

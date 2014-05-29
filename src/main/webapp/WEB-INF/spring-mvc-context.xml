@@ -140,6 +140,8 @@
     </bean>-->
 
     <bean id="authService" class="com.homerenting.repo.UserShortProfileDaoImpl"></bean>
+    <!-- Use a Md5 encoder since the user's passwords are stored as Md5 in the database -->
+    <bean class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" id="passwordEncoder"/>
 
 
     <mvc:annotation-driven/>

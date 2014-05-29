@@ -21,8 +21,8 @@
     <script src="<@spring.url '/static/resources/realto-html/js/custom.js'/>"/>
     <script src="js/custom.js"></script>
 
-    <#--<script src="<@spring.url '/static/resources/realto-html/js/modules/login/login.js'/>"/>
-    <script src="js/login.js"></script>-->
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/login.js'/>"/>
+    <script src="js/login.js"></script>
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/login/sha256.jquery.debug.js'/>"/>
     <script src="js/sha256.jquery.debug.js"></script>
@@ -67,7 +67,7 @@
         $(document).ready(function(){
             $("a.recover-password").tooltip();
             $("a.register-panel-login").tooltip();
-            $("a.terms-and-conditions").tooltip();
+            /*$("a.terms-and-conditions").tooltip();*/
             $("a.register-free").tooltip();
             $('button.register-user-form-submit').attr("disabled", true);
         });

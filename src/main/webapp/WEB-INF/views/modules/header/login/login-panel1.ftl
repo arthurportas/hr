@@ -1,5 +1,5 @@
 <#macro renderTab1>
-    <div class="tab-pane active" id="panel1">
+    <div class="tab-pane active login" id="panel1">
         <div class="row-fluid">
             <@renderTab1LoginForm />
             <@renderTab1LoginSocial />

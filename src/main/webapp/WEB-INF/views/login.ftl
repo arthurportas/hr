@@ -47,19 +47,19 @@
 
 <#macro renderTabs>
     <ul class="nav nav-tabs">
-        <li class="active">
+        <li class="active login">
             <a href="#panel1" data-toggle="tab" class="active ">
                 <i class="icon-lock"></i>&nbsp;
                 <span><@spring.messageText "LOGIN.PANEL", "Login"/></span>
             </a>
         </li>
-        <li>
+        <li class="register">
             <a href="#panel2" data-toggle="tab">
                 <i class="icon-user"></i>&nbsp;
                 <span><@spring.messageText "REGISTER.PANEL", "Registar"/></span>
             </a>
         </li>
-        <li>
+        <li class="forgot-password">
             <a href="#panel3" data-toggle="tab"><i class="icon-key"></i>&nbsp;
                 <span><@spring.messageText "FORGOT.PASSWORD", "Recuperar Password"/></span>
             </a>
