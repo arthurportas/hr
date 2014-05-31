@@ -51,7 +51,7 @@
                     value="/var/lucene/indexes"/>
             <!-- Useful configuration during development -
             developer can see structured SQL queries -->
-            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.show_sql" value="false" />
             <property name="hibernate.format_sql" value="true" />
         </properties>
    </persistence-unit>

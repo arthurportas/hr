@@ -48,8 +48,8 @@ public class UserShortProfile implements Serializable {
 
 	@NotEmpty(message = "password may not be empty")
 	@Size(min = 5, max = 200, message = "password must be 5 digits or more")
-    @Column(name = "USER_PASSWORD", unique = true, nullable = false)
-	private String password;/* SHA-1 */
+    @Column(name = "USER_PASSWORD", unique = false, nullable = false)
+	private String password;/* should be encoded in SHA-1 */
 
     private boolean isAccountEnabled = false;
 

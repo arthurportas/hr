@@ -94,4 +94,5 @@ public class LoginController {
         mav.addObject("motd", motdService.getById(1L));
         return mav;
     }
+
 }

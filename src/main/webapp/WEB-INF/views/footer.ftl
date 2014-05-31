@@ -67,7 +67,7 @@
         $(document).ready(function(){
             $("a.recover-password").tooltip();
             $("a.register-panel-login").tooltip();
-            /*$("a.terms-and-conditions").tooltip();*/
+            $("a.terms-and-conditions").tooltip();
             $("a.register-free").tooltip();
             $('button.register-user-form-submit').attr("disabled", true);
         });

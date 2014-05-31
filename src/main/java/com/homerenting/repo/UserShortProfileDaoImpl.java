@@ -7,6 +7,7 @@ import org.apache.commons.exec.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.GrantedAuthorityImpl;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -122,9 +123,12 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException, DataAccessException {
 
-        UserShortProfile details = this.findByEmail(username);//should validate password
+        UserShortProfile userEntity = this.findByEmail(username);//should validate password
+
+        if (userEntity == null)
+            throw new UsernameNotFoundException("user not found");
 
         ArrayList<SimpleGrantedAuthority> authorities = new ArrayList<SimpleGrantedAuthority>();
         SimpleGrantedAuthority userAuthority = new SimpleGrantedAuthority(
@@ -132,7 +136,7 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
         SimpleGrantedAuthority adminAuthority = new SimpleGrantedAuthority(
                 "ROLE_ADMIN");
 
-        for (Iterator<Role> it = details.getRoles().iterator(); it.hasNext(); ) {
+        for (Iterator<Role> it = userEntity.getRoles().iterator(); it.hasNext(); ) {
             Role role = it.next();
             if (role.getRoleName().equals(Roles.ROLE_USER)){
                 authorities.add(userAuthority);
@@ -140,8 +144,21 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
                 authorities.add(adminAuthority);
             }
         }
-        UserDetails user = new User(details.getEmail(),
-                details.getPassword(), true, true, true, true, authorities);
+        String email = userEntity.getEmail();
+        String password = userEntity.getPassword();
+        //boolean enabled = details.isAccountEnabled();
+        boolean enabled = true;
+        boolean accountNonExpired = true;
+        boolean credentialsNonExpired = true;
+        boolean accountNonLocked = true;
+
+        UserDetails user = new User(email,
+                                    password,
+                                    enabled,
+                                    accountNonExpired,
+                                    credentialsNonExpired,
+                                    accountNonLocked,
+                                    authorities);
         return user;
     }
 }

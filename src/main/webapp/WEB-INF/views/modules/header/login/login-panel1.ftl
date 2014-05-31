@@ -13,42 +13,40 @@
         <h4>
             <i class="icon-user"></i>&nbsp;&nbsp; <@spring.messageText "LOGIN.HERE", "Efetue Login"/>
         </h4>
-        <div class="register-user-blockUI">
-            <form name='loginForm' action="<@spring.url 'j_spring_security_check'/>" method='POST' role="form">
+        <form name='loginForm' action="<@spring.url 'j_spring_security_check'/>" method='POST' role="form">
 
-                <div class="form-group">
-                    <label for="login-form-username">
-                        <@spring.messageText "USERNAME", "Utilizador"/>
-                    </label>
-                    <input type="text" name='j_username' class="input-block-level form-control"
-                           id="login-form-username" placeholder="<@spring.messageText "ENTER.EMAIL", "Introduza Email"/>"/>
-                </div>
+            <div class="form-group">
+                <label for="login-form-username">
+                    <@spring.messageText "USERNAME", "Utilizador"/>
+                </label>
+                <input type="text" name='j_username' class="input-block-level form-control"
+                       id="login-form-username" placeholder="<@spring.messageText "ENTER.EMAIL", "Introduza Email"/>"/>
+            </div>
 
-                <div class="form-group">
-                    <label for="login-form-password">
-                        <@spring.messageText "PASSWORD", "Password"/>
-                        <a href="#" class="pull-right recover-password" data-toggle="tooltip" data-placement="top"
-                           title="<@spring.messageText "FORGOT.PASSWORD", "Recuperar Password"/>">
-                            <i class="icon-question-sign"></i>&nbsp;
-                            <@spring.messageText "FORGOT.PASSWORD", "Recuperar Password"/>
-                        </a>
-                    </label>
-                    <input type="password" name='j_password' class="input-block-level form-control"
-                           id="login-form-password" placeholder="<@spring.messageText "ENTER.PASSWORD", "Introduza Password"/>"/>
-                </div>
+            <div class="form-group">
+                <label for="login-form-password">
+                    <@spring.messageText "PASSWORD", "Password"/>
+                    <a href="#" class="pull-right recover-password" data-toggle="tooltip" data-placement="top"
+                       title="<@spring.messageText "FORGOT.PASSWORD", "Recuperar Password"/>">
+                        <i class="icon-question-sign"></i>&nbsp;
+                        <@spring.messageText "FORGOT.PASSWORD", "Recuperar Password"/>
+                    </a>
+                </label>
+                <input type="password" name='j_password' class="input-block-level form-control"
+                       id="login-form-password" placeholder="<@spring.messageText "ENTER.PASSWORD", "Introduza Password"/>"/>
+            </div>
 
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" name="_spring_security_remember_me"> <@spring.messageText "REMEMBER.ME", "Lembrar-me"/>
-                    </label>
-                </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="_spring_security_remember_me"> <@spring.messageText "REMEMBER.ME", "Lembrar-me"/>
+                </label>
+            </div>
 
-                <button name="submit" type="submit" class="btn btn-default" value="submit">
-                    <@spring.messageText "SIGN.IN", "Entrar"/><i class="icon-chevron-sign-right"></i>
-                </button>
+            <button name="submit" type="submit" class="btn btn-default" value="submit">
+                <@spring.messageText "SIGN.IN", "Entrar"/><i class="icon-chevron-sign-right"></i>
+            </button>
 
-            </form>
-        </div>
+        </form>
     </div>
 </#macro>
 
