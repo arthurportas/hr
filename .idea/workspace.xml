@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/BaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/BaseEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -283,13 +280,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserShortProfileServiceImpl.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UserShortProfileServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="15" selection-start="2808" selection-end="2808" vertical-scroll-proportion="3.5093834" vertical-offset="0" max-vertical-offset="1530">
+            <state line="77" column="15" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="12" selection-start="3017" selection-end="3017" vertical-scroll-proportion="0.45576409" vertical-offset="697" max-vertical-offset="1071">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -300,18 +306,6 @@
             <state line="18" column="41" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="import.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="376" column="88" selection-start="36701" selection-end="36701" vertical-scroll-proportion="-11.333333" vertical-offset="6086" max-vertical-offset="15725">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -371,7 +365,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/MySimpleUrlAuthenticationSuccessHandler.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationErrorHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/UserShortProfile.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
@@ -385,6 +378,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
       </list>
     </option>
   </component>
@@ -2359,7 +2353,7 @@
       <workItem from="1400008239796" duration="48044000" />
       <workItem from="1400331002710" duration="41023000" />
       <workItem from="1400612171356" duration="62619000" />
-      <workItem from="1401538862763" duration="5705000" />
+      <workItem from="1401538862763" duration="6378000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2457,11 +2451,15 @@
       <created>1401544494077</created>
       <updated>1401544494077</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Login working, but needs  error handling&#10;Added transaction requirement to UserShortProfile Service">
+      <created>1401659958873</created>
+      <updated>1401659958873</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="506161000" />
+    <option name="totallyTimeSpent" value="506834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
@@ -2559,8 +2557,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Major refactor" />
-    <MESSAGE value="i18n working" />
     <MESSAGE value="i18n working DS&#10;" />
     <MESSAGE value="added concelhos.txt&#10;" />
     <MESSAGE value="Moved properties files&#10;" />
@@ -2584,7 +2580,9 @@
     <MESSAGE value="Refactor parish items id.&#10;Small Code review&#10;" />
     <MESSAGE value="Links corrected on login/register/forgot-password tabs&#10;" />
     <MESSAGE value="Login working, but needs  error handling&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login working, but needs  error handling&#10;" />
+    <MESSAGE value="Login working, but needs  error handling&#10;Added transaction requirement to UserShortProfile Service" />
+    <MESSAGE value="Disabled hibernate search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disabled hibernate search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2808,13 +2806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="60" selection-start="3176" selection-end="3176" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="1258" />
@@ -2955,10 +2946,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="15" selection-start="2808" selection-end="2808" vertical-scroll-proportion="3.5093834" vertical-offset="0" max-vertical-offset="1530">
+        <state line="77" column="15" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="12" selection-start="3017" selection-end="3017" vertical-scroll-proportion="0.45576409" vertical-offset="697" max-vertical-offset="1071">
+          <folding />
         </state>
       </provider>
     </entry>
