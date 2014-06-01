@@ -2,6 +2,7 @@ package com.homerenting.domain;
 
 import com.homerenting.domain.modules.header.search.*;
 import com.homerenting.external.CloudinaryImage;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.search.annotations.Analyzer;
 import org.hibernate.search.annotations.DocumentId;
@@ -37,7 +38,7 @@ import java.util.Set;
 @Analyzer(impl = org.apache.lucene.analysis.standard.StandardAnalyzer.class)
 //@Cache(usage= CacheConcurrencyStrategy.TRANSACTIONAL,
 //        region="PROPERTY")
-public class Property implements Serializable {
+public class Property extends BaseEntity implements Serializable {
 
     /**
      * Default value included to remove warning. Remove or modify at will. *
@@ -362,4 +363,44 @@ public class Property implements Serializable {
         this.propertyDistrict = propertyDistrict;
     }
 
+    /**
+     * HashCode
+     */
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((propertyName == null) ? 0 : propertyName.hashCode());
+        return result;
+    }
+
+    /**
+     * Equals
+     *
+     * @param obj
+     */
+    @Override
+    public boolean equals(final Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        final Property other = (Property) obj;
+        if (propertyName == null) {
+            if (other.propertyName != null)
+                return false;
+        } else if (!propertyName.equals(other.propertyName))
+            return false;
+        return true;
+    }
+
+    /**
+     * ToString
+     */
+    @Override
+    public String toString() {
+        return ToStringBuilder.reflectionToString(this);
+    }
 }

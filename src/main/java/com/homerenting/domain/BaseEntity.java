@@ -16,7 +16,7 @@ public abstract class BaseEntity {
 	/**
 	 * Equals
 	 * */
-	public abstract boolean equals(Object obj);
+	public abstract boolean equals(final Object obj);
 	/**
 	 * ToString
 	 * */

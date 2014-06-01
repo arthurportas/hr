@@ -12,7 +12,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.NoResultException;
 import java.util.List;
 
 @Service(UserShortProfileServiceImpl.COMPONENT_NAME)
@@ -76,6 +75,7 @@ public class UserShortProfileServiceImpl implements IUserShortProfileService{
         userShortProfileDao.update(user);
     }
 
+    @Deprecated
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         slf4jLogger.info("==UserDetails loadUserByUsername(String username) throws UsernameNotFoundException==");
