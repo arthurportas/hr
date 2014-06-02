@@ -117,6 +117,7 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
         }
         return addedRoles;
     }
+    @Deprecated
     @Override
     public UserDetails _loadUserByUsername(String username) throws UsernameNotFoundException {
         return this.loadUserByUsername(username);

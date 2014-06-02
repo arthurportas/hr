@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/import.sql" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -70,66 +77,6 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" line="127" class="com.homerenting.repo.UserShortProfileDaoImpl" package="com.homerenting.repo">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" line="138" class="com.homerenting.repo.UserShortProfileDaoImpl" package="com.homerenting.repo">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" line="132" class="com.homerenting.repo.UserShortProfileDaoImpl" package="com.homerenting.repo">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java" line="25" class="com.homerenting.domain.helpers.UrlAuthenticationFailureHandler" package="com.homerenting.domain.helpers">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" line="61" class="com.homerenting.domain.helpers.UrlAuthenticationSuccessHandler" package="com.homerenting.domain.helpers">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -160,51 +107,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" line="129" class="com.homerenting.repo.UserShortProfileDaoImpl" package="com.homerenting.repo">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java" line="19" class="com.homerenting.domain.helpers.UrlAuthenticationFailureHandler" package="com.homerenting.domain.helpers">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java" line="26" class="com.homerenting.domain.helpers.UrlAuthenticationFailureHandler" package="com.homerenting.domain.helpers">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -215,19 +117,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="register-user.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/register-user.js">
+      <file leaf-file-name="UrlAuthenticationFailureHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="passwords-match.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/passwords-match.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state line="19" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
@@ -236,36 +129,56 @@
       <file leaf-file-name="UserShortProfileDaoImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="26" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="2499">
+            <state line="119" column="15" selection-start="4943" selection-end="4943" vertical-scroll-proportion="0.0" vertical-offset="1687" max-vertical-offset="2516">
               <folding>
-                <element signature="e#5486#5510#0" expanded="true" />
+                <element signature="e#5502#5526#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlAuthenticationSuccessHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
+      <file leaf-file-name="RootController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.0" vertical-offset="701" max-vertical-offset="1241">
+            <state line="44" column="45" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1428">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContextLoadListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="782">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlAuthenticationFailureHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java">
+      <file leaf-file-name="IndexUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="425">
+            <state line="33" column="11" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
+      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="399" column="15" selection-start="12642" selection-end="12642" vertical-scroll-proportion="0.0" vertical-offset="4857" max-vertical-offset="5253">
+            <state line="39" column="13" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0" vertical-offset="3424" max-vertical-offset="3791">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="0" selection-start="3525" selection-end="3525" vertical-scroll-proportion="0.0" vertical-offset="928" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
@@ -274,37 +187,31 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="428" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+            <state line="13" column="0" selection-start="428" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="901">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import.sql" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="846" column="83" selection-start="77831" selection-end="77831" vertical-scroll-proportion="-2.090909" vertical-offset="15141" max-vertical-offset="15504">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UserShortProfileServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="15" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+            <state line="77" column="15" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.0" vertical-offset="1146" max-vertical-offset="1530">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="12" selection-start="3017" selection-end="3017" vertical-scroll-proportion="0.45576409" vertical-offset="697" max-vertical-offset="1071">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/BaseEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -332,7 +239,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/search/geo-location.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java" />
@@ -361,7 +267,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/SecurityContext.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/MySimpleUrlAuthenticationSuccessHandler.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationErrorHandler.java" />
@@ -370,15 +275,17 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/register-user.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
       </list>
     </option>
   </component>
@@ -476,6 +383,50 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="homerenting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.apache.lucene:lucene-memory:3.6.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucene-memory-3.6.2.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.apache.lucene:lucene-memory:3.6.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucene-memory-3.6.2.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2353,7 +2304,7 @@
       <workItem from="1400008239796" duration="48044000" />
       <workItem from="1400331002710" duration="41023000" />
       <workItem from="1400612171356" duration="62619000" />
-      <workItem from="1401538862763" duration="6378000" />
+      <workItem from="1401538862763" duration="12135000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2455,11 +2406,19 @@
       <created>1401659958873</created>
       <updated>1401659958873</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Disabled hibernate search">
+      <created>1401661010169</created>
+      <updated>1401661010169</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Disabled hibernate search&#10;">
+      <created>1401661650594</created>
+      <updated>1401661650594</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="506834000" />
+    <option name="totallyTimeSpent" value="512591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
@@ -2479,20 +2438,20 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22083333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16380544" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44166666" sideWeight="0.6695279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3611111" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36944443" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.5010352" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08011445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22174536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2557,7 +2516,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="i18n working DS&#10;" />
     <MESSAGE value="added concelhos.txt&#10;" />
     <MESSAGE value="Moved properties files&#10;" />
     <MESSAGE value="Major refactor&#10;" />
@@ -2582,7 +2540,8 @@
     <MESSAGE value="Login working, but needs  error handling&#10;" />
     <MESSAGE value="Login working, but needs  error handling&#10;Added transaction requirement to UserShortProfile Service" />
     <MESSAGE value="Disabled hibernate search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Disabled hibernate search" />
+    <MESSAGE value="Disabled hibernate search&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disabled hibernate search&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2596,27 +2555,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/PhoneContact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/login/SecurityQuestions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="74" selection-end="78" vertical-scroll-proportion="0.0787037" vertical-offset="0" max-vertical-offset="432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/contacts/TwitterContact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/navigation/EmailTemplates.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="33" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
@@ -2675,15 +2613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="796" selection-end="810" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1428">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2750,15 +2679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="-0.36607143" vertical-offset="310" max-vertical-offset="850">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/login/SocialMediaService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="38" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
@@ -2775,7 +2695,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="34" selection-start="2835" selection-end="2835" vertical-scroll-proportion="-15.076923" vertical-offset="645" max-vertical-offset="1275" />
+        <state line="61" column="34" selection-start="2835" selection-end="2835" vertical-scroll-proportion="-15.076923" vertical-offset="645" max-vertical-offset="1275">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/forgot-password-panel1.ftl">
@@ -2848,20 +2770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="3936" selection-end="3936" vertical-scroll-proportion="0.0" vertical-offset="214" max-vertical-offset="1411">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0" vertical-offset="2125" max-vertical-offset="3791">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
@@ -2876,29 +2784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="376" column="88" selection-start="36701" selection-end="36701" vertical-scroll-proportion="-11.333333" vertical-offset="6086" max-vertical-offset="15725">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="0" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.0" vertical-offset="701" max-vertical-offset="1241">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="26" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="2499">
-          <folding>
-            <element signature="e#5486#5510#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2916,23 +2805,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="41" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="399" column="15" selection-start="12642" selection-end="12642" vertical-scroll-proportion="0.0" vertical-offset="4857" max-vertical-offset="5253">
+        <state line="37" column="0" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="5253">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-memory/3.6.2/lucene-memory-3.6.2.jar!/org/apache/lucene/index/memory/MemoryIndex.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="-1.140575" vertical-offset="442" max-vertical-offset="2856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="22" selection-start="2591" selection-end="2591" vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="11662">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
@@ -2953,11 +2865,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="12" selection-start="3017" selection-end="3017" vertical-scroll-proportion="0.45576409" vertical-offset="697" max-vertical-offset="1071">
+        <state line="39" column="13" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0" vertical-offset="2125" max-vertical-offset="3791">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="0" selection-start="3525" selection-end="3525" vertical-scroll-proportion="0.0" vertical-offset="928" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="15" selection-start="4943" selection-end="4943" vertical-scroll-proportion="0.0" vertical-offset="1687" max-vertical-offset="2516">
+          <folding>
+            <element signature="e#5502#5526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="45" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1428">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="11" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="846" column="83" selection-start="77831" selection-end="77831" vertical-scroll-proportion="-2.090909" vertical-offset="15141" max-vertical-offset="15504">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>

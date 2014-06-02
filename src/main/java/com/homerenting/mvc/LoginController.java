@@ -83,7 +83,6 @@ public class LoginController {
         slf4jLogger.info("==ModelAndView loginForm()==");
         ModelAndView mav = new ModelAndView("login");
         mav.addObject("motd", motdService.getById(1L));
-        mav.addObject("securityQuestions", SecurityQuestions.values());
         return mav;
     }
 

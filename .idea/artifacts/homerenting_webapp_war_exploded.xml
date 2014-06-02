@@ -79,6 +79,9 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.2" />
           <element id="library" level="project" name="Maven: org.springframework.social:spring-social-twitter:1.1.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:3.2.3.RELEASE" />
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.6.9" />
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.8.2" />
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-web:2.0.4" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.0" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:12.0" />
