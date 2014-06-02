@@ -28,7 +28,7 @@ public class Parish implements Serializable{
     private String parishName;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "REGION_ID", unique= false, nullable=true, insertable=true, updatable=true)
+    @JoinColumn(name="REGION_ID_FK", referencedColumnName = "REGION_ID", unique= false, nullable=false, insertable=true, updatable=true)
     @JsonBackReference
     private Region region;
     	/* ==========================GETTERS/SETTERS======================= */

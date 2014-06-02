@@ -39,7 +39,9 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
 	public UserShortProfile findByEmail(String email) {
         slf4jLogger.info("==UserShortProfile findByEmail(String email)==");
 		try{
-            return (UserShortProfile) em.createNamedQuery(UserShortProfile.FIND_BY_EMAIL).setParameter("email", email).getSingleResult();
+            return (UserShortProfile) em.createNamedQuery(UserShortProfile.FIND_BY_EMAIL)
+                    .setParameter("email", email)
+                    .getSingleResult();
         }catch (NoResultException nre){
             slf4jLogger.info("==NoResultException==");
             slf4jLogger.info(nre.getMessage());

@@ -43,7 +43,7 @@ public class Region implements Serializable{
     private String regionName;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "DISTRICT_ID", nullable = false)
+    @JoinColumn(name="DISTRICT_ID_FK", referencedColumnName = "DISTRICT_ID", unique= false, nullable=false, insertable=true, updatable=true)
     @JsonBackReference
     private District district;
 

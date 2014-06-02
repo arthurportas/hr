@@ -36,8 +36,7 @@ import java.util.Set;
 })
 @Indexed
 @Analyzer(impl = org.apache.lucene.analysis.standard.StandardAnalyzer.class)
-//@Cache(usage= CacheConcurrencyStrategy.TRANSACTIONAL,
-//        region="PROPERTY")
+//@Cache(usage=CacheConcurrencyStrategy.READ_ONLY,region="pizza")
 public class Property extends BaseEntity implements Serializable {
 
     /**
@@ -143,11 +142,11 @@ public class Property extends BaseEntity implements Serializable {
     private String country;
 
     @ManyToOne
-    @JoinColumn(name="districtId")
+    @JoinColumn(name="DISTRICT_ID_FK", referencedColumnName = "DISTRICT_ID", unique= false, nullable=true, insertable=true, updatable=true)
     private District propertyDistrict;
 
     @ManyToOne
-    @JoinColumn(name="regionId")
+    @JoinColumn(name="REGION_ID_FK", referencedColumnName = "REGION_ID", unique= false, nullable=true, insertable=true, updatable=true)
     private Region propertyRegion;
 
     @NotNull
