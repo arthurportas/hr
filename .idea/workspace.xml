@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/import.sql" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -76,7 +70,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" line="61" class="com.homerenting.domain.helpers.UrlAuthenticationSuccessHandler" package="com.homerenting.domain.helpers">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" line="65" class="com.homerenting.domain.helpers.UrlAuthenticationSuccessHandler" package="com.homerenting.domain.helpers">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -91,7 +85,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" line="63" class="com.homerenting.domain.helpers.UrlAuthenticationSuccessHandler" package="com.homerenting.domain.helpers">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" line="67" class="com.homerenting.domain.helpers.UrlAuthenticationSuccessHandler" package="com.homerenting.domain.helpers">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -131,7 +125,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="782">
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,10 +141,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Property.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="2" selection-start="2536" selection-end="2536" vertical-scroll-proportion="-18.634686" vertical-offset="5424" max-vertical-offset="6698">
+            <state line="346" column="21" selection-start="11612" selection-end="11612" vertical-scroll-proportion="0.0" vertical-offset="5424" max-vertical-offset="6698">
               <folding>
                 <element signature="e#7548#7565#0" expanded="true" />
                 <element signature="e#7679#7680#0" expanded="true" />
@@ -269,6 +265,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UrlAuthenticationSuccessHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="90" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.77754235" vertical-offset="670" max-vertical-offset="1326">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CloudinaryImage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/CloudinaryImage.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -303,7 +308,12 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state line="909" column="57" selection-start="86064" selection-end="86064" vertical-scroll-proportion="-1.4074074" vertical-offset="15339" max-vertical-offset="15572">
-              <folding />
+              <folding>
+                <marker date="1401746894000" expanded="true" signature="71932:72015" placeholder="INSERT INTO ..." />
+                <marker date="1401746894000" expanded="true" signature="74565:74651" placeholder="INSERT INTO ..." />
+                <marker date="1401746894000" expanded="true" signature="75905:75987" placeholder="INSERT INTO ..." />
+                <marker date="1401746894000" expanded="true" signature="80308:80393" placeholder="INSERT INTO ..." />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
@@ -376,7 +386,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/register-user.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/BaseEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" />
@@ -390,6 +399,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" />
       </list>
     </option>
   </component>
@@ -2438,7 +2448,7 @@
       <workItem from="1400008239796" duration="48044000" />
       <workItem from="1400331002710" duration="41023000" />
       <workItem from="1400612171356" duration="62619000" />
-      <workItem from="1401538862763" duration="16209000" />
+      <workItem from="1401538862763" duration="17409000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2552,18 +2562,22 @@
       <created>1401740908309</created>
       <updated>1401740908309</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="entity beautiffy">
+      <created>1401747636522</created>
+      <updated>1401747636523</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="516665000" />
+    <option name="totallyTimeSpent" value="517865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25555557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25555557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2583,7 +2597,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5347222" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5347222" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2654,8 +2668,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Moved properties files&#10;" />
-    <MESSAGE value="Major refactor&#10;" />
     <MESSAGE value="Added header and footer dependencies front-office&#10;" />
     <MESSAGE value="UserShortProfile registration with token verification working" />
     <MESSAGE value="Mail service working&#10;" />
@@ -2679,7 +2691,9 @@
     <MESSAGE value="Disabled hibernate search" />
     <MESSAGE value="Disabled hibernate search&#10;" />
     <MESSAGE value="enabled hibernate search&#10;enabled ehcache&#10;corrected region io on parish relation&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="enabled hibernate search&#10;enabled ehcache&#10;corrected region io on parish relation&#10;" />
+    <MESSAGE value="entity beautiffy" />
+    <MESSAGE value="Login working, but needs  error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login working, but needs  error handling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2887,13 +2901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.0" vertical-offset="701" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/passwords-match.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
@@ -2971,7 +2978,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/ContextLoadListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="782">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3024,7 +3033,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="2" selection-start="2536" selection-end="2536" vertical-scroll-proportion="-18.634686" vertical-offset="5424" max-vertical-offset="6698">
+        <state line="346" column="21" selection-start="11612" selection-end="11612" vertical-scroll-proportion="0.0" vertical-offset="5424" max-vertical-offset="6698">
           <folding>
             <element signature="e#7548#7565#0" expanded="true" />
             <element signature="e#7679#7680#0" expanded="true" />
@@ -3134,7 +3143,12 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="909" column="57" selection-start="86064" selection-end="86064" vertical-scroll-proportion="-1.4074074" vertical-offset="15339" max-vertical-offset="15572">
-          <folding />
+          <folding>
+            <marker date="1401746894000" expanded="true" signature="71932:72015" placeholder="INSERT INTO ..." />
+            <marker date="1401746894000" expanded="true" signature="74565:74651" placeholder="INSERT INTO ..." />
+            <marker date="1401746894000" expanded="true" signature="75905:75987" placeholder="INSERT INTO ..." />
+            <marker date="1401746894000" expanded="true" signature="80308:80393" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
@@ -3144,6 +3158,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="90" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.77754235" vertical-offset="670" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>

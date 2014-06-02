@@ -35,6 +35,9 @@ public class UrlAuthenticationSuccessHandler implements AuthenticationSuccessHan
 
     protected void handle(HttpServletRequest request,
                           HttpServletResponse response, Authentication authentication) throws IOException {
+        slf4jLogger.info("==handle(HttpServletRequest request,\n" +
+                "                          HttpServletResponse response, Authentication authentication) throws IOException ==");
+
         String targetUrl = determineTargetUrl(authentication);
 
         if (response.isCommitted()) {
@@ -46,6 +49,7 @@ public class UrlAuthenticationSuccessHandler implements AuthenticationSuccessHan
     }
     /** Builds the target URL according to the logic defined in the main class Javadoc. */
     protected String determineTargetUrl(Authentication authentication) {
+        slf4jLogger.info("==String determineTargetUrl(Authentication authentication)==");
         boolean isUser = false;
         boolean isAdmin = false;
         Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
@@ -69,6 +73,7 @@ public class UrlAuthenticationSuccessHandler implements AuthenticationSuccessHan
     }
 
     protected void clearAuthenticationAttributes(HttpServletRequest request) {
+        slf4jLogger.info("==void clearAuthenticationAttributes(HttpServletRequest request)==");
         HttpSession session = request.getSession(false);
         if (session == null) {
             return;
