@@ -148,7 +148,8 @@ iframe {
 ! Typography
 ========================================================== */
 .serif {
-	font-family: Georgia, serif;
+	//font-family: Georgia, serif;
+    font-family: Georgia, Sans-Serif, serif;
 }
 .italic {
 	font-style: italic;
@@ -717,6 +718,7 @@ footer a {
 ========================================================== */
 .prop-price, .prop-title {
 	font-size: 22px;
+    min-height: 44px;
 }
 .map iframe {
     height: 312px;

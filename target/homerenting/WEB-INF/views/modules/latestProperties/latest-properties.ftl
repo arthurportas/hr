@@ -24,7 +24,6 @@
                 </div><!-- .carousel-inner -->
             </div>
         </div><!--End Carousel-->
-
     </div><!-- .container  -->
 </div><!-- #latest-properties  -->
 <!-- #latest-properties  -->
@@ -32,12 +31,16 @@
 <#macro renderActiveHighlightedProperties>
     <div class="item active">
         <ul class="thumbnails">
-            <#list highlightedProperties as p><#--should begin index 3-->
+            <#list highlightedProperties as p>
                 <li class="span4 box-container">
                     <div class="holder">
                         <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">
                             <span class="more"></span>
-                            <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
+                            <#if (p.images?size > 0) >
+                                <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
+                            <#else>
+                                <img alt="image" src="http://placehold.it/800x454" class="media-object" />
+                            </#if>
                             <#--<img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />-->
                         </a>
                         <span class="prop-tag">
@@ -51,7 +54,7 @@
                                     ${p.tipology!""}
                                     ${p.vilageTipology!""}
                                     <@spring.messageText "IN", "em"/>
-                                    <span class="qty pull-right">${p.propertyRegion?cap_first}</span>
+                                    <span class="qty pull-right">${p.propertyRegion.regionName?cap_first}</span>
                                 </li>
                                 <li class="info-label clearfix">
                                     <span class="pull-left">${p.propertyPrice?string.number}€</span><#-- <span class="qty pull-right">2</span>-->
@@ -67,13 +70,19 @@
 
 <#macro renderHighlightedProperties>
     <div class="item">
-        <ul class="thumbnails">
-            <#list highlightedProperties as p><#--should begin index 3-->
-                <li class="span4 box-container">
+        <#list remaingHighlightedProperties as p><#--TODO: fix index for ul write-->
+            <#if ((p_index == 0) || (p_index % 3 == 0))>
+                <ul class="thumbnails ${p_index}">
+            </#if>
+                <li class="span4 box-container ${p_index}">
                     <div class="holder">
                         <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">
                             <span class="more"></span>
-                            <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
+                            <#if (p.images?size > 0) >
+                                <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
+                            <#else>
+                                <img alt="image" src="http://placehold.it/800x454" class="media-object" />
+                            </#if>
                             <#--<img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />-->
                         </a>
                         <span class="prop-tag">
@@ -87,7 +96,7 @@
                                         ${p.tipology!""}
                                         ${p.vilageTipology!""}
                                     <@spring.messageText "IN", "em"/>
-                                    <span class="qty pull-right">${p.propertyRegion?cap_first}</span>
+                                    <span class="qty pull-right">${p.propertyRegion.regionName?cap_first}</span>
                                 </li>
                                 <li class="info-label clearfix">
                                     <span class="pull-left">${p.propertyPrice?string.number}€</span><#-- <span class="qty pull-right">2</span>-->
@@ -96,7 +105,9 @@
                         </div>
                     </div>
                 </li>
-            </#list>
-        </ul>
+            <#if ((p_index != 0) && (p_index % 3 == 0))>
+                </ul>
+            </#if>
+        </#list>
     </div><!-- .item -->
 </#macro>

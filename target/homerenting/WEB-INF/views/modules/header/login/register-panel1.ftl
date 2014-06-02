@@ -1,5 +1,5 @@
 <#macro renderTab2>
-    <div class="tab-pane" id="panel2">
+    <div class="tab-pane register" id="panel2">
         <div class="row-fluid">
             <@renderTab2RegisterForm />
             <@renderTab2RegisterSocial />
@@ -50,7 +50,7 @@
                             <i class="icon-ok"></i>
                         </button>
                         &nbsp;&nbsp;&nbsp;<@spring.messageText "I.AGREE.WITH", "Concordo com"/>
-                        <a href="/terms" class="terms-and-conditions" data-toggle="tab" data-toggle="tooltip" data-placement="top"
+                        <a href="/terms" class="terms-and-conditions" data-toggle="tooltip" data-placement="top"
                            title="<@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/>">
                             <@spring.messageText "TERMS.AND.CONDITIONS", "Termos & Condições"/>
                         </a>

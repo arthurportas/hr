@@ -4,6 +4,7 @@ $('button.register-user-form-submit').bind("click", function(e){
 
     var email = $('input.register-user-form-username').val();
     var password = $.sha256($('input.register-user-form-password').val());
+
     var response = "";
         $.ajax({
             type: "PUT",

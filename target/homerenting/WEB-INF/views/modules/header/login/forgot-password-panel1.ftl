@@ -1,5 +1,5 @@
 <#macro renderTab3>
-    <div class="tab-pane" id="panel3">
+    <div class="tab-pane forgot-password" id="panel3">
         <div class="row-fluid">
             <@renderTab3ForgotPasswordForm />
             <@renderTab3Help />

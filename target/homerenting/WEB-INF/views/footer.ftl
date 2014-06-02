@@ -21,8 +21,8 @@
     <script src="<@spring.url '/static/resources/realto-html/js/custom.js'/>"/>
     <script src="js/custom.js"></script>
 
-    <#--<script src="<@spring.url '/static/resources/realto-html/js/modules/login/login.js'/>"/>
-    <script src="js/login.js"></script>-->
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/login.js'/>"/>
+    <script src="js/login.js"></script>
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/login/sha256.jquery.debug.js'/>"/>
     <script src="js/sha256.jquery.debug.js"></script>
@@ -81,5 +81,8 @@
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/login/register-user.js'/>"/>
     <script src="js/register-user.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/search/geo-location.js'/>"/>
+    <script src="js/geo-location.js"></script>
 
 </html>
