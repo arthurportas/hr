@@ -18,7 +18,9 @@ import java.util.Set;
 @NamedQueries({
         @NamedQuery(name = "District.FIND_ALL", query = "SELECT d from District d"),
         @NamedQuery(name = "District.FIND_ALL_REGIONS",
-                query = "SELECT d from District d WHERE  d.districtId= :id")
+                query = "SELECT d from District d WHERE  d.districtId= :id"),
+        @NamedQuery(name = "District.FIND_BY_NAME",
+                query = "SELECT d from District d WHERE  d.districtName LIKE :districtName")
 })
 public class District implements Serializable {
 
@@ -27,6 +29,8 @@ public class District implements Serializable {
     public static final String FIND_ALL = "District.FIND_ALL";
 
     public static final String FIND_ALL_REGIONS = "District.FIND_ALL_REGIONS";
+
+    public static final String FIND_BY_NAME = "District.FIND_BY_NAME";
 
     @Id
     @GeneratedValue
@@ -83,5 +87,38 @@ public class District implements Serializable {
     @XmlElement
     public void setProperties(Set<Property> properties) {
         this.properties = properties;
+    }
+
+    	/* ==========================BUILDER======================= */
+
+    public static Builder getBuilder() {
+        return new Builder();
+    }
+    public static class Builder {
+
+        private District district;
+
+        public Builder() {
+            district = new District();
+        }
+
+        public Builder withName(String districtName) {
+            district.districtName = districtName;
+            return this;
+        }
+
+        public Builder withRegions(Set<Region> regions) {
+            district.regions = regions;
+            return this;
+        }
+
+        public Builder withProperties(Set<Property> properties) {
+            district.properties = properties;
+            return this;
+        }
+
+        public District build() {
+            return district;
+        }
     }
 }

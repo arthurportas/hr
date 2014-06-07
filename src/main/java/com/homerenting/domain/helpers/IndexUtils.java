@@ -20,9 +20,9 @@ public class IndexUtils {
 
     public static final String COMPONENT_NAME = "indexUtils";
 
-    @Qualifier("entityManager")
+    /*@Qualifier("entityManager")
     @Autowired
-    private EntityManager em;
+    private EntityManager em;*/
 
     public void reindex() {
         slf4jLogger.info("==void reindex()==");

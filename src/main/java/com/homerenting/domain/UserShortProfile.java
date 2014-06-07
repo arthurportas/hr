@@ -13,8 +13,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import com.homerenting.domain.modules.header.security.Role;
 import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.annotate.JsonManagedReference;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -22,9 +20,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Table(name="USER_SHORT_PROFILE",uniqueConstraints = @UniqueConstraint(columnNames = "USER_SHORT_PROFILE_EMAIL"))
 @NamedQueries({
         @NamedQuery(name = "UserShortProfile.FIND_ALL", query = "SELECT u FROM UserShortProfile u"),
-        @NamedQuery(name = "UserShortProfile.FIND_BY_EMAIL",
-                query = "SELECT u FROM UserShortProfile u " +
-                        "WHERE u.email=:email")
+        @NamedQuery(name = "UserShortProfile.FIND_BY_EMAIL", query = "SELECT u FROM UserShortProfile u WHERE u.email=:email")
 })
 @XmlRootElement(name = "userShortProfile")
 @XmlAccessorType(XmlAccessType.PROPERTY)

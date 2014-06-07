@@ -1,4 +1,4 @@
-package com.homerenting.test;
+package com.homerenting.test.domain;
 
 import java.util.List;
 
@@ -8,7 +8,6 @@ import junit.framework.Assert;
 import com.homerenting.domain.User;
 import com.homerenting.repo.IUserDao;
 
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

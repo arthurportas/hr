@@ -5,6 +5,7 @@ import com.homerenting.domain.Parish;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,6 +22,9 @@ public class ApartmentDaoImpl implements IApartmentDao {
     private static final Logger slf4jLogger = LoggerFactory.getLogger(ApartmentDaoImpl.class);
 
     public static final String COMPONENT_NAME = "apartmentDaoImpl";
+
+    @Value("highlights.max.results")
+    private static int MAX_RESULTS;
 
     @Autowired
     private EntityManager em;
@@ -39,7 +43,10 @@ public class ApartmentDaoImpl implements IApartmentDao {
     @Override
     public List<Apartment> fetchHighlitedApartments() {
         slf4jLogger.info("==List<Apartment> fetchHighlitedApartments()==");
-        return em.createNamedQuery(Apartment.FIND_ALL_HIGHLIGHTED).setMaxResults(37).getResultList();
+        return em.createNamedQuery(Apartment.FIND_ALL_HIGHLIGHTED)
+                .setHint("org.hibernate.cacheable", Boolean.TRUE)
+                .setMaxResults(MAX_RESULTS)
+                .getResultList();
         //37 should be in config
     }
 }

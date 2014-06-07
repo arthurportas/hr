@@ -18,7 +18,7 @@ import java.util.Set;
 @NamedQueries({
     @NamedQuery(name = "Region.FIND_ALL", query = "SELECT r from Region r"),
     @NamedQuery(name = "Region.FIND_BY_NAME", query = "SELECT r from Region r WHERE r.regionName LIKE :regionName"),
-    @NamedQuery(name = "Region.FIND_BY_NAME_PATTERN", query = "SELECT r from Region r WHERE r.regionName LIKE :regionName")
+    @NamedQuery(name = "Region.FIND_BY_NAME_PATTERN", query = "SELECT r from Region r WHERE r.regionName LIKE :regionName"),
 })
 public class Region implements Serializable{
 
@@ -49,7 +49,7 @@ public class Region implements Serializable{
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "region")
     @JsonManagedReference
-    private Set<Parish> parishs = new HashSet<Parish>(0);
+    private Set<Parish> parishes = new HashSet<Parish>(0);
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy="propertyRegion")
     private Set<Property> properties = new HashSet<Property>(0);
@@ -83,13 +83,13 @@ public class Region implements Serializable{
         this.district = district;
     }
 
-    public Set<Parish> getParishs() {
-        return parishs;
+    public Set<Parish> getParishes() {
+        return parishes;
     }
 
     @XmlElement
-    public void setParishs(Set<Parish> parishs) {
-        this.parishs = parishs;
+    public void setParishes(Set<Parish> parishes) {
+        this.parishes = parishes;
     }
 
     public Set<Property> getProperties() {
@@ -101,5 +101,41 @@ public class Region implements Serializable{
         this.properties = properties;
     }
 
+    	/* ==========================BUILDER======================= */
 
+    public static Builder getBuilder() {
+        return new Builder();
+    }
+    public static class Builder {
+
+        private Region region;
+
+        public Builder() {
+            region = new Region();
+        }
+
+        public Builder withName(String regionName) {
+            region.regionName = regionName;
+            return this;
+        }
+
+        public Builder withDistrict(District district) {
+            region.district = district;
+            return this;
+        }
+
+        public Builder withParishes(Set<Parish> parishes) {
+            region.parishes = parishes;
+            return this;
+        }
+
+        public Builder withProperties(Set<Property> properties) {
+            region.properties = properties;
+            return this;
+        }
+
+        public Region build() {
+            return region;
+        }
+    }
 }

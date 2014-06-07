@@ -62,6 +62,29 @@ public class PropertyKind implements Serializable{
     public void setProperties(Set<Property> properties) {
         this.properties = properties;
     }
+
+    	/* ==========================BUILDER======================= */
+
+    public static Builder getBuilder() {
+        return new Builder();
+    }
+    public static class Builder {
+
+        private PropertyKind propertyKind;
+
+        public Builder() {
+            propertyKind = new PropertyKind();
+        }
+
+        public Builder withName(String propertyKindName) {
+            propertyKind.propertyKindName = propertyKindName;
+            return this;
+        }
+
+        public PropertyKind build() {
+            return propertyKind;
+        }
+    }
 }
 
 

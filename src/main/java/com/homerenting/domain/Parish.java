@@ -8,13 +8,19 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;
+import java.util.Set;
 
 @Entity
 @Table(name = "PARISH")
+@NamedQueries({
+        @NamedQuery(name = "Parish.FIND_ALL", query = "SELECT p FROM Parish p")
+})
 public class Parish implements Serializable{
 
     /** Default value included to remove warning. Remove or modify at will. **/
     private static final long serialVersionUID = 1L;
+
+    public static final String FIND_ALL = "Parish.FIND_ALL";
 
     @Id
     @GeneratedValue
@@ -28,7 +34,7 @@ public class Parish implements Serializable{
     private String parishName;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="REGION_ID_FK", referencedColumnName = "REGION_ID", unique= false, nullable=false, insertable=true, updatable=true)
+    @JoinColumn(name="REGION_ID_FK", referencedColumnName = "REGION_ID", unique= false, nullable=true, insertable=true, updatable=true)
     @JsonBackReference
     private Region region;
     	/* ==========================GETTERS/SETTERS======================= */
@@ -58,5 +64,32 @@ public class Parish implements Serializable{
     @XmlElement
     public void setRegion(Region region) {
         this.region = region;
+    }
+
+    	/* ==========================BUILDER======================= */
+
+    public static Builder getBuilder() {
+        return new Builder();
+    }
+    public static class Builder {
+
+        private Parish parish;
+
+        public Builder() {
+            parish = new Parish();
+        }
+
+        public Builder withName(String parishName) {
+            parish.parishName = parishName;
+            return this;
+        }
+
+        public Builder withRegion(Region region) {
+            parish.region = region;
+            return this;
+        }
+        public Parish build() {
+            return parish;
+        }
     }
 }

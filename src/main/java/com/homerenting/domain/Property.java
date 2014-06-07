@@ -3,12 +3,10 @@ package com.homerenting.domain;
 import com.homerenting.domain.modules.header.search.*;
 import com.homerenting.external.CloudinaryImage;
 import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
-import org.hibernate.search.annotations.Analyzer;
-import org.hibernate.search.annotations.DocumentId;
-import org.hibernate.search.annotations.Field;
-import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.*;
 import org.hibernate.search.annotations.Index;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
@@ -34,9 +32,10 @@ import java.util.Set;
         @NamedQuery(name = "Property.FIND_ALL_BY_DISTRICT_AND_REGION_AND_KIND", query = "SELECT p FROM Property p WHERE p.propertyDistrict.districtId  = :districtId AND p.propertyRegion.regionId  = :regionId AND p.propertyKind.propertyKindName  LIKE :propertyKind"),
         //@NamedQuery(name = "Property.FIND_ALL_BY_BUSINESS_KIND", query = "SELECT p FROM Property p WHERE p.propertyKind.propertyKindName  LIKE :propertyKind")
 })
+@Spatial
 @Indexed
 @Analyzer(impl = org.apache.lucene.analysis.standard.StandardAnalyzer.class)
-//@Cache(usage=CacheConcurrencyStrategy.READ_ONLY,region="pizza")
+@Cache(usage=CacheConcurrencyStrategy.READ_WRITE, region="property")
 public class Property extends BaseEntity implements Serializable {
 
     /**
@@ -133,7 +132,6 @@ public class Property extends BaseEntity implements Serializable {
     private int bruteArea;
 
     @NotNull
-    @Past
     @Column(name = "PROPERTY_YEAR_OF_CONSTRUCTION", nullable = false)
     private int yearOfConstruction;
 
@@ -153,7 +151,7 @@ public class Property extends BaseEntity implements Serializable {
     @Size(min = 1, max = 25)
     @Pattern(regexp = "[A-Za-z ]*", message = "must contain only letters and spaces")
     @Column(name = "PROPERTY_PARISH", unique = false, nullable = false)
-    private String propertyParish;
+    private String propertyParish;//TODO should this be the entity?
 
     @Column(name = "PROPERTY_ENERGY_EFFICIENCY", nullable = true)
     @Enumerated(EnumType.STRING)
@@ -167,6 +165,13 @@ public class Property extends BaseEntity implements Serializable {
     @Column(name = "PROPERTY_IMAGES", nullable = true)
     private Set<CloudinaryImage> images = new HashSet<CloudinaryImage>();
 
+    @Column(name = "PROPERTY_LATITUDE", nullable = true)
+    @Latitude
+    private Double latitude;
+
+    @Column(name = "PROPERTY_LONGITUDE", nullable = true)
+    @Longitude
+    private Double longitude;
     	/* ==========================GETTERS/SETTERS======================= */
 
     public Long getPropertyId() {
@@ -362,6 +367,23 @@ public class Property extends BaseEntity implements Serializable {
         this.propertyDistrict = propertyDistrict;
     }
 
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    @XmlElement
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    @XmlElement
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
     /**
      * HashCode
      */
@@ -401,5 +423,138 @@ public class Property extends BaseEntity implements Serializable {
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
+    }
+    	/* ==========================BUILDER======================= */
+
+    public static Builder getBuilder() {
+        return new Builder();
+    }
+
+    public static class Builder {
+
+        private Property property;
+
+        public Builder() {
+            property = new Property();
+        }
+
+        public Builder withName(String propertyName) {
+            property.propertyName = propertyName;
+            return this;
+        }
+
+        public Builder withKind(PropertyKind propertyKind) {
+            property.propertyKind = propertyKind;
+            return this;
+        }
+
+        public Builder withTipology(Tipologies tipology) {
+            property.tipology = tipology;
+            return this;
+        }
+
+        public Builder withVillageTipology(VillageTipologies tipology) {
+            property.vilageTipology = tipology;
+            return this;
+        }
+
+        public Builder withTitle(String propertyTitle) {
+            property.propertyTitle = propertyTitle;
+            return this;
+        }
+
+        public Builder withDescription(String propertyDescription) {
+            property.propertyDescription = propertyDescription;
+            return this;
+        }
+
+        public Builder withPrice(float propertyPrice) {
+            property.propertyPrice = propertyPrice;
+            return this;
+        }
+
+        public Builder isPriceNegotiable(boolean isPriceNegotiable) {
+            property.isPriceNegotiable = isPriceNegotiable;
+            return this;
+        }
+
+        public Builder possibleExchange(boolean possibleExchange) {
+            property.possibleExchange = possibleExchange;
+            return this;
+        }
+
+        public Builder withBusinessType(BusinessType businessType) {
+            property.businessType = businessType;
+            return this;
+        }
+
+        public Builder withStatus(PropertyStatus propertyStatus) {
+            property.propertyStatus = propertyStatus;
+            return this;
+        }
+
+        public Builder withUsefullArea(int usefullArea) {
+            property.usefullArea = usefullArea;
+            return this;
+        }
+
+        public Builder withBruteArea(int bruteArea) {
+            property.bruteArea = bruteArea;
+            return this;
+        }
+
+        public Builder withYearOfConstruction(int yearOfConstruction) {
+            property.yearOfConstruction = yearOfConstruction;
+            return this;
+        }
+
+        public Builder withCountry(String country) {
+            property.country = country;
+            return this;
+        }
+
+        public Builder withDistrict(District propertyDistrict) {
+            property.propertyDistrict = propertyDistrict;
+            return this;
+        }
+
+        public Builder withRegion(Region propertyRegion) {
+            property.propertyRegion = propertyRegion;
+            return this;
+        }
+
+        public Builder withParish(String propertyParish) {
+            property.propertyParish = propertyParish;
+            return this;
+        }
+
+        public Builder withEnergyEfficiency(EnergyEfficiency energyEfficiency) {
+            property.energyEfficiency = energyEfficiency;
+            return this;
+        }
+
+        public Builder isHighlighted(boolean isHighlighted) {
+            property.isHighlighted = isHighlighted;
+            return this;
+        }
+
+        public Builder withImages(Set<CloudinaryImage> images) {
+            property.images = images;
+            return this;
+        }
+
+        public Builder withLatitude(Double latitude) {
+            property.latitude = latitude;
+            return this;
+        }
+
+        public Builder withLongitude(Double longitude) {
+            property.longitude = longitude;
+            return this;
+        }
+
+        public Property build() {
+            return property;
+        }
     }
 }

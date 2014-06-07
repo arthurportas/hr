@@ -1,11 +1,6 @@
-package com.homerenting.test;
+package com.homerenting.test.domain;
 
 import com.google.common.collect.ImmutableMap;
-import com.homerenting.domain.AccountTokens;
-import com.homerenting.domain.User;
-import com.homerenting.domain.UserKind;
-import com.homerenting.domain.UserShortProfile;
-import com.homerenting.repo.IUserDao;
 import com.homerenting.repo.IUserShortProfileDao;
 import com.homerenting.repo.UserShortProfileDaoImpl;
 import junit.framework.Assert;
@@ -19,10 +14,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:test-context.xml",
@@ -53,11 +44,6 @@ public class UserShortProfileDaoTest {
        Assert.assertNotNull("User should not be null", userDao.findByEmail(this.EMAIL));
     }
 
-
-
-
-
-
 	@Test
     @Ignore
 	public void testAccountTokenAssociation() {
@@ -81,7 +67,4 @@ public class UserShortProfileDaoTest {
         Assert.assertEquals("wrong token", persistedUser.getToken().getToken(), generatedToken);*/
 
 	}
-
-
-
 }
