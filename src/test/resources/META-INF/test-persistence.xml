@@ -24,7 +24,7 @@
             <property name="hibernate.dialect"
                 value="org.hibernate.dialect.H2Dialect"/>
 	        <property name="hibernate.hbm2ddl.auto" value="create-drop" />
-        	<property name="hibernate.show_sql" value="true" />
+        	<property name="hibernate.show_sql" value="false" />
 
             <!--second level cache with ehCache-->
             <property name="hibernate.cache.provider_configuration_file_resource_path"

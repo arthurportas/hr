@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/DistricMethods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/DistrictTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Districts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishMethods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Parishes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/PropertyDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/QueryHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionMethods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Regions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/TestStub.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_web_2_0_4.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/homerenting/test/UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/UserDaoTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/homerenting/test/UserShortProfileDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/UserShortProfileDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PropertyKind.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PropertyKind.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/UserShortProfile.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/UserShortProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/company.properties" afterPath="$PROJECT_DIR$/src/main/resources/company.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/import.sql" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/import.sql" afterPath="$PROJECT_DIR$/src/test/resources/import.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/test-context.xml" afterPath="$PROJECT_DIR$/src/test/resources/test-context.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -298,10 +264,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegionTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RegionTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="2.9669812" vertical-offset="1717" max-vertical-offset="3179">
+            <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="-48.384617" vertical-offset="1717" max-vertical-offset="3179">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -330,10 +296,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="75" selection-start="2876" selection-end="2876" vertical-scroll-proportion="-9.52" vertical-offset="544" max-vertical-offset="1105">
+            <state line="6" column="62" selection-start="310" selection-end="378" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -342,7 +308,7 @@
       <file leaf-file-name="test-persistence.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="77" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="731">
+            <state line="26" column="60" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -449,8 +415,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
       </list>
     </option>
   </component>
@@ -2642,7 +2608,7 @@
       <workItem from="1400331002710" duration="41023000" />
       <workItem from="1400612171356" duration="62619000" />
       <workItem from="1401538862763" duration="19687000" />
-      <workItem from="1401830114566" duration="26568000" />
+      <workItem from="1401830114566" duration="27494000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2764,11 +2730,15 @@
       <created>1401748817883</created>
       <updated>1401748817883</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Login working, but needs  error handling&#10;Progression on unit tests :)">
+      <created>1402176393326</created>
+      <updated>1402176393326</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="546711000" />
+    <option name="totallyTimeSpent" value="547637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="22" width="1440" height="812" extended-state="0" />
@@ -2866,7 +2836,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added header and footer dependencies front-office&#10;" />
     <MESSAGE value="UserShortProfile registration with token verification working" />
     <MESSAGE value="Mail service working&#10;" />
     <MESSAGE value="Mail service with templates working&#10;" />
@@ -2891,7 +2860,8 @@
     <MESSAGE value="enabled hibernate search&#10;enabled ehcache&#10;corrected region io on parish relation&#10;" />
     <MESSAGE value="entity beautiffy" />
     <MESSAGE value="Login working, but needs  error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login working, but needs  error handling" />
+    <MESSAGE value="Login working, but needs  error handling&#10;Progression on unit tests :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login working, but needs  error handling&#10;Progression on unit tests :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3292,26 +3262,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="75" selection-start="2876" selection-end="2876" vertical-scroll-proportion="-9.52" vertical-offset="544" max-vertical-offset="1105">
-          <folding />
+        <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="-48.384617" vertical-offset="1717" max-vertical-offset="3179">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="77" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="731">
+        <state line="26" column="60" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="2.9669812" vertical-offset="1717" max-vertical-offset="3179">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="6" column="62" selection-start="310" selection-end="378" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="1105">
+          <folding />
         </state>
       </provider>
     </entry>
