@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -258,7 +258,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="21" selection-start="9320" selection-end="9320" vertical-scroll-proportion="0.9435294" vertical-offset="3713" max-vertical-offset="11781">
+            <state line="247" column="26" selection-start="9623" selection-end="9623" vertical-scroll-proportion="0.88" vertical-offset="3825" max-vertical-offset="11883">
               <folding />
             </state>
           </provider>
@@ -2600,7 +2600,7 @@
       <workItem from="1400612171356" duration="62619000" />
       <workItem from="1401538862763" duration="19687000" />
       <workItem from="1401830114566" duration="27517000" />
-      <workItem from="1402242389216" duration="802000" />
+      <workItem from="1402242389216" duration="1416000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2734,15 +2734,19 @@
       <created>1402242498074</created>
       <updated>1402242498074</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl">
+      <created>1402243433219</created>
+      <updated>1402243433219</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="548462000" />
+    <option name="totallyTimeSpent" value="549076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25555557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2770,7 +2774,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.5010352" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15450644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15450644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2836,7 +2840,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Mail service working&#10;" />
     <MESSAGE value="Mail service with templates working&#10;" />
     <MESSAGE value="Recover pasword - removed security question&#10;" />
     <MESSAGE value="Register panel - disabled checkbox for terms &amp; conditions&#10;" />
@@ -2861,7 +2864,8 @@
     <MESSAGE value="Login working, but needs  error handling" />
     <MESSAGE value="Login working, but needs  error handling&#10;Progression on unit tests :)" />
     <MESSAGE value="trying openshift deploy&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying openshift deploy&#10;" />
+    <MESSAGE value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3243,7 +3247,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="21" selection-start="9320" selection-end="9320" vertical-scroll-proportion="0.9435294" vertical-offset="3713" max-vertical-offset="11781">
+        <state line="247" column="26" selection-start="9623" selection-end="9623" vertical-scroll-proportion="0.88" vertical-offset="3825" max-vertical-offset="11883">
           <folding />
         </state>
       </provider>
