@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -249,7 +247,7 @@
       <file leaf-file-name="ParishTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+            <state line="18" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2261">
               <folding />
             </state>
           </provider>
@@ -267,10 +265,8 @@
       <file leaf-file-name="RegionTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="-48.384617" vertical-offset="1717" max-vertical-offset="3179">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="0.0" vertical-offset="2975" max-vertical-offset="3179">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -278,11 +274,8 @@
       <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="8007">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7468#7485#0" expanded="true" />
-              </folding>
+            <state line="37" column="0" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="9605">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -290,7 +283,7 @@
       <file leaf-file-name="ehcache.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="10" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state line="11" column="10" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -299,7 +292,7 @@
       <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="62" selection-start="310" selection-end="378" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="1105">
+            <state line="6" column="62" selection-start="310" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -308,7 +301,7 @@
       <file leaf-file-name="test-persistence.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="60" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="731">
+            <state line="26" column="60" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -317,11 +310,8 @@
       <file leaf-file-name="Regions.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Regions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="4" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="833">
-              <folding>
-                <element signature="e#1720#1721#0" expanded="false" />
-                <element signature="e#1753#1754#0" expanded="false" />
-              </folding>
+            <state line="18" column="4" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="867">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -329,7 +319,7 @@
       <file leaf-file-name="Region.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1972">
+            <state line="32" column="0" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="2482">
               <folding />
             </state>
           </provider>
@@ -337,13 +327,13 @@
       </file>
       <file leaf-file-name="import.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="57" selection-start="2418" selection-end="2432" vertical-scroll-proportion="-3.037736" vertical-offset="434" max-vertical-offset="15572">
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="57" selection-start="2418" selection-end="2432" vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="15572">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -490,7 +480,6 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
@@ -523,18 +512,6 @@
     <panes>
       <pane id="Scope">
         <subPane subId="Problems" />
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="homerenting">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
         <subPane subId="Tests">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -598,6 +575,18 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="domain">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="homerenting">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -2283,12 +2272,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -2306,6 +2289,12 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="homerenting" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 7.1.1.Final" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
@@ -2608,7 +2597,8 @@
       <workItem from="1400331002710" duration="41023000" />
       <workItem from="1400612171356" duration="62619000" />
       <workItem from="1401538862763" duration="19687000" />
-      <workItem from="1401830114566" duration="27494000" />
+      <workItem from="1401830114566" duration="27517000" />
+      <workItem from="1402242389216" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2734,15 +2724,19 @@
       <created>1402176393326</created>
       <updated>1402176393326</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="trying openshift deploy&#10;">
+      <created>1402177699563</created>
+      <updated>1402177699563</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="547637000" />
+    <option name="totallyTimeSpent" value="547716000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="22" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="812" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25555557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2758,17 +2752,15 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22083333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31111112" sideWeight="0.83476394" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16380544" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30416667" sideWeight="0.6695279" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16380544" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30282637" sideWeight="0.6695279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.5010352" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15450644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2780,19 +2772,21 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25555557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32083333" sideWeight="0.16380544" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32083333" sideWeight="0.16380544" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22083333" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2806,10 +2800,10 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2817,8 +2811,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.5010352" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13519314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13519314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2836,7 +2830,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="UserShortProfile registration with token verification working" />
     <MESSAGE value="Mail service working&#10;" />
     <MESSAGE value="Mail service with templates working&#10;" />
     <MESSAGE value="Recover pasword - removed security question&#10;" />
@@ -2861,7 +2854,8 @@
     <MESSAGE value="entity beautiffy" />
     <MESSAGE value="Login working, but needs  error handling" />
     <MESSAGE value="Login working, but needs  error handling&#10;Progression on unit tests :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login working, but needs  error handling&#10;Progression on unit tests :)" />
+    <MESSAGE value="trying openshift deploy&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying openshift deploy&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2932,16 +2926,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/header.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="105" selection-start="603" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3060">
-          <folding />
-        </state>
+        <state line="10" column="105" selection-start="603" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3060" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/CloudinaryImage.java">
@@ -2963,9 +2953,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/company.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="131" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="131" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java">
@@ -2997,33 +2985,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="343" column="0" selection-start="0" selection-end="86547" vertical-scroll-proportion="-7.5555553" vertical-offset="5627" max-vertical-offset="15572">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="343" column="0" selection-start="0" selection-end="86547" vertical-scroll-proportion="-7.5555553" vertical-offset="5627" max-vertical-offset="15572" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/neovisionaries/nv-i18n/1.1/nv-i18n-1.1-sources.jar!/com/neovisionaries/i18n/CountryCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="12" selection-start="3435" selection-end="3435" vertical-scroll-proportion="0.0" vertical-offset="35792" max-vertical-offset="39678">
-          <folding>
-            <element signature="e#0#86145#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#77093#77114#0" expanded="false" />
-            <element signature="e#77193#77215#0" expanded="false" />
-            <element signature="e#77900#77901#0" expanded="false" />
-            <element signature="e#77927#77928#0" expanded="false" />
-            <element signature="e#78572#78573#0" expanded="false" />
-            <element signature="e#78601#78602#0" expanded="false" />
-            <element signature="e#78907#78908#0" expanded="false" />
-            <element signature="e#78937#78938#0" expanded="false" />
-            <element signature="e#79279#79280#0" expanded="false" />
-            <element signature="e#79312#79313#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="74" column="12" selection-start="3435" selection-end="3435" vertical-scroll-proportion="0.0" vertical-offset="35792" max-vertical-offset="39678" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Districts.java">
@@ -3080,9 +3051,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/test-framework.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="351">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="351" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java">
@@ -3094,9 +3063,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Cache.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="164" selection-end="164" vertical-scroll-proportion="0.13198757" vertical-offset="0" max-vertical-offset="644">
-          <folding />
-        </state>
+        <state line="6" column="17" selection-start="164" selection-end="164" vertical-scroll-proportion="0.13198757" vertical-offset="0" max-vertical-offset="644" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml">
@@ -3116,9 +3083,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/test-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="680">
-          <folding>
-            <marker date="1402161084000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3204,40 +3169,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="57" selection-start="2418" selection-end="2432" vertical-scroll-proportion="-3.037736" vertical-offset="434" max-vertical-offset="15572">
+        <state line="18" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Regions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="833">
-          <folding>
-            <element signature="e#1720#1721#0" expanded="false" />
-            <element signature="e#1753#1754#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="8007">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7468#7485#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3248,9 +3183,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+        <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="0.0" vertical-offset="2975" max-vertical-offset="3179">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="8007">
           <folding />
         </state>
       </provider>
@@ -3262,12 +3204,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="-48.384617" vertical-offset="1717" max-vertical-offset="3179">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="6" column="62" selection-start="310" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1105">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3278,9 +3218,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Regions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="62" selection-start="310" selection-end="378" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="1105">
+        <state line="18" column="4" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="57" selection-start="2418" selection-end="2432" vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="15572">
           <folding />
         </state>
       </provider>
