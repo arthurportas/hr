@@ -245,7 +245,7 @@
         <dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
-            <version>2.0.2</version>
+            <version>1.4.01</version>
         </dependency>
 
 
@@ -375,6 +375,12 @@
             <version>1.1.0.RELEASE</version>
         </dependency>
 
+        <!--Spring Integration-->
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-http</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </dependency>
 
         <dependency>
             <groupId>net.sf.ehcache</groupId>

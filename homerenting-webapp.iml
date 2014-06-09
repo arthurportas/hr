@@ -22,6 +22,7 @@
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <dependency>web spring servlet context</dependency>
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring-database.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/recaptcha-integration.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -68,7 +69,7 @@
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:4.3.5.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final" level="project" />
     <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.4.Final" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.18.1-GA" level="project" />
     <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
@@ -138,6 +139,8 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.social:spring-social-twitter:1.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:3.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.integration:spring-integration-http:2.1.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.integration:spring-integration-core:2.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.6.9" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-ehcache:4.3.5.Final" level="project" />
     <orderEntry type="library" name="Maven: taglibs:standard:1.1.2" level="project" />

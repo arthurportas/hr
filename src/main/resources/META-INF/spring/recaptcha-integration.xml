@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:int="http://www.springframework.org/schema/integration"
+             xmlns:http="http://www.springframework.org/schema/integration/http"
+             xsi:schemaLocation="
+               http://www.springframework.org/schema/integration
+               http://www.springframework.org/schema/integration/spring-integration.xsd
+               http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.springframework.org/schema/integration/http
+               http://www.springframework.org/schema/integration/http/spring-integration-http.xsd">
+
+    <int:gateway id="ReCaptchaVerifier" service-interface="com.homerenting.external.ReCaptchaVerifier"
+                 default-request-channel="reCaptchaSecuredForm"/>
+
+    <int:channel id="reCaptchaSecuredForm" datatype="com.homerenting.external.ReCaptchaSecured"/>
+
+    <int:transformer input-channel="reCaptchaSecuredForm" output-channel="reCaptchaGoogleServerRequest"
+                     ref="reCaptchaFormToHttpRequest"/>
+
+    <int:channel id="reCaptchaGoogleServerRequest" datatype="java.util.Map"/>
+
+    <http:outbound-gateway
+            request-channel="reCaptchaGoogleServerRequest"
+            reply-channel="reCaptchaGoogleServerResponse"
+            url="${recaptcha_url}"
+            http-method="POST"
+            extract-request-payload="true"
+            expected-response-type="java.lang.String"/>
+
+    <int:channel id="reCaptchaGoogleServerResponse" datatype="java.lang.String"/>
+
+    <int:transformer input-channel="reCaptchaGoogleServerResponse" ref="reCaptchaServerResponseToResult"/>
+
+</beans:beans>

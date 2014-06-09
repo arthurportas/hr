@@ -2,45 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/MemberDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/MemberDaoImpl.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ApartmentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ApartmentServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/CompanyMOTDServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/CompanyMOTDServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/DistrictDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/DistrictDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/GenericDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/GenericDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IApartmentDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IApartmentDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IApartmentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IApartmentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ICompanyMOTDDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ICompanyMOTDDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ICompanyMOTDService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ICompanyMOTDService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IDistrictDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IDistrictDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IDistrictService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IDistrictService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IGenericDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IGenericDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IMailService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IMailService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IRegionDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IRegionDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IRegionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IRegionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaFormToHttpRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaSecured.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaServerResponseToResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaVerifier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/recaptcha-integration.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/company.properties" afterPath="$PROJECT_DIR$/src/main/resources/company.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -253,91 +225,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IUserShortProfileService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="527">
+            <state line="241" column="37" selection-start="9432" selection-end="9432" vertical-scroll-proportion="0.17482518" vertical-offset="4022" max-vertical-offset="12495">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="39" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3570">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParishServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="765">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlAuthenticationSuccessHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="20" selection-start="3074" selection-end="3074" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register-panel1.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="28" selection-start="336" selection-end="336" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1785">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.ftl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="footer.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="4" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.7548077" vertical-offset="1165" max-vertical-offset="1615">
+            <state line="87" column="4" selection-start="3912" selection-end="3912" vertical-scroll-proportion="-12.076923" vertical-offset="1165" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PropertyServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java">
+      <file leaf-file-name="company.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/company.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
+            <state line="10" column="62" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegionServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java">
+      <file leaf-file-name="recaptcha-integration.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/recaptcha-integration.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+            <state line="11" column="99" selection-start="382" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java">
+      <file leaf-file-name="ReCaptchaFormToHttpRequest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaFormToHttpRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+            <state line="21" column="40" selection-start="647" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="867">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#882#898#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
+                <element signature="e#1252#1253#0" expanded="true" />
+                <element signature="e#1324#1325#0" expanded="true" />
+                <element signature="e#1376#1377#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReCaptchaSecured.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaSecured.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="32" selection-start="211" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <folding>
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ContactController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="4" selection-start="906" selection-end="1067" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserShortProfileDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java">
+      <file leaf-file-name="ReCaptchaServerResponseToResult.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaServerResponseToResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="12" selection-start="4759" selection-end="4849" vertical-scroll-proportion="0.0" vertical-offset="1834" max-vertical-offset="2635">
+            <state line="19" column="71" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="629">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReCaptchaException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="21" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -361,17 +342,16 @@
       <MyDateState />
     </option>
   </component>
+  <component name="GotoFileConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="AIDL" />
+      <filtered-out-file-type name="ActionScript" />
+      <filtered-out-file-type name="Android RenderScript" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PhotoUpload.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
@@ -415,6 +395,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/company.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaVerifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaSecured.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaServerResponseToResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaFormToHttpRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/recaptcha-integration.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -1121,6 +1109,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1276,6 +1320,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="external" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2224,7 +2298,7 @@
       <workItem from="1400612171356" duration="62619000" />
       <workItem from="1401538862763" duration="19687000" />
       <workItem from="1401830114566" duration="27517000" />
-      <workItem from="1402242389216" duration="20337000" />
+      <workItem from="1402242389216" duration="27284000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2370,11 +2444,15 @@
       <created>1402335290245</created>
       <updated>1402335290246</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Corrected @Transaction on DAO's.&#10;">
+      <created>1402348270714</created>
+      <updated>1402348270714</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="567997000" />
+    <option name="totallyTimeSpent" value="574944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
@@ -2494,10 +2572,10 @@
     <MESSAGE value="Login working, but needs  error handling&#10;Progression on unit tests :)" />
     <MESSAGE value="trying openshift deploy&#10;" />
     <MESSAGE value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl" />
-    <MESSAGE value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl&#10;" />
     <MESSAGE value="Login works with error handling&#10;" />
     <MESSAGE value="Corrected @Transaction on DAO's.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected @Transaction on DAO's.&#10;" />
+    <MESSAGE value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2511,90 +2589,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.3.RELEASE/spring-security-web-3.2.3.RELEASE.jar!/org/springframework/security/web/WebAttributes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="332" selection-end="332" vertical-scroll-proportion="0.29238328" vertical-offset="0" max-vertical-offset="407">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="68" selection-start="923" selection-end="923" vertical-scroll-proportion="-10.88" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="63" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1055" selection-end="1125" vertical-scroll-proportion="-7.6296296" vertical-offset="389" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="34" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-8.888889" vertical-offset="372" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="43" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-8.888889" vertical-offset="372" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="43" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-8.259259" vertical-offset="389" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="776" selection-end="776" vertical-scroll-proportion="-8.5" vertical-offset="119" max-vertical-offset="1734">
-          <folding>
-            <marker date="1402323220000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="47" selection-start="8021" selection-end="8021" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
@@ -2858,7 +2852,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="12" selection-start="4759" selection-end="4849" vertical-scroll-proportion="0.0" vertical-offset="1834" max-vertical-offset="2635">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2879,7 +2873,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="4" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.7548077" vertical-offset="1165" max-vertical-offset="1615">
+        <state line="87" column="4" selection-start="3912" selection-end="3912" vertical-scroll-proportion="-12.076923" vertical-offset="1165" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/company.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="62" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="184" selection-end="184" vertical-scroll-proportion="0.2989011" vertical-offset="0" max-vertical-offset="455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="21" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaVerifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="258" selection-end="258" vertical-scroll-proportion="0.37362638" vertical-offset="0" max-vertical-offset="455">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/ContactController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="4" selection-start="906" selection-end="1067" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaSecured.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="32" selection-start="211" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding>
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaServerResponseToResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="71" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="629">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/ReCaptchaFormToHttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="40" selection-start="647" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="867">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#882#898#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/recaptcha-integration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="99" selection-start="382" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="241" column="37" selection-start="9432" selection-end="9432" vertical-scroll-proportion="0.17482518" vertical-offset="4022" max-vertical-offset="12495">
           <folding />
         </state>
       </provider>
