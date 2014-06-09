@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.NoResultException;
 import java.util.List;
 
 @Service(UserShortProfileServiceImpl.COMPONENT_NAME)
@@ -27,25 +28,25 @@ public class UserShortProfileServiceImpl implements IUserShortProfileService{
     private IUserShortProfileDao userShortProfileDao;
 
     @Override
-    public UserShortProfile getById(Long id) {
+    public UserShortProfile getById(Long id) throws NoResultException {
         slf4jLogger.info("==UserShortProfile getById(Long id)==");
         return userShortProfileDao.findById(id);
     }
 
     @Override
-    public UserShortProfile getByEmail(String email) {
+    public UserShortProfile getByEmail(String email) throws NoResultException{
         slf4jLogger.info("==Parish getByEmail(String email)==");
         return userShortProfileDao.findByEmail(email);
     }
 
     @Override
-    public List<UserShortProfile> getAllOrderedByEmail() {
+    public List<UserShortProfile> getAllOrderedByEmail() throws NoResultException{
         slf4jLogger.info("==List<UserShortProfile> getAllOrderedByEmail()==");
         return userShortProfileDao.findAllOrderedByEmail();
     }
 
     @Override
-    public List<UserShortProfile> getAllOrderedByEmailDesc() {
+    public List<UserShortProfile> getAllOrderedByEmailDesc() throws NoResultException{
         slf4jLogger.info("==List<UserShortProfile> getAllOrderedByEmailDesc()==");
         return userShortProfileDao.findAllOrderedByEmailDesc();
     }

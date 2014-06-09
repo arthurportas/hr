@@ -36,9 +36,10 @@
         <property name="cache" value="true"/>
         <property name="prefix" value=""/>
         <property name="suffix" value=".ftl"/>
-        <property name="exposeSessionAttributes">
-            <value>true</value>
-        </property>
+        <property name="requestContextAttribute"  value="request" />
+        <property name="exposeSpringMacroHelpers" value="true" />
+        <property name="exposeRequestAttributes"  value="true" />
+        <property name="exposeSessionAttributes"  value="true" />
     </bean>
 
     <!-- Freemarker & templates -->
@@ -140,4 +141,14 @@
     </bean>-->
 
     <mvc:annotation-driven/>
+
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+        <!-- one of the properties available; the maximum file size in bytes -->
+        <property name="maxUploadSize" value="100000"/>
+    </bean>
+
+    <mvc:resources mapping="/cloudinary_cors.html" location="/" />
+
 </beans>

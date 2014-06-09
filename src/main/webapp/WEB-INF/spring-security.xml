@@ -14,7 +14,7 @@
         <access-denied-handler error-page="/403" />
 		<form-login login-page="/login/new"
                     default-target-url="/announces"
-                    authentication-failure-url="/login/new"
+                    authentication-failure-url="/login/new?auth=fail"
                     authentication-success-handler-ref="authenticationSuccessHandler"
                     authentication-failure-handler-ref="authenticationFailureHandler"
                />

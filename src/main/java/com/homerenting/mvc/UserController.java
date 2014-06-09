@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import javax.persistence.NoResultException;
 import javax.validation.Valid;
 
 import com.homerenting.domain.AccountTokens;
@@ -171,11 +172,17 @@ public class UserController {
             return mav;
         }
 
-        if(userShortProfileService.getByEmail(newUser.getEmail())!=null){
-            //user already exists
-            mav.setViewName("user-already-exists");
-            return mav;
+        try {
+            if(userShortProfileService.getByEmail(newUser.getEmail())!=null){
+                //user already exists
+                mav.setViewName("user-already-exists");
+                return mav;
+            }
+        } catch(NoResultException nre) {
+            slf4jLogger.info("==NoResultException==");
+            slf4jLogger.info(nre.getMessage());
         }
+
         userShortProfileService.save(newUser);
 
         String token = TokenGenerator.getUUID();
@@ -211,11 +218,16 @@ public class UserController {
     public ModelAndView isEmailAlreadyRegistered(@PathVariable String email) {
         slf4jLogger.info("==ModelAndView isEmailAlreadyRegistered(Model model)==");
 
-        if(userShortProfileService.getByEmail(email)!=null){
+        try {
+            userShortProfileService.getByEmail(email);
             String viewName = "email-already-registered";
             ModelAndView mav = new ModelAndView(viewName);
             return mav;
+        } catch(NoResultException nre) {
+            slf4jLogger.info("==NoResultException==");
+            slf4jLogger.info(nre.getMessage());
         }
+
         String viewName = "email-un-registered";
         ModelAndView mav = new ModelAndView(viewName);
         return mav;
@@ -226,25 +238,31 @@ public class UserController {
         slf4jLogger.info("==ModelAndView activateUserAccount(@PathVariable String token)==");
         String viewName = "account-activation-error";
         ModelAndView mav = new ModelAndView(viewName);
-        final UserShortProfile user = userShortProfileService.getByEmail(email);
-        if(!user.isAccountEnabled()){
-            if(userShortProfileService.isAccountActivationTokenValid(user, token)){
-                userShortProfileService.activateAccount(user);
-                Map<String,Object> data = new HashMap<String,Object>();
-                data.put("user", user.getEmail());
-                data.put("portalName", "ImoWeb");
-                mailService.sendUserRegistrationMessageWithTemplate("arthurportas@gmail.com", user.getEmail(),
-                        "subject", EmailTemplates.USER_ACCOUNT_ACTIVATION.getValue(), data);
+        UserShortProfile user;
+        try {
+            user = userShortProfileService.getByEmail(email);
+            if(!user.isAccountEnabled()){
+                if(userShortProfileService.isAccountActivationTokenValid(user, token)){
+                    userShortProfileService.activateAccount(user);
+                    Map<String,Object> data = new HashMap<String,Object>();
+                    data.put("user", user.getEmail());
+                    data.put("portalName", "ImoWeb");
+                    mailService.sendUserRegistrationMessageWithTemplate("arthurportas@gmail.com", user.getEmail(),
+                            "subject", EmailTemplates.USER_ACCOUNT_ACTIVATION.getValue(), data);
 
-                viewName = "account-activation-success";
+                    viewName = "account-activation-success";
+                    mav.setViewName(viewName);
+                    return mav;
+                }
+            }else{
+                //account already active
+                viewName = "account-already-active";//this view does not exists
                 mav.setViewName(viewName);
                 return mav;
             }
-        }else{
-            //account already active
-            viewName = "account-already-active";//this view does not exists
-            mav.setViewName(viewName);
-            return mav;
+        } catch(NoResultException nre) {
+            slf4jLogger.info("==NoResultException==");
+            slf4jLogger.info(nre.getMessage());
         }
         return mav;
     }

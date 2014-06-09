@@ -10,6 +10,17 @@
 
 <#macro renderTab1LoginForm>
     <div class="span5">
+        <#if RequestParameters.auth??>
+            <div class="alert alert-warning alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>
+                    <@spring.messageText "LOGIN.FAILED", "Erro no login"/>
+                </strong>
+                <br />
+                <@spring.messageText "PLEASE.TRY.AGAIN", "Por favor, tente novamente"/>
+            </div>
+        </#if>
+
         <h4>
             <i class="icon-user"></i>&nbsp;&nbsp; <@spring.messageText "LOGIN.HERE", "Efetue Login"/>
         </h4>

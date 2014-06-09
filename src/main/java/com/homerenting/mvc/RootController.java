@@ -1,9 +1,13 @@
 package com.homerenting.mvc;
 
+import com.cloudinary.Cloudinary;
+import com.cloudinary.Singleton;
 import com.homerenting.domain.District;
 import com.homerenting.domain.modules.header.search.BusinessType;
 import com.homerenting.domain.modules.header.search.PropertyKind;
 import com.homerenting.services.*;
+import net.glxn.qrgen.QRCode;
+import net.glxn.qrgen.image.ImageType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +22,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.List;
 
@@ -50,7 +60,8 @@ public class RootController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-	public ModelAndView index(Model model) {
+	public ModelAndView index(Model model, HttpServletRequest request,
+                              HttpServletResponse response)  throws ServletException, IOException {
         slf4jLogger.info("==ModelAndView index(Model model)==");
         ModelAndView mav = new ModelAndView();
         mav.setViewName("index");
@@ -69,10 +80,39 @@ public class RootController {
         final List highlighted = propertyService.getAllHighLighted();
         List firstThreeHighlighted = highlighted.subList(0, 3);
         int hightlightedListSize = highlighted.size();
+
         List remaingHighlighted = highlighted.subList(3, hightlightedListSize);
         mav.addObject("highlightedProperties", firstThreeHighlighted);
         mav.addObject("remaingHighlightedProperties", remaingHighlighted);
         mav.addObject("motd", motdService.getById(1L));
 		return mav;
 	}
+
+    @RequestMapping(value = "/qrcode", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public void qrcode(Model model, HttpServletRequest request,
+                              HttpServletResponse response)  throws ServletException, IOException {
+        final int QRCODE_WIDTH = 125;
+        final int QRCODE_HEIGHT = 125;
+
+        Cloudinary cloudinary = Singleton.getCloudinary();
+
+
+
+
+        ByteArrayOutputStream out = QRCode.from("http://www.google.pt")
+                .to(ImageType.PNG)
+                .withSize(QRCODE_WIDTH,QRCODE_HEIGHT)
+                .stream();
+
+        response.setContentType("image/png");
+        response.setContentLength(out.size());
+
+        OutputStream outStream = response.getOutputStream();
+
+        outStream.write(out.toByteArray());
+
+        outStream.flush();
+        outStream.close();
+    }
 }

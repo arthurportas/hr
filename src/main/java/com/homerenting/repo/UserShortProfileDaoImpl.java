@@ -3,13 +3,10 @@ package com.homerenting.repo;
 import com.homerenting.domain.UserShortProfile;
 import com.homerenting.domain.modules.header.security.Role;
 import com.homerenting.domain.modules.header.security.Roles;
-import org.apache.commons.exec.util.StringUtils;
+import org.hibernate.NonUniqueResultException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataAccessException;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.GrantedAuthorityImpl;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -26,7 +23,7 @@ import javax.persistence.criteria.Root;
 import java.util.*;
 
 @Repository(UserShortProfileDaoImpl.COMPONENT_NAME)
-@Transactional
+@Transactional(noRollbackFor={NoResultException.class, NonUniqueResultException.class})
 public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> implements IUserShortProfileDao, UserDetailsService {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(UserShortProfileDaoImpl.class);
@@ -36,60 +33,36 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
 	@Autowired
 	private EntityManager em;
 
-	public UserShortProfile findByEmail(String email) {
+	public UserShortProfile findByEmail(String email) throws NoResultException{
         slf4jLogger.info("==UserShortProfile findByEmail(String email)==");
-		try{
-            return (UserShortProfile) em.createNamedQuery(UserShortProfile.FIND_BY_EMAIL)
-                    .setParameter("email", email)
-                    .getSingleResult();
-        }catch (NoResultException nre){
-            slf4jLogger.info("==NoResultException==");
-            slf4jLogger.info(nre.getMessage());
-        }
-        return null;
+        return (UserShortProfile) em.createNamedQuery(UserShortProfile.FIND_BY_EMAIL)
+                .setParameter("email", email)
+                .getSingleResult();
 	}
 
     @Override
-    public UserShortProfile findById(Long id) {
+    public UserShortProfile findById(Long id) throws NoResultException{
         slf4jLogger.info("==UserShortProfile findById(Long id)==");
-        try{
             return em.find(UserShortProfile.class, id);
-        }catch (NoResultException nre){
-            slf4jLogger.info("==NoResultException==");
-            slf4jLogger.info(nre.getMessage());
-        }
-        return null;
     }
 
-    public List<UserShortProfile> findAllOrderedByEmail() {
+    public List<UserShortProfile> findAllOrderedByEmail() throws NoResultException{
         slf4jLogger.info("==List<UserShortProfile> findAllOrderedByEmail()==");
-        try{
-            CriteriaBuilder cb = em.getCriteriaBuilder();
-            CriteriaQuery<UserShortProfile> criteria = cb.createQuery(UserShortProfile.class);
-            Root<UserShortProfile> user = criteria.from(UserShortProfile.class);
-            criteria.select(user).orderBy(cb.asc(user.get("email")));
-            return em.createQuery(criteria).getResultList();
-        }catch (NoResultException nre){
-            slf4jLogger.info("==NoResultException==");
-            slf4jLogger.info(nre.getMessage());
-        }
-        return null;
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+        CriteriaQuery<UserShortProfile> criteria = cb.createQuery(UserShortProfile.class);
+        Root<UserShortProfile> user = criteria.from(UserShortProfile.class);
+        criteria.select(user).orderBy(cb.asc(user.get("email")));
+        return em.createQuery(criteria).getResultList();
 	}
 
     @Override
-    public List<UserShortProfile> findAllOrderedByEmailDesc() {
+    public List<UserShortProfile> findAllOrderedByEmailDesc() throws NoResultException{
         slf4jLogger.info("==List<UserShortProfile> findAllOrderedByEmailDesc()==");
-        try{
-            CriteriaBuilder cb = em.getCriteriaBuilder();
-            CriteriaQuery<UserShortProfile> criteria = cb.createQuery(UserShortProfile.class);
-            Root<UserShortProfile> user = criteria.from(UserShortProfile.class);
-            criteria.select(user).orderBy(cb.desc(user.get("email")));
-            return em.createQuery(criteria).getResultList();
-        }catch (NoResultException nre){
-            slf4jLogger.info("==NoResultException==");
-            slf4jLogger.info(nre.getMessage());
-        }
-        return null;
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+        CriteriaQuery<UserShortProfile> criteria = cb.createQuery(UserShortProfile.class);
+        Root<UserShortProfile> user = criteria.from(UserShortProfile.class);
+        criteria.select(user).orderBy(cb.desc(user.get("email")));
+        return em.createQuery(criteria).getResultList();
     }
 
     @Override
@@ -126,12 +99,21 @@ public class UserShortProfileDaoImpl extends GenericDaoImpl<UserShortProfile> im
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException, DataAccessException {
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        UserShortProfile userEntity = this.findByEmail(username);//should validate password
+        UserShortProfile userEntity;
 
-        if (userEntity == null)
-            throw new UsernameNotFoundException("user not found");
+        try {
+            userEntity = this.findByEmail(username);//should validate password
+
+            if (userEntity == null) {
+                throw new UsernameNotFoundException("user not found");
+            }
+        } catch (NoResultException nre) {
+            slf4jLogger.info("==NoResultException==");
+            slf4jLogger.info(nre.getMessage());
+            throw new UsernameNotFoundException("database error");
+        }
 
         ArrayList<SimpleGrantedAuthority> authorities = new ArrayList<SimpleGrantedAuthority>();
         SimpleGrantedAuthority userAuthority = new SimpleGrantedAuthority(

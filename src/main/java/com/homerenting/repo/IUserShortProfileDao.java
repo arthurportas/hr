@@ -5,17 +5,18 @@ import com.homerenting.domain.modules.header.security.Role;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import javax.persistence.NoResultException;
 import java.util.List;
 
 public interface IUserShortProfileDao extends IGenericDao<UserShortProfile>{
 
-	public UserShortProfile findByEmail(String email);
+	public UserShortProfile findByEmail(String email) throws NoResultException;
 
-    public UserShortProfile findById(Long id);
+    public UserShortProfile findById(Long id) throws NoResultException;
 
-    public List<UserShortProfile> findAllOrderedByEmail();
+    public List<UserShortProfile> findAllOrderedByEmail() throws NoResultException;
 
-    public List<UserShortProfile> findAllOrderedByEmailDesc();
+    public List<UserShortProfile> findAllOrderedByEmailDesc() throws NoResultException;
 
     public void register(UserShortProfile user);
 
