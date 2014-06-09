@@ -13,10 +13,10 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.NoResultException;
 import java.util.List;
 
 @Service(DistrictServiceImpl.COMPONENT_NAME)
-@Transactional
 public class DistrictServiceImpl implements IDistrictService {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(DistrictServiceImpl.class);
@@ -28,19 +28,19 @@ public class DistrictServiceImpl implements IDistrictService {
     private IDistrictDao districtDao;
 
     @Override
-    public District getById(Long id) {
+    public District getById(Long id) throws NoResultException {
         slf4jLogger.info("==District getById(Long id)==");
         return districtDao.findById(id);
     }
 
     @Override
-    public District getByName(String name) {
+    public District getByName(String name) throws NoResultException{
         slf4jLogger.info("==District getByName(String name)==");
         return districtDao.findByName(name);
     }
 
     @Override
-    public List<District> getAllOrderedByName() {
+    public List<District> getAllOrderedByName() throws NoResultException{
         slf4jLogger.info("==List<District> getAllOrderedByName()==");
         return districtDao.findAllOrderedByName();
     }

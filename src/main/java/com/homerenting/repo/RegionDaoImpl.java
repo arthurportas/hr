@@ -1,6 +1,7 @@
 package com.homerenting.repo;
 
 import com.homerenting.domain.Region;
+import org.hibernate.NonUniqueResultException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,13 +9,14 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
 @Repository(RegionDaoImpl.COMPONENT_NAME)
-@Transactional
+@Transactional(noRollbackFor={NoResultException.class, NonUniqueResultException.class})
 public class RegionDaoImpl implements IRegionDao {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(RegionDaoImpl.class);
@@ -24,12 +26,12 @@ public class RegionDaoImpl implements IRegionDao {
     @Autowired
     private EntityManager em;
 
-    public Region findById(Long id) {
+    public Region findById(Long id) throws NoResultException {
         slf4jLogger.info("==Region findById(Long id)==");
         return em.find(Region.class, id);
     }
 
-    public Region findByName(String name) {
+    public Region findByName(String name) throws NoResultException{
         slf4jLogger.info("==Region findByName(String name)==");
         CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaQuery<Region> criteria = builder.createQuery(Region.class);
@@ -39,7 +41,7 @@ public class RegionDaoImpl implements IRegionDao {
         return em.createQuery(criteria).getSingleResult();
     }
 
-    public List<Region> findAllOrderedByName() {
+    public List<Region> findAllOrderedByName() throws NoResultException{
         slf4jLogger.info("==List<Region> findAllOrderedByName()==");
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Region> criteria = cb.createQuery(Region.class);
@@ -50,7 +52,7 @@ public class RegionDaoImpl implements IRegionDao {
     }
 
     @Override
-    public List<Region> findAllOrderedByNameDesc() {
+    public List<Region> findAllOrderedByNameDesc() throws NoResultException{
         slf4jLogger.info("==List<Region> findAllOrderedByNameDesc()==");
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Region> criteria = cb.createQuery(Region.class);
@@ -61,7 +63,7 @@ public class RegionDaoImpl implements IRegionDao {
     }
 
     @Override
-    public List<Region> findAllByNamePattern(String name) {
+    public List<Region> findAllByNamePattern(String name) throws NoResultException{
         slf4jLogger.info("==List<Region> findAllByNamePattern(String name)==");
         return em.createNamedQuery(Region.FIND_BY_NAME_PATTERN)
                 .setParameter("regionName",  "%" + name + "%").getResultList();

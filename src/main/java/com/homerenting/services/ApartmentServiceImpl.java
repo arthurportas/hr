@@ -10,10 +10,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.NoResultException;
 import java.util.List;
 
 @Service(ApartmentServiceImpl.COMPONENT_NAME)
-@Transactional
 public class ApartmentServiceImpl implements IApartmentService {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(ApartmentServiceImpl.class);
@@ -25,7 +25,7 @@ public class ApartmentServiceImpl implements IApartmentService {
     private IApartmentDao apartmentDao;
 
     @Override
-    public Apartment getById(Long id) {
+    public Apartment getById(Long id) throws NoResultException {
         slf4jLogger.info("==Apartment getById(Long id)==");
         return apartmentDao.findById(id);
     }
@@ -37,7 +37,7 @@ public class ApartmentServiceImpl implements IApartmentService {
     }
 
     @Override
-    public List<Apartment> getHighlitedApartments() {
+    public List<Apartment> getHighlitedApartments() throws NoResultException{
         slf4jLogger.info("==List<Apartment> getHighlitedApartments()==");
         return apartmentDao.fetchHighlitedApartments();
     }

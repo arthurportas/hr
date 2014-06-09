@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.web.DefaultRedirectStrategy;
 import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.WebAttributes;
@@ -68,7 +69,9 @@ public class UrlAuthenticationSuccessHandler implements AuthenticationSuccessHan
         } else if (isAdmin) {
             return "/";
         } else {
-            throw new IllegalStateException();//TODO Custom exception to register unrelated user ROLE
+            slf4jLogger.info("==UsernameNotFoundException==");
+            slf4jLogger.info("An error while trying to login..."+ authentication.getPrincipal());
+            throw new UsernameNotFoundException("database error");
         }
     }
 

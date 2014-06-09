@@ -2,6 +2,7 @@ package com.homerenting.repo;
 
 import com.homerenting.domain.Property;
 import com.homerenting.domain.modules.header.search.PropertyKind;
+import org.hibernate.NonUniqueResultException;
 import org.hibernate.search.jpa.FullTextEntityManager;
 import org.hibernate.search.jpa.Search;
 import org.hibernate.search.query.dsl.QueryBuilder;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
@@ -19,7 +21,7 @@ import java.awt.print.Book;
 import java.util.List;
 
 @Repository(PropertyDaoImpl.COMPONENT_NAME)
-@Transactional
+@Transactional(noRollbackFor={NoResultException.class, NonUniqueResultException.class})
 public class PropertyDaoImpl implements IPropertyDao {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(PropertyDaoImpl.class);
@@ -31,12 +33,12 @@ public class PropertyDaoImpl implements IPropertyDao {
     @Autowired
     private EntityManager em;
 
-    public Property findById(Long id) {
+    public Property findById(Long id) throws NoResultException {
         slf4jLogger.info("==Property findById(Long id)==");
         return em.find(Property.class, id);
     }
 
-    public Property findByName(String name) {
+    public Property findByName(String name) throws NoResultException{
         slf4jLogger.info("==Property findByName(String name)==");
         CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaQuery<Property> criteria = builder.createQuery(Property.class);
@@ -46,7 +48,7 @@ public class PropertyDaoImpl implements IPropertyDao {
         return em.createQuery(criteria).getSingleResult();
     }
 
-    public List<Property> findAllOrderedByName() {
+    public List<Property> findAllOrderedByName() throws NoResultException{
         slf4jLogger.info("==List<Property> findAllOrderedByName()==");
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Property> criteria = cb.createQuery(Property.class);
@@ -57,7 +59,7 @@ public class PropertyDaoImpl implements IPropertyDao {
     }
 
     @Override
-    public List<Property> findAllOrderedByNameDesc() {
+    public List<Property> findAllOrderedByNameDesc() throws NoResultException{
         slf4jLogger.info("==List<Property> findAllOrderedByNameDesc()==");
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Property> criteria = cb.createQuery(Property.class);
@@ -68,7 +70,7 @@ public class PropertyDaoImpl implements IPropertyDao {
     }
 
     @Override
-    public List<Property> findAllByNamePattern(String name) {
+    public List<Property> findAllByNamePattern(String name) throws NoResultException{
         slf4jLogger.info("==List<Property> findAllByNamePattern(String name)==");
         return em.createNamedQuery(Property.FIND_BY_NAME_PATTERN)
                 .setParameter("propertyName",  "%" + name + "%").getResultList();

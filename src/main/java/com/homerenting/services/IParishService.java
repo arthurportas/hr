@@ -3,16 +3,16 @@ package com.homerenting.services;
 import com.homerenting.domain.Parish;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.NoResultException;
 import java.util.List;
 
-@Service
 public interface IParishService {
 
-    public Parish getById(Long id);
+    public Parish getById(final Long id) throws NoResultException;
 
-    public Parish getByName(String name);
+    public Parish getByName(String name) throws NoResultException;
 
-    public List<Parish> getAllOrderedByName();
+    public List<Parish> getAllOrderedByName() throws NoResultException;
 
-    public void save(Parish parish);
+    public void save(final Parish parish);
 }

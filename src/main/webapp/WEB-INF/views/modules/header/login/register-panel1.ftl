@@ -10,6 +10,7 @@
 
 <#macro renderTab2RegisterForm>
     <div class="span5">
+        <div id="recaptcha"></div>
         <h4><i class="icon-user"></i>&nbsp;&nbsp;
             <@spring.messageText "REGISTER.HERE", "Registar-me Aqui"/>
         </h4>

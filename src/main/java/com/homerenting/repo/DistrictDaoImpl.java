@@ -1,6 +1,7 @@
 package com.homerenting.repo;
 
 import com.homerenting.domain.District;
+import org.hibernate.NonUniqueResultException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,13 +9,14 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
 @Repository(DistrictDaoImpl.COMPONENT_NAME)
-@Transactional
+@Transactional(noRollbackFor={NoResultException.class, NonUniqueResultException.class})
 public class DistrictDaoImpl implements IDistrictDao {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(DistrictDaoImpl.class);
@@ -24,12 +26,12 @@ public class DistrictDaoImpl implements IDistrictDao {
     @Autowired
     private EntityManager em;
 
-    public District findById(Long id) {
+    public District findById(Long id) throws NoResultException {
         slf4jLogger.info("==District findById(Long id)==");
         return em.find(District.class, id);
     }
 
-    public District findByName(String name) {
+    public District findByName(String name) throws NoResultException{
         slf4jLogger.info("==District findByName(String name)==");
         CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaQuery<District> criteria = builder.createQuery(District.class);
@@ -39,7 +41,7 @@ public class DistrictDaoImpl implements IDistrictDao {
         return em.createQuery(criteria).getSingleResult();
     }
 
-    public List<District> findAllOrderedByName() {
+    public List<District> findAllOrderedByName() throws NoResultException{
         slf4jLogger.info("==List<District> findAllOrderedByName()==");
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<District> criteria = cb.createQuery(District.class);

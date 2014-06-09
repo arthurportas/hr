@@ -9,6 +9,7 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
@@ -53,7 +54,7 @@ public class GenericDaoImpl<T extends Serializable> implements IGenericDao<T> {
 	 * @see com.realtv.repo.GenericDao#count()
 	 */
 	@Override
-	public long count() {
+	public long count() throws NoResultException{
 		slf4jLogger.info("==long count()==");
 		String entity = type.getSimpleName();
 		slf4jLogger.debug("==entity==" + entity);
@@ -96,7 +97,7 @@ public class GenericDaoImpl<T extends Serializable> implements IGenericDao<T> {
 	 * @see com.realtv.repo.GenericDao#find(java.lang.Object)
 	 */
 	@Override
-	public T find(final long id) {
+	public T find(final long id) throws NoResultException{
 		slf4jLogger.info("==T find(final long id)==");
 		return em.find(type, id);
 	}
@@ -108,7 +109,7 @@ public class GenericDaoImpl<T extends Serializable> implements IGenericDao<T> {
 	 */
 	@Override
 	@SuppressWarnings("unchecked")
-	public List<T> getAll() {
+	public List<T> getAll() throws NoResultException {
 		slf4jLogger.info("==List<T> getAll()==");
 		Query query = em.createQuery("from " + type.getName());
 		return query.getResultList();

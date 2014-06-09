@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import javax.persistence.NoResultException;
 import java.util.List;
 
-@Service
 public interface IUserShortProfileService {
 
     public UserShortProfile getById(Long id) throws NoResultException;

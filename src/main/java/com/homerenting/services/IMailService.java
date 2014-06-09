@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-@Service
 public interface IMailService {
 
     public void sendUserRegistrationMessage(final String from, final String to, final String subject, final Map<String,Object> model, final String template);

@@ -3,12 +3,14 @@ package com.homerenting.repo;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 import com.homerenting.domain.User;
 
+import org.hibernate.NonUniqueResultException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +18,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository(UserDaoImpl.COMPONENT_NAME)
-@Transactional
+@Transactional(noRollbackFor={NoResultException.class, NonUniqueResultException.class})
 public class UserDaoImpl extends GenericDaoImpl<User> implements IUserDao {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(UserDaoImpl.class);
@@ -26,24 +28,24 @@ public class UserDaoImpl extends GenericDaoImpl<User> implements IUserDao {
 	@Autowired
 	private EntityManager em;
 
-	public User findByEmail(String email) {
+	public User findByEmail(String email) throws NoResultException {
         slf4jLogger.info("==User findByEmail(String email)==");
 		return (User) em.createNamedQuery(User.FIND_BY_EMAIL).setParameter("email", email).getSingleResult();
 	}
 
     @Override
-    public User findById(Long id) {
+    public User findById(Long id) throws NoResultException{
         slf4jLogger.info("==User findById(Long id)==");
         return null;
     }
 
     @Override
-    public User findByName(String name) {
+    public User findByName(String name) throws NoResultException{
         slf4jLogger.info("==User findByName(String name)==");
         return null;
     }
 
-    public List<User> findAllOrderedByName() {
+    public List<User> findAllOrderedByName() throws NoResultException{
         slf4jLogger.info("==List<User> findAllOrderedByName()==");
 		CriteriaBuilder cb = em.getCriteriaBuilder();
 		CriteriaQuery<User> criteria = cb.createQuery(User.class);
@@ -53,7 +55,7 @@ public class UserDaoImpl extends GenericDaoImpl<User> implements IUserDao {
 	}
 
     @Override
-    public List<User> findAllOrderedByNameDesc() {
+    public List<User> findAllOrderedByNameDesc() throws NoResultException{
         slf4jLogger.info("==List<User> findAllOrderedByNameDesc()==");
         return null;
     }

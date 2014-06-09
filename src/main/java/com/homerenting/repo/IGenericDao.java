@@ -3,6 +3,7 @@
  */
 package com.homerenting.repo;
 
+import javax.persistence.NoResultException;
 import java.io.Serializable;
 import java.util.List;
 
@@ -12,13 +13,13 @@ import java.util.List;
  */
 public interface IGenericDao<T extends Serializable> {
 
-	public long count();
+	public long count() throws NoResultException;
 
 	public T create(T t);
 
 	public void delete(long id);
 
-	public T find(long id);
+	public T find(long id) throws NoResultException;
 
 	public List<T> getAll();
 

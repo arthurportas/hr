@@ -10,10 +10,10 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.NoResultException;
 import java.util.List;
 
 @Service(PropertyServiceImpl.COMPONENT_NAME)
-@Transactional
 public class PropertyServiceImpl implements IPropertyService {
 
     public static final String COMPONENT_NAME = "propertyServiceImpl";
@@ -23,27 +23,27 @@ public class PropertyServiceImpl implements IPropertyService {
     private IPropertyDao propertyDao;
 
     @Override
-    public Property getById(Long id) {
+    public Property getById(Long id) throws NoResultException {
         return propertyDao.findById(id);
     }
 
     @Override
-    public Property getByName(String name) {
+    public Property getByName(String name) throws NoResultException{
         return propertyDao.findByName(name);
     }
 
     @Override
-    public List<Property> getAllOrderedByName() {
+    public List<Property> getAllOrderedByName() throws NoResultException{
         return propertyDao.findAllOrderedByName();
     }
 
     @Override
-    public List<Property> getAllOrderedByNameDesc() {
+    public List<Property> getAllOrderedByNameDesc() throws NoResultException{
         return propertyDao.findAllOrderedByNameDesc();
     }
 
     @Override
-    public List<Property> getAllByNamePattern(String name) {
+    public List<Property> getAllByNamePattern(String name) throws NoResultException{
         return propertyDao.findAllByNamePattern(name);
     }
 

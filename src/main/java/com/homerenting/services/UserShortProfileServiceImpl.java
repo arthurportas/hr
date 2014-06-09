@@ -16,7 +16,6 @@ import javax.persistence.NoResultException;
 import java.util.List;
 
 @Service(UserShortProfileServiceImpl.COMPONENT_NAME)
-@Transactional
 public class UserShortProfileServiceImpl implements IUserShortProfileService{
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(UserShortProfileServiceImpl.class);

@@ -2,30 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Photo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PhotoUpload.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/validators/PhotoUploadValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cloudinary_cors.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_cloudinary_cloudinary_1_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserShortProfileDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserShortProfileDao.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/MemberDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/MemberDaoImpl.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ApartmentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ApartmentServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/CompanyMOTDServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/CompanyMOTDServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/DistrictDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/DistrictDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/GenericDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/GenericDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IApartmentDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IApartmentDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IApartmentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IApartmentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ICompanyMOTDDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ICompanyMOTDDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ICompanyMOTDService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ICompanyMOTDService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IDistrictDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IDistrictDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IDistrictService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IDistrictService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IGenericDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IGenericDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IMailService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IMailService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IRegionDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IRegionDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IRegionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IRegionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationFailureHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/cloudinary.properties" afterPath="$PROJECT_DIR$/src/main/resources/cloudinary.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homerenting-webapp.iml" afterPath="$PROJECT_DIR$/homerenting-webapp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/homerenting_webapp_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -93,7 +108,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" line="47" class="com.homerenting.repo.ApartmentDaoImpl" package="com.homerenting.repo">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" line="49" class="com.homerenting.repo.ApartmentDaoImpl" package="com.homerenting.repo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -138,7 +153,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" line="54" class="com.homerenting.repo.ParishDaoImpl" package="com.homerenting.repo">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" line="56" class="com.homerenting.repo.ParishDaoImpl" package="com.homerenting.repo">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -238,84 +253,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login-panel1.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl">
+      <file leaf-file-name="IUserShortProfileService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="776" selection-end="776" vertical-scroll-proportion="-8.5" vertical-offset="119" max-vertical-offset="1734">
-              <folding>
-                <marker date="1402323220000" expanded="true" signature="307:2715" placeholder="..." />
-              </folding>
+            <state line="10" column="0" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="527">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_en_UK.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties">
+      <file leaf-file-name="MailServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="34" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-8.888889" vertical-offset="372" max-vertical-offset="714">
+            <state line="24" column="39" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3570">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_es_ES.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties">
+      <file leaf-file-name="ParishServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="43" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-8.888889" vertical-offset="372" max-vertical-offset="714">
+            <state line="18" column="0" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="765">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_pt_PT.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="43" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-8.259259" vertical-offset="389" max-vertical-offset="731">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UrlAuthenticationSuccessHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="5" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1326">
+            <state line="69" column="20" selection-start="3074" selection-end="3074" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
+      <file leaf-file-name="register-panel1.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="47" selection-start="8021" selection-end="8021" vertical-scroll-proportion="0.5537721" vertical-offset="2443" max-vertical-offset="4080">
+            <state line="12" column="28" selection-start="336" selection-end="336" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserShortProfileServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java">
+      <file leaf-file-name="footer.ftl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="58" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
+            <state line="87" column="4" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.7548077" vertical-offset="1165" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IUserShortProfileService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java">
+      <file leaf-file-name="PropertyServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="77" selection-start="531" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="544">
+            <state line="16" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegionServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -324,19 +337,10 @@
       <file leaf-file-name="UserShortProfileDaoImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="47" selection-start="4759" selection-end="4849" vertical-scroll-proportion="0.0" vertical-offset="1705" max-vertical-offset="2635">
+            <state line="112" column="12" selection-start="4759" selection-end="4849" vertical-scroll-proportion="0.0" vertical-offset="1834" max-vertical-offset="2635">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUserShortProfileDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserShortProfileDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="86" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="527">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -360,41 +364,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/IndexUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/UserShortProfileDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Districts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Parishes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PropertyKind.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Regions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/PropertyDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/services/DistrictDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/daos/PropertyDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/daos/RegionDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/daos/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/test-context.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/daos/TestStub.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/daos/ParishDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/daos/ParishTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishMethods.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/TestStub.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/DistricMethods.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/DistrictTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionMethods.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/TestUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cloudinary_cors.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Photo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/validators/PhotoUploadValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/cloudinary.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/PhotoUpload.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml" />
@@ -408,9 +377,44 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserShortProfileDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/GenericDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IApartmentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ICompanyMOTDDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IDistrictDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IGenericDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IRegionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/DistrictDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/ApartmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/CompanyMOTDServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IApartmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/ICompanyMOTDService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IDistrictService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IMailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IRegionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
       </list>
     </option>
   </component>
@@ -1154,6 +1158,40 @@
               <option name="myItemId" value="homerenting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1212,6 +1250,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2160,7 +2224,7 @@
       <workItem from="1400612171356" duration="62619000" />
       <workItem from="1401538862763" duration="19687000" />
       <workItem from="1401830114566" duration="27517000" />
-      <workItem from="1402242389216" duration="16095000" />
+      <workItem from="1402242389216" duration="20337000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2302,11 +2366,15 @@
       <created>1402244031660</created>
       <updated>1402244031660</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Login works with error handling&#10;">
+      <created>1402335290245</created>
+      <updated>1402335290246</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="563755000" />
+    <option name="totallyTimeSpent" value="567997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
@@ -2333,13 +2401,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06388889" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29722223" sideWeight="0.8361946" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25679544" sideWeight="0.5010352" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15450644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15450644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2404,8 +2472,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Recover pasword - removed security question&#10;" />
-    <MESSAGE value="Register panel - disabled checkbox for terms &amp; conditions&#10;" />
     <MESSAGE value="Added Role ralationship to UserShortProfile&#10;" />
     <MESSAGE value="Initial definition for Property domain object and recover password process&#10;" />
     <MESSAGE value="Properties persisted inside sql script.&#10;Menu entry for Personal Area&#10;Minor UI changes" />
@@ -2429,7 +2495,9 @@
     <MESSAGE value="trying openshift deploy&#10;" />
     <MESSAGE value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl" />
     <MESSAGE value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl&#10;" />
+    <MESSAGE value="Login works with error handling&#10;" />
+    <MESSAGE value="Corrected @Transaction on DAO's.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected @Transaction on DAO's.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2443,313 +2511,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="25.84" vertical-offset="646" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/infrastructure.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="944" selection-end="944" vertical-scroll-proportion="-10.88" vertical-offset="17" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/test-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/PropertyDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="1433" selection-end="1485" vertical-scroll-proportion="0.19450802" vertical-offset="510" max-vertical-offset="2482">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/TestStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="43" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/DistricMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/DistrictTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="4134" selection-end="4134" vertical-scroll-proportion="0.0" vertical-offset="1892" max-vertical-offset="2329">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="62" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/District.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="90" selection-start="891" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="1751">
-          <folding>
-            <element signature="e#1738#1746#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Parish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="49" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
-          <folding>
-            <element signature="e#1402#1403#0" expanded="false" />
-            <element signature="e#1430#1431#0" expanded="false" />
-            <element signature="e#1486#1487#0" expanded="false" />
-            <element signature="e#1523#1524#0" expanded="false" />
-            <element signature="e#1560#1561#0" expanded="false" />
-            <element signature="e#1590#1591#0" expanded="false" />
-            <element signature="e#1658#1659#0" expanded="false" />
-            <element signature="e#1699#1700#0" expanded="false" />
-            <element signature="e#1732#1733#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="e#1857#1858#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/ParishTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/homerenting/test/domain/RegionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="40" selection-start="5311" selection-end="5311" vertical-scroll-proportion="0.0" vertical-offset="2975" max-vertical-offset="3179">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="8007">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/cache/ehcache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="62" selection-start="310" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/test-persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="60" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/modules/header/search/Regions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="57" selection-start="2418" selection-end="2432" vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="15572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cloudinary_cors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="3907" selection-end="3907" vertical-scroll-proportion="-10.961538" vertical-offset="395" max-vertical-offset="782">
-          <folding>
-            <marker date="1402262031000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1402262031000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1402262031000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/cloudinary/cloudinary/1.0.13/cloudinary-1.0.13.jar!/com/cloudinary/Cloudinary.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.34851485" vertical-offset="198" max-vertical-offset="1309">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/cloudinary/cloudinary/1.0.13/cloudinary-1.0.13.jar!/com/cloudinary/StoredFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="398" selection-end="398" vertical-scroll-proportion="0.34851485" vertical-offset="11" max-vertical-offset="969">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/cloudinary.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="95" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/validators/PhotoUploadValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="412" selection-end="412" vertical-scroll-proportion="0.40699816" vertical-offset="0" max-vertical-offset="561">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Photo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="732" max-vertical-offset="1275">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#467#468#0" expanded="false" />
-            <element signature="e#492#493#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#554#555#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#656#657#0" expanded="false" />
-            <element signature="e#690#691#0" expanded="false" />
-            <element signature="e#722#723#0" expanded="false" />
-            <element signature="e#750#751#0" expanded="false" />
-            <element signature="e#792#793#0" expanded="false" />
-            <element signature="e#826#827#0" expanded="false" />
-            <element signature="e#860#861#0" expanded="false" />
-            <element signature="e#892#893#0" expanded="false" />
-            <element signature="e#940#941#0" expanded="false" />
-            <element signature="e#983#984#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/cloudinary/cloudinary-taglib/1.0.8/cloudinary-taglib-1.0.8.jar!/com/cloudinary/Singleton.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/cloudinary/cloudinary-taglib/1.0.8/cloudinary-taglib-1.0.8-sources.jar!/com/cloudinary/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="51" selection-start="994" selection-end="1002" vertical-scroll-proportion="0.65561694" vertical-offset="154" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/RootController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="45" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/HTTPCodesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="683" selection-end="683" vertical-scroll-proportion="0.15653776" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/PhotoUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="65" selection-start="2430" selection-end="2430" vertical-scroll-proportion="-6.392157" vertical-offset="371" max-vertical-offset="2703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="656" column="87" selection-start="23296" selection-end="23296" vertical-scroll-proportion="-68.34615" vertical-offset="9375" max-vertical-offset="12393">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="1072" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.3.RELEASE/spring-security-core-3.2.3.RELEASE.jar!/org/springframework/security/core/userdetails/UsernameNotFoundException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="293" selection-end="293" vertical-scroll-proportion="0.32903227" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.3.RELEASE/spring-security-web-3.2.3.RELEASE.jar!/org/springframework/security/web/WebAttributes.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="41" selection-start="332" selection-end="332" vertical-scroll-proportion="0.29238328" vertical-offset="0" max-vertical-offset="407">
@@ -2815,51 +2576,310 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="18" selection-start="776" selection-end="776" vertical-scroll-proportion="-8.5" vertical-offset="119" max-vertical-offset="1734">
           <folding>
-            <marker date="1402323220000" expanded="true" signature="307:2715" placeholder="..." />
+            <marker date="1402323220000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="5" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1326">
+        <state line="199" column="47" selection-start="8021" selection-end="8021" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4080">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ApartmentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="58" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
+        <state line="21" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/CompanyMOTDDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/DistrictDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/EnergieDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/GenericDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="48" selection-start="1487" selection-end="1487" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IApartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="78" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ICompanyMOTDDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="76" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IDistrictDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="73" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IEnergieCertificateDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IGenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="48" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IParishDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="71" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IPropertyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="134" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IRegionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="82" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="73" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserShortProfileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="86" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/ApartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/CompanyMOTDServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IApartmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/ICompanyMOTDService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IDistrictService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IMailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IPropertyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IRegionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="77" selection-start="531" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="544">
+        <state line="10" column="0" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="39" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/transfer/objects/SearchFormTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/ParishServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserShortProfileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="71" selection-start="828" selection-end="934" vertical-scroll-proportion="-4.7325583" vertical-offset="933" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserShortProfileDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="47" selection-start="4759" selection-end="4849" vertical-scroll-proportion="0.0" vertical-offset="1705" max-vertical-offset="2635">
+        <state line="112" column="12" selection-start="4759" selection-end="4849" vertical-scroll-proportion="0.0" vertical-offset="1834" max-vertical-offset="2635">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/repo/IUserShortProfileDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/helpers/UrlAuthenticationSuccessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="86" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="527">
+        <state line="69" column="20" selection-start="3074" selection-end="3074" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/mvc/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/register-panel1.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="47" selection-start="8021" selection-end="8021" vertical-scroll-proportion="0.5537721" vertical-offset="2443" max-vertical-offset="4080">
+        <state line="12" column="28" selection-start="336" selection-end="336" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="4" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.7548077" vertical-offset="1165" max-vertical-offset="1615">
           <folding />
         </state>
       </provider>

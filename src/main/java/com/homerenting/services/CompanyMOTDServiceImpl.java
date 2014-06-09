@@ -12,10 +12,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.NoResultException;
 import java.util.List;
 
 @Repository(CompanyMOTDServiceImpl.COMPONENT_NAME)
-@Transactional
 public class CompanyMOTDServiceImpl implements ICompanyMOTDService {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(CompanyMOTDServiceImpl.class);
@@ -27,19 +27,19 @@ public class CompanyMOTDServiceImpl implements ICompanyMOTDService {
     private ICompanyMOTDDao companyMOTDDao;
 
     @Override
-    public CompanyMOTD getById(Long id) {
+    public CompanyMOTD getById(Long id) throws NoResultException {
         slf4jLogger.info("==CompanyMOTD getById(Long id)==");
         return companyMOTDDao.findById(id);
     }
 
     @Override
-    public CompanyMOTD getByName(String name) {
+    public CompanyMOTD getByName(String name) throws NoResultException{
         slf4jLogger.info("==CompanyMOTD getByName(String name)==");
         return companyMOTDDao.findByName(name);
     }
 
     @Override
-    public List<CompanyMOTD> getAllOrderedByName() {
+    public List<CompanyMOTD> getAllOrderedByName() throws NoResultException{
         slf4jLogger.info("==List<CompanyMOTD> getAllOrderedByName()==");
         return companyMOTDDao.findAllOrderedByName();
     }

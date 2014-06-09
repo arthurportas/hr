@@ -1,6 +1,7 @@
 package com.homerenting.repo;
 
 import com.homerenting.domain.CompanyMOTD;
+import org.hibernate.NonUniqueResultException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,13 +9,14 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
 @Repository(CompanyMOTDDaoImpl.COMPONENT_NAME)
-@Transactional
+@Transactional(noRollbackFor={NoResultException.class, NonUniqueResultException.class})
 public class CompanyMOTDDaoImpl implements ICompanyMOTDDao {
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(CompanyMOTDDaoImpl.class);
@@ -24,11 +26,11 @@ public class CompanyMOTDDaoImpl implements ICompanyMOTDDao {
     @Autowired
     private EntityManager em;
 
-    public CompanyMOTD findById(Long id) {
+    public CompanyMOTD findById(Long id) throws NoResultException {
         return em.find(CompanyMOTD.class, id);
     }
 
-    public CompanyMOTD findByName(String name) {
+    public CompanyMOTD findByName(String name) throws NoResultException{
         CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaQuery<CompanyMOTD> criteria = builder.createQuery(CompanyMOTD.class);
         Root<CompanyMOTD> motd = criteria.from(CompanyMOTD.class);
@@ -37,7 +39,7 @@ public class CompanyMOTDDaoImpl implements ICompanyMOTDDao {
         return em.createQuery(criteria).getSingleResult();
     }
 
-    public List<CompanyMOTD> findAllOrderedByName() {
+    public List<CompanyMOTD> findAllOrderedByName() throws NoResultException{
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<CompanyMOTD> criteria = cb.createQuery(CompanyMOTD.class);
         Root<CompanyMOTD> motd = criteria.from(CompanyMOTD.class);

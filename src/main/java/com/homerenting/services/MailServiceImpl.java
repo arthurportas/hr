@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * Created by Arthur on 09/05/14.
  */
-@Service
+@Service(MailServiceImpl.COMPONENT_NAME)
 public class MailServiceImpl implements IMailService{
 
     private static final Logger slf4jLogger = LoggerFactory.getLogger(MailServiceImpl.class);
