@@ -231,7 +231,7 @@
         <dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
-            <scope>runtime</scope>
+            <scope>runtime</scope><!--this scope is essential-->
             <version>1.4.01</version>
         </dependency>
 
