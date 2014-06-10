@@ -13,8 +13,8 @@
 <#macro renderCompanyMOTD>
     <div class="span3">
         <div class="footer-widget">
-            <h2 class="brand widget-title">Realto</h2>
-            <p class="footer-tag-line">Your Company Tag Line</p>
+            <h2 class="brand widget-title">ProcurarCasa.pt</h2>
+            <p class="footer-tag-line"><@spring.messageText "FOOTER.TAG.LINE", "Anúncie o seu imóvel"/></p>
             <p><#if motd?has_content>
                 ${motd.motd}
             </#if></p>

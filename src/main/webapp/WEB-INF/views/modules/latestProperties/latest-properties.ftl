@@ -39,7 +39,7 @@
 </#macro>
 
 <#macro renderHighlightedProperties>
-    <#list remaingHighlightedProperties as p><#--TODO: fix index for ul write-->
+    <#list remaingHighlightedProperties as p>
         <#if ((p_index == 0) || (p_index % 3 == 0))>
             <div class="item">
                 <ul class="thumbnails ${p_index}">
@@ -64,9 +64,9 @@
                 </#if>
             <#--<img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />-->
             </a>
-                            <span class="prop-tag">
-                                <@spring.messageText "FOR.${p.businessType?upper_case}", "${p.businessType?cap_first}"/>
-                            </span>
+            <span class="prop-tag">
+                <@spring.messageText "FOR.${p.businessType?upper_case}", "${p.businessType?cap_first}"/>
+            </span>
             <div class="prop-info">
                 <h3 class="prop-title">${p.propertyTitle}</h3>
                 <ul class="more-info clearfix">
@@ -78,7 +78,7 @@
                         <span class="qty pull-right">${p.propertyRegion.regionName?cap_first}</span>
                     </li>
                     <li class="info-label clearfix">
-                        <span class="pull-left">${p.propertyPrice?string.number}€</span><#-- <span class="qty pull-right">2</span>-->
+                        <span class="pull-left">${p.propertyPrice?string.number}&euro;</span><#-- <span class="qty pull-right">2</span>-->
                     </li>
                 </ul>
             </div>
