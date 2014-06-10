@@ -1,4 +1,14 @@
 <#import "spring.ftl" as spring />
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&appId=1481163645452025&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <!-- Core Scripts - Include with every page -->
     <script src="<@spring.url '/static/resources/realto-html/js/jquery.js'/>"/>
     <script src="js/jquery.js"></script>
@@ -42,7 +52,8 @@
     <script type="text/javascript">
         $("#wizard").bwizard();
     </script>
-    </body>
+
+
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/announces/jquery.ui.widget.js'/>"/>
     <script src="js/jquery.ui.widget.js"></script>
@@ -86,5 +97,5 @@
     <script src="js/geo-location.js"></script>
 
     <script src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
-
+    </body>
 </html>

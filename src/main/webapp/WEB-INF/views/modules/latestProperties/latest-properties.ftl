@@ -72,16 +72,33 @@
                 <ul class="more-info clearfix">
                     <li class="info-label clearfix">
                         <span class="pull-left"></span>
-                    ${p.tipology!""}
-                    ${p.vilageTipology!""}
+                        ${p.tipology!""}
+                        ${p.vilageTipology!""}
                         <@spring.messageText "IN", "em"/>
                         <span class="qty pull-right">${p.propertyRegion.regionName?cap_first}</span>
                     </li>
                     <li class="info-label clearfix">
-                        <span class="pull-left">${p.propertyPrice?string.number}&euro;</span><#-- <span class="qty pull-right">2</span>-->
+                        <span class="pull-left">${p.propertyPrice?string.number}&euro;</span>
+                        <#-- <span class="qty pull-right">2</span>-->
+                    </li>
+                    <li class="info-label clearfix">
+                        <span class="pull-left">
+                            <@renderFBLikeBtn p />
+                        </span>
                     </li>
                 </ul>
             </div>
         </div>
     </li>
+</#macro>
+
+<#macro renderFBLikeBtn p><#--TODO:should be https procurarcasa.pt, 240px width of mobile-->
+    <div class="fb-like"
+         data-href="https://procurarcasa.pt/property/${p.propertyId?c}"
+         data-layout="button_count"
+         data-action="like"
+         data-show-faces="true"
+         data-share="true"
+         data-width="240px">
+    </div>
 </#macro>

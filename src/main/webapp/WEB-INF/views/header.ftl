@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>.:ImoWeb:.</title>
+        <title>.:ProcurarCasa.pt:.</title>
 
         <!-- Core CSS - Include with every page -->
         <link rel="stylesheet" type="text/css" href="<@spring.url '/static/resources/realto-html/css/bootstrap.min.css'/>"/>

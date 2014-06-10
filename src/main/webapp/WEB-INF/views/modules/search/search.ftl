@@ -5,18 +5,19 @@
                 <div class="widget pull-right">
                     <div class="row">
                         <div class="span12 head-container">
-                            <div class="full-text-search">
-                                <input type="text" name='full-text-search-home' class="input-block-level form-control"
-                                       id="full-text-search-home" placeholder="<@spring.messageText "SEARCH.WHAT.IS.ON.YOUR.MIND", "Pesquisar o que pensa..."/>"/>
-                            </div>
+
+                            <#--<@renderFullTextSearchBox />-->
+
+
                             <div class="row">
                                 <div class="span8 hidden-phone">
 
+                                    <#-- gmaps geolocation example
                                     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
                                     <article>
                                         <p>Finding your location: <span id="status">checking...</span></p>
-                                    </article>
+                                    </article>-->
 
                                     <#--<div class="item active">-->
                                         <#--<ul class="thumbnails">-->
@@ -172,4 +173,11 @@
         <option value="#"><@spring.messageText "TO", "até"/> $400.000</option>
         <option value="#"><@spring.messageText "TO", "até"/> $500.000</option>
     </select>
+</#macro>
+
+<#macro renderFullTextSearchBox>
+    <div class="full-text-search">
+        <input type="text" name='full-text-search-home' class="input-block-level form-control"
+               id="full-text-search-home" placeholder="<@spring.messageText "SEARCH.WHAT.IS.ON.YOUR.MIND", "Pesquisar o que pensa..."/>"/>
+    </div>
 </#macro>
