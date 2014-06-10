@@ -57,7 +57,7 @@
         <div class="holder">
             <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">
                 <span class="more"></span>
-                <#if (p.images?size > 0) >
+                <#if ((p.images?size > 0) && (p.images[0].cloudinaryHighlightImageUrl??))>
                     <img alt="image" src="${p.images[0].cloudinaryHighlightImageUrl}" class="media-object" />
                 <#else>
                     <img alt="image" src="http://placehold.it/800x454" class="media-object" />

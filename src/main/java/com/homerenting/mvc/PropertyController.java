@@ -55,7 +55,7 @@ public class PropertyController {
         String viewName= "properties-all-highlighted";
         try{
             List<Property> properties = propertyService.getAllHighLighted();
-            mav.addObject("allHighlighted", properties);
+            mav.addObject("properties", properties);
             mav.setViewName(viewName);
             return mav;
         } catch (NoResultException nre) {

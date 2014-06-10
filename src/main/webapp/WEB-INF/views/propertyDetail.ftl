@@ -16,34 +16,33 @@
                      data-cycle-next="#next"
                         >
 
-                    <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
-                    <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
-                    <img alt="image" src="http://placehold.it/770x437" class="media-object">
-                    <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
-                    <img alt="image" src="http://placehold.it/770x437" class="media-object">
-                    <img alt="image" src="http://placehold.it/770x437" class="media-object">
-                    <img alt="image" src="http://placehold.it/770x437" class="media-object">
-                    <img alt="image" src="http://placehold.it/770x437" class="media-object">
-
+                    <@renderPropertyImages property />
                 </div><!-- .cycle-slideshow -->
-
 
 
                 <div id="adv-custom-pager"></div>
                 <div class="clearfix">
                     <div class="clearfix padding30">
-                        <h2 class="prop-title pull-left margin0">1630 Washington Avenue Miami
-                            Beach 33139 FL</h2>
-                        <span class="prop-price pull-right serif italic">$ 2,500,000</span>
+                        <h2 class="prop-title pull-left margin0">
+                            1630 Washington Avenue Miami
+                            Beach 33139 FL
+                        </h2>
+                        <span class="prop-price pull-right serif italic">
+                            $ 2,500,000
+                        </span>
                     </div>
                     <div class="clearfix padding030 row-fluid">
                         <ul class="more-info pull-left span6">
                             <li class="info-label clearfix">
-                                <span class="pull-left">Bedrooms:</span>
+                                <span class="pull-left">
+                                    Bedrooms:
+                                </span>
                                 <span class="qty pull-right">4</span>
                             </li>
                             <li class="info-label clearfix">
-                                <span class="pull-left">Bathrooms:</span>
+                                <span class="pull-left">
+                                    Bathrooms:
+                                </span>
                                 <span class="qty pull-right">2</span>
                             </li>
                             <li class="info-label clearfix">
@@ -51,58 +50,45 @@
                                 <span class="qty pull-right">Condo</span>
                             </li>
                             <li class="info-label clearfix">
-                                <span class="pull-left">Square feet:</span>
+                                <span class="pull-left">
+                                    Square feet:
+                                </span>
                                 <span class="qty pull-right">1,700 sqft</span>
                             </li>
                         </ul>
                         <ul class="more-info pull-right span6">
-                            <li class="info-label clearfix"><span class="pull-left">Year:</span>
+                            <li class="info-label clearfix">
+                                <span class="pull-left">Year:</span>
                                 <span class="qty pull-right">2010</span></li>
-                            <li class="info-label clearfix"><span class="pull-left">Listing
-                                        type:</span>
-                                <span class="qty pull-right">For Sale</span></li>
-                            <li class="info-label clearfix"><span class="pull-left">Parking:</span>
-                                <span class="qty pull-right">Assigned</span></li>
-                            <li class="info-label clearfix"><span class="pull-left">Neighborhood:</span>
-                                <span class="qty pull-right">Oceanfront</span></li>
+                            <li class="info-label clearfix">
+                                <span class="pull-left">
+                                    Listing type:
+                                </span>
+                                <span class="qty pull-right">
+                                    For Sale
+                                </span>
+                            </li>
+                            <li class="info-label clearfix">
+                                <span class="pull-left">
+                                    Parking:
+                                </span>
+                                <span class="qty pull-right">
+                                    Assigned
+                                </span>
+                            </li>
+                            <li class="info-label clearfix">
+                                <span class="pull-left">
+                                    Neighborhood:
+                                </span>
+                                <span class="qty pull-right">
+                                    Oceanfront
+                                </span>
+                            </li>
                         </ul>
                     </div>
+
                     <div class="clearfix padding30">
-                        <h3>Property Description</h3>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                            egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-                            leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-                            erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-                            fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-                            sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-                            facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
-                            neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
-                            volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-                            luctus, metus</p>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                            egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-                            leo.</p>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                            egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-                            leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-                            erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-                            fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-                            sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-                            facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
-                            neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
-                            volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-                            luctus, metus</p>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                            egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-                            leo.</p>
+                        <@renderPropertyDetailedDesc property />
                     </div>
                 </div>
             </div>
@@ -110,10 +96,9 @@
         <!-- .span8 -->
 
         <div class="span4">
-            <div class="widget map box-container padding30">
-                <h3 class="widget-title">Map &amp; Directions</h3>
-                <iframe src="http://maps.google.it/maps?f=q&amp;source=s_q&amp;hl=it&amp;geocode=&amp;q=miami+beach+collins+ave+1220&amp;aq=&amp;sll=25.861386,-80.120888&amp;sspn=0.205136,0.347786&amp;ie=UTF8&amp;hq=&amp;hnear=1220+Collins+Ave,+Miami+Beach,+Miami-Dade,+Florida+33139,+Stati+Uniti&amp;t=m&amp;z=14&amp;ll=25.783255,-80.131265&amp;output=embed"></iframe>
-            </div>
+
+            <@renderPropertyMap property />
+
 
             <#--<div class="agent-box widget box-container clearfix padding30">-->
                 <#--<div class="">-->
@@ -224,3 +209,67 @@
 
 <#include "modules/footer/footer.ftl">
 <#include "footer.ftl">
+
+<#macro renderPropertyImages p>
+    <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
+    <img alt="image" src="$http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+</#macro>
+
+<#macro renderPropertyDetailedDesc p>
+    <h3>Property Description</h3>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+    </p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo.
+    </p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
+        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
+        luctus, metus
+    </p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+        leo.
+    </p>
+</#macro>
+
+<#macro renderPropertyMap p>
+    <div class="widget map box-container padding30">
+        <h3 class="widget-title">Map &amp; Directions</h3>
+        <iframe src="http://maps.google.it/maps?f=q&amp;source=s_q&amp;hl=it&amp;geocode=&amp;q=miami+beach+collins+ave+1220&amp;aq=&amp;sll=25.861386,-80.120888&amp;sspn=0.205136,0.347786&amp;ie=UTF8&amp;hq=&amp;hnear=1220+Collins+Ave,+Miami+Beach,+Miami-Dade,+Florida+33139,+Stati+Uniti&amp;t=m&amp;z=14&amp;ll=25.783255,-80.131265&amp;output=embed"></iframe>
+    </div>
+</#macro>

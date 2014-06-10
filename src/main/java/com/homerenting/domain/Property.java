@@ -172,6 +172,8 @@ public class Property extends BaseEntity implements Serializable {
     @Column(name = "PROPERTY_LONGITUDE", nullable = true)
     @Longitude
     private Double longitude;
+
+    //TODO:add address
     	/* ==========================GETTERS/SETTERS======================= */
 
     public Long getPropertyId() {
