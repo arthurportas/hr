@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/company.properties" afterPath="$PROJECT_DIR$/src/main/resources/company.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -231,7 +227,7 @@
       <file leaf-file-name="search.ftl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="59" selection-start="504" selection-end="504" vertical-scroll-proportion="0.27733332" vertical-offset="134" max-vertical-offset="3196">
+            <state line="6" column="59" selection-start="265" selection-end="265" vertical-scroll-proportion="0.232" vertical-offset="15" max-vertical-offset="3145">
               <folding />
             </state>
           </provider>
@@ -2432,7 +2428,7 @@
       <workItem from="1400612171356" duration="62619000" />
       <workItem from="1401538862763" duration="19687000" />
       <workItem from="1401830114566" duration="27517000" />
-      <workItem from="1402242389216" duration="49304000" />
+      <workItem from="1402242389216" duration="49955000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2606,11 +2602,15 @@
       <created>1402412458467</created>
       <updated>1402412458467</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="added FB like and share button on each highlighted property&#10;">
+      <created>1402420551867</created>
+      <updated>1402420551867</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="596964000" />
+    <option name="totallyTimeSpent" value="597615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
@@ -2708,7 +2708,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Property has images associated&#10;" />
     <MESSAGE value="Ajax mechanism for number of properties per district, on region selection&#10;" />
     <MESSAGE value="Ajax mechanism for number of properties per district and region working.&#10;Trigger is region selection&#10;" />
     <MESSAGE value="Added relation between Region(1-N)Parish" />
@@ -2724,7 +2723,6 @@
     <MESSAGE value="entity beautiffy" />
     <MESSAGE value="Login working, but needs  error handling" />
     <MESSAGE value="Login working, but needs  error handling&#10;Progression on unit tests :)" />
-    <MESSAGE value="trying openshift deploy&#10;" />
     <MESSAGE value="trying openshift deploy&#10;trying to solve&#10;java.lang.NoClassDefFoundError: org/apache/xerces/dom/ElementImpl" />
     <MESSAGE value="Login works with error handling&#10;" />
     <MESSAGE value="Corrected @Transaction on DAO's.&#10;" />
@@ -2733,7 +2731,9 @@
     <MESSAGE value="fixed currency display and chamed ImoWeb to ProcurarCasa.pt" />
     <MESSAGE value="work on /properties/all/highlighted" />
     <MESSAGE value="work on /properties/all/highlighted&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on /properties/all/highlighted&#10;" />
+    <MESSAGE value="added FB like and share button on each highlighted property&#10;" />
+    <MESSAGE value="trying openshift deploy&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying openshift deploy&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3150,7 +3150,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="59" selection-start="504" selection-end="504" vertical-scroll-proportion="0.27733332" vertical-offset="134" max-vertical-offset="3196">
+        <state line="6" column="59" selection-start="265" selection-end="265" vertical-scroll-proportion="0.232" vertical-offset="15" max-vertical-offset="3145">
           <folding />
         </state>
       </provider>

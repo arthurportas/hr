@@ -5,10 +5,7 @@
                 <div class="widget pull-right">
                     <div class="row">
                         <div class="span12 head-container">
-
                             <#--<@renderFullTextSearchBox />-->
-
-
                             <div class="row">
                                 <div class="span8 hidden-phone">
 
