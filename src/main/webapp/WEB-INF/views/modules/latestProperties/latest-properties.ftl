@@ -12,7 +12,7 @@
         <div class="row">
             <div id="realto-carousel" class="carousel slide span12">
                 <div class="carousel-navigation pull-right">
-                    <a class="serif italic pull-left view-all-carousel" href="#"><@spring.messageText "VIEW.ALL", "Ver todos"/></a>
+                    <a class="serif italic pull-left view-all-carousel" href="/properties/all/highlighted"><@spring.messageText "VIEW.ALL", "Ver todos"/></a>
                     <a class="left carousel-control pull-left" href="#realto-carousel" data-slide="prev">&lt;</a>
                     <a class="right carousel-control pull-right" href="#realto-carousel" data-slide="next">&gt;</a>
                 </div>

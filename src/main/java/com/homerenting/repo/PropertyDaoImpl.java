@@ -9,6 +9,7 @@ import org.hibernate.search.query.dsl.QueryBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,7 +29,8 @@ public class PropertyDaoImpl implements IPropertyDao {
 
     public static final String COMPONENT_NAME = "propertyDaoImpl";
 
-    private int maxResults;
+    //@Value("${highlights.max.results}")
+    private int MAX_RESULTS = 37;
 
     @Autowired
     private EntityManager em;
@@ -84,9 +86,9 @@ public class PropertyDaoImpl implements IPropertyDao {
 
     @Override
     public List<Property> findAllHighLighted() {
-        slf4jLogger.info("==List<Property> findAllHighLighted()==");//TODO: maxresults in config
+        slf4jLogger.info("==List<Property> findAllHighLighted()==");
         return em.createNamedQuery(Property.FIND_ALL_HIGHLIGHTED)
-                .setMaxResults(37)
+                .setMaxResults(MAX_RESULTS)
                 .getResultList();
     }
 

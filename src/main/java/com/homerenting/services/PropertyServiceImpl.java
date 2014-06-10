@@ -53,12 +53,12 @@ public class PropertyServiceImpl implements IPropertyService {
     }
 
     @Override
-    public List<Property> getAllHighLighted() {
+    public List<Property> getAllHighLighted() throws NoResultException{
         return propertyDao.findAllHighLighted();
     }
 
     @Override
-    public List<Property> getRandomHighLighted() {
+    public List<Property> getRandomHighLighted() throws NoResultException{
         return null;//TODO implement this
     }
 

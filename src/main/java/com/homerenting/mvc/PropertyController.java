@@ -19,6 +19,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.persistence.NoResultException;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -37,12 +38,31 @@ public class PropertyController {
     @Autowired
     private ICompanyMOTDService motdService;
 
-    @RequestMapping(value = "properties", method = RequestMethod.GET)
+    @RequestMapping(value = "/properties", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public List<Property> displaySortedProperties(Model model) {
         slf4jLogger.info("==List<Property> displaySortedProperties(Model model)==");
         return propertyService.getAllOrderedByName();
+    }
+
+    @RequestMapping("/properties/all/highlighted")
+    @ResponseStatus(HttpStatus.FOUND)
+    @ResponseBody
+    public ModelAndView getAllByHighlighted() {
+        slf4jLogger.info("==List<Property> getAllByHighlighted()==");
+        ModelAndView mav = new ModelAndView();
+        String viewName= "properties-all-highlighted";
+        try{
+            List<Property> properties = propertyService.getAllHighLighted();
+            mav.addObject("allHighlighted", properties);
+            mav.setViewName(viewName);
+            return mav;
+        } catch (NoResultException nre) {
+            slf4jLogger.info("==NoResultException nre==");
+            slf4jLogger.info(nre.getMessage());
+        }
+        return null;//TODO: perhaps a nice view for error handling
     }
 
     @RequestMapping("/properties/all/{namePattern}")
