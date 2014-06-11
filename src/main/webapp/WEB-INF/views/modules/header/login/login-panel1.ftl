@@ -62,13 +62,14 @@
 </#macro>
 
 <#macro renderTab1LoginSocial>
+<div id="status"></div>
     <div class="span3">
         <h4><i class="icon-expand-alt"></i>&nbsp;&nbsp;Social</h4>
         <div class="socials clearfix">
-            <a href="#" class="icon-facebook facebook" title="login with facebook"></a>
-            <a href="#" class="icon-twitter twitter" title="login with twitter"></a>
-            <a href="#" class="icon-google-plus google-plus" title="login with google-plus"></a>
-            <a href="#" class="icon-linkedin linked-in" title="login with linked-in"></a>
+            <a href="#" class="icon-facebook facebook tab-login-fblogin" title="<@spring.messageText "LOGIN.WITH.FACEBOOK", "Entrar com credenciais Facebook"/>"></a>
+            <a href="#" class="icon-twitter twitter" title="<@spring.messageText "LOGIN.WITH.TWITTER", "Entrar com credenciais Twitter"/>"></a>
+            <a href="#" class="icon-google-plus google-plus" title="<@spring.messageText "LOGIN.WITH.GPLUS", "Entrar com credenciais Google Plus"/>"></a>
+            <a href="#" class="icon-linkedin linked-in" title="<@spring.messageText "LOGIN.WITH.LINKEDIN", "Entrar com credenciais LinkedIn"/>"></a>
         </div>
     </div>
 </#macro>

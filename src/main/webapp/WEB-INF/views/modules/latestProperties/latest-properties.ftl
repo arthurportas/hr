@@ -32,7 +32,7 @@
     <div class="item active">
         <ul class="thumbnails">
             <#list highlightedProperties as p>
-                <@renderPropertiItem p />
+                <@renderPropertyItem p />
             </#list>
         </ul>
     </div><!-- .item -->
@@ -44,7 +44,7 @@
             <div class="item">
                 <ul class="thumbnails ${p_index}">
         </#if>
-            <@renderPropertiItem p />
+            <@renderPropertyItem p />
         <#if ((p_index != 0) && (p_index % 2 == 0))>
                 </ul>
             </div><!-- .item -->
@@ -52,7 +52,7 @@
     </#list>
 </#macro>
 
-<#macro renderPropertiItem p>
+<#macro renderPropertyItem p>
     <li class="span4 box-container">
         <div class="holder">
             <a class="overlay" title="${p.propertyTitle}" href="/property/${p.propertyId?c}">

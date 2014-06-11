@@ -97,5 +97,8 @@
     <script src="js/geo-location.js"></script>
 
     <script src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/login/facebook.js'/>"/>
+    <script src="js/facebook.js"></script>
     </body>
 </html>

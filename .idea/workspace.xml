@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/facebook.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties-all-highlighted.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties-all-highlighted.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -215,55 +223,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="latest-properties.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl">
+      <file leaf-file-name="properties-all-highlighted.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties-all-highlighted.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="43" selection-start="4143" selection-end="4143" vertical-scroll-proportion="-5.269231" vertical-offset="1495" max-vertical-offset="1870">
-              <folding />
+            <state line="178" column="26" selection-start="8763" selection-end="8763" vertical-scroll-proportion="1.5875" vertical-offset="3153" max-vertical-offset="4012">
+              <folding>
+                <marker date="1402519109000" expanded="true" signature="9756:10099" placeholder="..." />
+                <marker date="1402519109000" expanded="true" signature="9984:10077" placeholder="..." />
+                <marker date="1402519109000" expanded="true" signature="10148:10351" placeholder="..." />
+                <marker date="1402519109000" expanded="true" signature="10193:10284" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.ftl" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
+      <file leaf-file-name="login-panel1.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="59" selection-start="265" selection-end="265" vertical-scroll-proportion="0.232" vertical-offset="15" max-vertical-offset="3145">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="11" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-10.5" vertical-offset="288" max-vertical-offset="663">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="49" selection-start="402" selection-end="402" vertical-scroll-proportion="30.846153" vertical-offset="921" max-vertical-offset="1802">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="22" selection-start="7717" selection-end="7717" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="7803">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment-confirmation.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/email/payment-confirmation.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="118" selection-start="259" selection-end="259" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="340">
+            <state line="64" column="17" selection-start="2776" selection-end="2776" vertical-scroll-proportion="-7.8846154" vertical-offset="883" max-vertical-offset="1751">
               <folding />
             </state>
           </provider>
@@ -272,37 +249,84 @@
       <file leaf-file-name="company.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/company.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="46" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+            <state line="12" column="26" selection-start="347" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-account-activation-email.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/email/user-account-activation-email.ftl">
+      <file leaf-file-name="facebook.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+            <state line="19" column="29" selection-start="972" selection-end="972" vertical-scroll-proportion="0.77061856" vertical-offset="24" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-register-confirmation-email.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/email/user-register-confirmation-email.ftl">
+      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="57" selection-start="77" selection-end="90" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="510">
-              <folding />
+            <state line="63" column="4" selection-start="1580" selection-end="1599" vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="1258">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/import.sql">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+      <file leaf-file-name="login.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="16" selection-start="1290" selection-end="1295" vertical-scroll-proportion="-10.074074" vertical-offset="408" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_en_UK.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="8" selection-start="17140" selection-end="17140" vertical-scroll-proportion="431.92593" vertical-offset="15198" max-vertical-offset="15572">
+            <state line="37" column="0" selection-start="1111" selection-end="1130" vertical-scroll-proportion="-10.555555" vertical-offset="344" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_es_ES.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="-13.074074" vertical-offset="344" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_pt_PT.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="-13.074074" vertical-offset="344" max-vertical-offset="816">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="0" selection-start="4556" selection-end="4556" vertical-scroll-proportion="-12.307693" vertical-offset="1414" max-vertical-offset="1853">
               <folding />
             </state>
           </provider>
@@ -334,12 +358,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/DistrictDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/ParishDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/RegionDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/ApartmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/CompanyMOTDServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/DistrictServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/IApartmentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/ICompanyMOTDService.java" />
@@ -376,15 +394,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/services/PropertyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/repo/PropertyDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/PropertyController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties-all-highlighted.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/propertyDetail.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/domain/Property.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/email/payment-confirmation.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/company.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties-all-highlighted.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/facebook.js" />
       </list>
     </option>
   </component>
@@ -1169,6 +1193,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'login'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="i18n" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="footer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1196,6 +1266,154 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="realto-html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="realto-html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="realto-html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homerenting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="realto-html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2428,7 +2646,7 @@
       <workItem from="1400612171356" duration="62619000" />
       <workItem from="1401538862763" duration="19687000" />
       <workItem from="1401830114566" duration="27517000" />
-      <workItem from="1402242389216" duration="49955000" />
+      <workItem from="1402242389216" duration="52695000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -2606,11 +2824,15 @@
       <created>1402420551867</created>
       <updated>1402420551867</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="trying openshift deploy&#10;">
+      <created>1402421824008</created>
+      <updated>1402421824008</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="597615000" />
+    <option name="totallyTimeSpent" value="600355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
@@ -2708,7 +2930,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Ajax mechanism for number of properties per district, on region selection&#10;" />
     <MESSAGE value="Ajax mechanism for number of properties per district and region working.&#10;Trigger is region selection&#10;" />
     <MESSAGE value="Added relation between Region(1-N)Parish" />
     <MESSAGE value="Added relation between Property(1-N)PropertyKind&#10;Ajax call to properties number by kind and district region and kind&#10;" />
@@ -2733,7 +2954,8 @@
     <MESSAGE value="work on /properties/all/highlighted&#10;" />
     <MESSAGE value="added FB like and share button on each highlighted property&#10;" />
     <MESSAGE value="trying openshift deploy&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying openshift deploy&#10;" />
+    <MESSAGE value="started fb login intergration&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="started fb login intergration&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2747,55 +2969,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IMailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IParishService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IRegionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/IUserShortProfileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/MailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="39" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/services/RegionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/transfer/objects/SearchFormTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="833">
@@ -3013,15 +3186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties-all-highlighted.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="86" selection-start="8954" selection-end="9041" vertical-scroll-proportion="-3.3076923" vertical-offset="2939" max-vertical-offset="3689">
-          <folding>
-            <marker date="1402407008000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/homerenting/external/CloudinaryImage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="13" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
@@ -3120,13 +3284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/company.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="11" selection-start="2271" selection-end="2271" vertical-scroll-proportion="-10.5" vertical-offset="288" max-vertical-offset="663">
@@ -3134,23 +3291,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="43" selection-start="4143" selection-end="4143" vertical-scroll-proportion="-5.269231" vertical-offset="1495" max-vertical-offset="1870">
+        <state line="19" column="35" selection-start="949" selection-end="949" vertical-scroll-proportion="73.84615" vertical-offset="2243" max-vertical-offset="3145">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/latestProperties/latest-properties.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="26" selection-start="2067" selection-end="2067" vertical-scroll-proportion="-5.35" vertical-offset="490" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties-all-highlighted.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="26" selection-start="8763" selection-end="8763" vertical-scroll-proportion="1.5875" vertical-offset="3153" max-vertical-offset="4012">
+          <folding>
+            <marker date="1402519109000" expanded="true" signature="9756:10099" placeholder="..." />
+            <marker date="1402519109000" expanded="true" signature="9984:10077" placeholder="..." />
+            <marker date="1402519109000" expanded="true" signature="10148:10351" placeholder="..." />
+            <marker date="1402519109000" expanded="true" signature="10193:10284" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_pt_PT.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="-13.074074" vertical-offset="344" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_es_ES.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="-13.074074" vertical-offset="344" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login_en_UK.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1111" selection-end="1130" vertical-scroll-proportion="-10.555555" vertical-offset="344" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/header/login/login.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="16" selection-start="1290" selection-end="1295" vertical-scroll-proportion="-10.074074" vertical-offset="408" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="402" selection-end="402" vertical-scroll-proportion="30.846153" vertical-offset="921" max-vertical-offset="1802">
+        <state line="102" column="0" selection-start="4556" selection-end="4556" vertical-scroll-proportion="-12.307693" vertical-offset="1414" max-vertical-offset="1853">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/search/search.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="59" selection-start="265" selection-end="265" vertical-scroll-proportion="0.232" vertical-offset="15" max-vertical-offset="3145">
+        <state line="63" column="4" selection-start="1580" selection-end="1599" vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="1258">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modules/header/login/login-panel1.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="17" selection-start="2776" selection-end="2776" vertical-scroll-proportion="-7.8846154" vertical-offset="883" max-vertical-offset="1751">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/company.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="26" selection-start="347" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/facebook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="29" selection-start="972" selection-end="972" vertical-scroll-proportion="0.77061856" vertical-offset="24" max-vertical-offset="1496">
           <folding />
         </state>
       </provider>
