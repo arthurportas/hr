@@ -212,6 +212,9 @@
                     <span class="pull-left">
                         <@renderFBLikeBtn p />
                     </span>
+                    <span class="pull-right">
+                        <@renderTwitterBtn p />
+                    </span>
                 </li>
             </ul>
         </div>
@@ -220,12 +223,20 @@
 </#macro>
 
 <#macro renderFBLikeBtn p><#--TODO:should be https procurarcasa.pt, 240px width of mobile-->
-<div class="fb-like"
-     data-href="https://procurarcasa.pt/property/${p.propertyId?c}"
-     data-layout="button_count"
-     data-action="like"
-     data-show-faces="true"
-     data-share="true"
-     data-width="240px">
-</div>
+    <div class="fb-like"
+         data-href="https://procurarcasa.pt/property/${p.propertyId?c}"
+         data-layout="button_count"
+         data-action="like"
+         data-show-faces="true"
+         data-share="true"
+         data-width="240px">
+    </div>
+</#macro>
+
+<#macro renderTwitterBtn p>
+    <a href="https://twitter.com/share"
+       class="twitter-share-button"
+       data-url="https://procurarcasa.pt/property/${p.propertyId?c}">Tweet
+    </a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </#macro>
