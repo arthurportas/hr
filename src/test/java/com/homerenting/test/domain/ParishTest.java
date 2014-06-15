@@ -1,6 +1,7 @@
 package com.homerenting.test.domain;
 
 import com.google.common.collect.ImmutableList;
+import com.homerenting.domain.District;
 import com.homerenting.domain.Parish;
 import com.homerenting.domain.Region;
 import groovy.lang.Immutable;
@@ -18,7 +19,9 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import static com.homerenting.domain.modules.header.search.Parishes.RAMALDE;
 import static junit.framework.Assert.*;
@@ -119,9 +122,52 @@ public class ParishTest extends TestStub implements ParishMethods{
     }
 
     @Override
-    @Test
+    @Test //TODO: use more significant names
     public void testParishWithRegionAssociation() {
 
+        //this method need de parent entity District due to it's dependencies
 
+        create();
+        final Parish parish = em.find(Parish.class, this.ramalde.getParishId());
+        assertNotNull("ramalde(parish) should not be null", parish);
+
+        Region region = new Region();
+        Set<Parish> parishes = region.getParishes();
+        parishes.add(parish);
+
+        District district = new District();
+        Set<Region> regions = district.getRegions();
+
+        region = new Region().getBuilder()
+                .withName("region")
+                .withDistrict(district)
+                .withProperties(null)
+                .withParishes(parishes)
+                .build();
+
+        district = new District().getBuilder()
+                .withName("district")
+                .withProperties(null)
+                .withRegions(regions)
+                .build();
+
+
+        parish.setRegion(region);
+
+        em.persist(district);
+
+        final District districtPersisted = em.find(District.class, district.getDistrictId());
+        assertNotNull("district(districtPersisted) should not be null", districtPersisted);
+
+        assertNotNull("region list on(districtPersisted) should not be null", districtPersisted.getRegions());
+
+        for (Iterator<Region> it = districtPersisted.getRegions().iterator(); it.hasNext(); ) {
+            Region regionFromDistrict  = it.next();
+            assertEquals("region", regionFromDistrict.getRegionName());
+            for (Iterator<Parish> it2 = regionFromDistrict.getParishes().iterator(); it.hasNext(); ) {
+                Parish parishFromRegion = it2.next();
+                assertEquals("RAMALDE.getValue()", parishFromRegion.getParishName());
+            }
+        }
     }
 }

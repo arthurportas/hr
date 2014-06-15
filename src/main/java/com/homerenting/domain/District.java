@@ -43,11 +43,11 @@ public class District implements Serializable {
     @Column(name = "DISTRICT_NAME", unique = true, nullable = false)
     private String districtName = StringUtils.EMPTY;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "district")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "district", cascade=CascadeType.ALL)
     @JsonManagedReference
     private Set<Region> regions = new HashSet<Region>(0);
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy="propertyDistrict")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy="propertyDistrict", cascade=CascadeType.ALL)
     private Set<Property> properties = new HashSet<Property>(0);
 
     	/* ==========================GETTERS/SETTERS======================= */

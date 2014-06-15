@@ -161,7 +161,7 @@ public class Property extends BaseEntity implements Serializable {
     @Column(name = "PROPERTY_IS_HIGHLIGHTED", nullable = false)
     private boolean isHighlighted = false;
 
-    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL, mappedBy="property")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy="property", cascade=CascadeType.ALL)
     @Column(name = "PROPERTY_IMAGES", nullable = true)
     private Set<CloudinaryImage> images = new HashSet<CloudinaryImage>();
 

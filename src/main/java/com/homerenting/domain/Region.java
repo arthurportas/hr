@@ -47,11 +47,11 @@ public class Region implements Serializable{
     @JsonBackReference
     private District district;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "region")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "region", cascade=CascadeType.ALL)
     @JsonManagedReference
     private Set<Parish> parishes = new HashSet<Parish>(0);
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy="propertyRegion")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy="propertyRegion", cascade=CascadeType.ALL)
     private Set<Property> properties = new HashSet<Property>(0);
 
     	/* ==========================GETTERS/SETTERS======================= */

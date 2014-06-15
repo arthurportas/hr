@@ -3,6 +3,7 @@ package com.homerenting.mvc;
 import com.cloudinary.Cloudinary;
 import com.cloudinary.Singleton;
 import com.homerenting.domain.District;
+import com.homerenting.domain.helpers.CustomGenericException;
 import com.homerenting.domain.modules.header.search.BusinessType;
 import com.homerenting.domain.modules.header.search.PropertyKind;
 import com.homerenting.services.*;
@@ -17,11 +18,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.persistence.NoResultException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -61,13 +61,21 @@ public class RootController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
 	public ModelAndView index(Model model, HttpServletRequest request,
-                              HttpServletResponse response)  throws ServletException, IOException {
+                              HttpServletResponse response) throws CustomGenericException {
         slf4jLogger.info("==ModelAndView index(Model model)==");
         ModelAndView mav = new ModelAndView();
         mav.setViewName("index");
-        final List<District> districts = districtService.getAllOrderedByName();
-        mav.addObject("districts", districts);
-        mav.addObject("regions", districts.get(0).getRegions());//Todo fetch client district
+
+        try{
+            final List<District> districts = districtService.getAllOrderedByName();
+            mav.addObject("districts", districts);
+            mav.addObject("regions", districts.get(0).getRegions());//Todo fetch client district
+        } catch (NoResultException nre) {
+            slf4jLogger.info("==NoResultException nre==");
+            slf4jLogger.info(nre.getMessage());
+            throw new CustomGenericException("errorcode", "errormessage");
+        }
+
         //mav.addObject("regions", regionService.getAllOrderedByName());
         mav.addObject("propertyKinds", Arrays.asList(PropertyKind.values()));
         mav.addObject("busynessType", Arrays.asList(BusinessType.values()));
@@ -77,15 +85,29 @@ public class RootController {
         if(auth.isAuthenticated() && name!="anonymousUser") {
             mav.addObject("personalArea", "personal");
         }
-        final List highlighted = propertyService.getAllHighLighted();
-        List firstThreeHighlighted = highlighted.subList(0, 3);
-        int hightlightedListSize = highlighted.size();
 
-        List remaingHighlighted = highlighted.subList(3, hightlightedListSize);
-        mav.addObject("highlightedProperties", firstThreeHighlighted);
-        mav.addObject("remaingHighlightedProperties", remaingHighlighted);
+        try{
+            final List highlighted = propertyService.getAllHighLighted();
+            List firstThreeHighlighted = highlighted.subList(0, 3);
+            int hightlightedListSize = highlighted.size();
+
+            List remaingHighlighted = highlighted.subList(3, hightlightedListSize);
+            mav.addObject("highlightedProperties", firstThreeHighlighted);
+            mav.addObject("remaingHighlightedProperties", remaingHighlighted);
+        } catch (NoResultException nre) {
+            slf4jLogger.info("==NoResultException nre==");
+            slf4jLogger.info(nre.getMessage());
+            throw new CustomGenericException("errorcode", "errormessage");
+        }
+
+        try{
         mav.addObject("motd", motdService.getById(1L));
-		return mav;
+        } catch (NoResultException nre) {
+            slf4jLogger.info("==NoResultException nre==");
+            slf4jLogger.info(nre.getMessage());
+            throw new CustomGenericException("errorcode", "errormessage");
+        }
+        return mav;
 	}
 
     @RequestMapping(value = "/qrcode", method = RequestMethod.GET)
@@ -96,9 +118,6 @@ public class RootController {
         final int QRCODE_HEIGHT = 125;
 
         Cloudinary cloudinary = Singleton.getCloudinary();
-
-
-
 
         ByteArrayOutputStream out = QRCode.from("http://www.google.pt")
                 .to(ImageType.PNG)
@@ -114,5 +133,22 @@ public class RootController {
 
         outStream.flush();
         outStream.close();
+    }
+
+    //for testing purposes
+    @RequestMapping(value = "/{type:.+}", method = RequestMethod.GET)
+    public ModelAndView getPages(@PathVariable("type") String type)
+            throws Exception {
+
+        if ("error".equals(type)) {
+            // go handleCustomException
+            throw new CustomGenericException("E888", "This is custom message");
+        } else if ("io-error".equals(type)) {
+            // go handleAllException
+            throw new IOException();
+        } else {
+            return new ModelAndView("index").addObject("msg", type);
+        }
+
     }
 }
