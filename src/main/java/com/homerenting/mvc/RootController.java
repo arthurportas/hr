@@ -48,7 +48,7 @@ public class RootController {
 
     @Qualifier("propertyServiceImpl")
     @Autowired
-    private IPropertyService propertyService;//should act as a facade dor apartment service villas etc
+    private IPropertyService propertyService;
 
     @Qualifier(ApartmentServiceImpl.COMPONENT_NAME)
     @Autowired
@@ -136,7 +136,7 @@ public class RootController {
     }
 
     //for testing purposes
-    @RequestMapping(value = "/{type:.+}", method = RequestMethod.GET)
+   /* @RequestMapping(value = "/{type:.+}", method = RequestMethod.GET)
     public ModelAndView getPages(@PathVariable("type") String type)
             throws Exception {
 
@@ -149,6 +149,5 @@ public class RootController {
         } else {
             return new ModelAndView("index").addObject("msg", type);
         }
-
-    }
+    }*/
 }

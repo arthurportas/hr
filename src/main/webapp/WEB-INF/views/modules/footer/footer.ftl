@@ -4,8 +4,9 @@
         <div class="row">
             <@renderCompanyMOTD />
             <@renderCompanyContacts />
-            <@renderSiteMap/>
-            <@renderFlickrHighlights/>
+            <@renderCompanySocialContacts />
+            <#--<@renderSiteMap/>-->
+            <#--<@renderFlickrHighlights/>-->
         </div>
     </div>
 </footer>
@@ -14,10 +15,14 @@
     <div class="span3">
         <div class="footer-widget">
             <h2 class="brand widget-title">ProcurarCasa.pt</h2>
-            <p class="footer-tag-line"><@spring.messageText "FOOTER.TAG.LINE", "Anúncie o seu imóvel"/></p>
-            <p><#if motd?has_content>
-                ${motd.motd}
-            </#if></p>
+            <p class="footer-tag-line">
+                <@spring.messageText "FOOTER.TAG.LINE", "Anúncie o seu imóvel"/>
+            </p>
+            <p>
+                <#if motd?has_content>
+                    ${motd.motd}
+                </#if>
+            </p>
         </div>
         <!-- .footer-company-info -->
     </div>
@@ -27,19 +32,25 @@
 <#macro renderCompanyContacts>
     <div class="span3">
         <div class="footer-widget">
-            <h3 class="widget-title"><@spring.messageText "ADDRESS", "Endereço"/></h3>
+            <h3 class="widget-title">
+                <#--<@spring.messageText "ADDRESS", "Endereço"/>-->
+                <@spring.messageText "COMPANY", "Empresa"/>
+            </h3>
             <div class="clearfix">
                 <ul>
                     <li class="clearfix">
                         <i class="icon-map-marker pull-left"></i>
-                        <p class="pull-left">1680 Washington Avenue
-                            <br/>Miami Beach 33139 FL</p></li>
+                        <p class="pull-left">
+                            Rua A Voz dos Ridículos
+                            <br/>40 1º H2
+                        </p>
+                    </li>
                     <li class="clearfix">
                         <i class="icon-phone pull-left"></i>
-                        <p class="pull-left">+1 (800) 765 4321</p></li>
+                        <p class="pull-left">+351 935705832</p></li>
                     <li class="clearfix">
                         <i class="icon-envelope-alt pull-left"></i>
-                        <p class="pull-left"><a href="#">realto@realto.com</a></p>
+                        <p class="pull-left"><a href="#">geral[AT]procurarcasa.com</a></p>
                     </li>
                 </ul>
             </div>
@@ -53,7 +64,9 @@
 <#macro renderSiteMap>
     <div class="span3">
         <div class="footer-widget">
-            <h3 class="widget-title"><@spring.messageText "COMPANY", "Empresa"/></h3></h3>
+            <h3 class="widget-title">
+                <@spring.messageText "COMPANY", "Empresa"/>
+            </h3>
             <ul>
                 <li>
                     <i class="icon-caret-right"></i>
@@ -128,4 +141,36 @@
         <!-- .footer-widget -->
     </div>
     <!-- .span3 -->
+</#macro>
+
+<#macro renderCompanySocialContacts>
+<div class="span3">
+    <div class="footer-widget">
+        <h3 class="widget-title">
+            <@spring.messageText "SOCIAL.NETWORKS", "Redes Sociais"/>
+        </h3>
+        <div class="clearfix">
+            <ul>
+                <li class="clearfix">
+                    <p class="pull-left fb-follow">
+                        <@renderFBFollow />
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- .clearfix -->
+    </div>
+    <!-- .footer-widget -->
+</div>
+<!-- .span3 -->
+</#macro>
+
+<#macro renderFBFollow>
+    <div class="fb-like"
+         data-href="https://procurarcasa.pt"
+         data-layout="standard"
+         data-action="like"
+         data-show-faces="true"
+         data-share="true">
+    </div>
 </#macro>
