@@ -2,7 +2,7 @@
     <div class="tab-pane active login" id="panel1">
         <div class="row-fluid">
             <@renderTab1LoginForm />
-            <@renderTab1LoginSocial />
+            <#--<@renderTab1LoginSocial />-->
             <@renderTab1Registration/>
         </div>
     </div>
