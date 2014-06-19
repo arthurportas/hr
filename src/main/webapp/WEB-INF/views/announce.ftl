@@ -3,12 +3,12 @@
 <body>
     <#include "modules/header/header.ftl">
     <div class="container page-content">
-    <div class="row">
-    <div class="span8">
-    <div class="box-container">
-    <div class="padding30">
+        <div class="row">
+            <div class="span8">
+                <div class="box-container">
+                    <div class="padding30">
 
-    <h2 class="page-title">Novo Anúncio</h2>
+                        <h2 class="page-title">Novo Anúncio</h2>
     <#--<ul class="unstyled">
         <li>
             <i class="icon-envelope-alt"></i>
@@ -37,9 +37,9 @@
             </div>
         </form>
     </div>-->
-    <div id="wizard">
-    <@renderNewAnnounceTabs />
-    <div>
+                            <div id="wizard">
+                                <@renderNewAnnounceTabs />
+                            <div>
         <!-- Select Basic -->
         <div class="form-group">
             <label class="col-md-4 control-label" for="category">Categoria</label>
@@ -181,17 +181,7 @@
             </div>
         </div>
 
-        <!-- Select Basic -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="selectbasic">Distrito</label>
-
-            <div class="col-md-4">
-                <select id="selectbasic" name="selectbasic" class="form-control">
-                    <option value="1">Option one</option>
-                    <option value="2">Option two</option>
-                </select>
-            </div>
-        </div>
+        <@renderpropertyDistrict />
 
         <!-- Select Basic -->
         <div class="form-group">
@@ -503,4 +493,34 @@
                 </div>-->
 </div>
 <!-- .span4 -->
+</#macro>
+
+<#macro renderFirstPanelFields property>
+    <@renderpropertyTitle property/>
+    <@renderpropertyDescription  property/>
+    <@renderpropertyDistrict />
+</#macro>
+
+<#-- Property Title-->
+<#macro renderpropertyTitle property>
+
+</#macro>
+
+<#-- Property Description-->
+<#macro renderpropertyDescription property>
+
+</#macro>
+
+<#-- Property District-->
+<#macro renderpropertyDistrict >
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="selectbasic">Distrito</label>
+
+        <div class="col-md-4">
+            <select id="selectbasic" name="selectbasic" class="form-control">
+                <option value="1">Option one</option>
+                <option value="2">Option two</option>
+            </select>
+        </div>
+    </div>
 </#macro>
