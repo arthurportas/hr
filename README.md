@@ -1,4 +1,4 @@
-homerenting-webapp
+procurarcasa.pt-webapp
 ========================
 
 What is it?

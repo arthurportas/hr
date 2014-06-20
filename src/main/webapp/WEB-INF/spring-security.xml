@@ -7,7 +7,7 @@
 	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
 	<http auto-config="true">
-		<intercept-url pattern="/announces*" access="ROLE_USER" />
+		<intercept-url pattern="/announces*" access="ROLE_USER,ROLE_ANONYMOUS" />
         <intercept-url pattern="/boffice*" access="ROLE_ADMIN" />
         <intercept-url pattern="/**" access='ROLE_ANONYMOUS,ROLE_USER,ROLE_ADMIN'/>
         <!-- access denied page -->

@@ -34,6 +34,6 @@
         <link href="<@spring.url '/static/resources/realto-html/ico/apple-touch-icon-57x57.png'/>" rel="apple-touch-icon" sizes="57x57">
         <link href="<@spring.url '/static/resources/realto-html/ico/apple-touch-icon.png'/>" rel="apple-touch-icon">
 
-        <link href="<@spring.url '/static/resources/realto-html/ico/favicon.png'/>" rel="shortcut icon">
+        <link href="<@spring.url '/static/resources/realto-html/ico/favicon.ico'/>" rel="shortcut icon">
 
     </head>

@@ -1,9 +1,10 @@
 package com.homerenting.mvc;
 
-import com.homerenting.services.ApartmentServiceImpl;
-import com.homerenting.services.CompanyMOTDServiceImpl;
-import com.homerenting.services.IApartmentService;
-import com.homerenting.services.ICompanyMOTDService;
+import com.homerenting.domain.District;
+import com.homerenting.domain.helpers.CustomGenericException;
+import com.homerenting.domain.modules.header.search.BusinessType;
+import com.homerenting.domain.modules.header.search.PropertyKind;
+import com.homerenting.services.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.persistence.NoResultException;
+import java.util.Arrays;
+import java.util.List;
+
 @Controller(AnnounceController.COMPONENT_NAME)
 public class AnnounceController {
 	
@@ -29,9 +34,17 @@ public class AnnounceController {
     @Autowired
     private ICompanyMOTDService motdService;
 
-    @Qualifier(ApartmentServiceImpl.COMPONENT_NAME)
+    @Qualifier("districtServiceImpl")
     @Autowired
-    private IApartmentService apartmentService;
+    private IDistrictService districtService;
+
+    @Qualifier("regionServiceImpl")
+    @Autowired
+    private IRegionService regionService;
+
+    @Qualifier("propertyServiceImpl")
+    @Autowired
+    private IPropertyService propertyService;
 
 	@RequestMapping(value = "/announces", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
@@ -45,6 +58,23 @@ public class AnnounceController {
         if(auth.isAuthenticated() && name!="anonymousUser") {
             mav.addObject("personalArea", "personal");
         }
+        try{
+            final List<District> districts = districtService.getAllOrderedByName();
+            mav.addObject("districts", districts);
+            mav.addObject("regions", districts.get(0).getRegions());
+        } catch (NoResultException nre) {
+            slf4jLogger.info("==NoResultException nre==");
+            slf4jLogger.info(nre.getMessage());
+            throw new CustomGenericException("errorcode", "errormessage");
+        }
+
+        //mav.addObject("regions", regionService.getAllOrderedByName());
+        mav.addObject("propertyKinds", Arrays.asList(PropertyKind.values()));
+        mav.addObject("busynessType", Arrays.asList(BusinessType.values()));
+
+
+
+
         mav.addObject("motd", motdService.getById(1L));
 
 

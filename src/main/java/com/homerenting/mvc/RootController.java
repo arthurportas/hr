@@ -50,10 +50,6 @@ public class RootController {
     @Autowired
     private IPropertyService propertyService;
 
-    @Qualifier(ApartmentServiceImpl.COMPONENT_NAME)
-    @Autowired
-    private IApartmentService apartmentService;
-
     @Qualifier(CompanyMOTDServiceImpl.COMPONENT_NAME)
     @Autowired
     private ICompanyMOTDService motdService;
