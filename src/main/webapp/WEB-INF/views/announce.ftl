@@ -4,7 +4,7 @@
 <#include "modules/header/header.ftl">
 <div class="container page-content">
     <div class="row">
-        <div class="span12">
+        <div class="span8">
             <div class="box-container">
                 <div class="padding30">
                     <h2 class="page-title">
@@ -12,27 +12,33 @@
                     </h2>
                         <div id="wizard">
                             <@renderNewAnnounceTabs />
-                            <div>
-                                <@renderFirstPanelFields />
+                            <div class="announces-first-panel">
+                                 <@renderFirstPanelFields />
                             </div>
                             <div class="announces-second-panel">
                                 <@renderSecondPanelFields />
                             </div>
-                            <div>
+                            <div class="announces-third-panel">
                                 <@renderThirdPanelFields />
                             </div>
-                            <div>
+                            <div class="announces-fourth-panel">
                                 <@renderFourthPanelFields />
+                            </div>
+                            <div class="announces-fourth-panel">
+                                <@renderFifthPanelFields />
                             </div>
                         </div>
                 </div>
             </div>
         </div>
+        <!-- .span8 -->
+        <@renderInstantPreview />
     </div>
+    <!-- .row -->
 </div>
-<!-- .span12 -->
-    <#--<@renderAds />-->
-<!-- .row -->
+
+    <#---->
+
     <#include "modules/footer/footer.ftl">
     <#include "footer.ftl">
 
@@ -42,7 +48,62 @@
         <li><@spring.messageText "ANNOUNCES.PROPERTY.DETAIL", "Detalhe"/></li>
         <li><@spring.messageText "ANNOUNCES.PROPERTY.IMAGES", "Imagens"/></li>
         <li><@spring.messageText "ANNOUNCES.PROPERTY.PREVIEW", "Pré-visualização"/></li>
+        <li><@spring.messageText "ANNOUNCES.PROPERTY.ORDER", "Encomendar"/></li>
     </ol>
+</#macro>
+
+<#macro renderInstantPreview>
+    <div class="span4 widget">
+        <div class="widget box-container padding010">
+            <h3 class="announce-preview-title">
+                <@spring.messageText "ANNOUNCES.PROPERTY.PREVIEW", "Pré-visualização"/>
+            </h3>
+            <div class="item active">
+                <ul class="thumbnails">
+                    <@renderPropertyItem/>
+                </ul>
+            </div><!-- .item -->
+        </div>
+    </div>
+</#macro>
+
+<#macro renderPropertyItem>
+<li class="span3">
+    <div class="holder">
+        <a class="overlay" title="" href="/property/">
+            <span class="more"></span>
+                <img alt="image" src="http://placehold.it/800x454" class="media-object" />
+        <#--<img alt="image" src="<@spring.url '/static/resources/realto-html/images/04.jpg'/>" class="media-object" />-->
+        </a>
+            <span class="prop-tag">
+                <#--<@spring.messageText "FOR.${p.businessType?upper_case}", "${p.businessType?cap_first}"/>-->
+            </span>
+        <div class="prop-info">
+            <h3 class="prop-title"></h3>
+            <ul class="more-info clearfix">
+                <li class="info-label clearfix">
+                    <span class="pull-left"></span>
+                <#--${p.tipology!""}
+                ${p.vilageTipology!""}
+                -->    <@spring.messageText "IN", "em"/>
+                    <span class="qty pull-right"></span>
+                </li>
+                <li class="info-label clearfix">
+                    <span class="pull-left">&euro;</span>
+                <#-- <span class="qty pull-right">2</span>-->
+                </li>
+                <li class="info-label clearfix">
+                        <span class="pull-left">
+                            <#--<@renderFBLikeBtn p />-->
+                        </span>
+                        <span class="pull-right">
+                           <#--<@renderTwitterBtn p />-->
+                        </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</li>
 </#macro>
 
 <#macro renderAds>
@@ -93,6 +154,10 @@
 </#macro>
 
 <#macro renderFourthPanelFields>
+
+</#macro>
+
+<#macro renderFifthPanelFields>
 
 </#macro>
 
@@ -383,19 +448,21 @@
 
 <#macro renderPropertyPossibleExchange>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="permuta">Possiblidade de Permuta?</label>
+        <label class="col-md-4 control-label" for="property-possible-exchange">
+            <@spring.messageText "ANNOUNCES.PROPERTY.POSSIBLE.EXCHANGE", "Possibilidade de Permuta"/>?
+        </label>
 
         <div class="col-md-4">
             <div class="radio">
                 <label for="permuta-0">
                     <input type="radio" name="permuta" id="permuta-0" value="1" checked="checked">
-                    Sim
+                    <@spring.messageText "ANNOUNCES.YES", "Sim"/>
                 </label>
             </div>
             <div class="radio">
                 <label for="permuta-1">
                     <input type="radio" name="permuta" id="permuta-1" value="2">
-                    Não
+                    <@spring.messageText "ANNOUNCES.NO", "Não"/>
                 </label>
             </div>
         </div>
@@ -420,8 +487,7 @@
 </#macro>
 
 <#macro renderPropertyExtras>
-
-    <table class="table table-striped table-hover span4">
+    <table class="table table-striped table-hover span4" style=" float: inherit;margin-left: 0px; ">
         <thead>
         </thead>
         <tbody>
@@ -508,6 +574,7 @@
             <@spring.messageText "ANNOUNCES.PROPERTY.PHOTOS", "Fotografias"/>
         </label>
         <div class="col-md-4">
+            <@renderImageUploadArea />
             <input id="filebutton" name="filebutton" class="input-file" type="file" />
         </div>
     </div>
@@ -524,4 +591,71 @@
             </button>
         </div>
     </div>
+</#macro>
+
+<#macro renderImageUploadArea>
+<div class="upload_section">
+    <form action="/share" class="share_form" method="POST">
+        <div class="drag_area">
+            <div class="drag_inner">
+              <span>
+                Drop Photo Here
+                <span class="small">or</span>
+              </span>
+                <div class="upload_button_holder">
+                    <input class="select_files" type="submit" value="Select Photo">
+                    <input class="cloudinary-fileupload"
+                           data-cloudinary-field="photo_id"
+                           data-form-data="{&quot;timestamp&quot;:1403389689,&quot;transformation&quot;:&quot;c_limit,h_1200,w_1200&quot;,&quot;callback&quot;:&quot;http://edgedemo.cloudinary.com/cloudinary_cors.html&quot;,&quot;image_metadata&quot;:1,&quot;eager&quot;:&quot;c_fill,g_face,h_133,r_20,w_200/fl_relative,g_center,l_logo_watermark,o_40,w_0.9|c_fill,e_sepia,g_face,h_133,r_20,w_200/fl_relative,g_center,l_logo_watermark,o_40,w_0.9|c_fill,e_improve,g_face,h_133,r_20,w_200/fl_relative,g_center,l_logo_watermark,o_40,w_0.9|c_fill,e_hue:70,g_face,h_133,r_20,w_200/e_blue:40/fl_relative,g_center,l_logo_watermark,o_40,w_0.9|c_limit,h_600,w_600&quot;,&quot;signature&quot;:&quot;5a2f6fd6a9c0486f33831b22aaeccfbd176176db&quot;,&quot;api_key&quot;:&quot;584952392728183&quot;}"
+                           data-url="https://api.cloudinary.com/v1_1/hzxyensd5/image/upload" name="file" type="file">
+                </div>
+            </div>
+        </div>
+        <div class="upload_progress">
+            <span>Uploading...</span>
+            <div class="progress_bar">
+                <div class="completed" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="processing_progress">
+            <span>Processing...</span>
+            <img alt="Processing..." height="32" src="/ajax-loader.gif" width="32">
+        </div>
+        <div class="share_details_section">
+            <ul class="kind_selection">
+                <li class="natural">
+                    <label for="kind_field_natural">
+                        <span class="name">Natural</span>
+                        <span class="image"></span>
+                    </label>
+                    <input checked="" id="kind_field_natural" name="kind" type="radio" value="natural">
+                </li>
+                <li class="sepia">
+                    <label for="kind_field_sepia">
+                        <span class="name">Sepia</span>
+                        <span class="image"></span>
+                    </label>
+                    <input id="kind_field_sepia" name="kind" type="radio" value="sepia">
+                </li>
+                <li class="improved">
+                    <label for="kind_field_improved">
+                        <span class="name">Improved</span>
+                        <span class="image"></span>
+                    </label>
+                    <input id="kind_field_improved" name="kind" type="radio" value="improved">
+                </li>
+                <li class="blue">
+                    <label for="kind_field_blue">
+                        <span class="name">Blue</span>
+                        <span class="image"></span>
+                    </label>
+                    <input id="kind_field_blue" name="kind" type="radio" value="blue">
+                </li>
+            </ul>
+            <input class="model_field" name="model" type="hidden" value="">
+            <input class="taken_at_field" name="taken_at" type="hidden" value="">
+            <input type="submit" value="Share Photo">
+        </div>
+    </form>
+</div>
 </#macro>
