@@ -4,20 +4,25 @@
 <#include "modules/header/header.ftl">
 <div class="container page-content">
     <div class="row">
-        <div class="span8">
+        <div class="span12">
             <div class="box-container">
                 <div class="padding30">
-                    <h2 class="page-title">Novo Anúncio</h2>
+                    <h2 class="page-title">
+                        <@spring.messageText "ANNOUNCES.NEW.ANNOUNCE", "Novo Anúncio"/>
+                    </h2>
                         <div id="wizard">
                             <@renderNewAnnounceTabs />
                             <div>
                                 <@renderFirstPanelFields />
                             </div>
-                            <div>
+                            <div class="announces-second-panel">
                                 <@renderSecondPanelFields />
                             </div>
                             <div>
                                 <@renderThirdPanelFields />
+                            </div>
+                            <div>
+                                <@renderFourthPanelFields />
                             </div>
                         </div>
                 </div>
@@ -25,21 +30,20 @@
         </div>
     </div>
 </div>
-
-    <!-- .span8 -->
+<!-- .span12 -->
     <#--<@renderAds />-->
-    <!-- .row -->
+<!-- .row -->
     <#include "modules/footer/footer.ftl">
     <#include "footer.ftl">
 
 <#macro renderNewAnnounceTabs>
-<ol>
-    <li>Large Paragraph</li>
-    <li>Paragraph</li>
-    <li>Unordered List</li>
-</ol>
+    <ol>
+        <li><@spring.messageText "ANNOUNCES.PROPERTY.HIGHLIGHT", "Destaques"/></li>
+        <li><@spring.messageText "ANNOUNCES.PROPERTY.DETAIL", "Detalhe"/></li>
+        <li><@spring.messageText "ANNOUNCES.PROPERTY.IMAGES", "Imagens"/></li>
+        <li><@spring.messageText "ANNOUNCES.PROPERTY.PREVIEW", "Pré-visualização"/></li>
+    </ol>
 </#macro>
-
 
 <#macro renderAds>
 <div class="span4 widget">
@@ -59,7 +63,7 @@
 <#macro renderFirstPanelFields >
     <@renderPropertyKind />
     <@renderPropertyTitle />
-    <@renderPropertyDescription /><#--TODO: work from here-->
+    <@renderPropertyDescription />
     <@renderPropertyPrice />
     <@renderPropertyPriceNegotiable />
     <@renderPropertyPossibleExchange />
@@ -71,7 +75,6 @@
     <@renderpropertyDistrict />
     <@renderPropertyRegion />
     <@renderPropertyParish />
-
 </#macro>
 
 <#macro renderSecondPanelFields>
@@ -79,31 +82,41 @@
     <@renderPropertyDoorNumber />
     <@renderPropertyZipCode />
     <@renderPropertyTipology />
+    <@renderPropertyBathroomsNumber />
+    <@renderPropertyEnergyCertificate />
+    <@renderPropertyGarage />
+    <@renderPropertyExtras />
 </#macro>
 
 <#macro renderThirdPanelFields>
+    <@renderImagesInput />
+</#macro>
+
+<#macro renderFourthPanelFields>
 
 </#macro>
 
-<#-- Property District-->
 <#macro renderpropertyDistrict >
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Distrito</label>
-        <div class="col-md-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">Option one</option>
-                <option value="2">Option two</option>
-            </select>
-        </div>
+        <label class="col-md-4 control-label" for="property-district">
+            <@spring.messageText "ANNOUNCES.PROPERTY.DISTRICT", "Distrito"/>
+        </label>
+        <select id="property-district" class="span4 select property-district" name="property-district">
+            <option disabled="disabled" selected="selected" value="null"/>
+            ---<@spring.messageText "ANNOUNCES.PROPERTY.DISTRICT", "Distrito"/>---
+            <#list districts as d>
+                <option value="${d.districtId}">${d.districtName?string?cap_first}</option>
+            </#list>
+        </select>
     </div>
 </#macro>
 
 <#macro renderPropertyKind>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="category">
-            <@spring.messageText "ANNOUNCES.CATEGORY", "Categoria"/>
+        <label class="col-md-4 control-label" for="property-kind">
+            <@spring.messageText "ANNOUNCES.PROPERTY.CATEGORY", "Categoria"/>
         </label>
-        <select class="span4 select property-kind" name="type">
+        <select id="property-kind" class="span4 select property-kind" name="property-kind">
             <option disabled="disabled" selected="selected" value="null"/>
             ---<@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/>---
 
@@ -116,51 +129,61 @@
 
 <#macro renderPropertyTitle>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">
-            <@spring.messageText "ANNOUNCES.TITLE", "Título"/>
+        <label class="col-md-4 control-label" for="property-title">
+            <@spring.messageText "ANNOUNCES.PROPERTY.TITLE", "Título"/>
         </label>
         <div class="col-md-4 property-title">
-            <input id="announces-title" name="announces-title" type="text"
-                   placeholder="<@spring.messageText "ANNOUNCES.TITLE", "Título"/>"
-                   class="form-control input-md span4 property-kind" required="true">
+            <input id="property-title" name="property-title" type="text"
+                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.TITLE", "Título"/>"
+                   class="form-control input-md span4 property-kind" required="true" />
         </div>
     </div>
 </#macro>
 
 <#macro renderPropertyDescription>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">Descrição</label>
+        <label class="col-md-4 control-label" for="property-description">
+            <@spring.messageText "ANNOUNCES.PROPERTY.SHORT.DESCRIPTION", "Descrição"/>
+        </label>
         <div class="col-md-4">
-            <input id="textinput" name="textinput" type="text" placeholder="placeholder"
-                   class="form-control input-md">
+            <textarea rows="3" id="property-description" name="property-description"
+                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.SHORT.DESCRIPTION", "Descrição"/>"
+                   class="form-control span4 property-description" >
+            </textarea>
         </div>
     </div>
 </#macro>
 
 <#macro renderPropertyPrice>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="price">Preço</label>
+        <label class="col-md-4 control-label" for="price">
+            <@spring.messageText "ANNOUNCES.PROPERTY.PRICE", "Preço"/>
+        </label>
         <div class="col-md-4">
-            <input id="price" name="price" type="text" placeholder="placeholder" class="form-control input-md">
+            <input id="price" name="price" type="number"
+                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.PRICE", "Preço"/>"
+                   class="form-control span2 input-md property-price" />
         </div>
     </div>
 </#macro>
 
 <#macro renderPropertyPriceNegotiable>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="radios">Negociável?</label>
+        <label class="col-md-4 control-label" for="price-negotiable-options">
+            <@spring.messageText "ANNOUNCES.PROPERTY.PRICE.NEGOTIABLE", "Preço Negociável"/>?
+        </label>
 
         <div class="col-md-4">
             <div class="radio">
-                <label for="radios-0">
-                    <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-                    Sim
+                <label for="price-negotiable-option-yes">
+                    <input type="radio" name="price-negotiable-options" id="price-negotiable-option-yes" value="1" checked="checked" />
+                    <@spring.messageText "ANNOUNCES.YES", "Sim"/>
                 </label>
             </div>
             <div class="radio">
-                <label for="radios-1">
-                    <input type="radio" name="radios" id="radios-1" value="2">
-                    Não
+                <label for="price-negotiable-option-no">
+                    <input type="radio" name="price-negotiable-options" id="price-negotiable-option-no" value="2" />
+                    <@spring.messageText "ANNOUNCES.NO", "Não"/>
                 </label>
             </div>
         </div>
@@ -169,13 +192,17 @@
 
 <#macro renderPropertyState>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Estado</label>
+        <label class="col-md-4 control-label" for="property-state">
+            <@spring.messageText "ANNOUNCES.PROPERTY.STATE", "Estado da Propriedade"/>
+        </label>
 
         <div class="col-md-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">Novo</option>
-                <option value="2">Usado</option>
-                <option value="">Restaurado</option>
+            <select id="property-state" name="property-state" class="span4 select property-state">
+                <option disabled="disabled" selected="selected" value="null"/>
+                ---<@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/>---
+                <#list propertyStatus as ps>
+                    <option value="${ps.value}"><@spring.messageText "ANNOUNCES.PROPERTY.STATE.${(ps.value)?string?upper_case}", "${ps.value}"/></option>
+                </#list>
             </select>
         </div>
     </div>
@@ -183,35 +210,44 @@
 
 <#macro renderPropertyUsefullArea>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="area">Área Útil</label>
-        <div class="col-md-4">
-            <input id="area" name="area" type="text" placeholder="placeholder" class="form-control input-md">
+        <label class="col-md-4 control-label" for="property-usefull-area">
+            <@spring.messageText "ANNOUNCES.PROPERTY.USEFULL.AREA", "Área Útil"/>
+        </label>
+        <div class="col-md-4 property-usefull-area">
+            <input id="property-usefull-area" name="property-usefull-area" type="number"
+                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.USEFULL.AREA", "Área Útil"/>"
+                   class="form-control input-md span2 property-usefull-area" />
         </div>
     </div>
 </#macro>
 
 <#macro renderPropertyBruteArea>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">Área Bruta</label>
-        <div class="col-md-4">
-            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+        <label class="col-md-4 control-label" for="property-brute-area">
+            <@spring.messageText "ANNOUNCES.PROPERTY.BRUTE.AREA", "Área Bruta"/>
+        </label>
+        <div class="col-md-4 property-brute-area">
+            <input id="property-brute-area" name="property-brute-area" type="number"
+                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.BRUTE.AREA", "Área Bruta"/>"
+                   class="form-control input-md span2 property-brute-area" />
         </div>
     </div>
 </#macro>
 
 <#macro renderPropertyTipology>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Tipologia</label>
+        <label class="col-md-4 control-label" for="property-tipology">
+            <@spring.messageText "ANNOUNCES.PROPERTY.TIPOLOGY", "Número Quartos"/>
+        </label>
+
         <div class="col-md-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">T0</option>
-                <option value="2">T0+1</option>
-                <option value="">T1</option>
-                <option value="">T1+1</option>
-                <option value="">T2</option>
-                <option value="">T2+1</option>
-                <option value="">T3</option>
-                <option value="">T3+1</option>
+            <select id="property-tipology" name="property-tipology" class="span2 select property-tipology">
+                <option disabled="disabled" selected="selected" value="null"/>
+                ---<@spring.messageText "ANNOUNCES.PROPERTY.TIPOLOGY", "Número Quartos"/>---
+                <#local x=12>
+                <#list 1..x as i>
+                    <option value="${i}"> ${i}</option>
+                </#list>
             </select>
         </div>
     </div>
@@ -219,20 +255,28 @@
 
 <#macro renderPropertyConstructionYear>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">Ano de Construção</label>
-        <div class="col-md-4">
-            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+        <label class="col-md-4 control-label" for="property-construction-year">
+            <@spring.messageText "ANNOUNCES.PROPERTY.CONSTRUCTION.YEAR", "Ano de Construção"/>
+        </label>
+        <div class="col-md-4 property-construction-year">
+            <input id="property-construction-year" name="property-construction-year" type="text"
+                   pattern="\d{4}"
+                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.CONSTRUCTION.YEAR", "Ano de Construção"/>"
+                   class="form-control input-md span2 property-construction-year" />
         </div>
     </div>
 </#macro>
 
 <#macro renderPropertyCountryLocation>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">País</label>
-        <div class="col-md-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">Option one</option>
-                <option value="2">Option two</option>
+        <label class="col-md-4 control-label" for="property-country-location">
+            <@spring.messageText "ANNOUNCES.PROPERTY.COUNTRY.LOCATION", "País"/>
+        </label>
+        <div class="col-md-4 property-country-location">
+            <select id="property-country-location" name="property-country-location" class="span4 select property-country-location">
+                <#list propertyLocalizationCountry as plc>
+                    <option value="${plc.value}"><@spring.messageText "ANNOUNCES.PROPERTY.LOCALIZATION.${(plc.value)?string?upper_case}", "${plc.value}"/></option>
+                </#list>
             </select>
         </div>
     </div>
@@ -257,41 +301,46 @@
 
 <#macro renderPropertyParish>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Freguesia</label>
-        <div class="col-md-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">Option one</option>
-                <option value="2">Option two</option>
-            </select>
-        </div>
+        <label class="col-md-4 control-label" for="property-parish">
+            <@spring.messageText "ANNOUNCES.PROPERTY.PARISH", "Freguesia"/>
+        </label>
+        <select id="property-parish" class="span4 select property-parish" name="property-parish">
+            <option disabled="disabled" selected="selected" value="null"/>
+            ---<@spring.messageText "ANNOUNCES.PROPERTY.PARISH", "Freguesia"/>---
+            <#list parishes as p>
+                <option value="${p.parishId}">${p.parishName?string?cap_first}</option>
+            </#list>
+        </select>
     </div>
 </#macro>
 
 <#macro renderPropertyAddress>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">Morada</label>
+        <label class="col-md-4 control-label" for="property-address">
+            <@spring.messageText "ANNOUNCES.PROPERTY.ADDRESS", "Endereço"/>
+        </label>
         <div class="col-md-4">
-            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+            <textarea rows="3" id="property-address" name="property-address"
+                      class="form-control span4 property-address" >
+            </textarea>
         </div>
     </div>
 </#macro>
 
 <#macro renderPropertyBathroomsNumber>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Casas de Banho</label>
+        <label class="col-md-4 control-label" for="property-bathrooms-number">
+            <@spring.messageText "ANNOUNCES.PROPERTY.BATHROOM.NUMBER", "Número Casas de Banho"/>
+        </label>
 
         <div class="col-md-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
+            <select id="property-bathrooms-number" name="property-bathrooms-number" class="span2 select property-bathrooms-number">
+                <option disabled="disabled" selected="selected" value="null"/>
+                ---<@spring.messageText "ANNOUNCES.PROPERTY.BATHROOM.NUMBER", "Número Casas de Banho"/>---
+                <#local x=6>
+                <#list 1..x as i>
+                    <option value="${i}"> ${i}</option>
+                </#list>
             </select>
         </div>
     </div>
@@ -299,13 +348,21 @@
 
 <#macro renderPropertyGarage>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Garagem</label>
+        <label class="col-md-4 control-label" for="selectbasic">
+            <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.GARAGE", "Garagem"/>
+        </label>
 
         <div class="col-md-4">
             <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">1 Carro</option>
-                <option value="2">2 Carros</option>
-                <option value="">3 ou mais carros</option>
+                <option value="1">
+                    <@spring.messageText "ANNOUNCES.PROPERTY.GARAGE.ONE.CAR", "1 carro"/>
+                </option>
+                <option value="2">
+                    <@spring.messageText "ANNOUNCES.PROPERTY.GARAGE.TWO.CARS", "2 carros"/>
+                </option>
+                <option value="3_or_more">
+                    <@spring.messageText "ANNOUNCES.PROPERTY.GARAGE.THREEORMORE.CARS", "3 ou mais carros"/>
+                </option>
             </select>
         </div>
     </div>
@@ -313,9 +370,13 @@
 
 <#macro renderPropertyDoorNumber>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">Numero</label>
+        <label class="col-md-4 control-label" for="property-door-number">
+            <@spring.messageText "ANNOUNCES.PROPERTY.DOOR.NUMBER", "Número"/>
+        </label>
         <div class="col-md-4">
-            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+            <input id="property-door-number" name="property-door-number" type="number"
+                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.DOOR.NUMBER", "Número"/>"
+                   class="form-control input-md span2 property-door-number">
         </div>
     </div>
 </#macro>
@@ -341,165 +402,126 @@
     </div>
 </#macro>
 
+<#macro renderTableRowWithCheckboxes>
+    <tr>
+        <td>
+            <@renderYesCheckbox />
+        </td>
+        <td>
+            <@renderYesCheckbox />
+        </td>
+    </tr>
+</#macro>
+<#macro renderYesCheckbox>
+    <label class="checkbox" for="checkboxes-0">
+        <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+        <@spring.messageText "ANNOUNCES.YES", "Sim"/>
+    </label>
+</#macro>
+
 <#macro renderPropertyExtras>
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Aquecimento Central</label>
 
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Lareira</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Imóvel do Banco</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Varanda</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Vista de Serra</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Vista de Mar</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Condomínio Fechado</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Alarme</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Elevador</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">Som Ambiente</label>
-
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                Sim
-            </label>
-        </div>
-    </div>
+    <table class="table table-striped table-hover span4">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.HEATING", "Aquecimento Central"/>
+                </th>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.FIREPLACE", "Lareira"/>
+                </th>
+            </tr>
+            <@renderTableRowWithCheckboxes />
+            <tr>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.BALCONY", "Varanda"/>
+                </th>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.MOUNTAIN.VIEW", "Vista de Serra"/>
+                </th>
+            </tr>
+            <@renderTableRowWithCheckboxes />
+            <tr>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.SEA.VIEW", "Vista de Mar"/>
+                </th>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.ALARM", "Alarme"/>
+                </th>
+            </tr>
+            <@renderTableRowWithCheckboxes />
+            <tr>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.ELEVATOR", "Elevador"/>
+                </th>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.ALARM", "Alarme"/>
+                </th>
+            </tr>
+            <@renderTableRowWithCheckboxes />
+            <tr>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.GATED.COMMUNITY", "Condomínio Fechado"/>
+                </th>
+                <th>
+                    <@spring.messageText "ANNOUNCES.PROPERTY.EXTRAS.NATURAL.GAS", "Gás Natural"/>
+                </th>
+            </tr>
+                <@renderTableRowWithCheckboxes />
+        </tbody>
+    </table>
 </#macro>
 
 <#macro renderPropertyRegion>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Concelho</label>
-        <div class="col-md-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">Option one</option>
-                <option value="2">Option two</option>
-            </select>
-        </div>
+        <label class="col-md-4 control-label" for="property-region">
+            <@spring.messageText "ANNOUNCES.PROPERTY.REGION", "Concelho"/>
+        </label>
+        <select id="property-region" class="span4 select property-region" name="property-region">
+            <option disabled="disabled" selected="selected" value="null"/>
+            ---<@spring.messageText "ANNOUNCES.PROPERTY.REGION", "Concelho"/>---
+            <#list regions as r>
+                <option value="${r.regionId}">${r.regionName?string?cap_first}</option>
+            </#list>
+        </select>
     </div>
 </#macro>
 
 <#macro renderPropertyZipCode>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">Código Postal</label>
-        <div class="col-md-4">
-            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+        <label class="col-md-4 control-label" for="property-zip-code">
+            <@spring.messageText "ANNOUNCES.PROPERTY.ZIP.CODE", "Código Postal"/>
+        </label>
+        <div class="col-md-4 property-zip-code">
+            <input id="property-zip-code" name="property-zip-code" type="text"
+                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.ZIP.CODE", "Código Postal"/>"
+                   class="form-control input-md span2 property-zip-code" required />
         </div>
     </div>
 </#macro>
 
-<#macro renderImageInput>
-    <!-- File Button -->
+<#macro renderImagesInput>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="filebutton">Fotografias</label>
+        <label class="col-md-4 control-label" for="filebutton">
+            <@spring.messageText "ANNOUNCES.PROPERTY.PHOTOS", "Fotografias"/>
+        </label>
         <div class="col-md-4">
-            <input id="filebutton" name="filebutton" class="input-file" type="file">
+            <input id="filebutton" name="filebutton" class="input-file" type="file" />
         </div>
     </div>
 </#macro>
 
 <#macro renderSubmitButton>
-    <!-- Button -->
     <div class="form-group">
-        <label class="col-md-4 control-label" for="singlebutton"></label>
+        <label class="col-md-4 control-label" for="singlebutton">
+
+        </label>
         <div class="col-md-4">
-            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submeter Imóvel</button>
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">
+                Submeter Imóvel
+            </button>
         </div>
     </div>
 </#macro>

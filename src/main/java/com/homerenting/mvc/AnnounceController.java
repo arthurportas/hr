@@ -1,9 +1,9 @@
 package com.homerenting.mvc;
 
 import com.homerenting.domain.District;
+import com.homerenting.domain.Region;
 import com.homerenting.domain.helpers.CustomGenericException;
-import com.homerenting.domain.modules.header.search.BusinessType;
-import com.homerenting.domain.modules.header.search.PropertyKind;
+import com.homerenting.domain.modules.header.search.*;
 import com.homerenting.services.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.persistence.NoResultException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 @Controller(AnnounceController.COMPONENT_NAME)
 public class AnnounceController {
@@ -61,17 +62,25 @@ public class AnnounceController {
         try{
             final List<District> districts = districtService.getAllOrderedByName();
             mav.addObject("districts", districts);
-            mav.addObject("regions", districts.get(0).getRegions());
+            final Set<Region> regionsPerDistrict = districts.get(0).getRegions();
+            mav.addObject("regions", regionsPerDistrict);
+
+            for(Region region : regionsPerDistrict) {
+                final Region firstRegionPerDistrict = region;
+                mav.addObject("parishes", (firstRegionPerDistrict.getParishes()));
+                break;
+            }
         } catch (NoResultException nre) {
             slf4jLogger.info("==NoResultException nre==");
             slf4jLogger.info(nre.getMessage());
             throw new CustomGenericException("errorcode", "errormessage");
         }
 
-        //mav.addObject("regions", regionService.getAllOrderedByName());
         mav.addObject("propertyKinds", Arrays.asList(PropertyKind.values()));
         mav.addObject("busynessType", Arrays.asList(BusinessType.values()));
-
+        mav.addObject("propertyStatus", Arrays.asList(PropertyStatus.values()));
+        mav.addObject("propertyLocalizationCountry", Arrays.asList(Countries.values()));
+        mav.addObject("energyCertificateValues", Arrays.asList(EnergyEfficiency.values()));
 
 
 
