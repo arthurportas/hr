@@ -210,11 +210,13 @@
         <label class="col-md-4 control-label" for="property-description">
             <@spring.messageText "ANNOUNCES.PROPERTY.SHORT.DESCRIPTION", "Descrição"/>
         </label>
+        <span id="property-description-feedback"></span>
+        <@spring.messageText "ANNOUNCES.PROPERTY.DESCRIPTION.REMAINING.CHARS", "carateres restantes"/>
+
         <div class="col-md-4">
             <textarea rows="3" id="property-description" name="property-description"
                    class="form-control span4 property-description" wrap="physical"
                    maxlength="99"></textarea><#--TODO: correct maxlength value-->
-            <div id="property-description-feedback"></div> carateres restantes
         </div>
     </div>
 </#macro>
