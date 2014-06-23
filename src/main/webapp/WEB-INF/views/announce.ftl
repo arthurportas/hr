@@ -36,9 +36,6 @@
     </div>
     <!-- .row -->
 </div>
-
-    <#---->
-
     <#include "modules/footer/footer.ftl">
     <#include "footer.ftl">
 
@@ -62,7 +59,7 @@
                 <ul class="thumbnails">
                     <@renderPropertyItem/>
                 </ul>
-            </div><!-- .item -->
+            </div>
         </div>
     </div>
 </#macro>
@@ -82,14 +79,16 @@
             <h3 class="announce-preview-prop-title"></h3>
             <ul class="more-info clearfix">
                 <li class="info-label clearfix">
-                    <span class="pull-left"></span>
+                    <span class="pull-left announce-preview-tipology">
+
+                    </span>
                 <#--${p.tipology!""}
                 ${p.vilageTipology!""}
                 -->    <@spring.messageText "IN", "em"/>
                     <span class="qty pull-right"></span>
                 </li>
                 <li class="info-label clearfix">
-                    <span class="pull-left">&euro;</span>
+                    <span class="pull-left announce-preview-price"></span>&euro;
                 <#-- <span class="qty pull-right">2</span>-->
                 </li>
                 <li class="info-label clearfix">
@@ -216,18 +215,18 @@
         <div class="col-md-4">
             <textarea rows="3" id="property-description" name="property-description"
                    class="form-control span4 property-description" wrap="physical"
-                   maxlength="99"></textarea><#--TODO: correct maxlength value-->
+                   maxlength="46"></textarea><#--TODO: correct maxlength value-->
         </div>
     </div>
 </#macro>
 
 <#macro renderPropertyPrice>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="price">
+        <label class="col-md-4 control-label" for="property-price">
             <@spring.messageText "ANNOUNCES.PROPERTY.PRICE", "Preço"/>
         </label>
-        <div class="col-md-4">
-            <input id="price" name="price" type="number"
+        <div class="col-md-4 property-price">
+            <input id="price" name="price" type="text"
                    placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.PRICE", "Preço"/>"
                    class="form-control span2 input-md property-price" />
         </div>

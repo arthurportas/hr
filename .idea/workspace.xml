@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e78db-ff65-44f3-a7c7-3c5a4f1e5e7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/transfer/objects/AnnounceFormTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/new-announce.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AnnounceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AnnounceController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_en_UK.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_en_UK.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_es_ES.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_es_ES.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_pt_PT.properties" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_pt_PT.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/new-announce.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/new-announce.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="homerenting.iws" />
@@ -223,10 +216,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="announce.ftl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="announce.ftl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="59" selection-start="8467" selection-end="8467" vertical-scroll-proportion="-3.0" vertical-offset="3516" max-vertical-offset="11373">
+            <state line="61" column="18" selection-start="2485" selection-end="2485" vertical-scroll-proportion="-0.04644809" vertical-offset="1054" max-vertical-offset="11390">
               <folding>
                 <element signature="n#style#0;n#table#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#26;n#body#0;n#!!top" expanded="true" />
@@ -235,10 +228,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new-announce.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new-announce.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/new-announce.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.07888631" vertical-offset="0" max-vertical-offset="431">
+            <state line="19" column="34" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -257,15 +250,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="54" column="0" selection-start="1294" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="918">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bwizard.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/bwizard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="327" column="41" selection-start="16460" selection-end="16464" vertical-scroll-proportion="0.0" vertical-offset="2948" max-vertical-offset="13940">
               <folding />
             </state>
           </provider>
@@ -294,7 +278,7 @@
       <file leaf-file-name="announces.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="2088" selection-end="2088" vertical-scroll-proportion="-3.3333333" vertical-offset="743" max-vertical-offset="1241">
+            <state line="49" column="48" selection-start="2088" selection-end="2155" vertical-scroll-proportion="-3.3333333" vertical-offset="743" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -306,7 +290,19 @@
       <file leaf-file-name="announces_es_ES.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_es_ES.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="2140" selection-end="2140" vertical-scroll-proportion="-6.7777777" vertical-offset="667" max-vertical-offset="1088">
+            <state line="51" column="0" selection-start="2207" selection-end="2207" vertical-scroll-proportion="-7.4074073" vertical-offset="667" max-vertical-offset="1105">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="announces_en_UK.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_en_UK.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="62" selection-start="2165" selection-end="2165" vertical-scroll-proportion="-13.074074" vertical-offset="497" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -318,7 +314,7 @@
       <file leaf-file-name="announces_pt_PT.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_pt_PT.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="21" selection-start="2108" selection-end="2140" vertical-scroll-proportion="-8.0" vertical-offset="617" max-vertical-offset="1105">
+            <state line="51" column="0" selection-start="2207" selection-end="2207" vertical-scroll-proportion="-9.259259" vertical-offset="617" max-vertical-offset="1122">
               <folding />
             </state>
           </provider>
@@ -396,14 +392,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/modules/announces/bwizard.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/mvc/AnnounceController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_en_UK.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_pt_PT.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_es_ES.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/homerenting/transfer/objects/AnnounceFormTO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.ftl" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_es_ES.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_pt_PT.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_en_UK.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/new-announce.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl" />
       </list>
     </option>
   </component>
@@ -3042,7 +3038,7 @@
       <workItem from="1402242389216" duration="60919000" />
       <workItem from="1402764472155" duration="8359000" />
       <workItem from="1403215193737" duration="45352000" />
-      <workItem from="1403382176512" duration="9614000" />
+      <workItem from="1403382176512" duration="11861000" />
     </task>
     <task id="LOCAL-00001" summary="Major refactor">
       <created>1396829182648</created>
@@ -3260,11 +3256,19 @@
       <created>1403390525824</created>
       <updated>1403390525824</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="working on announce.ftl&#10;started TO&#10;logic for preview&#10;">
+      <created>1403536202736</created>
+      <updated>1403536202736</updated>
+    </task>
+    <task id="LOCAL-00056" summary="working on announce.ftl&#10;started TO&#10;logic for remaining chars&#10;">
+      <created>1403536751291</created>
+      <updated>1403536751291</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="671904000" />
+    <option name="totallyTimeSpent" value="674151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="812" extended-state="0" />
@@ -3362,8 +3366,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Disabled hibernate search&#10;" />
-    <MESSAGE value="enabled hibernate search&#10;enabled ehcache&#10;corrected region io on parish relation&#10;" />
     <MESSAGE value="entity beautiffy" />
     <MESSAGE value="Login working, but needs  error handling" />
     <MESSAGE value="Login working, but needs  error handling&#10;Progression on unit tests :)" />
@@ -3387,7 +3389,9 @@
     <MESSAGE value="working on announce.ftl&#10;added form fields for first two tabs&#10;" />
     <MESSAGE value="working on announce.ftl&#10;layout tweaks&#10;added form fields for file upload" />
     <MESSAGE value="working on announce.ftl&#10;started TO&#10;logic for preview&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on announce.ftl&#10;started TO&#10;logic for preview&#10;" />
+    <MESSAGE value="working on announce.ftl&#10;started TO&#10;logic for remaining chars&#10;" />
+    <MESSAGE value="working on announce.ftl&#10;minor fixes&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on announce.ftl&#10;minor fixes&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3775,46 +3779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_en_UK.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="24" selection-start="2068" selection-end="2103" vertical-scroll-proportion="-13.074074" vertical-offset="480" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_pt_PT.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="21" selection-start="2108" selection-end="2140" vertical-scroll-proportion="-8.0" vertical-offset="617" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_es_ES.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="2140" selection-end="2140" vertical-scroll-proportion="-6.7777777" vertical-offset="667" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2088" selection-end="2088" vertical-scroll-proportion="-3.3333333" vertical-offset="743" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/bwizard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="327" column="41" selection-start="16460" selection-end="16464" vertical-scroll-proportion="0.0" vertical-offset="2948" max-vertical-offset="13940">
@@ -3852,20 +3816,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="59" selection-start="8467" selection-end="8467" vertical-scroll-proportion="-3.0" vertical-offset="3516" max-vertical-offset="11373">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#26;n#body#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="49" column="48" selection-start="2088" selection-end="2155" vertical-scroll-proportion="-3.3333333" vertical-offset="743" max-vertical-offset="1258">
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_es_ES.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="2207" selection-end="2207" vertical-scroll-proportion="-7.4074073" vertical-offset="667" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_pt_PT.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="2207" selection-end="2207" vertical-scroll-proportion="-9.259259" vertical-offset="617" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/i18n/modules/announces/announces_en_UK.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="62" selection-start="2165" selection-end="2165" vertical-scroll-proportion="-13.074074" vertical-offset="497" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/realto-html/js/modules/announces/new-announce.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.07888631" vertical-offset="0" max-vertical-offset="431">
+        <state line="19" column="34" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/announce.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="18" selection-start="2485" selection-end="2485" vertical-scroll-proportion="-0.04644809" vertical-offset="1054" max-vertical-offset="11390">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#26;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
