@@ -100,5 +100,8 @@
 
     <script src="<@spring.url '/static/resources/realto-html/js/modules/login/facebook.js'/>"/>
     <script src="js/facebook.js"></script>
+
+    <script src="<@spring.url '/static/resources/realto-html/js/modules/announces/new-announce.js'/>"/>
+    <script src="js/new-announce.js"></script>
     </body>
 </html>

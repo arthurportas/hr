@@ -80,7 +80,7 @@ public class AnnounceController {
         mav.addObject("busynessType", Arrays.asList(BusinessType.values()));
         mav.addObject("propertyStatus", Arrays.asList(PropertyStatus.values()));
         mav.addObject("propertyLocalizationCountry", Arrays.asList(Countries.values()));
-        mav.addObject("energyCertificateValues", Arrays.asList(EnergyEfficiency.values()));
+        mav.addObject("energyEfficiencyValues", Arrays.asList(EnergyEfficiency.values()));
 
 
 

@@ -79,7 +79,7 @@
                 <#--<@spring.messageText "FOR.${p.businessType?upper_case}", "${p.businessType?cap_first}"/>-->
             </span>
         <div class="prop-info">
-            <h3 class="prop-title"></h3>
+            <h3 class="announce-preview-prop-title"></h3>
             <ul class="more-info clearfix">
                 <li class="info-label clearfix">
                     <span class="pull-left"></span>
@@ -93,12 +93,12 @@
                 <#-- <span class="qty pull-right">2</span>-->
                 </li>
                 <li class="info-label clearfix">
-                        <span class="pull-left">
-                            <#--<@renderFBLikeBtn p />-->
-                        </span>
-                        <span class="pull-right">
-                           <#--<@renderTwitterBtn p />-->
-                        </span>
+                    <span class="pull-left">
+                        <#--<@renderFBLikeBtn p />-->
+                    </span>
+                    <span class="pull-right">
+                       <#--<@renderTwitterBtn p />-->
+                    </span>
                 </li>
             </ul>
         </div>
@@ -181,7 +181,7 @@
         <label class="col-md-4 control-label" for="property-kind">
             <@spring.messageText "ANNOUNCES.PROPERTY.CATEGORY", "Categoria"/>
         </label>
-        <select id="property-kind" class="span4 select property-kind" name="property-kind">
+        <select id="property-kind" class="span2 select property-kind" name="property-kind">
             <option disabled="disabled" selected="selected" value="null"/>
             ---<@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/>---
 
@@ -212,9 +212,9 @@
         </label>
         <div class="col-md-4">
             <textarea rows="3" id="property-description" name="property-description"
-                   placeholder="<@spring.messageText "ANNOUNCES.PROPERTY.SHORT.DESCRIPTION", "Descrição"/>"
-                   class="form-control span4 property-description" >
-            </textarea>
+                   class="form-control span4 property-description" wrap="physical"
+                   maxlength="99"></textarea><#--TODO: correct maxlength value-->
+            <div id="property-description-feedback"></div> carateres restantes
         </div>
     </div>
 </#macro>
@@ -262,7 +262,7 @@
         </label>
 
         <div class="col-md-4">
-            <select id="property-state" name="property-state" class="span4 select property-state">
+            <select id="property-state" name="property-state" class="span2 select property-state">
                 <option disabled="disabled" selected="selected" value="null"/>
                 ---<@spring.messageText "PROPERTY.KIND", "Tipo de Imóvel"/>---
                 <#list propertyStatus as ps>
@@ -276,7 +276,7 @@
 <#macro renderPropertyUsefullArea>
     <div class="form-group">
         <label class="col-md-4 control-label" for="property-usefull-area">
-            <@spring.messageText "ANNOUNCES.PROPERTY.USEFULL.AREA", "Área Útil"/>
+            <@spring.messageText "ANNOUNCES.PROPERTY.USEFULL.AREA", "Área Útil"/> m&sup2;
         </label>
         <div class="col-md-4 property-usefull-area">
             <input id="property-usefull-area" name="property-usefull-area" type="number"
@@ -289,7 +289,7 @@
 <#macro renderPropertyBruteArea>
     <div class="form-group">
         <label class="col-md-4 control-label" for="property-brute-area">
-            <@spring.messageText "ANNOUNCES.PROPERTY.BRUTE.AREA", "Área Bruta"/>
+            <@spring.messageText "ANNOUNCES.PROPERTY.BRUTE.AREA", "Área Bruta"/> m&sup2;
         </label>
         <div class="col-md-4 property-brute-area">
             <input id="property-brute-area" name="property-brute-area" type="number"
@@ -338,7 +338,9 @@
             <@spring.messageText "ANNOUNCES.PROPERTY.COUNTRY.LOCATION", "País"/>
         </label>
         <div class="col-md-4 property-country-location">
-            <select id="property-country-location" name="property-country-location" class="span4 select property-country-location">
+            <select id="property-country-location" name="property-country-location" class="span2 select property-country-location">
+                <option disabled="disabled" selected="selected" value="null"/>
+                ---<@spring.messageText "ANNOUNCES.PROPERTY.COUNTRY", "País"/>---
                 <#list propertyLocalizationCountry as plc>
                     <option value="${plc.value}"><@spring.messageText "ANNOUNCES.PROPERTY.LOCALIZATION.${(plc.value)?string?upper_case}", "${plc.value}"/></option>
                 </#list>
@@ -349,16 +351,16 @@
 
 <#macro renderPropertyEnergyCertificate>
     <div class="form-group">
-        <label class="col-md-4 control-label" for="selectbasic">Certificado Energético</label>
-        <div class="col-md-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-                <option value="1">A+</option>
-                <option value="2">A</option>
-                <option value="">B</option>
-                <option value="">C</option>
-                <option value="">D</option>
-                <option value="">E</option>
-                <option value="">F</option>
+        <label class="col-md-4 control-label" for="property-energy-efficiency">
+            <@spring.messageText "ANNOUNCES.PROPERTY.ENERGY.EFFICIENCY", "Certificado Energético"/>
+        </label>
+        <div class="col-md-4 property-energy-efficiency">
+            <select id="property-energy-efficiency" name="property-energy-efficiency" class="span2 select property-energy-efficiency">
+                <option disabled="disabled" selected="selected" value="null"/>
+                ---<@spring.messageText "ANNOUNCES.PROPERTY.ENERGY.EFFICIENCY", "Certificado Energéticos"/>---
+                <#list energyEfficiencyValues as eev>
+                    <option value="${eev.value}">${(eev.value)?string?upper_case}</option>
+                </#list>
             </select>
         </div>
     </div>
@@ -399,7 +401,7 @@
         </label>
 
         <div class="col-md-4">
-            <select id="property-bathrooms-number" name="property-bathrooms-number" class="span2 select property-bathrooms-number">
+            <select id="property-bathrooms-number" name="property-bathrooms-number" class="span3 select property-bathrooms-number">
                 <option disabled="disabled" selected="selected" value="null"/>
                 ---<@spring.messageText "ANNOUNCES.PROPERTY.BATHROOM.NUMBER", "Número Casas de Banho"/>---
                 <#local x=6>
