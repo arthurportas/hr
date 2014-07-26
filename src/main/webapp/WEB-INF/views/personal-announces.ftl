@@ -2,86 +2,15 @@
 <#include "header.ftl">
 <body>
 <#include "modules/header/header.ftl">
-<#--<div class="container page-content">
+<div class="container page-content">
     <div class="row">
         <div class="span8">
-            <div class="box-container">
-                <div class="padding30">
-                    <h2 class="page-title">Personal TODO...</h2>
-                    <ul class="unstyled">
-                        <li>
-                            <i class="icon-envelope-alt"></i>
-                            Email: realto@realto.com</li>
-                        <li>
-                            <i class="icon-phone"></i>
-                            Phone: +1 786 345 6789</li>
-                        <li>
-                            <i class="icon-linkedin"></i>
-                            linkedin.com/realto</li>
-                        <li>
-                            <i class="icon-twitter"></i>
-                            twitter.com/realto</li>
-                    </ul>
-
-                    <div class="row-fluid contacts-blockUI">
-
-                        <div class="contacts-alert"></div>
-
-                        <form class="margin300" method="post">
-                            <input class="span6 contacts-email-name" placeholder="Please, insert your name" type="text" name="name">
-                            <input class="span6 pull-right contacts-email-from" placeholder="Please, insert your email" type="text" name="emailFrom">
-                            <textarea class="span12 contacts-email-msg" placeholder="Write your message" rows="6" name="message"></textarea>
-                            <div class="clearfix">
-                                <button class="btn btn-realto span6 contacts-email">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>-->
-        
-        <div class="container page-content">
             <h2 class="page-title">Tabs</h2>
             <div class="row-fluid padding30 box-container">
-                <div class="tabbable" id="myTab">
-                     
-                    <!-- Only required for left/right tabs -->
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-                        <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab1">
-                            <p>I'm in Section 1.</p>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                                ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                                egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-                                leo.</p>
-                        </div>
-                        <div class="tab-pane" id="tab2">
-                            <p>Howdy, I'm in Section 2.</p>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                                ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                                egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-                                leo.</p>
-                        </div>
-                        <div class="tab-pane" id="tab3">
-                            <p>Yo, I'm in Section 3.</p>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                                ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                                egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-                                leo.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- .tabbable -->
+                <#include "modules/my-account/announces-tabs.ftl">   
             </div>
             <!-- .row-fluid -->
+            <#--
             <h2 class="page-title">Toggle</h2>
             <div class="row-fluid padding30 box-container">
                 <div class="accordion">
@@ -145,9 +74,9 @@
                     </div>
                 </div>
                 <!-- .accordion -->
-            </div>
+            <#--</div>-->
             <!-- .row-fluid -->
-
+        </div>
         <!-- .span8 -->
         <div class="span4 widget">
             <div class="widget map box-container padding30">

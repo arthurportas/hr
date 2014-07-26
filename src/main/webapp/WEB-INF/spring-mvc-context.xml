@@ -93,6 +93,7 @@
                 <value>/WEB-INF/i18n/modules/latestProperties/latest-properties</value>
                 <value>/WEB-INF/i18n/modules/search/search</value>
                 <value>/WEB-INF/i18n/modules/announces/announces</value>
+                <value>/WEB-INF/i18n/modules/announces/my-account</value>
                 <value>/company</value>
             </list>
         </property>

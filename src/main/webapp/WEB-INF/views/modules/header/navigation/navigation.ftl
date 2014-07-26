@@ -45,9 +45,6 @@
                                 <li><a href="/personal/mailbox" title="<@spring.messageText "PERSONAL.MAILBOX", "Mailbox"/>"><@spring.messageText "PERSONAL.MAILBOX", "Maibox"/></a></li>
                             </ul>
                         </li>
-                        <#--<li>
-                            <a href="/personal" title="<@spring.messageText "PERSONAL.AREA", "Área Pessoal"/>"><@spring.messageText "PERSONAL.AREA", "Área Pessoal"/></a>
-                        </li>-->
                     </#if>
                 </ul>
             </div>
