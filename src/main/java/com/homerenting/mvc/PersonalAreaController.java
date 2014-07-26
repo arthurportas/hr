@@ -42,4 +42,68 @@ public class PersonalAreaController {
         mav.addObject("motd", motdService.getById(1L));
 		return mav;
 	}
+	
+	@RequestMapping(value = "/personal/announces", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+	public ModelAndView personalAnnounces(Model model) {
+        slf4jLogger.info("==ModelAndView personalAnnounces(Model model)==");
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("personal-announces");
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        mav.addObject("username", name);
+        if(auth.isAuthenticated() && name!="anonymousUser") {
+            mav.addObject("personalArea", "personal");
+        }
+        mav.addObject("motd", motdService.getById(1L));
+		return mav;
+	}
+	
+	@RequestMapping(value = "/personal/invoices", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+	public ModelAndView personalInvoices(Model model) {
+        slf4jLogger.info("==ModelAndView personalInvoices(Model model)==");
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("personal-invoices");
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        mav.addObject("username", name);
+        if(auth.isAuthenticated() && name!="anonymousUser") {
+            mav.addObject("personalArea", "personal");
+        }
+        mav.addObject("motd", motdService.getById(1L));
+		return mav;
+	}
+	
+    @RequestMapping(value = "/personal/account", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+	public ModelAndView personalAccount(Model model) {
+        slf4jLogger.info("==ModelAndView personalAccount(Model model)==");
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("personal-account");
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        mav.addObject("username", name);
+        if(auth.isAuthenticated() && name!="anonymousUser") {
+            mav.addObject("personalArea", "personal");
+        }
+        mav.addObject("motd", motdService.getById(1L));
+		return mav;
+	}
+	
+	@RequestMapping(value = "/personal/mailbox", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+	public ModelAndView personalMailbox(Model model) {
+        slf4jLogger.info("==ModelAndView personalMailbox(Model model)==");
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("personal-mailbox");
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        mav.addObject("username", name);
+        if(auth.isAuthenticated() && name!="anonymousUser") {
+            mav.addObject("personalArea", "personal");
+        }
+        mav.addObject("motd", motdService.getById(1L));
+		return mav;
+	}
 }
