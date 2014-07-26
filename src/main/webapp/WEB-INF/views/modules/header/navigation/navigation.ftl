@@ -21,12 +21,14 @@
                     <li>
                         <a href="/financing" title="<@spring.messageText "FINANCING", "Financiamento"/>"><@spring.messageText "FINANCING", "Financiamento"/></a>
                     </li>
+                    
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><@spring.messageText "LAW", "Legislação"/><i class="icon-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="/law/rental" title="<@spring.messageText "RENTAL", "Aluguer"/>"><@spring.messageText "RENTAL", "Aluguer"/></a></li>
                             <li><a href="/law/sale" title="<@spring.messageText "SALE", "Venda"/>"><@spring.messageText "SALE", "Venda"/></a></li>
                         </ul>
                     </li>
+                    
                     <li>
                         <a href="/services" title="<@spring.messageText "SERVICES", "Serviços"/>"><@spring.messageText "SERVICES", "Serviços"/></a>
                     </li>
@@ -35,9 +37,17 @@
                     </li>
 
                     <#if personalArea?has_content>
-                        <li>
-                            <a href="/personal" title="<@spring.messageText "PERSONAL.AREA", "Área Pessoal"/>"><@spring.messageText "PERSONAL.AREA", "Área Pessoal"/></a>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><@spring.messageText "PERSONAL.AREA", "Área Pessoal"/><i class="icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/personal/announces" title="<@spring.messageText "RENTAL", "Anúncios"/>"><@spring.messageText "RENTAL", "Anúncios"/></a></li>
+                                <li><a href="/personal/invoices" title="<@spring.messageText "SALE", "Faturação"/>"><@spring.messageText "SALE", "Faturação"/></a></li>
+                                <li><a href="/personal/invoices" title="<@spring.messageText "SALE", "Conta"/>"><@spring.messageText "SALE", "Conta"/></a></li>
+                                <li><a href="/personal/invoices" title="<@spring.messageText "SALE", "Mailbox"/>"><@spring.messageText "SALE", "Maibox"/></a></li>
+                            </ul>
                         </li>
+                        <#--<li>
+                            <a href="/personal" title="<@spring.messageText "PERSONAL.AREA", "Área Pessoal"/>"><@spring.messageText "PERSONAL.AREA", "Área Pessoal"/></a>
+                        </li>-->
                     </#if>
                 </ul>
             </div>
