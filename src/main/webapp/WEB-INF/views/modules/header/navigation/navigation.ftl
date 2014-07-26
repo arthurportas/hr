@@ -39,10 +39,10 @@
                     <#if personalArea?has_content>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><@spring.messageText "PERSONAL.AREA", "Área Pessoal"/><i class="icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/personal/announces" title="<@spring.messageText "RENTAL", "Anúncios"/>"><@spring.messageText "RENTAL", "Anúncios"/></a></li>
-                                <li><a href="/personal/invoices" title="<@spring.messageText "SALE", "Faturação"/>"><@spring.messageText "SALE", "Faturação"/></a></li>
-                                <li><a href="/personal/invoices" title="<@spring.messageText "SALE", "Conta"/>"><@spring.messageText "SALE", "Conta"/></a></li>
-                                <li><a href="/personal/invoices" title="<@spring.messageText "SALE", "Mailbox"/>"><@spring.messageText "SALE", "Maibox"/></a></li>
+                                <li><a href="/personal/announces" title="<@spring.messageText "PERSONAL.ANNOUNCES", "Anúncios"/>"><@spring.messageText "PERSONAL.ANNOUNCES", "Anúncios"/></a></li>
+                                <li><a href="/personal/invoices" title="<@spring.messageText "PERSONAL.INVOICES", "Faturação"/>"><@spring.messageText "PERSONAL.INVOICES", "Faturação"/></a></li>
+                                <li><a href="/personal/account" title="<@spring.messageText "PERSONAL.ACCOUNT", "Conta"/>"><@spring.messageText "PERSONAL.ACCOUNT", "Conta"/></a></li>
+                                <li><a href="/personal/mailbox" title="<@spring.messageText "PERSONAL.MAILBOX", "Mailbox"/>"><@spring.messageText "PERSONAL.MAILBOX", "Maibox"/></a></li>
                             </ul>
                         </li>
                         <#--<li>
