@@ -1,3 +1,4 @@
+<h2 class="page-title">Tabs</h2>
 <div class="tabbable" id="myTab">
     <!-- Only required for left/right tabs -->
     <ul class="nav nav-tabs">
