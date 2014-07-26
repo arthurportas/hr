@@ -147,7 +147,7 @@
                 <!-- .accordion -->
             </div>
             <!-- .row-fluid -->
-        </div>
+
         <!-- .span8 -->
         <div class="span4 widget">
             <div class="widget map box-container padding30">

@@ -3,6 +3,112 @@
 <body>
 <#include "modules/header/header.ftl">
 <div class="container page-content">
+            <h2 class="page-title">Tabs</h2>
+            <div class="row-fluid padding30 box-container">
+                <div class="tabbable" id="myTab">
+                     
+                    <!-- Only required for left/right tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <p>I'm in Section 1.</p>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+                                ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                                egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+                                leo.</p>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <p>Howdy, I'm in Section 2.</p>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+                                ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                                egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+                                leo.</p>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            <p>Yo, I'm in Section 3.</p>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+                                ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                                egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+                                leo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .tabbable -->
+            </div>
+            <!-- .row-fluid -->
+            <h2 class="page-title">Toggle</h2>
+            <div class="row-fluid padding30 box-container">
+                <div class="accordion">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">
+                                Toggle Group Item #1
+                            </a>
+                        </div>
+                        <div class="accordion-body collapse" id="collapseOne">
+                            <div class="accordion-inner">
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+                                    ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                                    egestas semper. Aenean ultricies mi vitae est. Vestibulum tortor quam,
+                                    feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+                                    sit amet quam egestas semper. Mauris placerat eleifend leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">
+                                Toggle Group Item #2
+                            </a>
+                        </div>
+                        <div class="accordion-body collapse" id="collapseTwo">
+                            <div class="accordion-inner">
+                                <p>Aenean ultricies mi vitae est. Vestibulum tortor quam, feugiat vitae,
+                                    ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                                    egestas semper. Pellentesque habitant morbi tristique senectus et netus
+                                    et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+                                    vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                                    quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+                                    eleifend leo. Donec eu libero sit amet quam egestas semper. Aenean
+                                    ultricies mi vitae est. Vestibulum tortor quam, feugiat vitae, ultricies
+                                    eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+                                    semper.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-parent="#accordion" data-toggle="collapse" href="#collapseTree">
+                                Toggle Group Item #3
+                            </a>
+                        </div>
+                        <div class="accordion-body collapse" id="collapseTree">
+                            <div class="accordion-inner">
+                                <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi
+                                    vitae est. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
+                                    sit amet, ante. Donec eu libero sit amet quam egestas semper.
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                    fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+                                    ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+                                    egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+                                    leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .accordion -->
+            </div>
+            <!-- .row-fluid -->
+<#--<div class="container page-content">
     <div class="row">
         <div class="span8">
             <div class="box-container">
@@ -39,7 +145,7 @@
 
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- .span8 -->
         <div class="span4 widget">
             <div class="widget map box-container padding30">
