@@ -5,11 +5,11 @@ package com.homerenting.domain.modules.header.search;
  */
 public enum PriceFrom {
 
-    50000("50000"),
-    100000("100000"),
-    150000("150000"),
-    200000("200000"),
-    MORE_THAN_30000("More than 300000");
+    FIFTY_THOUSAND("50000"),
+    ONE_HUNDRED_THOUSAND("100000"),
+    ONE_HUNDRED_AND_FIFTY_THOUSAND("150000"),
+    TWO_HUNDRED_THOUSAND("200000"),
+    MORE_THAN_THREE_HUNDRED_THOUSAND("More than 300000");
     
     private final String value;
 
