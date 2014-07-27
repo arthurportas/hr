@@ -5,8 +5,6 @@ import com.cloudinary.Singleton;
 import com.homerenting.domain.District;
 import com.homerenting.domain.helpers.CustomGenericException;
 import com.homerenting.domain.modules.header.search.BusinessType;
-import com.homerenting.domain.modules.header.search.PriceFrom;
-import com.homerenting.domain.modules.header.search.PriceTo;
 import com.homerenting.domain.modules.header.search.PropertyKind;
 import com.homerenting.services.*;
 import net.glxn.qrgen.QRCode;
