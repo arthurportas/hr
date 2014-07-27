@@ -27,7 +27,7 @@ public class PersonalAreaController {
     public static final String COMPONENT_NAME = "personalAreaController";
 
 
-    @Qualifier(UserServiceImpl.COMPONENT_NAME)
+    @Qualifier(UserShortProfileServiceImpl.COMPONENT_NAME)
     @Autowired
     private IUserShortProfileService userShortProfileService;
     
