@@ -39,6 +39,7 @@ public class AdminController {
 
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public String displayAdminLogin(Model model) {
+	    slf4jLogger.info("==ModelAndView displayAdminLogin(Model model)==");
 		return "admin-login";
 	}
 	@RequestMapping(value = "/admin/home", method = RequestMethod.GET)
