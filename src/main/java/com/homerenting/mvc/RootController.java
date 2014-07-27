@@ -77,8 +77,8 @@ public class RootController {
         //mav.addObject("regions", regionService.getAllOrderedByName());
         mav.addObject("propertyKinds", Arrays.asList(PropertyKind.values()));
         mav.addObject("busynessType", Arrays.asList(BusinessType.values()));
-        mav.addObject("priceTo", Arrays.asList(PriceTo.values()));
-        mav.addObject("priceFrom", Arrays.asList(PriceFrom.values()));
+        //mav.addObject("priceTo", Arrays.asList(PriceTo.values()));
+        //mav.addObject("priceFrom", Arrays.asList(PriceFrom.values()));
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
