@@ -34,6 +34,11 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    public User getByEmail(String email) throws NoResultException{
+        return userDao.findByEmail(user.getEmail());
+    }
+    
+    @Override
     public List<User> getAllOrderedByName() throws NoResultException{
         return userDao.findAllOrderedByName();
     }

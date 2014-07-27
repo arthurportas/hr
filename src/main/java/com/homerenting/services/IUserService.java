@@ -12,6 +12,8 @@ public interface IUserService {
 
     public User getByName(String name) throws NoResultException;
 
+    public User getByEmail(String email) throws NoResultException;
+    
     public List<User> getAllOrderedByName() throws NoResultException;
 
     public List<User> getAllOrderedByNameDesc() throws NoResultException;

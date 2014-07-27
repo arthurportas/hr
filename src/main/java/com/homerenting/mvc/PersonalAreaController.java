@@ -23,6 +23,11 @@ public class PersonalAreaController {
 
     public static final String COMPONENT_NAME = "personalAreaController";
 
+
+    @Qualifier(UserServiceImpl.COMPONENT_NAME)
+    @Autowired
+    private IUserShortProfileService userShortProfileService;
+    
     @Qualifier(CompanyMOTDServiceImpl.COMPONENT_NAME)
     @Autowired
     private ICompanyMOTDService motdService;
@@ -86,6 +91,15 @@ public class PersonalAreaController {
         mav.addObject("username", name);
         if(auth.isAuthenticated() && name!="anonymousUser") {
             mav.addObject("personalArea", "personal");
+        }
+        //call service to fetch user account data
+        try{
+            final UserShortProfile user =  userShortProfileService.getByEmail(name);
+            mav.addObject("user", user);
+        } catch (NoResultException nre) {
+            slf4jLogger.info("==NoResultException nre==");
+            slf4jLogger.info(nre.getMessage());
+            throw new CustomGenericException("errorcode", "errormessage");//handle exception
         }
         mav.addObject("motd", motdService.getById(1L));
 		return mav;

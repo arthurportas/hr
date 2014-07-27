@@ -212,7 +212,7 @@
 
 <#macro renderPropertyImages p>
     <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
-    <img alt="image" src="$http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
     <img alt="image" src="http://placehold.it/770x437" class="media-object">
     <img alt="image" src="http://placehold.it/770x437" class="media-object">
     <img alt="image" src="http://placehold.it/770x437" class="media-object">
