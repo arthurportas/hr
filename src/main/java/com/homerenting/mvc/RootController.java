@@ -75,6 +75,8 @@ public class RootController {
         //mav.addObject("regions", regionService.getAllOrderedByName());
         mav.addObject("propertyKinds", Arrays.asList(PropertyKind.values()));
         mav.addObject("busynessType", Arrays.asList(BusinessType.values()));
+        mav.addObject("priceTo", Arrays.asList(PriceTo.values()));
+        mav.addObject("priceFrom", Arrays.asList(PriceFrom.values()));
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         mav.addObject("username", name);
@@ -84,12 +86,13 @@ public class RootController {
 
         try{
             final List highlighted = propertyService.getAllHighLighted();
+            mav.addObject("latestHighLightedProperty", highlighted.get(1));
             List firstThreeHighlighted = highlighted.subList(0, 3);
             int hightlightedListSize = highlighted.size();
 
-            List remaingHighlighted = highlighted.subList(3, hightlightedListSize);
+            List remainingHighlighted = highlighted.subList(3, hightlightedListSize);
             mav.addObject("highlightedProperties", firstThreeHighlighted);
-            mav.addObject("remaingHighlightedProperties", remaingHighlighted);
+            mav.addObject("remainingHighlightedProperties", remainingHighlighted);
         } catch (NoResultException nre) {
             slf4jLogger.info("==NoResultException nre==");
             slf4jLogger.info(nre.getMessage());
@@ -97,7 +100,7 @@ public class RootController {
         }
 
         try{
-        mav.addObject("motd", motdService.getById(1L));
+            mav.addObject("motd", motdService.getById(1L));
         } catch (NoResultException nre) {
             slf4jLogger.info("==NoResultException nre==");
             slf4jLogger.info(nre.getMessage());

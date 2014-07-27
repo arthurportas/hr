@@ -8,7 +8,7 @@
                             <#--<@renderFullTextSearchBox />-->
                             <div class="row">
                                 <div class="span8 hidden-phone">
-
+                                    <@renderLatestProperty />
                                     <#-- gmaps geolocation example
                                     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
@@ -177,4 +177,112 @@
         <input type="text" name='full-text-search-home' class="input-block-level form-control"
                id="full-text-search-home" placeholder="<@spring.messageText "SEARCH.WHAT.IS.ON.YOUR.MIND", "Pesquisar o que pensa..."/>"/>
     </div>
+</#macro>
+
+<#macro renderLatestProperty>
+    <#local property = latestHighLightedProperty />
+    <div class="box-container">
+        <div class="cycle-slideshow"
+             data-cycle-fx=fade
+             data-cycle-timeout=0
+             data-cycle-swipe=true
+             data-cycle-pager="#adv-custom-pager"
+             data-cycle-pager-template='<a href="#" ><img src="{{src}}"></a>'
+             data-cycle-prev="#prev"
+             data-cycle-next="#next"
+                >
+    
+            <@renderPropertyImages property />
+        </div><!-- .cycle-slideshow -->
+    
+    
+        <div id="adv-custom-pager"></div>
+        <div class="clearfix">
+            <div class="clearfix padding30">
+                <h2 class="prop-title pull-left margin0">
+                    1630 Washington Avenue Miami
+                    Beach 33139 FL
+                </h2>
+                <span class="prop-price pull-right serif italic">
+                    $ 2,500,000
+                </span>
+            </div>
+            <#--
+            <div class="clearfix padding030 row-fluid">
+                <ul class="more-info pull-left span6">
+                    <li class="info-label clearfix">
+                        <span class="pull-left">
+                            Bedrooms:
+                        </span>
+                        <span class="qty pull-right">4</span>
+                    </li>
+                    <li class="info-label clearfix">
+                        <span class="pull-left">
+                            Bathrooms:
+                        </span>
+                        <span class="qty pull-right">2</span>
+                    </li>
+                    <li class="info-label clearfix">
+                        <span class="pull-left">Property type:</span>
+                        <span class="qty pull-right">Condo</span>
+                    </li>
+                    <li class="info-label clearfix">
+                        <span class="pull-left">
+                            Square feet:
+                        </span>
+                        <span class="qty pull-right">1,700 sqft</span>
+                    </li>
+                </ul>
+                <ul class="more-info pull-right span6">
+                    <li class="info-label clearfix">
+                        <span class="pull-left">Year:</span>
+                        <span class="qty pull-right">2010</span></li>
+                    <li class="info-label clearfix">
+                        <span class="pull-left">
+                            Listing type:
+                        </span>
+                        <span class="qty pull-right">
+                            For Sale
+                        </span>
+                    </li>
+                    <li class="info-label clearfix">
+                        <span class="pull-left">
+                            Parking:
+                        </span>
+                        <span class="qty pull-right">
+                            Assigned
+                        </span>
+                    </li>
+                    <li class="info-label clearfix">
+                        <span class="pull-left">
+                            Neighborhood:
+                        </span>
+                        <span class="qty pull-right">
+                            Oceanfront
+                        </span>
+                    </li>
+                </ul>
+            </div>-->
+    
+            <div class="clearfix padding30">
+                <#--show property price-->
+            </div>
+        </div>
+    </div>
+</#macro>
+
+<#--Iterate over provided list of images-->
+<#macro renderPropertyImages p>
+    <img alt="image" src="${property.images[0].cloudinaryDetailMainImageUrl}" class="media-object">
+    <img alt="image" src="$http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
+    <img alt="image" src="http://placehold.it/770x437" class="media-object">
 </#macro>

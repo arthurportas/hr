@@ -39,7 +39,7 @@
 </#macro>
 
 <#macro renderHighlightedProperties>
-    <#list remaingHighlightedProperties as p>
+    <#list remainingHighlightedProperties as p>
         <#if ((p_index == 0) || (p_index % 3 == 0))>
             <div class="item">
                 <ul class="thumbnails ${p_index}">
