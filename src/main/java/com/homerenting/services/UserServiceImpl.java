@@ -35,7 +35,7 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User getByEmail(String email) throws NoResultException{
-        return userDao.findByEmail(user.getEmail());
+        return userDao.findByEmail(email);
     }
     
     @Override
