@@ -2,7 +2,7 @@
 <#include "header.ftl">
 <body>
     <#include "modules/header/header.ftl">
-    <#include "modules/theme-chooser/theme-chooser.ftl">
+    <#--<#include "modules/theme-chooser/theme-chooser.ftl">-->
     <#include "modules/search/search.ftl">
     <#include "modules/latestProperties/latest-properties.ftl">
 

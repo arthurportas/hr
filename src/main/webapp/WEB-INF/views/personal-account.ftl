@@ -8,7 +8,7 @@
         <div class="span8">
             <div class="box-container">
                 <div class="padding30">
-                    <h2 class="page-title">Personal TODO...</h2>
+                    <h2 class="page-title">TODO: formulário para editar dados conta</h2>
                     <ul class="unstyled">
                         <li>
                             <i class="icon-envelope-alt"></i>
@@ -40,7 +40,7 @@
 
                 </div>
             </div>
-        </div>-->
+        </div>
         <!-- .span8 -->
         <div class="span4 widget">
             <div class="widget map box-container padding30">
