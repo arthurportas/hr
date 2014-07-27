@@ -10,7 +10,7 @@
 
                 <ul class="nav">
                     <li class="active">
-                        <a href="/"><i class="icon-home"></i></a>
+                        <a href="/" title="Home"><i class="icon-home"></i></a>
                     </li>
                     <li>
                         <a href="/news" title="<@spring.messageText "NEWS", "Notícias"/>"><@spring.messageText "NEWS", "Notícias"/></a>

@@ -5,7 +5,6 @@
 <div class="container page-content">
     <div class="row">
         <div class="span8">
-            
             <div class="row-fluid padding30 box-container">
                 <#include "modules/my-account/mailbox-tabs.ftl">   
             </div>
